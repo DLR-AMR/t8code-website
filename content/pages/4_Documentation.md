@@ -4,3 +4,4 @@ Category: Documentation
 Author: Sandro Elsweijer
 
  - [Latest Release](../doc/latest/index.html)
+ - [v0.13.0](../doc/v0.13.0/index.html)
