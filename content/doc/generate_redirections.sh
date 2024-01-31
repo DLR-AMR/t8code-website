@@ -17,8 +17,16 @@ fi
 # Recursively copy the directories and .html files from the specified version folder to 'latest'
 rsync -av --include="*/" --include="*.html" --exclude="*" "$version/" latest/
 
-# Loop over each HTML file in the 'latest' folder and overwrite its contents
-for file in latest/*.html; do
-  file_without_latest=$(basename "$file")
-  echo '<meta http-equiv="refresh" content="0; URL='"../$version/$file_without_latest"'"/>' > "$file"
+# Save the path to all html files in 'latest' in the 'files' variable
+files=$(find latest -type f -name "*.html")
+
+# Loop over each HTML file and overwrite its contents
+for file in $files; do
+  redirect_path=${file//latest/$version}
+  levels=$(grep -o '/' <<< "$redirect_path" | wc -l)
+  prefix=""
+  for ((i=0; i<$levels; i++)); do
+    prefix="../$prefix"
+  done
+  echo '<meta http-equiv="refresh" content="0; URL='$prefix$redirect_path'"/>' > $file
 done
