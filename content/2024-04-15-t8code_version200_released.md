@@ -5,6 +5,8 @@ Authors: Jakob Fußbroich
 
 We're thrilled to unveil our second major release: t8code v2.0.0! This latest version is packed with enhancements, polished interfaces, and exciting new features that will enhence your t8code experience.
 
+<img src="images/release200/Release_2_0.png" height="600" />
+
 Among the highlights are:
 
 - Introducing batch-based searching, revolutionizing the way you find what you need.
