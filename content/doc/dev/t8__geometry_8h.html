@@ -87,7 +87,6 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="t8_8h_source.html">t8.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__refcount_8h_source.html">t8_refcount.h</a>&gt;</code><br />
-<code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__cmesh_8h_source.html">t8_cmesh.h</a>&gt;</code><br />
 </div>
 <p><a href="t8__geometry_8h_source.html">Go to the source code of this file.</a></p>
@@ -139,9 +138,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a68117855d8c857fe98cf733565550c7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry_8h.html#a997db73b2726b9562eeb3d44f18a85be">t8_geometry_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a68117855d8c857fe98cf733565550c7f">t8_geometry_get_type</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
 <tr class="memdesc:a68117855d8c857fe98cf733565550c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the geometry type of a tree.  <a href="t8__geometry_8h.html#a68117855d8c857fe98cf733565550c7f">More...</a><br /></td></tr>
 <tr class="separator:a68117855d8c857fe98cf733565550c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6e02e86dd1cf99d62c4d4f096190733"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#aa6e02e86dd1cf99d62c4d4f096190733">t8_geometry_tree_negative_volume</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
-<tr class="memdesc:aa6e02e86dd1cf99d62c4d4f096190733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a tree has a negative volume.  <a href="t8__geometry_8h.html#aa6e02e86dd1cf99d62c4d4f096190733">More...</a><br /></td></tr>
-<tr class="separator:aa6e02e86dd1cf99d62c4d4f096190733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4367f0a4c90fb9ca092fe706a406bb60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry_8h.html#a4367f0a4c90fb9ca092fe706a406bb60">t8_geometry_tree_negative_volume</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
+<tr class="memdesc:a4367f0a4c90fb9ca092fe706a406bb60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a tree has a negative volume.  <a href="t8__geometry_8h.html#a4367f0a4c90fb9ca092fe706a406bb60">More...</a><br /></td></tr>
+<tr class="separator:a4367f0a4c90fb9ca092fe706a406bb60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Typedef for the <a class="el" href="structt8__geometry.html" title="The base class for all geometries.">t8_geometry</a> class in order to be usable as a pointer from .c files. </p>
@@ -370,14 +369,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa6e02e86dd1cf99d62c4d4f096190733"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6e02e86dd1cf99d62c4d4f096190733">&#9670;&nbsp;</a></span>t8_geometry_tree_negative_volume()</h2>
+<a id="a4367f0a4c90fb9ca092fe706a406bb60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4367f0a4c90fb9ca092fe706a406bb60">&#9670;&nbsp;</a></span>t8_geometry_tree_negative_volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool t8_geometry_tree_negative_volume </td>
+          <td class="memname">int t8_geometry_tree_negative_volume </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
           <td class="paramname"><em>cmesh</em>, </td>
