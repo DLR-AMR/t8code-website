@@ -202,15 +202,9 @@
 					<div class="col-md-9">
 						<div class="blog-page"> 
 
-							{% for article in articles_page.object_list %}
+							{% for article in articles_page.object_list %}										 
 
 							<article class="type-post single-news single-post">
-								{% if article.image %} 
-									<div class="post-thumbnail">
-										<img src="{{ SITEURL }}/images/{{ article.image }}" alt="Event Post Thumbnail Image">   
-									</div><!-- /.post-thumbnail --> 	
-								{% endif %}
-										 
 
 								<h2 class="post-title">
 									<a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
@@ -257,13 +251,17 @@
 											{% endfor %}
 										</span>
 									{% endif %}
-										
-
 
 								</footer><!-- /.entry-meta --> 
-								<div class="entry"> 
-									<p>
-										{{ article.summary }}  
+
+								<div class="entry">
+									{% if article.image %}
+										<div class="post-thumbnail">
+											<img src="{{ SITEURL }}/images/{{ article.image }}" alt="Event Post Thumbnail Image">   
+										</div><!-- /.post-thumbnail --> 	
+									{% endif %}
+
+									{{ article.summary }}  
 								</div><!-- /.entry --> 
 								<div class="btn-container">
 									<a href="{{ SITEURL }}/{{ article.url }}" class="read-more">
