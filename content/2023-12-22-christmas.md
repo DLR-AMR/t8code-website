@@ -2,9 +2,9 @@ Title: Christmas Greetings 2023
 Date: 2023-12-22 15:00
 Category: Misc
 Author: Johannes Holke and Sandro Elsweijer
+Image: christmas23/AMR_christmas_card_2023.gif
 
 The t8code developer team wishes merry Christmas, happy holidays and a happy new year 2024.
-<img src="images/christmas23/AMR_christmas_card_2023.gif" height="600" />
 
 This year's Christmas mesh shows a christmas tree with sparkling lights and demonstrates on of our new features developed in 2023: CAD-based geometry interpolation.
 
