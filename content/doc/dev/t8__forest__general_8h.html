@@ -220,12 +220,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_set_load</b
 <tr class="memitem:a1b11a2b819128be51b080a161d8b1612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__ctree.html">t8_ctree_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a1b11a2b819128be51b080a161d8b1612">t8_forest_get_coarse_tree</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid)</td></tr>
 <tr class="memdesc:a1b11a2b819128be51b080a161d8b1612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the local id of a tree in a forest, return the coarse tree of the cmesh that corresponds to this tree.  <a href="t8__forest__general_8h.html#a1b11a2b819128be51b080a161d8b1612">More...</a><br /></td></tr>
 <tr class="separator:a1b11a2b819128be51b080a161d8b1612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09a7b84a3fb2de351ec39bbca5ff5aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ab09a7b84a3fb2de351ec39bbca5ff5aa">t8_forest_leaf_face_orientation</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *leaf, int face)</td></tr>
+<tr class="memdesc:ab09a7b84a3fb2de351ec39bbca5ff5aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the leaf face orientation at given face in a forest.  <a href="t8__forest__general_8h.html#ab09a7b84a3fb2de351ec39bbca5ff5aa">More...</a><br /></td></tr>
+<tr class="separator:ab09a7b84a3fb2de351ec39bbca5ff5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59074ce7f350a4e711ac95c46c07a962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a59074ce7f350a4e711ac95c46c07a962">t8_forest_leaf_face_neighbors</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *leaf, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **pneighbor_leaves[], int face, int *dual_faces[], int *num_neighbors, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> **pelement_indices, <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> **pneigh_scheme, int forest_is_balanced)</td></tr>
 <tr class="memdesc:a59074ce7f350a4e711ac95c46c07a962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the leaf face neighbors of a forest.  <a href="t8__forest__general_8h.html#a59074ce7f350a4e711ac95c46c07a962">More...</a><br /></td></tr>
 <tr class="separator:a59074ce7f350a4e711ac95c46c07a962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8c1951a9da45c06b1c5eb1936914308"><td class="memItemLeft" align="right" valign="top"><a id="ad8c1951a9da45c06b1c5eb1936914308"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_leaf_face_neighbors_ext</b> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *leaf, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **pneighbor_leaves[], int face, int *dual_faces[], int *num_neighbors, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> **pelement_indices, <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> **pneigh_scheme, int forest_is_balanced, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *gneigh_tree)</td></tr>
-<tr class="separator:ad8c1951a9da45c06b1c5eb1936914308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e6aa90ab2382b2b6ae87b08b7ea5ef"><td class="memItemLeft" align="right" valign="top"><a id="aa3e6aa90ab2382b2b6ae87b08b7ea5ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_leaf_face_neighbors_ext</b> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *leaf, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **pneighbor_leaves[], int face, int *dual_faces[], int *num_neighbors, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> **pelement_indices, <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> **pneigh_scheme, int forest_is_balanced, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *gneigh_tree, int *orientation)</td></tr>
+<tr class="separator:aa3e6aa90ab2382b2b6ae87b08b7ea5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af18f68a52bd5a9d46b79b7efdac25bd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#af18f68a52bd5a9d46b79b7efdac25bd5">t8_forest_ghost_exchange_data</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, sc_array_t *element_data)</td></tr>
 <tr class="memdesc:af18f68a52bd5a9d46b79b7efdac25bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchange ghost information of user defined element data.  <a href="t8__forest__general_8h.html#af18f68a52bd5a9d46b79b7efdac25bd5">More...</a><br /></td></tr>
 <tr class="separator:af18f68a52bd5a9d46b79b7efdac25bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1907,6 +1910,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
     <tr><td class="paramdir">[out]</td><td class="paramname">pelement_indices</td><td>Unallocated on input. On output the element indices of the neighbor leaves are stored here. 0, 1, ... num_local_el - 1 for local leaves and num_local_el , ... , num_local_el + num_ghosts - 1 for ghosts. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pneigh_scheme</td><td>On output the eclass scheme of the neighbor elements. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">forest_is_balanced</td><td>True if we know that <em>forest</em> is balanced, false otherwise. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">orientation</td><td>If a pointer to an integer variable is given the face orientation is computed and stored there. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1915,6 +1919,66 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
 Currently <em>forest</em> must be balanced. </dd>
 <dd>
 <em>forest</em> must be committed before calling this function. </dd></dl>
+
+</div>
+</div>
+<a id="ab09a7b84a3fb2de351ec39bbca5ff5aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09a7b84a3fb2de351ec39bbca5ff5aa">&#9670;&nbsp;</a></span>t8_forest_leaf_face_orientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_forest_leaf_face_orientation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
+          <td class="paramname"><em>forest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramname"><em>ltreeid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *&#160;</td>
+          <td class="paramname"><em>ts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>leaf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>face</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the leaf face orientation at given face in a forest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest. Must have a valid ghost layer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltreeid</td><td>A local tree id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>The eclass scheme of the element. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">leaf</td><td>A leaf in tree <em>ltreeid</em> of <em>forest</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>The index of the face across which the face neighbors are searched. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Face orientation encoded as integer.</dd></dl>
+<p>For more information about the encoding of face orientation refer to <a class="el" href="t8__cmesh_8h.html#ab3ab0fe2910c94cf5f0129444ce9f72f">t8_cmesh_get_face_neighbor</a>. </p>
 
 </div>
 </div>
