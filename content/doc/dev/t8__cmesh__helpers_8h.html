@@ -91,15 +91,64 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a229d98d4d8d7c577722f4bcb538b81b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__helpers_8h.html#a229d98d4d8d7c577722f4bcb538b81b3">t8_cmesh_set_join_by_vertices</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const int ntrees, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> *eclasses, const double *vertices, int **connectivity, const int do_both_directions)</td></tr>
-<tr class="memdesc:a229d98d4d8d7c577722f4bcb538b81b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the face connectivity information of an un-committed \cmesh based on a list of tree vertices.  <a href="t8__cmesh__helpers_8h.html#a229d98d4d8d7c577722f4bcb538b81b3">More...</a><br /></td></tr>
-<tr class="separator:a229d98d4d8d7c577722f4bcb538b81b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2798c3ad7e46482ffb1fabbebb3b9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__helpers_8h.html#a3c2798c3ad7e46482ffb1fabbebb3b9f">t8_cmesh_set_join_by_vertices</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> ntrees, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> *eclasses, const double *vertices, int **connectivity, const int do_both_directions)</td></tr>
+<tr class="memdesc:a3c2798c3ad7e46482ffb1fabbebb3b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the face connectivity information of an un-committed \cmesh based on a list of tree vertices.  <a href="t8__cmesh__helpers_8h.html#a3c2798c3ad7e46482ffb1fabbebb3b9f">More...</a><br /></td></tr>
+<tr class="separator:a3c2798c3ad7e46482ffb1fabbebb3b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9409922a181df3aac03f5ca58a1446d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__helpers_8h.html#a9409922a181df3aac03f5ca58a1446d3">t8_cmesh_set_join_by_stash</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int **connectivity, const int do_both_directions)</td></tr>
+<tr class="memdesc:a9409922a181df3aac03f5ca58a1446d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the face connectivity information of an un-committed \cmesh based on the cmesh stash.  <a href="t8__cmesh__helpers_8h.html#a9409922a181df3aac03f5ca58a1446d3">More...</a><br /></td></tr>
+<tr class="separator:a9409922a181df3aac03f5ca58a1446d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Collection of helper routines for building cmeshes. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a229d98d4d8d7c577722f4bcb538b81b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a229d98d4d8d7c577722f4bcb538b81b3">&#9670;&nbsp;</a></span>t8_cmesh_set_join_by_vertices()</h2>
+<a id="a9409922a181df3aac03f5ca58a1446d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9409922a181df3aac03f5ca58a1446d3">&#9670;&nbsp;</a></span>t8_cmesh_set_join_by_stash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_cmesh_set_join_by_stash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int **&#160;</td>
+          <td class="paramname"><em>connectivity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>do_both_directions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the face connectivity information of an un-committed \cmesh based on the cmesh stash. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">cmesh</td><td>An uncommitted cmesh. The trees eclasses and vertices do need to be set. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">connectivity</td><td>If connectivity is not NULL the variable is filled with a pointer to an allocated face connectivity array. The ownership of this array goes to the caller. This argument is mainly used for debugging and testing purposes. The dimension of <em>connectivity</em> are [ntrees,T8_ECLASS_MAX_FACES,3]. For each element and each face the following is stored: neighbor_tree_id, neighbor_dual_face_id, orientation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">do_both_directions</td><td>Compute the connectivity from both neighboring sides. Takes much longer to compute.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>This routine might be too expensive for very large meshes. In this case, consider to use a fully featured mesh generator.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This routine does not detect periodic boundaries. </dd></dl>
+
+</div>
+</div>
+<a id="a3c2798c3ad7e46482ffb1fabbebb3b9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c2798c3ad7e46482ffb1fabbebb3b9f">&#9670;&nbsp;</a></span>t8_cmesh_set_join_by_vertices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,7 +162,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>ntrees</em>, </td>
         </tr>
         <tr>
