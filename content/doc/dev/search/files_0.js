@@ -13,7 +13,7 @@ var searchData=
   ['t8_5fcmesh_5fexamples_2eh_1360',['t8_cmesh_examples.h',['../t8__cmesh__examples_8h.html',1,'']]],
   ['t8_5fcmesh_5fgeometry_2ecxx_1361',['t8_cmesh_geometry.cxx',['../t8__cmesh__geometry_8cxx.html',1,'']]],
   ['t8_5fcmesh_5fgeometry_2eh_1362',['t8_cmesh_geometry.h',['../t8__cmesh__geometry_8h.html',1,'']]],
-  ['t8_5fcmesh_5fhelpers_2ec_1363',['t8_cmesh_helpers.c',['../t8__cmesh__helpers_8c.html',1,'']]],
+  ['t8_5fcmesh_5fhelpers_2ecxx_1363',['t8_cmesh_helpers.cxx',['../t8__cmesh__helpers_8cxx.html',1,'']]],
   ['t8_5fcmesh_5fhelpers_2eh_1364',['t8_cmesh_helpers.h',['../t8__cmesh__helpers_8h.html',1,'']]],
   ['t8_5fcmesh_5fnetcdf_2eh_1365',['t8_cmesh_netcdf.h',['../t8__cmesh__netcdf_8h.html',1,'']]],
   ['t8_5fcmesh_5foffset_2ec_1366',['t8_cmesh_offset.c',['../t8__cmesh__offset_8c.html',1,'']]],
