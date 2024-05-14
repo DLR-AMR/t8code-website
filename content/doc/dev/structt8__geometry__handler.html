@@ -124,6 +124,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9340eec842bc93e0fbdd38b6100cd7b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__handler.html#a9340eec842bc93e0fbdd38b6100cd7b1">tree_negative_volume</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
 <tr class="memdesc:a9340eec842bc93e0fbdd38b6100cd7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the volume of a tree is negative.  <a href="structt8__geometry__handler.html#a9340eec842bc93e0fbdd38b6100cd7b1">More...</a><br /></td></tr>
 <tr class="separator:a9340eec842bc93e0fbdd38b6100cd7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54c5c0a7d50b235339adafcd72da348"><td class="memItemLeft" align="right" valign="top"><a id="ab54c5c0a7d50b235339adafcd72da348"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__handler.html#ab54c5c0a7d50b235339adafcd72da348">ref</a> ()</td></tr>
+<tr class="memdesc:ab54c5c0a7d50b235339adafcd72da348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the reference count of the geometry handler. <br /></td></tr>
+<tr class="separator:ab54c5c0a7d50b235339adafcd72da348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a9c5ff15d61a92e70ceb9a3879639d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__handler.html#ad2a9c5ff15d61a92e70ceb9a3879639d">unref</a> ()</td></tr>
+<tr class="memdesc:ad2a9c5ff15d61a92e70ceb9a3879639d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease the reference count of the geometry handler.  <a href="structt8__geometry__handler.html#ad2a9c5ff15d61a92e70ceb9a3879639d">More...</a><br /></td></tr>
+<tr class="separator:ad2a9c5ff15d61a92e70ceb9a3879639d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3ce7364bd4883e3df83b607b9e8bb5ad"></a>
@@ -618,6 +625,34 @@ template&lt;typename geometry_type , typename... _args&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the volume of the tree is negative, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ad2a9c5ff15d61a92e70ceb9a3879639d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2a9c5ff15d61a92e70ceb9a3879639d">&#9670;&nbsp;</a></span>unref()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_geometry_handler::unref </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decrease the reference count of the geometry handler. </p>
+<p>If the reference count reaches zero, the geometry handler is deleted. </p>
 
 </div>
 </div>
