@@ -128,6 +128,9 @@ virtual <a class="el" href="t8__element__shape_8h.html#aab8844a13783f0c1ab05e1d0
 <tr class="memitem:a4ad696f2788bea5e0305ee7ecca40064"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common__c.html#a4ad696f2788bea5e0305ee7ecca40064">t8_element_count_leaves_from_root</a> (int level) const</td></tr>
 <tr class="memdesc:a4ad696f2788bea5e0305ee7ecca40064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many leaf descendants of a given uniform level the root element will produce.  <a href="classt8__default__scheme__common__c.html#a4ad696f2788bea5e0305ee7ecca40064">More...</a><br /></td></tr>
 <tr class="separator:a4ad696f2788bea5e0305ee7ecca40064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab272afa89dd4c163dc33c5e55376cac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common__c.html#aab272afa89dd4c163dc33c5e55376cac">t8_element_vertex_integer_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int vertex, int coords[]) const =0</td></tr>
+<tr class="memdesc:aab272afa89dd4c163dc33c5e55376cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the integer coordinates of a given element vertex.  <a href="classt8__default__scheme__common__c.html#aab272afa89dd4c163dc33c5e55376cac">More...</a><br /></td></tr>
+<tr class="separator:aab272afa89dd4c163dc33c5e55376cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24c212c9197d0644f3788cad1492d522"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common__c.html#a24c212c9197d0644f3788cad1492d522">t8_element_reference_coords</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const double *ref_coords, const size_t num_coords, double *out_coords) const =0</td></tr>
 <tr class="memdesc:a24c212c9197d0644f3788cad1492d522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert points in the reference space of an element to points in the reference space of the tree.  <a href="classt8__default__scheme__common__c.html#a24c212c9197d0644f3788cad1492d522">More...</a><br /></td></tr>
 <tr class="separator:a24c212c9197d0644f3788cad1492d522"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -615,6 +618,60 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <p>Implements <a class="el" href="structt8__eclass__scheme.html#aee286d901c89f287c7ab068f67b28b30">t8_eclass_scheme</a>.</p>
 
 <p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#ab4b992df9c8af3d9cf731847aa834a4b">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a636c5c52776ae40eb93ae12b1c17bdfb">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#ab4a30c5e5ca3e336d8038d3c6a03a1ba">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#ac41c79334797efab29d5f030d25fbba3">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#abde2a9ad7c248a86324fd5629a6b1c25">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a8b0e87e6da031029e9777e5001ee91f5">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#aab854e7af3f6e7b49faf89dc81e4d09e">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a47c54ec29ad14b8edea5719f25cee45a">t8_default_scheme_hex_c</a>.</p>
+
+</div>
+</div>
+<a id="aab272afa89dd4c163dc33c5e55376cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab272afa89dd4c163dc33c5e55376cac">&#9670;&nbsp;</a></span>t8_element_vertex_integer_coords()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void t8_default_scheme_common_c::t8_element_vertex_integer_coords </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vertex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coords</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute the integer coordinates of a given element vertex. </p>
+<p>The default scheme implements the Morton type SFCs. In these SFCs the elements are positioned in a cube [0,1]^(dL) with dimension d (=0,1,2,3) and L the maximum refinement level. All element vertices have integer coordinates in this cube. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertex</td><td>The id of the vertex whose coordinates shall be computed. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">coords</td><td>An array of at least as many integers as the element's dimension whose entries will be filled with the coordinates of <em>vertex</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="structt8__default__scheme__pyramid__c.html#af17983b7019e07b90b5b651b68d32b77">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a5ee4d81cb313f49bfdfbb6fa47d9e792">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#ab01b22cce5270dc66f52910a87127471">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#af040cb74620a1df4b92d3b3d9816a956">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#aecb255f7d4e5f71d3da529facc1d5219">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#a994a9eb39612dc0ad0ea02cdf8ce99de">t8_default_scheme_line_c</a>, <a class="el" href="structt8__default__scheme__hex__c.html#a11cb3e842e60ab76fff6e4b98cfe003a">t8_default_scheme_hex_c</a>, and <a class="el" href="structt8__default__scheme__tet__c.html#a5e9f261802a21a7978579d53bd9c58ce">t8_default_scheme_tet_c</a>.</p>
 
 </div>
 </div>
