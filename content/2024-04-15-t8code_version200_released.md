@@ -4,7 +4,7 @@ Category: News
 Authors: Jakob Fußbroich
 Image: release200/Release_2_0.png
 
-We're thrilled to unveil our second major release: t8code v2.0.0! This latest version is packed with enhancements, polished interfaces, and exciting new features that will enhence your t8code experience.
+We're thrilled to unveil our second major release: t8code v2.0.0! This latest version is packed with enhancements, polished interfaces, and exciting new features that will enhance your t8code experience.
 
 Among the highlights are:
 
