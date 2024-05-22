@@ -119,6 +119,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a44a7a99ff3477977a885d220916fe4fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a44a7a99ff3477977a885d220916fe4fa">t8_geom_get_tet_face_intersection</a> (const int face_index, const double *ref_coords, double face_intersection[3])</td></tr>
 <tr class="memdesc:a44a7a99ff3477977a885d220916fe4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the face intersection of a ray passing trough the reference coordinates and the opposite vertex of that face for a tetrahedron.  <a href="t8__geometry__helpers_8h.html#a44a7a99ff3477977a885d220916fe4fa">More...</a><br /></td></tr>
 <tr class="separator:a44a7a99ff3477977a885d220916fe4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5e4a8aad84130f8e25a5c3bfcfcd66"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a4c5e4a8aad84130f8e25a5c3bfcfcd66">t8_geom_get_scaling_factor_of_edge_on_face_prism</a> (int edge_index, int face_index, const double *ref_coords)</td></tr>
+<tr class="memdesc:a4c5e4a8aad84130f8e25a5c3bfcfcd66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the scaling factor for the displacement of an edge over a face of a prism element.  <a href="t8__geometry__helpers_8h.html#a4c5e4a8aad84130f8e25a5c3bfcfcd66">More...</a><br /></td></tr>
+<tr class="separator:a4c5e4a8aad84130f8e25a5c3bfcfcd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe53341bed40af2adf1a19177c1170a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#acbe53341bed40af2adf1a19177c1170a">t8_geom_get_scaling_factor_face_through_volume_prism</a> (const int face, const double *ref_coords)</td></tr>
+<tr class="memdesc:acbe53341bed40af2adf1a19177c1170a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the scaling factor for the displacement of an face through the volume of a prism element.  <a href="t8__geometry__helpers_8h.html#acbe53341bed40af2adf1a19177c1170a">More...</a><br /></td></tr>
+<tr class="separator:acbe53341bed40af2adf1a19177c1170a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3130db310c0cf36db0b63a7f18016399"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a3130db310c0cf36db0b63a7f18016399">t8_vertex_point_inside</a> (const double vertex_coords[3], const double point[3], const double tolerance)</td></tr>
 <tr class="memdesc:a3130db310c0cf36db0b63a7f18016399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a point lies inside a vertex.  <a href="t8__geometry__helpers_8h.html#a3130db310c0cf36db0b63a7f18016399">More...</a><br /></td></tr>
 <tr class="separator:a3130db310c0cf36db0b63a7f18016399"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,6 +414,89 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="acbe53341bed40af2adf1a19177c1170a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe53341bed40af2adf1a19177c1170a">&#9670;&nbsp;</a></span>t8_geom_get_scaling_factor_face_through_volume_prism()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double t8_geom_get_scaling_factor_face_through_volume_prism </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>face</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>ref_coords</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the scaling factor for the displacement of an face through the volume of a prism element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">face_index</td><td>Index of the displaced face. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array containing the coordinates of the reference point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaling factor of the face displacement at the point of the reference coordinates inside the prism volume. </dd></dl>
+
+</div>
+</div>
+<a id="a4c5e4a8aad84130f8e25a5c3bfcfcd66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c5e4a8aad84130f8e25a5c3bfcfcd66">&#9670;&nbsp;</a></span>t8_geom_get_scaling_factor_of_edge_on_face_prism()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double t8_geom_get_scaling_factor_of_edge_on_face_prism </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>edge_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>face_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>ref_coords</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the scaling factor for the displacement of an edge over a face of a prism element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">edge_index</td><td>Index of the edge, whose displacement should be scaled. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">face_index</td><td>Index of the face, the displacement should be scaled on. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array containing the coordinates of the reference point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaling factor of the edge displacement on the face at the point of the reference coordinates. </dd></dl>
 
 </div>
 </div>
