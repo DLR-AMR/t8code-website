@@ -90,6 +90,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a67ad5b20e54050ff8664d2932bc32edc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__geometrical_8h.html#a67ad5b20e54050ff8664d2932bc32edc">t8_forest_get_dimension</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest)</td></tr>
+<tr class="memdesc:a67ad5b20e54050ff8664d2932bc32edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the dimension of a forest.  <a href="t8__forest__geometrical_8h.html#a67ad5b20e54050ff8664d2932bc32edc">More...</a><br /></td></tr>
+<tr class="separator:a67ad5b20e54050ff8664d2932bc32edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab41599ba8f675822359e17108a732969"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__geometrical_8h.html#ab41599ba8f675822359e17108a732969">t8_forest_element_coordinate</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, int corner_number, double *coordinates)</td></tr>
 <tr class="memdesc:ab41599ba8f675822359e17108a732969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the coordinates of a given vertex of an element if a geometry for this tree is registered in the forest's cmesh.  <a href="t8__forest__geometrical_8h.html#ab41599ba8f675822359e17108a732969">More...</a><br /></td></tr>
 <tr class="separator:ab41599ba8f675822359e17108a732969"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -624,6 +627,33 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The diameter of the element. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function assumes d-linear interpolation for the tree vertex coordinates. <em>forest</em> must be committed when calling this function. </dd></dl>
+
+</div>
+</div>
+<a id="a67ad5b20e54050ff8664d2932bc32edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ad5b20e54050ff8664d2932bc32edc">&#9670;&nbsp;</a></span>t8_forest_get_dimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_forest_get_dimension </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
+          <td class="paramname"><em>forest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the dimension of a forest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>A forest. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The dimension. <em>forest</em> must be committed before calling this function. Note: The dimension is inferred from the associated <b>cmesh</b>. </dd></dl>
 
 </div>
 </div>

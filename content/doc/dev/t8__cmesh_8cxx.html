@@ -169,9 +169,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4918cb34d7d837ead1c8963adda4363c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#a4918cb34d7d837ead1c8963adda4363c">t8_cmesh_get_partition_table</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:a4918cb34d7d837ead1c8963adda4363c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shared memory array storing the partition table of a partitioned cmesh.  <a href="t8__cmesh_8cxx.html#a4918cb34d7d837ead1c8963adda4363c">More...</a><br /></td></tr>
 <tr class="separator:a4918cb34d7d837ead1c8963adda4363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1566488382697810dd5ce7f096f479e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#ad1566488382697810dd5ce7f096f479e">t8_cmesh_set_dimension</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int dim)</td></tr>
-<tr class="memdesc:ad1566488382697810dd5ce7f096f479e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the dimension of a cmesh.  <a href="t8__cmesh_8cxx.html#ad1566488382697810dd5ce7f096f479e">More...</a><br /></td></tr>
-<tr class="separator:ad1566488382697810dd5ce7f096f479e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdcc093b4cd3ab3350fb25f911607cbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#afdcc093b4cd3ab3350fb25f911607cbd">t8_cmesh_set_dimension</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const int dim)</td></tr>
+<tr class="memdesc:afdcc093b4cd3ab3350fb25f911607cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the dimension of a cmesh.  <a href="t8__cmesh_8cxx.html#afdcc093b4cd3ab3350fb25f911607cbd">More...</a><br /></td></tr>
+<tr class="separator:afdcc093b4cd3ab3350fb25f911607cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca324b0460e36a51c9a317c5cdb3280"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#a7ca324b0460e36a51c9a317c5cdb3280">t8_cmesh_get_dimension</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
+<tr class="memdesc:a7ca324b0460e36a51c9a317c5cdb3280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dimension of a cmesh.  <a href="t8__cmesh_8cxx.html#a7ca324b0460e36a51c9a317c5cdb3280">More...</a><br /></td></tr>
+<tr class="separator:a7ca324b0460e36a51c9a317c5cdb3280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad318211db9da3414ff89983b3e24c118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#ad318211db9da3414ff89983b3e24c118">t8_cmesh_set_tree_class</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree_id, <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class)</td></tr>
 <tr class="memdesc:ad318211db9da3414ff89983b3e24c118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the class of a tree in the cmesh.  <a href="t8__cmesh_8cxx.html#ad318211db9da3414ff89983b3e24c118">More...</a><br /></td></tr>
 <tr class="separator:ad318211db9da3414ff89983b3e24c118"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -627,6 +630,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 <dd>
 No check is performed whether the attribute actually stored <em>data_count</em> many entries since we do not store the number of data entries of the attribute array. You can keep track of the data count yourself by using another attribute. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__cmesh_8h.html#ad0d1703216f125ec0d57e4b1034bbe16" title="Store an array of t8_gloidx_t as an attribute at a tree in a cmesh.">t8_cmesh_set_attribute_gloidx_array</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7ca324b0460e36a51c9a317c5cdb3280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ca324b0460e36a51c9a317c5cdb3280">&#9670;&nbsp;</a></span>t8_cmesh_get_dimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_cmesh_get_dimension </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the dimension of a cmesh. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh. <em>cmesh</em> must be committed before calling this function. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1684,8 +1713,8 @@ If an attribute with the given package_id and key already exists, then it will g
 
 </div>
 </div>
-<a id="ad1566488382697810dd5ce7f096f479e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1566488382697810dd5ce7f096f479e">&#9670;&nbsp;</a></span>t8_cmesh_set_dimension()</h2>
+<a id="afdcc093b4cd3ab3350fb25f911607cbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdcc093b4cd3ab3350fb25f911607cbd">&#9670;&nbsp;</a></span>t8_cmesh_set_dimension()</h2>
 
 <div class="memitem">
 <div class="memproto">
