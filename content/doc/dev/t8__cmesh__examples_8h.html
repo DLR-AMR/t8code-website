@@ -110,6 +110,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a333fe27c716adf1f7f55c48d8a073d91"><td class="memItemLeft" align="right" valign="top"><a id="a333fe27c716adf1f7f55c48d8a073d91"></a>
 <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_new_hypercube_pad</b> (const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_MPI_Comm comm, const double *boundary, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_x, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_y, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_z, const int use_axis_aligned)</td></tr>
 <tr class="separator:a333fe27c716adf1f7f55c48d8a073d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ef0342a6a9b54437fee88ce5bd4fc5"><td class="memItemLeft" align="right" valign="top"><a id="a83ef0342a6a9b54437fee88ce5bd4fc5"></a>
+<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_new_hypercube_pad_ext</b> (const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_MPI_Comm comm, const double *boundary, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_x, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_y, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_z, const int periodic_x, const int periodic_y, const int periodic_z, const int use_axis_aligned, const int set_partition, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> offset)</td></tr>
+<tr class="separator:a83ef0342a6a9b54437fee88ce5bd4fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94f7a51c22371715a4c784a93e3c0c9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a94f7a51c22371715a4c784a93e3c0c9b">t8_cmesh_new_hypercube_hybrid</a> (sc_MPI_Comm comm, int do_partition, int periodic)</td></tr>
 <tr class="memdesc:a94f7a51c22371715a4c784a93e3c0c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hybercube with 6 Tets, 6 Prism, 4 Hex.  <a href="t8__cmesh__examples_8h.html#a94f7a51c22371715a4c784a93e3c0c9b">More...</a><br /></td></tr>
 <tr class="separator:a94f7a51c22371715a4c784a93e3c0c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +149,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a539ead8049133ddd30333929a8772192"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a539ead8049133ddd30333929a8772192">t8_cmesh_new_prism_geometry</a> (sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a539ead8049133ddd30333929a8772192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a forest of six connected noncannoical oriented prisms.  <a href="t8__cmesh__examples_8h.html#a539ead8049133ddd30333929a8772192">More...</a><br /></td></tr>
 <tr class="separator:a539ead8049133ddd30333929a8772192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b49f17fd850f650c5d5ff3550e3e8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a12b49f17fd850f650c5d5ff3550e3e8c">t8_cmesh_new_brick_2d</a> (<a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_x, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_y, int x_periodic, int y_periodic, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a12b49f17fd850f650c5d5ff3550e3e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a cmesh of quads whose trees are given by a <code>num_x * num_y</code> brick connectivity.  <a href="t8__cmesh__examples_8h.html#a12b49f17fd850f650c5d5ff3550e3e8c">More...</a><br /></td></tr>
+<tr class="separator:a12b49f17fd850f650c5d5ff3550e3e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde2d8c8afb7a12f59ae064347b1a8bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#acde2d8c8afb7a12f59ae064347b1a8bb">t8_cmesh_new_brick_3d</a> (<a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_x, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_y, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_z, int x_periodic, int y_periodic, int z_periodic, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:acde2d8c8afb7a12f59ae064347b1a8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a cmesh of hexs whose trees are given by a <code>num_x * num_y * num_z</code> brick connectivity.  <a href="t8__cmesh__examples_8h.html#acde2d8c8afb7a12f59ae064347b1a8bb">More...</a><br /></td></tr>
+<tr class="separator:acde2d8c8afb7a12f59ae064347b1a8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac19050f9ae9ce46c947b21cf8a3caa45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#ac19050f9ae9ce46c947b21cf8a3caa45">t8_cmesh_new_disjoint_bricks</a> (<a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_x, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_y, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_z, int x_periodic, int y_periodic, int z_periodic, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ac19050f9ae9ce46c947b21cf8a3caa45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a partitioned cmesh of quads whose local trees are given by an num_x by num_y brick connectivity from p4est or a num_x by num_y by num_z brick connectivity from p8est.  <a href="t8__cmesh__examples_8h.html#ac19050f9ae9ce46c947b21cf8a3caa45">More...</a><br /></td></tr>
 <tr class="separator:ac19050f9ae9ce46c947b21cf8a3caa45"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,6 +249,138 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A valid cmesh, as if _init and _commit had been called. </dd></dl>
+
+</div>
+</div>
+<a id="a12b49f17fd850f650c5d5ff3550e3e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12b49f17fd850f650c5d5ff3550e3e8c">&#9670;&nbsp;</a></span>t8_cmesh_new_brick_2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_cmesh_new_brick_2d </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>num_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>num_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x_periodic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y_periodic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a cmesh of quads whose trees are given by a <code>num_x * num_y</code> brick connectivity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_x</td><td>The number of trees in x-direction. Must be &gt;= 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_y</td><td>The number of trees in y-direction. Must be &gt;= 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_periodic</td><td>If nonzero, the local brick connectivity is periodic in x direction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_periodic</td><td>If nonzero, the local brick connectivity is periodic in y direction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator used to commit the cmesh. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A committed and partitioned cmesh. </dd></dl>
+
+</div>
+</div>
+<a id="acde2d8c8afb7a12f59ae064347b1a8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde2d8c8afb7a12f59ae064347b1a8bb">&#9670;&nbsp;</a></span>t8_cmesh_new_brick_3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_cmesh_new_brick_3d </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>num_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>num_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>num_z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x_periodic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y_periodic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>z_periodic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a cmesh of hexs whose trees are given by a <code>num_x * num_y * num_z</code> brick connectivity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_x</td><td>The number of trees in x-direction. Must be &gt;= 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_y</td><td>The number of trees in y-direction. Must be &gt;= 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_z</td><td>The number of trees in z-direction. Must be &gt;= 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_periodic</td><td>If nonzero, the local brick connectivity is periodic in x direction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_periodic</td><td>If nonzero, the local brick connectivity is periodic in y direction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">z_periodic</td><td>If nonzero, the local brick connectivity is periodic in z direction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator used to commit the cmesh. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A committed and partitioned cmesh. </dd></dl>
 
 </div>
 </div>
