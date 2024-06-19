@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.291-400d9</span>
+   &#160;<span id="projectnumber">2.0.0.310-b8ed9</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -205,6 +205,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_set_load</b
 <tr class="memitem:a22f680d8485c440925ef8debbd203760"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a22f680d8485c440925ef8debbd203760">t8_forest_get_eclass</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid)</td></tr>
 <tr class="memdesc:a22f680d8485c440925ef8debbd203760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the element class of a forest local tree.  <a href="t8__forest__general_8h.html#a22f680d8485c440925ef8debbd203760">More...</a><br /></td></tr>
 <tr class="separator:a22f680d8485c440925ef8debbd203760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721d6112a85ab7dd7aaff0b8f2af1bf2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a721d6112a85ab7dd7aaff0b8f2af1bf2">t8_forest_tree_is_local</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> local_tree)</td></tr>
+<tr class="memdesc:a721d6112a85ab7dd7aaff0b8f2af1bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given tree id belongs to a local tree in a forest.  <a href="t8__forest__general_8h.html#a721d6112a85ab7dd7aaff0b8f2af1bf2">More...</a><br /></td></tr>
+<tr class="separator:a721d6112a85ab7dd7aaff0b8f2af1bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1619a8f06e6c0f986eb06beb2f2a768"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ad1619a8f06e6c0f986eb06beb2f2a768">t8_forest_get_local_id</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
 <tr class="memdesc:ad1619a8f06e6c0f986eb06beb2f2a768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a global tree id compute the forest local id of this tree.  <a href="t8__forest__general_8h.html#ad1619a8f06e6c0f986eb06beb2f2a768">More...</a><br /></td></tr>
 <tr class="separator:ad1619a8f06e6c0f986eb06beb2f2a768"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +223,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_set_load</b
 <tr class="memitem:a1b11a2b819128be51b080a161d8b1612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__ctree.html">t8_ctree_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a1b11a2b819128be51b080a161d8b1612">t8_forest_get_coarse_tree</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid)</td></tr>
 <tr class="memdesc:a1b11a2b819128be51b080a161d8b1612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the local id of a tree in a forest, return the coarse tree of the cmesh that corresponds to this tree.  <a href="t8__forest__general_8h.html#a1b11a2b819128be51b080a161d8b1612">More...</a><br /></td></tr>
 <tr class="separator:a1b11a2b819128be51b080a161d8b1612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3748495e4c085f819f5581ea49dcd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a8b3748495e4c085f819f5581ea49dcd3">t8_forest_element_is_leaf</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> local_tree)</td></tr>
+<tr class="memdesc:a8b3748495e4c085f819f5581ea49dcd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given element is a leaf in a forest.  <a href="t8__forest__general_8h.html#a8b3748495e4c085f819f5581ea49dcd3">More...</a><br /></td></tr>
+<tr class="separator:a8b3748495e4c085f819f5581ea49dcd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab09a7b84a3fb2de351ec39bbca5ff5aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ab09a7b84a3fb2de351ec39bbca5ff5aa">t8_forest_leaf_face_orientation</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *leaf, int face)</td></tr>
 <tr class="memdesc:ab09a7b84a3fb2de351ec39bbca5ff5aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the leaf face orientation at given face in a forest.  <a href="t8__forest__general_8h.html#ab09a7b84a3fb2de351ec39bbca5ff5aa">More...</a><br /></td></tr>
 <tr class="separator:ab09a7b84a3fb2de351ec39bbca5ff5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -592,6 +598,54 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The global tree-id of the tree in which <em>neigh</em> is in. -1 if there exists no neighbor across that face. </dd></dl>
+
+</div>
+</div>
+<a id="a8b3748495e4c085f819f5581ea49dcd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b3748495e4c085f819f5581ea49dcd3">&#9670;&nbsp;</a></span>t8_forest_element_is_leaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_forest_element_is_leaf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
+          <td class="paramname"><em>forest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramname"><em>local_tree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query whether a given element is a leaf in a forest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>An element of a local tree in <em>forest</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">local_tree</td><td>A local tree id of <em>forest</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True (non-zero) if and only if <em>element</em> is a leaf in <em>local_tree</em> of <em>forest</em>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This does not query for ghost leaves. </dd>
+<dd>
+<em>forest</em> must be committed before calling this function. </dd></dl>
 
 </div>
 </div>
@@ -2756,6 +2810,44 @@ This setting may not be combined with <a class="el" href="t8__forest__general_8h
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An array of t8_element_t * storing all leaf elements of this tree. </dd></dl>
+
+</div>
+</div>
+<a id="a721d6112a85ab7dd7aaff0b8f2af1bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a721d6112a85ab7dd7aaff0b8f2af1bf2">&#9670;&nbsp;</a></span>t8_forest_tree_is_local()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_forest_tree_is_local </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
+          <td class="paramname"><em>forest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
+          <td class="paramname"><em>local_tree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether a given tree id belongs to a local tree in a forest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">local_tree</td><td>A tree id. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if and only if the id <em>local_tree</em> belongs to a local tree of <em>forest</em>. <em>forest</em> must be committed before calling this function. </dd></dl>
 
 </div>
 </div>
