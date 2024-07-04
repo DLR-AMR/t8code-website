@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.400-78fd0d</span>
+   &#160;<span id="projectnumber">2.0.0.402-f8135</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -138,7 +138,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aef6375ec7b82c96a966472293fc2cfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare if the cmesh is understood as a partitioned cmesh and specify the first local tree for each process.  <a href="t8__cmesh_8h.html#aef6375ec7b82c96a966472293fc2cfa1">More...</a><br /></td></tr>
 <tr class="separator:aef6375ec7b82c96a966472293fc2cfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae640d2a19a094bfdceaa7d33084a9b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#ae640d2a19a094bfdceaa7d33084a9b8b">t8_cmesh_set_partition_uniform</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int element_level, <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *ts)</td></tr>
-<tr class="memdesc:ae640d2a19a094bfdceaa7d33084a9b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare if the cmesh is understood as a partitioned cmesh where the partition table is derived from an assumed uniform refinement of a given level.  <a href="t8__cmesh_8h.html#ae640d2a19a094bfdceaa7d33084a9b8b">More...</a><br /></td></tr>
+<tr class="memdesc:ae640d2a19a094bfdceaa7d33084a9b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare if a derived cmesh should be partitioned according to a uniform refinement of a given level for the provided scheme.  <a href="t8__cmesh_8h.html#ae640d2a19a094bfdceaa7d33084a9b8b">More...</a><br /></td></tr>
 <tr class="separator:ae640d2a19a094bfdceaa7d33084a9b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b2e34579894e8d47ebfc44e80e8626b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a7b2e34579894e8d47ebfc44e80e8626b">t8_cmesh_set_refine</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int level, <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *scheme)</td></tr>
 <tr class="memdesc:a7b2e34579894e8d47ebfc44e80e8626b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refine the cmesh to a given level.  <a href="t8__cmesh_8h.html#a7b2e34579894e8d47ebfc44e80e8626b">More...</a><br /></td></tr>
@@ -2051,7 +2051,7 @@ If an attribute with the given package_id and key already exists, then it will g
 </dl>
 <dl class="section see"><dt>See also</dt><dd>t8_cmesh_set_partition_offset </dd>
 <dd>
-<a class="el" href="t8__cmesh_8h.html#ae640d2a19a094bfdceaa7d33084a9b8b" title="Declare if the cmesh is understood as a partitioned cmesh where the partition table is derived from a...">t8_cmesh_set_partition_uniform</a> </dd></dl>
+<a class="el" href="t8__cmesh_8h.html#ae640d2a19a094bfdceaa7d33084a9b8b" title="Declare if a derived cmesh should be partitioned according to a uniform refinement of a given level f...">t8_cmesh_set_partition_uniform</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>A value of <em>set_face_knowledge</em> other than -1 or 3 is not yet supported. </dd></dl>
 
 </div>
@@ -2088,8 +2088,8 @@ If an attribute with the given package_id and key already exists, then it will g
       </table>
 </div><div class="memdoc">
 
-<p>Declare if the cmesh is understood as a partitioned cmesh where the partition table is derived from an assumed uniform refinement of a given level. </p>
-<p>This call is only valid when the cmesh is not yet committed via a call to <a class="el" href="t8__cmesh_8h.html#ac819795480f1b8fe562e3561761a0184">t8_cmesh_commit</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Declare if a derived cmesh should be partitioned according to a uniform refinement of a given level for the provided scheme. </p>
+<p>This call is only valid when the cmesh is not yet committed via a call to <a class="el" href="t8__cmesh_8h.html#ac819795480f1b8fe562e3561761a0184">t8_cmesh_commit</a> and when the cmesh will be derived. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">cmesh</td><td>The cmesh to be updated. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">element_level</td><td>The refinement_level. </td></tr>
