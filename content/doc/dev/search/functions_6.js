@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sample_1491',['sample',['../classt8__lagrange__element.html#a9457001e11bcc30500efc218154684f0',1,'t8_lagrange_element']]]
+  ['sample_1487',['sample',['../classt8__lagrange__element.html#a9457001e11bcc30500efc218154684f0',1,'t8_lagrange_element']]]
 ];
