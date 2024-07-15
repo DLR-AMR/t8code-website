@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.440-51d6</span>
+   &#160;<span id="projectnumber">2.0.0.446-ea80f</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -94,42 +94,42 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abf9338dd3b6d5b2fdc24728d9872a4dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#abf9338dd3b6d5b2fdc24728d9872a4dc">t8_cmesh_gather_trees_per_eclass</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:abf9338dd3b6d5b2fdc24728d9872a4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">From num_local_trees_per_eclass compute num_trees_per_eclass.  <a href="t8__cmesh__partition_8cxx.html#abf9338dd3b6d5b2fdc24728d9872a4dc">More...</a><br /></td></tr>
-<tr class="separator:abf9338dd3b6d5b2fdc24728d9872a4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba78fbb12978d4bab3c852ef088ef13c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#aba78fbb12978d4bab3c852ef088ef13c">t8_cmesh_gather_treecount</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:aba78fbb12978d4bab3c852ef088ef13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the offset array for a partitioned cmesh.  <a href="t8__cmesh__partition_8cxx.html#aba78fbb12978d4bab3c852ef088ef13c">More...</a><br /></td></tr>
-<tr class="separator:aba78fbb12978d4bab3c852ef088ef13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17543b647903cab0d65c3fa95ec0ded8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#a17543b647903cab0d65c3fa95ec0ded8">t8_cmesh_gather_treecount_nocommit</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:a17543b647903cab0d65c3fa95ec0ded8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the same task as <a class="el" href="t8__cmesh__partition_8h.html#aba78fbb12978d4bab3c852ef088ef13c">t8_cmesh_gather_treecount</a>, but do not perform the debugging check whether cmesh is committed.  <a href="t8__cmesh__partition_8cxx.html#a17543b647903cab0d65c3fa95ec0ded8">More...</a><br /></td></tr>
-<tr class="separator:a17543b647903cab0d65c3fa95ec0ded8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc09aeb7045cb35a4dfa7a94169260a6"><td class="memItemLeft" align="right" valign="top"><a id="abc09aeb7045cb35a4dfa7a94169260a6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_partition_receive_message</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm, int proc_recv, sc_MPI_Status *status, int *local_procid, int recv_first, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> *num_ghosts)</td></tr>
-<tr class="separator:abc09aeb7045cb35a4dfa7a94169260a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c1f9022e212e050636cefa6769636a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#a29c1f9022e212e050636cefa6769636a">t8_cmesh_gather_trees_per_eclass</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a29c1f9022e212e050636cefa6769636a"><td class="mdescLeft">&#160;</td><td class="mdescRight">From num_local_trees_per_eclass compute num_trees_per_eclass.  <a href="t8__cmesh__partition_8cxx.html#a29c1f9022e212e050636cefa6769636a">More...</a><br /></td></tr>
+<tr class="separator:a29c1f9022e212e050636cefa6769636a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f30a71ea98b7018a6707d5580ab2ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#a63f30a71ea98b7018a6707d5580ab2ac">t8_cmesh_gather_treecount</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a63f30a71ea98b7018a6707d5580ab2ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the offset array for a partitioned cmesh.  <a href="t8__cmesh__partition_8cxx.html#a63f30a71ea98b7018a6707d5580ab2ac">More...</a><br /></td></tr>
+<tr class="separator:a63f30a71ea98b7018a6707d5580ab2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e1b58092b77d21644381de997536f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#ab0e1b58092b77d21644381de997536f3">t8_cmesh_gather_treecount_nocommit</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:ab0e1b58092b77d21644381de997536f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the same task as <a class="el" href="t8__cmesh__partition_8h.html#aba78fbb12978d4bab3c852ef088ef13c">t8_cmesh_gather_treecount</a>, but do not perform the debugging check whether cmesh is committed.  <a href="t8__cmesh__partition_8cxx.html#ab0e1b58092b77d21644381de997536f3">More...</a><br /></td></tr>
+<tr class="separator:ab0e1b58092b77d21644381de997536f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0efb7a72dc310c00de384819b8e5df56"><td class="memItemLeft" align="right" valign="top"><a id="a0efb7a72dc310c00de384819b8e5df56"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_partition_receive_message</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm, const int proc_recv, sc_MPI_Status *status, const int *local_procid, const int recv_first, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> *num_ghosts)</td></tr>
+<tr class="separator:a0efb7a72dc310c00de384819b8e5df56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad83e3a97eff87e965a42d6d248e423a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#ad83e3a97eff87e965a42d6d248e423a5">t8_cmesh_partition</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ad83e3a97eff87e965a42d6d248e423a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a cmesh which is to be partitioned, execute the partition task.  <a href="t8__cmesh__partition_8cxx.html#ad83e3a97eff87e965a42d6d248e423a5">More...</a><br /></td></tr>
 <tr class="separator:ad83e3a97eff87e965a42d6d248e423a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c259e56690025ed5e45f3dddbd75f34"><td class="memItemLeft" align="right" valign="top"><a id="a8c259e56690025ed5e45f3dddbd75f34"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_offset_print</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
-<tr class="separator:a8c259e56690025ed5e45f3dddbd75f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2effd859b22c8534efc23e249c93ce7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#a2effd859b22c8534efc23e249c93ce7b">t8_cmesh_offset_concentrate</a> (int proc, sc_MPI_Comm comm, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_trees)</td></tr>
-<tr class="memdesc:a2effd859b22c8534efc23e249c93ce7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a valid partition table that concentrates all trees at a given process.  <a href="t8__cmesh__partition_8cxx.html#a2effd859b22c8534efc23e249c93ce7b">More...</a><br /></td></tr>
-<tr class="separator:a2effd859b22c8534efc23e249c93ce7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ee3a7120f0f26fff78bb3657fef0d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#a23ee3a7120f0f26fff78bb3657fef0d4">t8_cmesh_offset_random</a> (sc_MPI_Comm comm, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_trees, int shared, unsigned seed)</td></tr>
-<tr class="memdesc:a23ee3a7120f0f26fff78bb3657fef0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a random partition table.  <a href="t8__cmesh__partition_8cxx.html#a23ee3a7120f0f26fff78bb3657fef0d4">More...</a><br /></td></tr>
-<tr class="separator:a23ee3a7120f0f26fff78bb3657fef0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab198d1c88099209d8ecf2124dd6e8cc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#ab198d1c88099209d8ecf2124dd6e8cc4">t8_cmesh_offset_percent</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm, int percent)</td></tr>
-<tr class="memdesc:ab198d1c88099209d8ecf2124dd6e8cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a repartition array, where each process sends a percentage of its trees to the next process.  <a href="t8__cmesh__partition_8cxx.html#ab198d1c88099209d8ecf2124dd6e8cc4">More...</a><br /></td></tr>
-<tr class="separator:ab198d1c88099209d8ecf2124dd6e8cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db99235f5d93dbe2fdd9f7358ee0bdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#a5db99235f5d93dbe2fdd9f7358ee0bdf">t8_cmesh_offset_half</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:a5db99235f5d93dbe2fdd9f7358ee0bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a repartition array, where each process sends half of its trees to the next process.  <a href="t8__cmesh__partition_8cxx.html#a5db99235f5d93dbe2fdd9f7358ee0bdf">More...</a><br /></td></tr>
-<tr class="separator:a5db99235f5d93dbe2fdd9f7358ee0bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d620f6f5ff6a90d02102f2a3c0fdec7"><td class="memItemLeft" align="right" valign="top"><a id="a0d620f6f5ff6a90d02102f2a3c0fdec7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_offset_print</b> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
+<tr class="separator:a0d620f6f5ff6a90d02102f2a3c0fdec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b519493ede6bf98c3ff9ecf0b61605f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#a7b519493ede6bf98c3ff9ecf0b61605f">t8_cmesh_offset_concentrate</a> (const int proc, sc_MPI_Comm comm, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_trees)</td></tr>
+<tr class="memdesc:a7b519493ede6bf98c3ff9ecf0b61605f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a valid partition table that concentrates all trees at a given process.  <a href="t8__cmesh__partition_8cxx.html#a7b519493ede6bf98c3ff9ecf0b61605f">More...</a><br /></td></tr>
+<tr class="separator:a7b519493ede6bf98c3ff9ecf0b61605f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764d6a5690d07bf8617e7ae42ba55e5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#a764d6a5690d07bf8617e7ae42ba55e5a">t8_cmesh_offset_random</a> (sc_MPI_Comm comm, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_trees, const int shared, const unsigned seed)</td></tr>
+<tr class="memdesc:a764d6a5690d07bf8617e7ae42ba55e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a random partition table.  <a href="t8__cmesh__partition_8cxx.html#a764d6a5690d07bf8617e7ae42ba55e5a">More...</a><br /></td></tr>
+<tr class="separator:a764d6a5690d07bf8617e7ae42ba55e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cb23dba20fcaf37ed92553fd0244ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#a42cb23dba20fcaf37ed92553fd0244ed">t8_cmesh_offset_percent</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm, const int percent)</td></tr>
+<tr class="memdesc:a42cb23dba20fcaf37ed92553fd0244ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a repartition array, where each process sends a percentage of its trees to the next process.  <a href="t8__cmesh__partition_8cxx.html#a42cb23dba20fcaf37ed92553fd0244ed">More...</a><br /></td></tr>
+<tr class="separator:a42cb23dba20fcaf37ed92553fd0244ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272cebc6aa9eda87ea1028ba2f2af654"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#a272cebc6aa9eda87ea1028ba2f2af654">t8_cmesh_offset_half</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a272cebc6aa9eda87ea1028ba2f2af654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a repartition array, where each process sends half of its trees to the next process.  <a href="t8__cmesh__partition_8cxx.html#a272cebc6aa9eda87ea1028ba2f2af654">More...</a><br /></td></tr>
+<tr class="separator:a272cebc6aa9eda87ea1028ba2f2af654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TODO: document this file. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="aba78fbb12978d4bab3c852ef088ef13c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba78fbb12978d4bab3c852ef088ef13c">&#9670;&nbsp;</a></span>t8_cmesh_gather_treecount()</h2>
+<a id="a63f30a71ea98b7018a6707d5580ab2ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f30a71ea98b7018a6707d5580ab2ac">&#9670;&nbsp;</a></span>t8_cmesh_gather_treecount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,8 +166,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_offset_print
 
 </div>
 </div>
-<a id="a17543b647903cab0d65c3fa95ec0ded8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17543b647903cab0d65c3fa95ec0ded8">&#9670;&nbsp;</a></span>t8_cmesh_gather_treecount_nocommit()</h2>
+<a id="ab0e1b58092b77d21644381de997536f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e1b58092b77d21644381de997536f3">&#9670;&nbsp;</a></span>t8_cmesh_gather_treecount_nocommit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,8 +205,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_offset_print
 
 </div>
 </div>
-<a id="abf9338dd3b6d5b2fdc24728d9872a4dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf9338dd3b6d5b2fdc24728d9872a4dc">&#9670;&nbsp;</a></span>t8_cmesh_gather_trees_per_eclass()</h2>
+<a id="a29c1f9022e212e050636cefa6769636a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c1f9022e212e050636cefa6769636a">&#9670;&nbsp;</a></span>t8_cmesh_gather_trees_per_eclass()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,8 +243,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_offset_print
 
 </div>
 </div>
-<a id="a2effd859b22c8534efc23e249c93ce7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2effd859b22c8534efc23e249c93ce7b">&#9670;&nbsp;</a></span>t8_cmesh_offset_concentrate()</h2>
+<a id="a7b519493ede6bf98c3ff9ecf0b61605f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b519493ede6bf98c3ff9ecf0b61605f">&#9670;&nbsp;</a></span>t8_cmesh_offset_concentrate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,8 +289,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_offset_print
 
 </div>
 </div>
-<a id="a5db99235f5d93dbe2fdd9f7358ee0bdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5db99235f5d93dbe2fdd9f7358ee0bdf">&#9670;&nbsp;</a></span>t8_cmesh_offset_half()</h2>
+<a id="a272cebc6aa9eda87ea1028ba2f2af654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a272cebc6aa9eda87ea1028ba2f2af654">&#9670;&nbsp;</a></span>t8_cmesh_offset_half()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,8 +328,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_offset_print
 
 </div>
 </div>
-<a id="ab198d1c88099209d8ecf2124dd6e8cc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab198d1c88099209d8ecf2124dd6e8cc4">&#9670;&nbsp;</a></span>t8_cmesh_offset_percent()</h2>
+<a id="a42cb23dba20fcaf37ed92553fd0244ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42cb23dba20fcaf37ed92553fd0244ed">&#9670;&nbsp;</a></span>t8_cmesh_offset_percent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -374,8 +374,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_offset_print
 
 </div>
 </div>
-<a id="a23ee3a7120f0f26fff78bb3657fef0d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23ee3a7120f0f26fff78bb3657fef0d4">&#9670;&nbsp;</a></span>t8_cmesh_offset_random()</h2>
+<a id="a764d6a5690d07bf8617e7ae42ba55e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a764d6a5690d07bf8617e7ae42ba55e5a">&#9670;&nbsp;</a></span>t8_cmesh_offset_random()</h2>
 
 <div class="memitem">
 <div class="memproto">

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.440-51d6</span>
+   &#160;<span id="projectnumber">2.0.0.446-ea80f</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -132,21 +132,21 @@ Functions</h2></td></tr>
 <tr class="memitem:abeda61b045cb1db32da2928a88ebffa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#abeda61b045cb1db32da2928a88ebffa0">t8_offset_all_owners_of_tree</a> (const int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset, sc_array_t *owners)</td></tr>
 <tr class="memdesc:abeda61b045cb1db32da2928a88ebffa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a list of all processes that own a specific tree.n <em>offset</em> minus 1.  <a href="t8__cmesh__offset_8c.html#abeda61b045cb1db32da2928a88ebffa0">More...</a><br /></td></tr>
 <tr class="separator:abeda61b045cb1db32da2928a88ebffa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86f466d9af9d1d2715aebd4270ead709"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a86f466d9af9d1d2715aebd4270ead709">t8_offset_nosend</a> (int proc, int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_from, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_to)</td></tr>
-<tr class="memdesc:a86f466d9af9d1d2715aebd4270ead709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether in a repartition setting a given process does send any of its local trees to any other process (including itself)  <a href="t8__cmesh__offset_8c.html#a86f466d9af9d1d2715aebd4270ead709">More...</a><br /></td></tr>
-<tr class="separator:a86f466d9af9d1d2715aebd4270ead709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace46110ea3051040695f4804c551680d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#ace46110ea3051040695f4804c551680d">t8_offset_sendsto</a> (int proca, int procb, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *t8_offset_from, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *t8_offset_to)</td></tr>
-<tr class="memdesc:ace46110ea3051040695f4804c551680d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether in a repartitioning setting, a given process sends local trees (and then possibly ghosts) to a given other process.  <a href="t8__cmesh__offset_8c.html#ace46110ea3051040695f4804c551680d">More...</a><br /></td></tr>
-<tr class="separator:ace46110ea3051040695f4804c551680d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a663783aede5b88d2001b6cb3ae981a36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a663783aede5b88d2001b6cb3ae981a36">t8_offset_sendstree</a> (int proc_send, int proc_to, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_from, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_to)</td></tr>
-<tr class="memdesc:a663783aede5b88d2001b6cb3ae981a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether in a repartitioning setting, a given process sends a given tree to a second process.  <a href="t8__cmesh__offset_8c.html#a663783aede5b88d2001b6cb3ae981a36">More...</a><br /></td></tr>
-<tr class="separator:a663783aede5b88d2001b6cb3ae981a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75f6bbf96f61cf570ce1b757eb83b1fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a75f6bbf96f61cf570ce1b757eb83b1fc">t8_offset_range_send</a> (int start, int end, int mpirank, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_from, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_to)</td></tr>
-<tr class="memdesc:a75f6bbf96f61cf570ce1b757eb83b1fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of processes in a given range [a,b] that send to a given other process in a repartitioning setting.  <a href="t8__cmesh__offset_8c.html#a75f6bbf96f61cf570ce1b757eb83b1fc">More...</a><br /></td></tr>
-<tr class="separator:a75f6bbf96f61cf570ce1b757eb83b1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac402ebe24e5fb255862135c60f3bbc54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#ac402ebe24e5fb255862135c60f3bbc54">t8_offset_print</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> offset, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:ac402ebe24e5fb255862135c60f3bbc54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print an offset array.  <a href="t8__cmesh__offset_8c.html#ac402ebe24e5fb255862135c60f3bbc54">More...</a><br /></td></tr>
-<tr class="separator:ac402ebe24e5fb255862135c60f3bbc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affee0509f67999f4b3879e9e5795747b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#affee0509f67999f4b3879e9e5795747b">t8_offset_nosend</a> (const int proc, const int mpisize, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_from, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_to)</td></tr>
+<tr class="memdesc:affee0509f67999f4b3879e9e5795747b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether in a repartition setting a given process does send any of its local trees to any other process (including itself)  <a href="t8__cmesh__offset_8c.html#affee0509f67999f4b3879e9e5795747b">More...</a><br /></td></tr>
+<tr class="separator:affee0509f67999f4b3879e9e5795747b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509e1152247d8e8cf3294d70f0b8dd2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a509e1152247d8e8cf3294d70f0b8dd2e">t8_offset_sendsto</a> (const int proca, const int procb, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *t8_offset_from, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *t8_offset_to)</td></tr>
+<tr class="memdesc:a509e1152247d8e8cf3294d70f0b8dd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether in a repartitioning setting, a given process sends local trees (and then possibly ghosts) to a given other process.  <a href="t8__cmesh__offset_8c.html#a509e1152247d8e8cf3294d70f0b8dd2e">More...</a><br /></td></tr>
+<tr class="separator:a509e1152247d8e8cf3294d70f0b8dd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d454997298d86bebfce4e51b951f834"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a0d454997298d86bebfce4e51b951f834">t8_offset_sendstree</a> (const int proc_send, const int proc_to, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_from, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_to)</td></tr>
+<tr class="memdesc:a0d454997298d86bebfce4e51b951f834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether in a repartitioning setting, a given process sends a given tree to a second process.  <a href="t8__cmesh__offset_8c.html#a0d454997298d86bebfce4e51b951f834">More...</a><br /></td></tr>
+<tr class="separator:a0d454997298d86bebfce4e51b951f834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29d511e2224d2aca455c5eba3978c23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#af29d511e2224d2aca455c5eba3978c23">t8_offset_range_send</a> (const int start, const int end, const int mpirank, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_from, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_to)</td></tr>
+<tr class="memdesc:af29d511e2224d2aca455c5eba3978c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of processes in a given range [a,b] that send to a given other process in a repartitioning setting.  <a href="t8__cmesh__offset_8c.html#af29d511e2224d2aca455c5eba3978c23">More...</a><br /></td></tr>
+<tr class="separator:af29d511e2224d2aca455c5eba3978c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca2c27beda4c415e396ce140039e696"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a2ca2c27beda4c415e396ce140039e696">t8_offset_print</a> (const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> offset, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a2ca2c27beda4c415e396ce140039e696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print an offset array.  <a href="t8__cmesh__offset_8c.html#a2ca2c27beda4c415e396ce140039e696">More...</a><br /></td></tr>
+<tr class="separator:a2ca2c27beda4c415e396ce140039e696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TODO: document this file. </p>
@@ -750,8 +750,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a86f466d9af9d1d2715aebd4270ead709"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86f466d9af9d1d2715aebd4270ead709">&#9670;&nbsp;</a></span>t8_offset_nosend()</h2>
+<a id="affee0509f67999f4b3879e9e5795747b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affee0509f67999f4b3879e9e5795747b">&#9670;&nbsp;</a></span>t8_offset_nosend()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -892,8 +892,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac402ebe24e5fb255862135c60f3bbc54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac402ebe24e5fb255862135c60f3bbc54">&#9670;&nbsp;</a></span>t8_offset_print()</h2>
+<a id="a2ca2c27beda4c415e396ce140039e696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca2c27beda4c415e396ce140039e696">&#9670;&nbsp;</a></span>t8_offset_print()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -929,8 +929,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a75f6bbf96f61cf570ce1b757eb83b1fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75f6bbf96f61cf570ce1b757eb83b1fc">&#9670;&nbsp;</a></span>t8_offset_range_send()</h2>
+<a id="af29d511e2224d2aca455c5eba3978c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29d511e2224d2aca455c5eba3978c23">&#9670;&nbsp;</a></span>t8_offset_range_send()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -988,8 +988,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ace46110ea3051040695f4804c551680d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace46110ea3051040695f4804c551680d">&#9670;&nbsp;</a></span>t8_offset_sendsto()</h2>
+<a id="a509e1152247d8e8cf3294d70f0b8dd2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a509e1152247d8e8cf3294d70f0b8dd2e">&#9670;&nbsp;</a></span>t8_offset_sendsto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1040,8 +1040,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a663783aede5b88d2001b6cb3ae981a36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a663783aede5b88d2001b6cb3ae981a36">&#9670;&nbsp;</a></span>t8_offset_sendstree()</h2>
+<a id="a0d454997298d86bebfce4e51b951f834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d454997298d86bebfce4e51b951f834">&#9670;&nbsp;</a></span>t8_offset_sendstree()</h2>
 
 <div class="memitem">
 <div class="memproto">
