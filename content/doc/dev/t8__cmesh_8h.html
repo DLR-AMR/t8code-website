@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.486-c538</span>
+   &#160;<span id="projectnumber">2.0.0.493-942a</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -110,6 +110,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0519e5e1547bdc72c73b478bbc1f6e70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a0519e5e1547bdc72c73b478bbc1f6e70">t8_cmesh_init</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> *pcmesh)</td></tr>
 <tr class="memdesc:a0519e5e1547bdc72c73b478bbc1f6e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new cmesh with reference count one.  <a href="t8__cmesh_8h.html#a0519e5e1547bdc72c73b478bbc1f6e70">More...</a><br /></td></tr>
 <tr class="separator:a0519e5e1547bdc72c73b478bbc1f6e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a00c1fc03267a939ddd0aafbef438ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a9a00c1fc03267a939ddd0aafbef438ee">t8_cmesh_new</a> ()</td></tr>
+<tr class="memdesc:a9a00c1fc03267a939ddd0aafbef438ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a new un-committed cmesh.  <a href="t8__cmesh_8h.html#a9a00c1fc03267a939ddd0aafbef438ee">More...</a><br /></td></tr>
+<tr class="separator:a9a00c1fc03267a939ddd0aafbef438ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3348d07b3c2953bcbb8b2e1aa919f182"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a3348d07b3c2953bcbb8b2e1aa919f182">t8_cmesh_is_initialized</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:a3348d07b3c2953bcbb8b2e1aa919f182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a cmesh is not NULL, initialized and not committed.  <a href="t8__cmesh_8h.html#a3348d07b3c2953bcbb8b2e1aa919f182">More...</a><br /></td></tr>
 <tr class="separator:a3348d07b3c2953bcbb8b2e1aa919f182"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,9 +176,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6c7e46e449c518574728e836d0a3289a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a6c7e46e449c518574728e836d0a3289a">t8_cmesh_bcast</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh_in, int root, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a6c7e46e449c518574728e836d0a3289a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast a cmesh structure that exists only on one process to all processes in the cmesh's communicator.  <a href="t8__cmesh_8h.html#a6c7e46e449c518574728e836d0a3289a">More...</a><br /></td></tr>
 <tr class="separator:a6c7e46e449c518574728e836d0a3289a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e0399bf93f360d0bd6bf942992a6c77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a3e0399bf93f360d0bd6bf942992a6c77">t8_cmesh_register_geometry</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> **geometry)</td></tr>
-<tr class="memdesc:a3e0399bf93f360d0bd6bf942992a6c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a geometry in the cmesh.  <a href="t8__cmesh_8h.html#a3e0399bf93f360d0bd6bf942992a6c77">More...</a><br /></td></tr>
-<tr class="separator:a3e0399bf93f360d0bd6bf942992a6c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad3781918ab29db3ea4126f35705774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#afad3781918ab29db3ea4126f35705774">t8_cmesh_register_geometry</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *geometry)</td></tr>
+<tr class="memdesc:afad3781918ab29db3ea4126f35705774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a geometry in the cmesh.  <a href="t8__cmesh_8h.html#afad3781918ab29db3ea4126f35705774">More...</a><br /></td></tr>
+<tr class="separator:afad3781918ab29db3ea4126f35705774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af63ca9ee92aa14f63cc8a70bd14cf8ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#af63ca9ee92aa14f63cc8a70bd14cf8ed">t8_cmesh_set_tree_geometry</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const <a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *geom)</td></tr>
 <tr class="memdesc:af63ca9ee92aa14f63cc8a70bd14cf8ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the geometry for a tree, thus specify which geometry to use for this tree.  <a href="t8__cmesh_8h.html#af63ca9ee92aa14f63cc8a70bd14cf8ed">More...</a><br /></td></tr>
 <tr class="separator:af63ca9ee92aa14f63cc8a70bd14cf8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1477,6 +1480,26 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
 
 </div>
 </div>
+<a id="a9a00c1fc03267a939ddd0aafbef438ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a00c1fc03267a939ddd0aafbef438ee">&#9670;&nbsp;</a></span>t8_cmesh_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_cmesh_new </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate a new un-committed cmesh. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to an un-committed <a class="el" href="structt8__cmesh.html" title="This structure holds the connectivity data of the coarse mesh.">t8_cmesh</a> structure. </dd></dl>
+
+</div>
+</div>
 <a id="aca420ae1dff4761f7c6ceb7e7574701b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca420ae1dff4761f7c6ceb7e7574701b">&#9670;&nbsp;</a></span>t8_cmesh_no_negative_volume()</h2>
 
@@ -1557,8 +1580,8 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
 
 </div>
 </div>
-<a id="a3e0399bf93f360d0bd6bf942992a6c77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e0399bf93f360d0bd6bf942992a6c77">&#9670;&nbsp;</a></span>t8_cmesh_register_geometry()</h2>
+<a id="afad3781918ab29db3ea4126f35705774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad3781918ab29db3ea4126f35705774">&#9670;&nbsp;</a></span>t8_cmesh_register_geometry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1572,7 +1595,7 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td>
           <td class="paramname"><em>geometry</em>&#160;</td>
         </tr>
         <tr>

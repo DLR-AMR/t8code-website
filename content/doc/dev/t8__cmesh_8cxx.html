@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.486-c538</span>
+   &#160;<span id="projectnumber">2.0.0.493-942a</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -114,6 +114,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0519e5e1547bdc72c73b478bbc1f6e70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#a0519e5e1547bdc72c73b478bbc1f6e70">t8_cmesh_init</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> *pcmesh)</td></tr>
 <tr class="memdesc:a0519e5e1547bdc72c73b478bbc1f6e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new cmesh with reference count one.  <a href="t8__cmesh_8cxx.html#a0519e5e1547bdc72c73b478bbc1f6e70">More...</a><br /></td></tr>
 <tr class="separator:a0519e5e1547bdc72c73b478bbc1f6e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a00c1fc03267a939ddd0aafbef438ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#a9a00c1fc03267a939ddd0aafbef438ee">t8_cmesh_new</a> ()</td></tr>
+<tr class="memdesc:a9a00c1fc03267a939ddd0aafbef438ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a new un-committed cmesh.  <a href="t8__cmesh_8cxx.html#a9a00c1fc03267a939ddd0aafbef438ee">More...</a><br /></td></tr>
+<tr class="separator:a9a00c1fc03267a939ddd0aafbef438ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f124d43072099edf31eb4d1fed1df48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#a6f124d43072099edf31eb4d1fed1df48">t8_cmesh_set_derive</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> set_from)</td></tr>
 <tr class="memdesc:a6f124d43072099edf31eb4d1fed1df48"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets a cmesh to be derived from.  <a href="t8__cmesh_8cxx.html#a6f124d43072099edf31eb4d1fed1df48">More...</a><br /></td></tr>
 <tr class="separator:a6f124d43072099edf31eb4d1fed1df48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1369,6 +1372,26 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The index of the ghost within all ghosts, thus an index 0 &lt;= index &lt; num_ghosts <em>cmesh</em> must be committed before calling this function. </dd></dl>
+
+</div>
+</div>
+<a id="a9a00c1fc03267a939ddd0aafbef438ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a00c1fc03267a939ddd0aafbef438ee">&#9670;&nbsp;</a></span>t8_cmesh_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_cmesh_new </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate a new un-committed cmesh. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to an un-committed <a class="el" href="structt8__cmesh.html" title="This structure holds the connectivity data of the coarse mesh.">t8_cmesh</a> structure. </dd></dl>
 
 </div>
 </div>
