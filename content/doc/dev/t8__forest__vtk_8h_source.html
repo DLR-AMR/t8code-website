@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.604-db56</span>
+   &#160;<span id="projectnumber">2.0.0.645-25e23</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -109,23 +109,35 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__forest__general_8h.html">t8_forest/t8_forest_general.h</a>&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__forest__geometrical_8h.html">t8_forest/t8_forest_geometrical.h</a>&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;T8_EXTERN_C_BEGIN ();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* function declarations */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">int</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;t8_forest_vtk_write_file_via_API (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix, <span class="keyword">const</span> <span class="keywordtype">int</span> write_treeid,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> write_mpirank, <span class="keyword">const</span> <span class="keywordtype">int</span> write_level, <span class="keyword">const</span> <span class="keywordtype">int</span> write_element_id,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> curved_flag, <span class="keyword">const</span> <span class="keywordtype">int</span> write_ghosts, <span class="keyword">const</span> <span class="keywordtype">int</span> num_data,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                  <a class="code" href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a> *data);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">int</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;t8_forest_vtk_write_file (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix, <span class="keyword">const</span> <span class="keywordtype">int</span> write_treeid, <span class="keyword">const</span> <span class="keywordtype">int</span> write_mpirank,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                          <span class="keyword">const</span> <span class="keywordtype">int</span> write_level, <span class="keyword">const</span> <span class="keywordtype">int</span> write_element_id, <span class="keywordtype">int</span> write_ghosts, <span class="keyword">const</span> <span class="keywordtype">int</span> num_data,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                          <a class="code" href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a> *data);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_FOREST_VTK_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#if T8_WITH_VTK</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;vtkUnstructuredGrid.h&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;T8_EXTERN_C_BEGIN ();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/* function declarations */</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#if T8_WITH_VTK</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;t8_forest_to_vtkUnstructuredGrid (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest, vtkSmartPointer&lt;vtkUnstructuredGrid&gt; unstructuredGrid,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> write_treeid, <span class="keyword">const</span> <span class="keywordtype">int</span> write_mpirank, <span class="keyword">const</span> <span class="keywordtype">int</span> write_level,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> write_element_id, <span class="keyword">const</span> <span class="keywordtype">int</span> write_ghosts, <span class="keyword">const</span> <span class="keywordtype">int</span> curved_flag,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> num_data, <a class="code" href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a> *data);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;t8_forest_vtk_write_file_via_API (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix, <span class="keyword">const</span> <span class="keywordtype">int</span> write_treeid,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> write_mpirank, <span class="keyword">const</span> <span class="keywordtype">int</span> write_level, <span class="keyword">const</span> <span class="keywordtype">int</span> write_element_id,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> curved_flag, <span class="keyword">const</span> <span class="keywordtype">int</span> write_ghosts, <span class="keyword">const</span> <span class="keywordtype">int</span> num_data,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                  <a class="code" href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a> *data);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;t8_forest_vtk_write_file (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix, <span class="keyword">const</span> <span class="keywordtype">int</span> write_treeid, <span class="keyword">const</span> <span class="keywordtype">int</span> write_mpirank,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                          <span class="keyword">const</span> <span class="keywordtype">int</span> write_level, <span class="keyword">const</span> <span class="keywordtype">int</span> write_element_id, <span class="keywordtype">int</span> write_ghosts, <span class="keyword">const</span> <span class="keywordtype">int</span> num_data,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                          <a class="code" href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a> *data);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_FOREST_VTK_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__forest_html"><div class="ttname"><a href="structt8__forest.html">t8_forest</a></div><div class="ttdoc">This structure is private to the implementation.</div><div class="ttdef"><b>Definition:</b> t8_forest_types.h:69</div></div>
 <div class="ttc" id="astructt8__vtk__data__field__t_html"><div class="ttname"><a href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a></div><div class="ttdef"><b>Definition:</b> t8_vtk.h:64</div></div>
 <div class="ttc" id="at8__forest__general_8h_html"><div class="ttname"><a href="t8__forest__general_8h.html">t8_forest_general.h</a></div><div class="ttdoc">We define the forest of trees in this file.</div></div>
