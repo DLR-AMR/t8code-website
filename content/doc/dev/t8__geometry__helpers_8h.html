@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.703-34886</span>
+   &#160;<span id="projectnumber">2.0.0.705-0248b</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -99,7 +99,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a6e975fe0372dfbfe024a891b3941e4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates linearly between 2, bilinearly between 4 or trilineraly between 8 points.  <a href="t8__geometry__helpers_8h.html#a6e975fe0372dfbfe024a891b3941e4b2">More...</a><br /></td></tr>
 <tr class="separator:a6e975fe0372dfbfe024a891b3941e4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3901ac9ff76bbceb6e96592f700ada6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#ab3901ac9ff76bbceb6e96592f700ada6">t8_geom_triangular_interpolation</a> (const double *coefficients, const double *corner_values, int corner_value_dim, int interpolation_dim, double *evaluated_function)</td></tr>
-<tr class="memdesc:ab3901ac9ff76bbceb6e96592f700ada6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triangular interpolation between 3 points (triangle) or 4 points (tetrahedron) using barycentric coordinates.  <a href="t8__geometry__helpers_8h.html#ab3901ac9ff76bbceb6e96592f700ada6">More...</a><br /></td></tr>
+<tr class="memdesc:ab3901ac9ff76bbceb6e96592f700ada6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triangular interpolation between 3 points (triangle) or 4 points (tetrahedron) using cartesian coordinates.  <a href="t8__geometry__helpers_8h.html#ab3901ac9ff76bbceb6e96592f700ada6">More...</a><br /></td></tr>
 <tr class="separator:ab3901ac9ff76bbceb6e96592f700ada6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cd456a4a62fd69e4ea7cef84e02aa3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__helpers_8h.html#a3cd456a4a62fd69e4ea7cef84e02aa3f">t8_geom_get_face_vertices</a> (<a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const double *tree_vertices, int face_index, int dim, double *face_vertices)</td></tr>
 <tr class="memdesc:a3cd456a4a62fd69e4ea7cef84e02aa3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the vertex coordinates of a tree face in zorder into a separate array.  <a href="t8__geometry__helpers_8h.html#a3cd456a4a62fd69e4ea7cef84e02aa3f">More...</a><br /></td></tr>
@@ -742,10 +742,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Triangular interpolation between 3 points (triangle) or 4 points (tetrahedron) using barycentric coordinates. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Triangular interpolation between 3 points (triangle) or 4 points (tetrahedron) using cartesian coordinates. </p>
+<p>The input coefficients have to be given as coordinates in the reference triangle (interpolation_dim = 2) with points (0,0) (1,0) (1,1) or the reference tet (interpolation_dim = 3) with points (0,0,0) (1,0,0) (1,1,0) (1,1,1). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">coefficients</td><td>An array of size <em>interpolation_dim</em> giving the coefficients used for the interpolation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coefficients</td><td>An array of size <em>interpolation_dim</em> giving the coefficients in the reference triangle/tet used for the interpolation </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">corner_values</td><td>An array of size 3 * <em>corner_value_dim</em> for <em>interpolation_dim</em> == 2 or 4 * <em>corner_value_dim</em> for <em>interpolation_dim</em> == 3, giving the function values of the triangle/tetrahedron for each corner (in zorder) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">corner_value_dim</td><td>The dimension of the <em>corner_values</em>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">interpolation_dim</td><td>The dimension of the interpolation (2 for triangle, 3 for tetrahedron) </td></tr>
