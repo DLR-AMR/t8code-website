@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.700-e9c8</span>
+   &#160;<span id="projectnumber">2.0.0.703-34886</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -99,14 +99,14 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa34a72f8daa2645077d0c6d1fd534382"><td class="memItemLeft" align="right" valign="top"><a id="aa34a72f8daa2645077d0c6d1fd534382"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_TREE_FIRST_ATT</b>(t)&#160;&#160;&#160;((char *) (t) + (t)-&gt;att_offset)</td></tr>
-<tr class="separator:aa34a72f8daa2645077d0c6d1fd534382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da5bb790b37ef3fe1b38ca9397d52dd"><td class="memItemLeft" align="right" valign="top"><a id="a7da5bb790b37ef3fe1b38ca9397d52dd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_TREE_FIRST_ATT_INFO</b>(t)&#160;&#160;&#160;((char *) (t) + (t)-&gt;att_offset)</td></tr>
+<tr class="separator:a7da5bb790b37ef3fe1b38ca9397d52dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7176ad459837755c02ae090d405e9f0"><td class="memItemLeft" align="right" valign="top"><a id="ae7176ad459837755c02ae090d405e9f0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_TREE_ATTR_INFO</b>(t,  i)&#160;&#160;&#160;  ((<a class="el" href="t8__cmesh__types_8h.html#a74e0d99a09de67d1143365630b0edc9e">t8_attribute_info_struct_t</a> *) ((char *) (t) + (t)-&gt;att_offset + (i) * sizeof (<a class="el" href="t8__cmesh__types_8h.html#a74e0d99a09de67d1143365630b0edc9e">t8_attribute_info_struct_t</a>)))</td></tr>
 <tr class="separator:ae7176ad459837755c02ae090d405e9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3b99741666a59da1747d0283b6a17a1"><td class="memItemLeft" align="right" valign="top"><a id="aa3b99741666a59da1747d0283b6a17a1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_TREE_ATTR</b>(t,  ai)&#160;&#160;&#160;(T8_TREE_FIRST_ATT (t) + (ai)-&gt;attribute_offset)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_TREE_ATTR</b>(t,  ai)&#160;&#160;&#160;(T8_TREE_FIRST_ATT_INFO (t) + (ai)-&gt;attribute_offset)</td></tr>
 <tr class="separator:aa3b99741666a59da1747d0283b6a17a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de49be53dbd9634bf709333b79a2a6d"><td class="memItemLeft" align="right" valign="top"><a id="a3de49be53dbd9634bf709333b79a2a6d"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_TREE_FACE</b>(t)&#160;&#160;&#160;((char *) (t) + (t)-&gt;neigh_offset)</td></tr>
@@ -114,9 +114,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a48fc9fe43c3a1f6033b476a4646dd8d6"><td class="memItemLeft" align="right" valign="top"><a id="a48fc9fe43c3a1f6033b476a4646dd8d6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_TREE_TTF</b>(t)&#160;&#160;&#160;(T8_TREE_FACE (t) + <a class="el" href="t8__eclass_8h.html#a9177f23834e09a88f85f64cf6498241b">t8_eclass_num_faces</a>[(t)-&gt;eclass] * sizeof (<a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>))</td></tr>
 <tr class="separator:a48fc9fe43c3a1f6033b476a4646dd8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3eb5a7a3e29f97464a58fd19e8265d0"><td class="memItemLeft" align="right" valign="top"><a id="ab3eb5a7a3e29f97464a58fd19e8265d0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_GHOST_FIRST_ATT</b>(g)&#160;&#160;&#160;T8_TREE_FIRST_ATT (g)</td></tr>
-<tr class="separator:ab3eb5a7a3e29f97464a58fd19e8265d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01841d6662347ebfe590d0bb8991ef0d"><td class="memItemLeft" align="right" valign="top"><a id="a01841d6662347ebfe590d0bb8991ef0d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_GHOST_FIRST_ATT_INFO</b>(g)&#160;&#160;&#160;T8_TREE_FIRST_ATT_INFO (g)</td></tr>
+<tr class="separator:a01841d6662347ebfe590d0bb8991ef0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a116c06a1288623de9e72518283796530"><td class="memItemLeft" align="right" valign="top"><a id="a116c06a1288623de9e72518283796530"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_GHOST_ATTR_INFO</b>(g,  i)&#160;&#160;&#160;T8_TREE_ATTR_INFO (g, i)</td></tr>
 <tr class="separator:a116c06a1288623de9e72518283796530"><td class="memSeparator" colspan="2">&#160;</td></tr>
