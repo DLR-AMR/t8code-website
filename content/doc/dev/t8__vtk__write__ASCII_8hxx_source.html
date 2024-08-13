@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>t8: src/t8_forest/t8_forest_to_vtkUnstructured.hxx Source File</title>
+<title>t8: src/t8_vtk/t8_vtk_write_ASCII.hxx Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.745-c72fb</span>
+   &#160;<span id="projectnumber">2.0.0.779-fa92a</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -70,12 +70,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_2e4fdf9f447f0f5bbdb1cb7e0a96ec94.html">t8_forest</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4fbca6658ab0db700b0e3273bae2fb78.html">t8_vtk</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">t8_forest_to_vtkUnstructured.hxx</div>  </div>
+<div class="title">t8_vtk_write_ASCII.hxx</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
@@ -83,7 +83,7 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">t8code is a C library to manage a collection (a forest) of multiple</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">connected adaptive space-trees of general element classes in parallel.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">Copyright (C) 2015 the developers</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">Copyright (C) 2024 the developers</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">t8code is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">it under the terms of the GNU General Public License as published by</span></div>
@@ -100,32 +100,25 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef T8_FOREST_VTK_UNSTRUCTURED_API_HXX</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define T8_FOREST_VTK_UNSTRUCTURED_API_HXX</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef T8_VTK_WRITE_ASCII_HXX</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define T8_VTK_WRITE_ASCII_HXX</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;t8_forest/t8_forest_vtk.h&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;t8_vtk.h&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="t8__forest__types_8h.html">t8_forest/t8_forest_types.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;t8_vtk.h&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#if T8_WITH_VTK</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;vtkUnstructuredGrid.h&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;T8_EXTERN_C_BEGIN ();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#if T8_WITH_VTK</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;t8_forest_to_vtkUnstructuredGrid (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest, vtkSmartPointer&lt;vtkUnstructuredGrid&gt; unstructuredGrid,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> write_treeid, <span class="keyword">const</span> <span class="keywordtype">int</span> write_mpirank, <span class="keyword">const</span> <span class="keywordtype">int</span> write_level,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> write_element_id, <span class="keyword">const</span> <span class="keywordtype">int</span> curved_flag, <span class="keyword">const</span> <span class="keywordtype">int</span> write_ghosts,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> num_data, <a class="code" href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a> *data);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_FOREST_VTK_UNSTRUCTURED_API_HXX */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;t8_forest_vtk_write_ASCII (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix, <span class="keyword">const</span> <span class="keywordtype">int</span> write_treeid, <span class="keyword">const</span> <span class="keywordtype">int</span> write_mpirank,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">int</span> write_level, <span class="keyword">const</span> <span class="keywordtype">int</span> write_element_id, <span class="keywordtype">int</span> write_ghosts, <span class="keyword">const</span> <span class="keywordtype">int</span> num_data,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                           <a class="code" href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a> *data);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;t8_cmesh_vtk_write_ASCII (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_VTK_WRITE_ASCII_HXX */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:88</div></div>
 <div class="ttc" id="astructt8__forest_html"><div class="ttname"><a href="structt8__forest.html">t8_forest</a></div><div class="ttdoc">This structure is private to the implementation.</div><div class="ttdef"><b>Definition:</b> t8_forest_types.h:69</div></div>
 <div class="ttc" id="astructt8__vtk__data__field__t_html"><div class="ttname"><a href="structt8__vtk__data__field__t.html">t8_vtk_data_field_t</a></div><div class="ttdef"><b>Definition:</b> t8_vtk.h:64</div></div>
+<div class="ttc" id="at8__forest__types_8h_html"><div class="ttname"><a href="t8__forest__types_8h.html">t8_forest_types.h</a></div><div class="ttdoc">We define here the datatypes needed for internal forest routines.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
