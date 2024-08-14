@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.790-7232</span>
+   &#160;<span id="projectnumber">2.0.0.809-1045</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -218,7 +218,6 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </div><div class="memdoc">
 
 <p>Map prism arranged as octahedron (or similar) to a spherical shell. </p>
-<p>Map the prismed faces of an octahedron to a spherical shell.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh in which the point lies. </td></tr>
@@ -229,16 +228,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   </table>
   </dd>
 </dl>
-<p>This routine expects an input mesh of prism arranged as octahedron or similar.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh in which the point lies. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global tree (of the cmesh) in which the reference point is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> many entries, specifying a point in [0,1]^dimension. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The mapped coordinates in physical space of <em>ref_coords</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>This routine expects an input mesh of prism arranged as octahedron or similar. </p>
 
 <p>Implements <a class="el" href="structt8__geometry.html#a79511346d3aec1b3edb4540f0041e6c3">t8_geometry</a>.</p>
 

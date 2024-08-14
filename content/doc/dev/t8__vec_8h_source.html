@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.790-7232</span>
+   &#160;<span id="projectnumber">2.0.0.809-1045</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -243,18 +243,32 @@ $(function() {
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  t8_vec_cross (a, b, normal);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;t8_vec_swap (<span class="keywordtype">double</span> p1[3], <span class="keywordtype">double</span> p2[3])</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;{</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordtype">double</span> tmp;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    tmp = p1[i];</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    p1[i] = p2[i];</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    p2[i] = tmp;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;t8_vec_orthogonal_tripod (<span class="keyword">const</span> <span class="keywordtype">double</span> v1[3], <span class="keywordtype">double</span> v2[3], <span class="keywordtype">double</span> v3[3])</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;{</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  v2[0] = v1[1];</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  v2[1] = v1[2];</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  v2[2] = -v1[0];</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  t8_vec_axpy (v1, v2, -t8_vec_dot (v1, v2));</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  t8_vec_cross (v1, v2, v3);</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_VEC_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  t8_vec_normalize (v2);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  t8_vec_normalize (v3);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;t8_vec_swap (<span class="keywordtype">double</span> p1[3], <span class="keywordtype">double</span> p2[3])</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordtype">double</span> tmp;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    tmp = p1[i];</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    p1[i] = p2[i];</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    p2[i] = tmp;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_VEC_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
 <div class="ttc" id="at8_8h_html_afee33776137ab765a38d5c84424104b8"><div class="ttname"><a href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a></div><div class="ttdeci">#define T8_ASSERT(c)</div><div class="ttdoc">Widely used assertion.</div><div class="ttdef"><b>Definition:</b> t8.h:71</div></div>
 </div><!-- fragment --></div><!-- contents -->
