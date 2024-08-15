@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.819-66535</span>
+   &#160;<span id="projectnumber">2.0.0.821-d7898e</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -100,6 +100,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a245b15e05bf6f2c5b4e560dbe93bf58f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__cubed__sphere.html#a245b15e05bf6f2c5b4e560dbe93bf58f">t8_geom_evaluate_jacobian</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *jacobian) const</td></tr>
 <tr class="memdesc:a245b15e05bf6f2c5b4e560dbe93bf58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space \( [0,1]^\mathrm{dim} \).  <a href="structt8__geometry__cubed__sphere.html#a245b15e05bf6f2c5b4e560dbe93bf58f">More...</a><br /></td></tr>
 <tr class="separator:a245b15e05bf6f2c5b4e560dbe93bf58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ccbe550f71638a93f2930560d847ab5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__cubed__sphere.html#a1ccbe550f71638a93f2930560d847ab5">t8_geom_check_tree_compatibility</a> () const</td></tr>
+<tr class="memdesc:a1ccbe550f71638a93f2930560d847ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for compatibility of the currently loaded tree with the geometry.  <a href="structt8__geometry__cubed__sphere.html#a1ccbe550f71638a93f2930560d847ab5">More...</a><br /></td></tr>
+<tr class="separator:a1ccbe550f71638a93f2930560d847ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structt8__geometry__with__vertices"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structt8__geometry__with__vertices')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structt8__geometry__with__vertices.html">t8_geometry_with_vertices</a></td></tr>
 <tr class="memitem:ab54e641c4a984d72e4da6aeddc5157ad inherit pub_methods_structt8__geometry__with__vertices"><td class="memItemLeft" align="right" valign="top"><a id="ab54e641c4a984d72e4da6aeddc5157ad"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_with_vertices</b> (int <a class="el" href="structt8__geometry.html#a3c89ac80ad02f18bba9e5a16fe2ae96a">dimension</a>, std::string <a class="el" href="structt8__geometry.html#af4d0bac9de52e525bb7b5e43f19d3ff3">name</a>)</td></tr>
@@ -165,6 +168,34 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This geometry maps specifically arranged hexahedrons to a sphere. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1ccbe550f71638a93f2930560d847ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ccbe550f71638a93f2930560d847ab5">&#9670;&nbsp;</a></span>t8_geom_check_tree_compatibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool t8_geometry_cubed_sphere::t8_geom_check_tree_compatibility </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check for compatibility of the currently loaded tree with the geometry. </p>
+<p>Only hex elements are supported by this geometry. </p><dl class="section return"><dt>Returns</dt><dd>True if the geometry is compatible with the tree. </dd></dl>
+
+</div>
+</div>
 <a id="a88dbbf472bda0b9941f723178cb2e9df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88dbbf472bda0b9941f723178cb2e9df">&#9670;&nbsp;</a></span>t8_geom_evaluate()</h2>
 
