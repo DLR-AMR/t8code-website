@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.823-43cf7</span>
+   &#160;<span id="projectnumber">2.0.0.856-e5bdd</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -98,23 +98,23 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#a5e18fee502729f90039d11c8beeec574">~t8_geometry_analytic</a> ()</td></tr>
 <tr class="memdesc:a5e18fee502729f90039d11c8beeec574"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor. <br /></td></tr>
 <tr class="separator:a5e18fee502729f90039d11c8beeec574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae18d973b2c2d8df55252906a940f76a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry_8h.html#a997db73b2726b9562eeb3d44f18a85be">t8_geometry_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#ae18d973b2c2d8df55252906a940f76a4">t8_geom_get_type</a> () const</td></tr>
-<tr class="memdesc:ae18d973b2c2d8df55252906a940f76a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of this geometry.  <a href="structt8__geometry__analytic.html#ae18d973b2c2d8df55252906a940f76a4">More...</a><br /></td></tr>
-<tr class="separator:ae18d973b2c2d8df55252906a940f76a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab153daef7d179a21ea0044cf5ffa6ef3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#ab153daef7d179a21ea0044cf5ffa6ef3">t8_geom_evaluate</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *out_coords) const</td></tr>
-<tr class="memdesc:ab153daef7d179a21ea0044cf5ffa6ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps points in the reference space \( [0,1]^\mathrm{dim} \to \mathbb{R}^3 \).  <a href="structt8__geometry__analytic.html#ab153daef7d179a21ea0044cf5ffa6ef3">More...</a><br /></td></tr>
-<tr class="separator:ab153daef7d179a21ea0044cf5ffa6ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45117e55cfeffd8717e39d3375f05211"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#a45117e55cfeffd8717e39d3375f05211">t8_geom_evaluate_jacobian</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *jacobian) const</td></tr>
-<tr class="memdesc:a45117e55cfeffd8717e39d3375f05211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space \( [0,1]^\mathrm{dim} \).  <a href="structt8__geometry__analytic.html#a45117e55cfeffd8717e39d3375f05211">More...</a><br /></td></tr>
-<tr class="separator:a45117e55cfeffd8717e39d3375f05211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa62d251c9f8b143ff2b71d163bb5adb6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#aa62d251c9f8b143ff2b71d163bb5adb6">t8_geom_point_batch_inside_element</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, const int num_points, int *is_inside, const double tolerance)</td></tr>
-<tr class="separator:aa62d251c9f8b143ff2b71d163bb5adb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd3b85f7da02974dfd45392c09d48251"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#afd3b85f7da02974dfd45392c09d48251">t8_geom_tree_negative_volume</a> () const</td></tr>
-<tr class="memdesc:afd3b85f7da02974dfd45392c09d48251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the currently active tree has a negative volume.  <a href="structt8__geometry__analytic.html#afd3b85f7da02974dfd45392c09d48251">More...</a><br /></td></tr>
-<tr class="separator:afd3b85f7da02974dfd45392c09d48251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c63c543256a52e5978e68ce17dbc648"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#a6c63c543256a52e5978e68ce17dbc648">t8_geom_load_tree_data</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
-<tr class="memdesc:a6c63c543256a52e5978e68ce17dbc648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a possible internal data buffer for per tree data.  <a href="structt8__geometry__analytic.html#a6c63c543256a52e5978e68ce17dbc648">More...</a><br /></td></tr>
-<tr class="separator:a6c63c543256a52e5978e68ce17dbc648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15bfb81f0f35badda71a84a533a744ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry_8h.html#a997db73b2726b9562eeb3d44f18a85be">t8_geometry_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#a15bfb81f0f35badda71a84a533a744ee">t8_geom_get_type</a> () const override</td></tr>
+<tr class="memdesc:a15bfb81f0f35badda71a84a533a744ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of this geometry.  <a href="structt8__geometry__analytic.html#a15bfb81f0f35badda71a84a533a744ee">More...</a><br /></td></tr>
+<tr class="separator:a15bfb81f0f35badda71a84a533a744ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a7f02f7c8214e337f97810e8909147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#ad6a7f02f7c8214e337f97810e8909147">t8_geom_evaluate</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *out_coords) const override</td></tr>
+<tr class="memdesc:ad6a7f02f7c8214e337f97810e8909147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps points in the reference space \( [0,1]^\mathrm{dim} \to \mathbb{R}^3 \).  <a href="structt8__geometry__analytic.html#ad6a7f02f7c8214e337f97810e8909147">More...</a><br /></td></tr>
+<tr class="separator:ad6a7f02f7c8214e337f97810e8909147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae019b763cc921334a7cb7d354e03689f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#ae019b763cc921334a7cb7d354e03689f">t8_geom_evaluate_jacobian</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const double *ref_coords, const size_t num_coords, double *jacobian) const override</td></tr>
+<tr class="memdesc:ae019b763cc921334a7cb7d354e03689f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the jacobian of the <em>t8_geom_evaluate</em> map at a point in the reference space \( [0,1]^\mathrm{dim} \).  <a href="structt8__geometry__analytic.html#ae019b763cc921334a7cb7d354e03689f">More...</a><br /></td></tr>
+<tr class="separator:ae019b763cc921334a7cb7d354e03689f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acafe27f641a3058df9129be24031e7a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#acafe27f641a3058df9129be24031e7a9">t8_geom_point_batch_inside_element</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, const int num_points, int *is_inside, const double tolerance) const override</td></tr>
+<tr class="separator:acafe27f641a3058df9129be24031e7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ab11855bbdb66df0ffcb21f1578ae7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#a60ab11855bbdb66df0ffcb21f1578ae7">t8_geom_tree_negative_volume</a> () const override</td></tr>
+<tr class="memdesc:a60ab11855bbdb66df0ffcb21f1578ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the currently active tree has a negative volume.  <a href="structt8__geometry__analytic.html#a60ab11855bbdb66df0ffcb21f1578ae7">More...</a><br /></td></tr>
+<tr class="separator:a60ab11855bbdb66df0ffcb21f1578ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4409520e1f73bd075aac74d0bb323e24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__analytic.html#a4409520e1f73bd075aac74d0bb323e24">t8_geom_load_tree_data</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid) override</td></tr>
+<tr class="memdesc:a4409520e1f73bd075aac74d0bb323e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a possible internal data buffer for per tree data.  <a href="structt8__geometry__analytic.html#a4409520e1f73bd075aac74d0bb323e24">More...</a><br /></td></tr>
+<tr class="separator:a4409520e1f73bd075aac74d0bb323e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae822ba7b35a834a7915e8a4b506309a0"><td class="memItemLeft" align="right" valign="top"><a id="ae822ba7b35a834a7915e8a4b506309a0"></a>
 const void *&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geom_analytic_get_user_data</b> ()</td></tr>
 <tr class="separator:ae822ba7b35a834a7915e8a4b506309a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,15 +125,12 @@ const void *&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geom_analy
 <tr class="memitem:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">~t8_geometry</a> ()</td></tr>
 <tr class="memdesc:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">More...</a><br /></td></tr>
 <tr class="separator:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a896891cdc5c3a64ce96b49684320673c inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a896891cdc5c3a64ce96b49684320673c">t8_geom_point_batch_inside_element</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, const int num_points, int *is_inside, const double tolerance) const</td></tr>
-<tr class="memdesc:a896891cdc5c3a64ce96b49684320673c inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a batch of points lies inside an element.  <a href="structt8__geometry.html#a896891cdc5c3a64ce96b49684320673c">More...</a><br /></td></tr>
-<tr class="separator:a896891cdc5c3a64ce96b49684320673c inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">t8_geom_get_dimension</a> () const</td></tr>
 <tr class="memdesc:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dimension of this geometry.  <a href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">More...</a><br /></td></tr>
 <tr class="separator:a9ee0828ae45c10c76ab817df24c019b1 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55b22008fd9dee0ccee85c32a2269f6e inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a55b22008fd9dee0ccee85c32a2269f6e">t8_geom_get_name</a> () const</td></tr>
-<tr class="memdesc:a55b22008fd9dee0ccee85c32a2269f6e inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of this geometry.  <a href="structt8__geometry.html#a55b22008fd9dee0ccee85c32a2269f6e">More...</a><br /></td></tr>
-<tr class="separator:a55b22008fd9dee0ccee85c32a2269f6e inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841bf054ae6b3d4fc82b8750846d122f inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a841bf054ae6b3d4fc82b8750846d122f">t8_geom_get_name</a> () const</td></tr>
+<tr class="memdesc:a841bf054ae6b3d4fc82b8750846d122f inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of this geometry.  <a href="structt8__geometry.html#a841bf054ae6b3d4fc82b8750846d122f">More...</a><br /></td></tr>
+<tr class="separator:a841bf054ae6b3d4fc82b8750846d122f inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf953559db74731f66f38388e0066f44 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top"><a id="adf953559db74731f66f38388e0066f44"></a>
 const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geom_get_hash</b> () const</td></tr>
 <tr class="separator:adf953559db74731f66f38388e0066f44 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,8 +260,8 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab153daef7d179a21ea0044cf5ffa6ef3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab153daef7d179a21ea0044cf5ffa6ef3">&#9670;&nbsp;</a></span>t8_geom_evaluate()</h2>
+<a id="ad6a7f02f7c8214e337f97810e8909147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a7f02f7c8214e337f97810e8909147">&#9670;&nbsp;</a></span>t8_geom_evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +307,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -331,8 +328,8 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
-<a id="a45117e55cfeffd8717e39d3375f05211"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45117e55cfeffd8717e39d3375f05211">&#9670;&nbsp;</a></span>t8_geom_evaluate_jacobian()</h2>
+<a id="ae019b763cc921334a7cb7d354e03689f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae019b763cc921334a7cb7d354e03689f">&#9670;&nbsp;</a></span>t8_geom_evaluate_jacobian()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +375,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -400,8 +397,8 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
-<a id="ae18d973b2c2d8df55252906a940f76a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae18d973b2c2d8df55252906a940f76a4">&#9670;&nbsp;</a></span>t8_geom_get_type()</h2>
+<a id="a15bfb81f0f35badda71a84a533a744ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15bfb81f0f35badda71a84a533a744ee">&#9670;&nbsp;</a></span>t8_geom_get_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,7 +415,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -430,8 +427,8 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
-<a id="a6c63c543256a52e5978e68ce17dbc648"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c63c543256a52e5978e68ce17dbc648">&#9670;&nbsp;</a></span>t8_geom_load_tree_data()</h2>
+<a id="a4409520e1f73bd075aac74d0bb323e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4409520e1f73bd075aac74d0bb323e24">&#9670;&nbsp;</a></span>t8_geom_load_tree_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,7 +456,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -477,8 +474,8 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 
 </div>
 </div>
-<a id="aa62d251c9f8b143ff2b71d163bb5adb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa62d251c9f8b143ff2b71d163bb5adb6">&#9670;&nbsp;</a></span>t8_geom_point_batch_inside_element()</h2>
+<a id="acafe27f641a3058df9129be24031e7a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acafe27f641a3058df9129be24031e7a9">&#9670;&nbsp;</a></span>t8_geom_point_batch_inside_element()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -487,7 +484,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void t8_geometry_analytic::t8_geom_point_batch_inside_element </td>
+          <td class="memname">void t8_geometry_analytic::t8_geom_point_batch_inside_element </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
           <td class="paramname"><em>forest</em>, </td>
@@ -531,12 +528,12 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -553,10 +550,12 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   </dd>
 </dl>
 
+<p>Reimplemented from <a class="el" href="structt8__geometry.html#a896891cdc5c3a64ce96b49684320673c">t8_geometry</a>.</p>
+
 </div>
 </div>
-<a id="afd3b85f7da02974dfd45392c09d48251"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd3b85f7da02974dfd45392c09d48251">&#9670;&nbsp;</a></span>t8_geom_tree_negative_volume()</h2>
+<a id="a60ab11855bbdb66df0ffcb21f1578ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ab11855bbdb66df0ffcb21f1578ae7">&#9670;&nbsp;</a></span>t8_geom_tree_negative_volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -573,7 +572,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

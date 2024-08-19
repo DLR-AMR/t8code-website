@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.823-43cf7</span>
+   &#160;<span id="projectnumber">2.0.0.856-e5bdd</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -789,7 +789,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <dl class="section return"><dt>Returns</dt><dd>Suppose <em>t</em> is uniformly refined up to level <em>level</em>. The return value is the resulting number of elements (of the given level). If <em>level</em> &lt; t8_element_level(t), the return value should be 0.</dd></dl>
 <p>Example: If <em>t</em> is a line element that refines into 2 line elements on each level, then the return value is max(0, 2^{<em>level</em> - level(<em>t</em>)}). Thus, if <em>t's</em> level is 0, and <em>level</em> = 3, the return value is 2^3 = 8. </p>
 
-<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a32910795c5b4cb22d4326d1848e510e9">t8_default_scheme_common_c</a>.</p>
+<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a0f816467013940c6f20d23eaee1d23af">t8_default_scheme_common_c</a>.</p>
 
 </div>
 </div>
@@ -827,7 +827,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <dl class="section return"><dt>Returns</dt><dd>The value of <a class="el" href="structt8__eclass__scheme.html#a0c665131e2c9db3e8299c5c10affa928">t8_element_count_leaves</a> if the input element is the root (level 0) element.</dd></dl>
 <p>This is a convenience function, and can be implemented via <a class="el" href="structt8__eclass__scheme.html#a0c665131e2c9db3e8299c5c10affa928">t8_element_count_leaves</a>. </p>
 
-<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a4ad696f2788bea5e0305ee7ecca40064">t8_default_scheme_common_c</a>.</p>
+<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a87b3c27395940103d7daca601134c71a">t8_default_scheme_common_c</a>.</p>
 
 </div>
 </div>
@@ -961,7 +961,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323f05c46c1f63e9036b" title="Allocate memory for length many elements of a given class and initialize them, and put pointers to th...">t8_element_new</a> </dd></dl>
 
-<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a751e3c492a7a7022a138282de56a7ee5">t8_default_scheme_common_c</a>.</p>
+<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a107052a012d29157164e52926470d511">t8_default_scheme_common_c</a>.</p>
 
 </div>
 </div>
@@ -2292,7 +2292,7 @@ Every call to <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323
 <dd>
 <a class="el" href="structt8__eclass__scheme.html#a5a550c35b8b1bfbfb075175bc959463c" title="Query whether a given element can be considered as &#39;valid&#39; and it is safe to perform any of the above...">t8_element_is_valid</a> </dd></dl>
 
-<p>Implemented in <a class="el" href="structt8__default__scheme__vertex__c.html#a9966081bac2cce1e71b3944201c119b3">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a4f559e12ae56d210555f0224f9cf0668">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a37d1aa6f3f44a079ec0781808d9a4445">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#a9b4eb51874365c7dad53e5c1d26fdb6d">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a7e12bd6b051e64d3b730ddd1ac6de43a">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a556d4dd617f1ef399d88728d7251e4e4">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#ade6fbdb99e0f8bcb46167334681aa391">t8_default_scheme_line_c</a>, <a class="el" href="structt8__default__scheme__hex__c.html#a51349f123c1f86d5961a52eaf24f6708">t8_default_scheme_hex_c</a>, and <a class="el" href="classt8__default__scheme__common__c.html#af4fb33eb6f42a3995f055867bbe9de17">t8_default_scheme_common_c</a>.</p>
+<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a890dad5dfc8eb14db5b6f50ccf733df6">t8_default_scheme_common_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#a9966081bac2cce1e71b3944201c119b3">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a4f559e12ae56d210555f0224f9cf0668">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#a37d1aa6f3f44a079ec0781808d9a4445">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#a9b4eb51874365c7dad53e5c1d26fdb6d">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#a7e12bd6b051e64d3b730ddd1ac6de43a">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a556d4dd617f1ef399d88728d7251e4e4">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#ade6fbdb99e0f8bcb46167334681aa391">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a51349f123c1f86d5961a52eaf24f6708">t8_default_scheme_hex_c</a>.</p>
 
 </div>
 </div>
@@ -2366,7 +2366,7 @@ Every call to <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of corners of <em>elem</em>. </dd></dl>
 
-<p>Implemented in <a class="el" href="structt8__default__scheme__pyramid__c.html#a86faea6a23579b5b2be016d505019798">t8_default_scheme_pyramid_c</a>, and <a class="el" href="classt8__default__scheme__common__c.html#a5930cb9ae3c5482871629327639751c5">t8_default_scheme_common_c</a>.</p>
+<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a6bf4adf97d174225745dfd4e07936ccc">t8_default_scheme_common_c</a>, and <a class="el" href="structt8__default__scheme__pyramid__c.html#a86faea6a23579b5b2be016d505019798">t8_default_scheme_pyramid_c</a>.</p>
 
 </div>
 </div>
@@ -2488,7 +2488,7 @@ Every call to <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of siblings of <em>element</em>. Note that this number is &gt;= 1, since we count the element itself as a sibling. </dd></dl>
 
-<p>Implemented in <a class="el" href="structt8__default__scheme__pyramid__c.html#ae1777cd85ce2656c5778465e8a5721fe">t8_default_scheme_pyramid_c</a>, and <a class="el" href="classt8__default__scheme__common__c.html#a3e595a37741002ba0e727b09c7c52867">t8_default_scheme_common_c</a>.</p>
+<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#ada041e93740d882d078740abfcd31534">t8_default_scheme_common_c</a>, and <a class="el" href="structt8__default__scheme__pyramid__c.html#ae1777cd85ce2656c5778465e8a5721fe">t8_default_scheme_pyramid_c</a>.</p>
 
 </div>
 </div>
@@ -2596,7 +2596,7 @@ Every call to <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a24c212c9197d0644f3788cad1492d522">t8_default_scheme_common_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#ab4b992df9c8af3d9cf731847aa834a4b">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a636c5c52776ae40eb93ae12b1c17bdfb">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#ab4a30c5e5ca3e336d8038d3c6a03a1ba">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#ac41c79334797efab29d5f030d25fbba3">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#abde2a9ad7c248a86324fd5629a6b1c25">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a8b0e87e6da031029e9777e5001ee91f5">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#aab854e7af3f6e7b49faf89dc81e4d09e">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a47c54ec29ad14b8edea5719f25cee45a">t8_default_scheme_hex_c</a>.</p>
+<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a712bf712451d359ed781b7d36aa7e99c">t8_default_scheme_common_c</a>, <a class="el" href="structt8__default__scheme__vertex__c.html#ab4b992df9c8af3d9cf731847aa834a4b">t8_default_scheme_vertex_c</a>, <a class="el" href="structt8__default__scheme__tri__c.html#a636c5c52776ae40eb93ae12b1c17bdfb">t8_default_scheme_tri_c</a>, <a class="el" href="structt8__default__scheme__tet__c.html#ab4a30c5e5ca3e336d8038d3c6a03a1ba">t8_default_scheme_tet_c</a>, <a class="el" href="structt8__default__scheme__quad__c.html#ac41c79334797efab29d5f030d25fbba3">t8_default_scheme_quad_c</a>, <a class="el" href="structt8__default__scheme__pyramid__c.html#abde2a9ad7c248a86324fd5629a6b1c25">t8_default_scheme_pyramid_c</a>, <a class="el" href="structt8__default__scheme__prism__c.html#a8b0e87e6da031029e9777e5001ee91f5">t8_default_scheme_prism_c</a>, <a class="el" href="structt8__default__scheme__line__c.html#aab854e7af3f6e7b49faf89dc81e4d09e">t8_default_scheme_line_c</a>, and <a class="el" href="structt8__default__scheme__hex__c.html#a47c54ec29ad14b8edea5719f25cee45a">t8_default_scheme_hex_c</a>.</p>
 
 </div>
 </div>
@@ -2754,7 +2754,7 @@ Every call to <a class="el" href="structt8__eclass__scheme.html#af65ee85ba8aa323
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The shape of the element as an eclass </dd></dl>
 
-<p>Implemented in <a class="el" href="structt8__default__scheme__pyramid__c.html#a6e229342ec52fda21299a578a0309030">t8_default_scheme_pyramid_c</a>, and <a class="el" href="classt8__default__scheme__common__c.html#a4af751af96ceaab812ea357dca8328e6">t8_default_scheme_common_c</a>.</p>
+<p>Implemented in <a class="el" href="classt8__default__scheme__common__c.html#a5e00983519d9950f157b0f8ff739ca7c">t8_default_scheme_common_c</a>, and <a class="el" href="structt8__default__scheme__pyramid__c.html#a6e229342ec52fda21299a578a0309030">t8_default_scheme_pyramid_c</a>.</p>
 
 </div>
 </div>
