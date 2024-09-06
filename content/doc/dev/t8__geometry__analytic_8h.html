@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.946-fe7d3</span>
+   &#160;<span id="projectnumber">2.0.0.982-ce83</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -102,15 +102,19 @@ Typedefs</h2></td></tr>
 typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__analytic_8h.html#aee03bbc2cba06bd195fcef2ae2636b40">t8_geom_tree_negative_volume_fn</a>) ()</td></tr>
 <tr class="memdesc:aee03bbc2cba06bd195fcef2ae2636b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition for the negative volume function. <br /></td></tr>
 <tr class="separator:aee03bbc2cba06bd195fcef2ae2636b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf23763684f5387f17feb81b928c233"><td class="memItemLeft" align="right" valign="top"><a id="acaf23763684f5387f17feb81b928c233"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__analytic_8h.html#acaf23763684f5387f17feb81b928c233">t8_geom_tree_compatible_fn</a>) ()</td></tr>
+<tr class="memdesc:acaf23763684f5387f17feb81b928c233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition for the tree compatible function. <br /></td></tr>
+<tr class="separator:acaf23763684f5387f17feb81b928c233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a65538322386c0ef96092792264fccb9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__analytic_8h.html#a65538322386c0ef96092792264fccb9e">t8_geometry_analytic_destroy</a> (<a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> **geom)</td></tr>
 <tr class="memdesc:a65538322386c0ef96092792264fccb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a geometry analytic object.  <a href="t8__geometry__analytic_8h.html#a65538322386c0ef96092792264fccb9e">More...</a><br /></td></tr>
 <tr class="separator:a65538322386c0ef96092792264fccb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76505e6704b71d0a4e5c2fc82535ebb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__analytic_8h.html#a76505e6704b71d0a4e5c2fc82535ebb1">t8_geometry_analytic_new</a> (int dim, const char *name, <a class="el" href="t8__geometry__analytic_8h.html#af027886d27dd2f80b608f334ed953436">t8_geom_analytic_fn</a> analytical, <a class="el" href="t8__geometry__analytic_8h.html#a7ac276c86f805a471fc34360a42b072a">t8_geom_analytic_jacobian_fn</a> jacobian, <a class="el" href="t8__geometry__analytic_8h.html#a939fe6cc94a07abd01d3e5f5652673ab">t8_geom_load_tree_data_fn</a> load_tree_data, <a class="el" href="t8__geometry__analytic_8h.html#aee03bbc2cba06bd195fcef2ae2636b40">t8_geom_tree_negative_volume_fn</a> tree_negative_volume, const void *user_data)</td></tr>
-<tr class="memdesc:a76505e6704b71d0a4e5c2fc82535ebb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new analytical geometry.  <a href="t8__geometry__analytic_8h.html#a76505e6704b71d0a4e5c2fc82535ebb1">More...</a><br /></td></tr>
-<tr class="separator:a76505e6704b71d0a4e5c2fc82535ebb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1db6f4cea4647de800e008dd467b42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry_8h.html#ae2af0c6e5462aced669b9d505370bdaa">t8_geometry_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__analytic_8h.html#a6c1db6f4cea4647de800e008dd467b42">t8_geometry_analytic_new</a> (int dim, const char *name, <a class="el" href="t8__geometry__analytic_8h.html#af027886d27dd2f80b608f334ed953436">t8_geom_analytic_fn</a> analytical, <a class="el" href="t8__geometry__analytic_8h.html#a7ac276c86f805a471fc34360a42b072a">t8_geom_analytic_jacobian_fn</a> jacobian, <a class="el" href="t8__geometry__analytic_8h.html#a939fe6cc94a07abd01d3e5f5652673ab">t8_geom_load_tree_data_fn</a> load_tree_data, <a class="el" href="t8__geometry__analytic_8h.html#aee03bbc2cba06bd195fcef2ae2636b40">t8_geom_tree_negative_volume_fn</a> tree_negative_volume, <a class="el" href="t8__geometry__analytic_8h.html#acaf23763684f5387f17feb81b928c233">t8_geom_tree_compatible_fn</a> tree_compatible, const void *user_data)</td></tr>
+<tr class="memdesc:a6c1db6f4cea4647de800e008dd467b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new analytic geometry with a given dimension.  <a href="t8__geometry__analytic_8h.html#a6c1db6f4cea4647de800e008dd467b42">More...</a><br /></td></tr>
+<tr class="separator:a6c1db6f4cea4647de800e008dd467b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8660ee917ea1d3897e0ca9a5add21e05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__geometry__analytic_8h.html#a8660ee917ea1d3897e0ca9a5add21e05">t8_geom_load_tree_data_vertices</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, const void **user_data)</td></tr>
 <tr class="memdesc:a8660ee917ea1d3897e0ca9a5add21e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load vertex data from given tree.  <a href="t8__geometry__analytic_8h.html#a8660ee917ea1d3897e0ca9a5add21e05">More...</a><br /></td></tr>
 <tr class="separator:a8660ee917ea1d3897e0ca9a5add21e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,7 +241,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global tree id (in the cmesh). </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">vertex_out</td><td>The load tree vertices. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">user_data</td><td>The load tree vertices. </td></tr>
   </table>
   </dd>
 </dl>
@@ -270,8 +274,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a76505e6704b71d0a4e5c2fc82535ebb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76505e6704b71d0a4e5c2fc82535ebb1">&#9670;&nbsp;</a></span>t8_geometry_analytic_new()</h2>
+<a id="a6c1db6f4cea4647de800e008dd467b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1db6f4cea4647de800e008dd467b42">&#9670;&nbsp;</a></span>t8_geometry_analytic_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,6 +319,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="t8__geometry__analytic_8h.html#acaf23763684f5387f17feb81b928c233">t8_geom_tree_compatible_fn</a>&#160;</td>
+          <td class="paramname"><em>tree_compatible</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>user_data</em>&#160;</td>
         </tr>
@@ -326,7 +336,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a new analytical geometry. </p>
+<p>Create a new analytic geometry with a given dimension. </p>
+<p>The geometry is viable with all tree types and uses a user-provided analytic and jacobian function. The actual mappings are done by these functions. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dim</td><td>The dimension of this geometry. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name to give this geometry. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">analytical</td><td>The analytical function to use for this geometry. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">jacobian</td><td>The jacobian of <em>analytical</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">load_tree_data</td><td>The function that is used to load a tree's data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tree_negative_volume_in</td><td>The function that is used to compute if a trees volume is negative. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tree_compatible_in</td><td>The function that is used to check if a tree is compatible with the geometry. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>Additional user data which the geometry can use. Gets retrieved via t8_geom_analytic_get_user_data. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to an allocated geometry struct. </dd></dl>
 
 </div>

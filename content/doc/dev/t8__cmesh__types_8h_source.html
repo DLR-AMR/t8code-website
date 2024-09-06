@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.946-fe7d3</span>
+   &#160;<span id="projectnumber">2.0.0.982-ce83</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -135,9 +135,9 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">  +T8_ECLASS_MAX_EDGES </span><span class="comment">/* Used to store which face is linked to which surface */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#define T8_CMESH_CAD_FACE_PARAMETERS_ATTRIBUTE_KEY \</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">  T8_CMESH_CAD_FACE_ATTRIBUTE_KEY + 1 </span><span class="comment">/* Used to store face parameters */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define T8_CMESH_LAGRANGE_POLY_DEGREE T8_CMESH_CAD_FACE_PARAMETERS_ATTRIBUTE_KEY + T8_ECLASS_MAX_FACES</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define T8_CMESH_LAGRANGE_POLY_DEGREE_KEY T8_CMESH_CAD_FACE_PARAMETERS_ATTRIBUTE_KEY + T8_ECLASS_MAX_FACES</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define T8_CMESH_NEXT_POSSIBLE_KEY \</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">  T8_CMESH_LAGRANGE_POLY_DEGREE + 1 </span><span class="comment">/* The next free value for a t8code attribute key */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">  T8_CMESH_LAGRANGE_POLY_DEGREE_KEY + 1 </span><span class="comment">/* The next free value for a t8code attribute key */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="structt8__cmesh.html">   87</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__cmesh.html">t8_cmesh</a></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
