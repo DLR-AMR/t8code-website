@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">2.0.0.1146-f6bf6</span>
+   &#160;<span id="projectnumber">2.0.0.1151-f61d4</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -107,9 +107,9 @@ Inheritance diagram for t8_geometry:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac52d66457e84715b2217d5b0e062bb54"><td class="memItemLeft" align="right" valign="top"><a id="ac52d66457e84715b2217d5b0e062bb54"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry</b> (int dim, std::string <a class="el" href="structt8__geometry.html#af4d0bac9de52e525bb7b5e43f19d3ff3">name</a>)</td></tr>
-<tr class="separator:ac52d66457e84715b2217d5b0e062bb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb22f0f977aac3eed002336abce076d6"><td class="memItemLeft" align="right" valign="top"><a id="acb22f0f977aac3eed002336abce076d6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry</b> (std::string <a class="el" href="structt8__geometry.html#af4d0bac9de52e525bb7b5e43f19d3ff3">name</a>)</td></tr>
+<tr class="separator:acb22f0f977aac3eed002336abce076d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af14c7f0e90f6068ca697fb06d2a8cd34"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">~t8_geometry</a> ()</td></tr>
 <tr class="memdesc:af14c7f0e90f6068ca697fb06d2a8cd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">More...</a><br /></td></tr>
 <tr class="separator:af14c7f0e90f6068ca697fb06d2a8cd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,9 +131,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae63c57302e57f271250601cfff83a29b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#ae63c57302e57f271250601cfff83a29b">t8_geom_check_tree_compatibility</a> () const =0</td></tr>
 <tr class="memdesc:ae63c57302e57f271250601cfff83a29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for compatibility of the currently loaded tree with the geometry.  <a href="structt8__geometry.html#ae63c57302e57f271250601cfff83a29b">More...</a><br /></td></tr>
 <tr class="separator:ae63c57302e57f271250601cfff83a29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ee0828ae45c10c76ab817df24c019b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">t8_geom_get_dimension</a> () const</td></tr>
-<tr class="memdesc:a9ee0828ae45c10c76ab817df24c019b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dimension of this geometry.  <a href="structt8__geometry.html#a9ee0828ae45c10c76ab817df24c019b1">More...</a><br /></td></tr>
-<tr class="separator:a9ee0828ae45c10c76ab817df24c019b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a841bf054ae6b3d4fc82b8750846d122f"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a841bf054ae6b3d4fc82b8750846d122f">t8_geom_get_name</a> () const</td></tr>
 <tr class="memdesc:a841bf054ae6b3d4fc82b8750846d122f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of this geometry.  <a href="structt8__geometry.html#a841bf054ae6b3d4fc82b8750846d122f">More...</a><br /></td></tr>
 <tr class="separator:a841bf054ae6b3d4fc82b8750846d122f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,10 +143,6 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geom_get_h
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a3c89ac80ad02f18bba9e5a16fe2ae96a"><td class="memItemLeft" align="right" valign="top"><a id="a3c89ac80ad02f18bba9e5a16fe2ae96a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#a3c89ac80ad02f18bba9e5a16fe2ae96a">dimension</a></td></tr>
-<tr class="memdesc:a3c89ac80ad02f18bba9e5a16fe2ae96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimension of reference space for which this is a geometry. <br /></td></tr>
-<tr class="separator:a3c89ac80ad02f18bba9e5a16fe2ae96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4d0bac9de52e525bb7b5e43f19d3ff3"><td class="memItemLeft" align="right" valign="top"><a id="af4d0bac9de52e525bb7b5e43f19d3ff3"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#af4d0bac9de52e525bb7b5e43f19d3ff3">name</a></td></tr>
 <tr class="memdesc:af4d0bac9de52e525bb7b5e43f19d3ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of this geometry. <br /></td></tr>
@@ -287,7 +280,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh in which the point lies. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global tree (of the cmesh) in which the reference point is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> x <em>num_coords</em> many entries, specifying points in \( [0,1]^\mathrm{dim} \). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of tree dimension x <em>num_coords</em> many entries, specifying points in \( [0,1]^\mathrm{dim} \). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>Amount of points of \( \mathrm{dim} \) to map. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">out_coords</td><td>The mapped coordinates in physical space of <em>ref_coords</em>. The length is <em>num_coords</em> * 3. </td></tr>
   </table>
@@ -355,7 +348,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh in which the point lies. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">glreeid</td><td>The global tree (of the cmesh) in which the reference point is. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of <em>dimension</em> x <em>num_coords</em> many entries, specifying points in \( [0,1]^\mathrm{dim} \). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_coords</td><td>Array of tree dimension x <em>num_coords</em> many entries, specifying points in \( [0,1]^\mathrm{dim} \). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_coords</td><td>Amount of points of \( \mathrm{dim} \) to map. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">jacobian</td><td>The jacobian at <em>ref_coords</em>. Array of size <em>num_coords</em> x dimension x 3. Indices \( 3 \cdot i\) , \( 3 \cdot i+1 \) , \( 3 \cdot i+2 \) correspond to the \( i \)-th column of the jacobian (Entry \( 3 \cdot i + j \) is \( \frac{\partial f_j}{\partial x_i} \)). </td></tr>
   </table>
@@ -363,34 +356,6 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </dl>
 
 <p>Implemented in <a class="el" href="structt8__geometry__lagrange.html#a414fefe0dfeb0c1327b2d3860ea85ff6">t8_geometry_lagrange</a>, <a class="el" href="structt8__geometry__zero.html#ab9995a43dbd4404fbd98ac98aa4018be">t8_geometry_zero</a>, <a class="el" href="structt8__geometry__analytic.html#ae019b763cc921334a7cb7d354e03689f">t8_geometry_analytic</a>, <a class="el" href="structt8__geometry__linear__axis__aligned.html#abc8383df8d79968d981e891048636b71">t8_geometry_linear_axis_aligned</a>, <a class="el" href="structt8__geometry__linear.html#a83c9e13ab32bf44894573f27b8e2db13">t8_geometry_linear</a>, <a class="el" href="structt8__geometry__cubed__sphere.html#a245b15e05bf6f2c5b4e560dbe93bf58f">t8_geometry_cubed_sphere</a>, <a class="el" href="structt8__geometry__prismed__spherical__shell.html#ab278f57af7ee73fb6e63a3391a8c0f8a">t8_geometry_prismed_spherical_shell</a>, <a class="el" href="structt8__geometry__cubed__spherical__shell.html#ac88870f1ff40a2d42b70baa21e80ec89">t8_geometry_cubed_spherical_shell</a>, <a class="el" href="structt8__geometry__tessellated__spherical__surface.html#a8800df757450c9acd62a3dd710aef549">t8_geometry_tessellated_spherical_surface</a>, <a class="el" href="structt8__geometry__triangulated__spherical__surface.html#ae34bd3e6265e1aeb0e44c34de732173f">t8_geometry_triangulated_spherical_surface</a>, <a class="el" href="structt8__geometry__quadrangulated__disk.html#a684956e52e6440ac5447a67c82457c84">t8_geometry_quadrangulated_disk</a>, and <a class="el" href="structt8__geometry__cad.html#aa6c06d22d8cc22e35b33faf7e1811d19">t8_geometry_cad</a>.</p>
-
-</div>
-</div>
-<a id="a9ee0828ae45c10c76ab817df24c019b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ee0828ae45c10c76ab817df24c019b1">&#9670;&nbsp;</a></span>t8_geom_get_dimension()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int t8_geometry::t8_geom_get_dimension </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the dimension of this geometry. </p>
-<dl class="section return"><dt>Returns</dt><dd>The dimension. </dd></dl>
 
 </div>
 </div>
