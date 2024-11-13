@@ -8,9 +8,6 @@ We are excited to announce the release of t8code v3.0.0, a major new release of 
 
 t8code can speed up your simulations and visualizations by 10x - 100x while scaling from notebooks to supercomputers. We support all standard element shapes and meshes with hundreds of billions of elements.
 
-Learn more about t8code: <a href="https://dlr-amr.github.io/t8code/">t8code</a> 
-
-Full v3.0.0 release notes: <a href="https://github.com/DLR-AMR/t8code/releases/tag/v3.0.0">v3.0.0</a>  
-
+Click <a href="https://github.com/DLR-AMR/t8code/releases/tag/v3.0.0">here</a> for the full release notes.
 
 We would like to thank everyone who contributed to this release, especially the adaptive mesh refinement team at Deutsches Zentrum für Luft-und Raumfahrt e.V., DLR Institute of Software Technology
