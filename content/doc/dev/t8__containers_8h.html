@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">3.0.0.37-bfba2</span>
+   &#160;<span id="projectnumber">3.0.0.47-f8b7b</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -109,9 +109,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aaeb904152399f6628bf975b3bac57561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__containers_8h.html#aaeb904152399f6628bf975b3bac57561">t8_element_array_init_size</a> (<a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *element_array, <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *scheme, size_t num_elements)</td></tr>
 <tr class="memdesc:aaeb904152399f6628bf975b3bac57561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an already allocated (or static) array structure and allocates a given number of elements and initializes them with t8_element_init.  <a href="t8__containers_8h.html#aaeb904152399f6628bf975b3bac57561">More...</a><br /></td></tr>
 <tr class="separator:aaeb904152399f6628bf975b3bac57561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a395e1d1f972dbc97c346639f4f5b2f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__containers_8h.html#a395e1d1f972dbc97c346639f4f5b2f38">t8_element_array_init_view</a> (<a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *view, <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *array, size_t offset, size_t length)</td></tr>
-<tr class="memdesc:a395e1d1f972dbc97c346639f4f5b2f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an already allocated (or static) view from existing t8_element_array.  <a href="t8__containers_8h.html#a395e1d1f972dbc97c346639f4f5b2f38">More...</a><br /></td></tr>
-<tr class="separator:a395e1d1f972dbc97c346639f4f5b2f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d53f6007365b5afbe180e3e36c8d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__containers_8h.html#a51d53f6007365b5afbe180e3e36c8d8e">t8_element_array_init_view</a> (<a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *view, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *array, const size_t offset, const size_t length)</td></tr>
+<tr class="memdesc:a51d53f6007365b5afbe180e3e36c8d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an already allocated (or static) view from existing t8_element_array.  <a href="t8__containers_8h.html#a51d53f6007365b5afbe180e3e36c8d8e">More...</a><br /></td></tr>
+<tr class="separator:a51d53f6007365b5afbe180e3e36c8d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf2c0edfc70775a2820703ff5d6d9793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__containers_8h.html#abf2c0edfc70775a2820703ff5d6d9793">t8_element_array_init_data</a> (<a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *view, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *base, <a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *scheme, size_t elem_count)</td></tr>
 <tr class="memdesc:abf2c0edfc70775a2820703ff5d6d9793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an already allocated (or static) view from given plain C data (array of t8_element_t).  <a href="t8__containers_8h.html#abf2c0edfc70775a2820703ff5d6d9793">More...</a><br /></td></tr>
 <tr class="separator:abf2c0edfc70775a2820703ff5d6d9793"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -736,8 +736,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a395e1d1f972dbc97c346639f4f5b2f38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a395e1d1f972dbc97c346639f4f5b2f38">&#9670;&nbsp;</a></span>t8_element_array_init_view()</h2>
+<a id="a51d53f6007365b5afbe180e3e36c8d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51d53f6007365b5afbe180e3e36c8d8e">&#9670;&nbsp;</a></span>t8_element_array_init_view()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -751,19 +751,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *&#160;</td>
           <td class="paramname"><em>array</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">const size_t&#160;</td>
           <td class="paramname"><em>offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">const size_t&#160;</td>
           <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>

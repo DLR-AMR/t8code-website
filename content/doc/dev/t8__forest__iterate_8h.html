@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">3.0.0.37-bfba2</span>
+   &#160;<span id="projectnumber">3.0.0.47-f8b7b</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -103,12 +103,12 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_it
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a54ece1f7d297ed9d46590c8341c17217"><td class="memItemLeft" align="right" valign="top"><a id="a54ece1f7d297ed9d46590c8341c17217"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_split_array</b> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, size_t *offsets)</td></tr>
-<tr class="separator:a54ece1f7d297ed9d46590c8341c17217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eee0f3942c4f892742b9cf51c24362c"><td class="memItemLeft" align="right" valign="top"><a id="a8eee0f3942c4f892742b9cf51c24362c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate_faces</b> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, int face, <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, void *user_data, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_lindex_of_first_leaf, t8_forest_iterate_face_fn callback)</td></tr>
-<tr class="separator:a8eee0f3942c4f892742b9cf51c24362c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2bf1aff369521a2d19123658ed92a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__iterate_8h.html#ace2bf1aff369521a2d19123658ed92a7">t8_forest_split_array</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, size_t *offsets)</td></tr>
+<tr class="memdesc:ace2bf1aff369521a2d19123658ed92a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split an array of elements according to the children of a given element E.  <a href="t8__forest__iterate_8h.html#ace2bf1aff369521a2d19123658ed92a7">More...</a><br /></td></tr>
+<tr class="separator:ace2bf1aff369521a2d19123658ed92a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022cfc1ceb72ee759402111a791fd6f1"><td class="memItemLeft" align="right" valign="top"><a id="a022cfc1ceb72ee759402111a791fd6f1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate_faces</b> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, int face, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, void *user_data, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_lindex_of_first_leaf, t8_forest_iterate_face_fn callback)</td></tr>
+<tr class="separator:a022cfc1ceb72ee759402111a791fd6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d3dbb11da50a1fccd2443be796b533a"><td class="memItemLeft" align="right" valign="top"><a id="a1d3dbb11da50a1fccd2443be796b533a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_search</b> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8__forest__iterate_8h.html#a1af9d0de90e3b7942b4fda9a7fc1c148">t8_forest_search_fn</a> search_fn, <a class="el" href="t8__forest__iterate_8h.html#a738431225a63390f5ff3141220d69128">t8_forest_query_fn</a> query_fn, sc_array_t *queries)</td></tr>
 <tr class="separator:a1d3dbb11da50a1fccd2443be796b533a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,6 +224,52 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_search</b> 
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>To pass a user pointer to <em>replace_fn</em> use <a class="el" href="t8__forest__general_8h.html#a7bc48a9274b531319b4e28f983050152">t8_forest_set_user_data</a> and <a class="el" href="t8__forest__general_8h.html#a384b80956287ea7345216785ce63f698">t8_forest_get_user_data</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ace2bf1aff369521a2d19123658ed92a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2bf1aff369521a2d19123658ed92a7">&#9670;&nbsp;</a></span>t8_forest_split_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_forest_split_array </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *&#160;</td>
+          <td class="paramname"><em>leaf_elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>offsets</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Split an array of elements according to the children of a given element E. </p>
+<p>In other words for each child C of E, find the index i, j, such that all descendants of C are elements[i], ..., elements[j-1].</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>An element. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">leaf_elements</td><td>An array of leaf elements of <em>element</em>. Thus, all elements must be descendants. Sorted by linear index. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">offsets</td><td>On input an allocated array of <em>num_children_of_E</em> + 1 entries. <br  />
+ On output entry i indicates the position in <em>leaf_elements</em> where the descandents of the i-th child of E start. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
