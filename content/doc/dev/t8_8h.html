@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">3.0.0.31-6eec8</span>
+   &#160;<span id="projectnumber">3.0.0.37-bfba2</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -105,6 +105,9 @@ Macros</h2></td></tr>
 <tr class="memitem:afee33776137ab765a38d5c84424104b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a>(c)&#160;&#160;&#160;SC_CHECK_ABORT ((c), &quot;Assertion '&quot; #c &quot;'&quot;)</td></tr>
 <tr class="memdesc:afee33776137ab765a38d5c84424104b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Widely used assertion.  <a href="t8_8h.html#afee33776137ab765a38d5c84424104b8">More...</a><br /></td></tr>
 <tr class="separator:afee33776137ab765a38d5c84424104b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a3b875e2b1f819c8766b48c9a012c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#ad8a3b875e2b1f819c8766b48c9a012c0">T8_ASSERTF</a>(c,  msg)&#160;&#160;&#160;SC_CHECK_ABORT ((c), &quot;Assertion '&quot; #c &quot;': &quot; msg)</td></tr>
+<tr class="memdesc:ad8a3b875e2b1f819c8766b48c9a012c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended T8_ASSERT assertion with custom error message.  <a href="t8_8h.html#ad8a3b875e2b1f819c8766b48c9a012c0">More...</a><br /></td></tr>
+<tr class="separator:ad8a3b875e2b1f819c8766b48c9a012c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51ac6ee19760b635183f1616c18348ef"><td class="memItemLeft" align="right" valign="top"><a id="a51ac6ee19760b635183f1616c18348ef"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a51ac6ee19760b635183f1616c18348ef">T8_ALLOC</a>(t,  n)&#160;&#160;&#160;(t *) sc_malloc (<a class="el" href="t8_8h.html#a803051b20cfd1e0736e5ee631709cc61">t8_get_package_id</a> (), (n) * sizeof (t))</td></tr>
 <tr class="memdesc:a51ac6ee19760b635183f1616c18348ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <em>t-array</em> with <em>n</em> elements. <br /></td></tr>
@@ -288,6 +291,37 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8
 </div><div class="memdoc">
 
 <p>Widely used assertion. </p>
+<p>Only active in debug-mode. </p>
+
+</div>
+</div>
+<a id="ad8a3b875e2b1f819c8766b48c9a012c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a3b875e2b1f819c8766b48c9a012c0">&#9670;&nbsp;</a></span>T8_ASSERTF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define T8_ASSERTF</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;SC_CHECK_ABORT ((c), &quot;Assertion '&quot; #c &quot;': &quot; msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extended T8_ASSERT assertion with custom error message. </p>
 <p>Only active in debug-mode. </p>
 
 </div>
