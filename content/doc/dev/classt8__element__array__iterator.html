@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">3.0.0.61-97703</span>
+   &#160;<span id="projectnumber">3.0.0.64-a7ab2</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -143,12 +143,12 @@ value_type&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> 
 <tr class="memitem:a9f66ac6bd843d09d004e8bd1d630d450"><td class="memItemLeft" align="right" valign="top"><a id="a9f66ac6bd843d09d004e8bd1d630d450"></a>
 <a class="el" href="classt8__element__array__iterator.html">t8_element_array_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (const difference_type n)</td></tr>
 <tr class="separator:a9f66ac6bd843d09d004e8bd1d630d450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abff93ebba7d9001824c2f5acce5639da"><td class="memItemLeft" align="right" valign="top"><a id="abff93ebba7d9001824c2f5acce5639da"></a>
-<a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentIndex</b> () const</td></tr>
-<tr class="separator:abff93ebba7d9001824c2f5acce5639da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51048ec6607b053ce78d14ed313d1588"><td class="memItemLeft" align="right" valign="top"><a id="a51048ec6607b053ce78d14ed313d1588"></a>
-<a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetLinearIDAtLevel</b> (const int level)</td></tr>
-<tr class="separator:a51048ec6607b053ce78d14ed313d1588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030e9b462605ccab30e16879c258fff4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__element__array__iterator.html#a030e9b462605ccab30e16879c258fff4">get_current_index</a> () const</td></tr>
+<tr class="memdesc:a030e9b462605ccab30e16879c258fff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index within the array the iterator currently points to [0,...,size].  <a href="classt8__element__array__iterator.html#a030e9b462605ccab30e16879c258fff4">More...</a><br /></td></tr>
+<tr class="separator:a030e9b462605ccab30e16879c258fff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd2d6a47459e2e6f834f9e25ce4d460"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__element__array__iterator.html#a6dd2d6a47459e2e6f834f9e25ce4d460">get_linear_id_at_level</a> (const int level)</td></tr>
+<tr class="memdesc:a6dd2d6a47459e2e6f834f9e25ce4d460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the linear id at a given level for the element the iterator points to.  <a href="classt8__element__array__iterator.html#a6dd2d6a47459e2e6f834f9e25ce4d460">More...</a><br /></td></tr>
+<tr class="separator:a6dd2d6a47459e2e6f834f9e25ce4d460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -186,7 +186,71 @@ difference_type&#160;</td><td class="memItemRight" valign="bottom"><b>operator-<
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class resembles a Random-Access-Iterator wrapper for the content of a <em><a class="el" href="structt8__element__array__t.html" title="The t8_element_array_t is an array to store t8_element_t * of a given eclass_scheme implementation.">t8_element_array_t</a></em>. </p>
 <p>The iterator can be dereferenced in order to receive a <em>t8_element_t</em> pointer to the corresponding index. These iterators may be used in algorithms of the standard library (e.g. std::lower_bound,...) or to iterate through a <em><a class="el" href="structt8__element__array__t.html" title="The t8_element_array_t is an array to store t8_element_t * of a given eclass_scheme implementation.">t8_element_array_t</a></em>. Since the actual data is serialized to char-bytes in the underlying array, we reconstruct a <em>t8_element_t</em> pointer and let the dereference operator return it as a value_type. Therefore, read-only operations on the <em><a class="el" href="structt8__element__array__t.html" title="The t8_element_array_t is an array to store t8_element_t * of a given eclass_scheme implementation.">t8_element_array_t</a></em> are possible. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a030e9b462605ccab30e16879c258fff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030e9b462605ccab30e16879c258fff4">&#9670;&nbsp;</a></span>get_current_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> t8_element_array_iterator::get_current_index </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the index within the array the iterator currently points to [0,...,size]. </p>
+<dl class="section return"><dt>Returns</dt><dd>The index within the array the iterator currently points to. </dd></dl>
+
+</div>
+</div>
+<a id="a6dd2d6a47459e2e6f834f9e25ce4d460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dd2d6a47459e2e6f834f9e25ce4d460">&#9670;&nbsp;</a></span>get_linear_id_at_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a> t8_element_array_iterator::get_linear_id_at_level </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute the linear id at a given level for the element the iterator points to. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The level at which the linear id should be computed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The linear id at the given level. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/t8_data/<a class="el" href="t8__element__array__iterator_8hxx_source.html">t8_element_array_iterator.hxx</a></li>
 </ul>
 </div><!-- contents -->
