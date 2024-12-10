@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">3.0.0.76-d675e</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.6-e04eae</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -88,6 +88,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="t8__shmem_8h_source.html">t8_data/t8_shmem.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__cmesh__save_8h_source.html">t8_cmesh/t8_cmesh_save.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__element_8h_source.html">t8_element.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="t8__scheme_8h_source.html">t8_schemes/t8_scheme.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__geometry_8h_source.html">t8_geometry/t8_geometry.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__eclass_8h_source.html">t8_eclass.h</a>&gt;</code><br />
 </div>
@@ -137,12 +138,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aef6375ec7b82c96a966472293fc2cfa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#aef6375ec7b82c96a966472293fc2cfa1">t8_cmesh_set_partition_offsets</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> tree_offsets)</td></tr>
 <tr class="memdesc:aef6375ec7b82c96a966472293fc2cfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare if the cmesh is understood as a partitioned cmesh and specify the first local tree for each process.  <a href="t8__cmesh_8h.html#aef6375ec7b82c96a966472293fc2cfa1">More...</a><br /></td></tr>
 <tr class="separator:aef6375ec7b82c96a966472293fc2cfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae640d2a19a094bfdceaa7d33084a9b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#ae640d2a19a094bfdceaa7d33084a9b8b">t8_cmesh_set_partition_uniform</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int element_level, <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *ts)</td></tr>
-<tr class="memdesc:ae640d2a19a094bfdceaa7d33084a9b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare if a derived cmesh should be partitioned according to a uniform refinement of a given level for the provided scheme.  <a href="t8__cmesh_8h.html#ae640d2a19a094bfdceaa7d33084a9b8b">More...</a><br /></td></tr>
-<tr class="separator:ae640d2a19a094bfdceaa7d33084a9b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b2e34579894e8d47ebfc44e80e8626b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a7b2e34579894e8d47ebfc44e80e8626b">t8_cmesh_set_refine</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int level, <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *scheme)</td></tr>
-<tr class="memdesc:a7b2e34579894e8d47ebfc44e80e8626b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refine the cmesh to a given level.  <a href="t8__cmesh_8h.html#a7b2e34579894e8d47ebfc44e80e8626b">More...</a><br /></td></tr>
-<tr class="separator:a7b2e34579894e8d47ebfc44e80e8626b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5beafd837a0a0d006805f656269609"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#afe5beafd837a0a0d006805f656269609">t8_cmesh_set_partition_uniform</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const int element_level, <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme)</td></tr>
+<tr class="memdesc:afe5beafd837a0a0d006805f656269609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare if a derived cmesh should be partitioned according to a uniform refinement of a given level for the provided scheme.  <a href="t8__cmesh_8h.html#afe5beafd837a0a0d006805f656269609">More...</a><br /></td></tr>
+<tr class="separator:afe5beafd837a0a0d006805f656269609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042c985a68e3f76d21fdabe37ef9d189"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a042c985a68e3f76d21fdabe37ef9d189">t8_cmesh_set_refine</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const int level, <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme)</td></tr>
+<tr class="memdesc:a042c985a68e3f76d21fdabe37ef9d189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refine the cmesh to a given level.  <a href="t8__cmesh_8h.html#a042c985a68e3f76d21fdabe37ef9d189">More...</a><br /></td></tr>
+<tr class="separator:a042c985a68e3f76d21fdabe37ef9d189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1566488382697810dd5ce7f096f479e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#ad1566488382697810dd5ce7f096f479e">t8_cmesh_set_dimension</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int dim)</td></tr>
 <tr class="memdesc:ad1566488382697810dd5ce7f096f479e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the dimension of a cmesh.  <a href="t8__cmesh_8h.html#ad1566488382697810dd5ce7f096f479e">More...</a><br /></td></tr>
 <tr class="separator:ad1566488382697810dd5ce7f096f479e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,9 +267,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_save</b> (<a 
 <tr class="memitem:a4918cb34d7d837ead1c8963adda4363c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a4918cb34d7d837ead1c8963adda4363c">t8_cmesh_get_partition_table</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:a4918cb34d7d837ead1c8963adda4363c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shared memory array storing the partition table of a partitioned cmesh.  <a href="t8__cmesh_8h.html#a4918cb34d7d837ead1c8963adda4363c">More...</a><br /></td></tr>
 <tr class="separator:a4918cb34d7d837ead1c8963adda4363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ef78a54b591c6cb7e5de364c7032849"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a7ef78a54b591c6cb7e5de364c7032849">t8_cmesh_uniform_bounds</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, int level, const <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *ts, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *first_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_begin, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *last_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_end, int8_t *first_tree_shared)</td></tr>
-<tr class="memdesc:a7ef78a54b591c6cb7e5de364c7032849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the section of a uniform forest for the current rank.  <a href="t8__cmesh_8h.html#a7ef78a54b591c6cb7e5de364c7032849">More...</a><br /></td></tr>
-<tr class="separator:a7ef78a54b591c6cb7e5de364c7032849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ec6f551778d4e14bfbf2e370942065"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a29ec6f551778d4e14bfbf2e370942065">t8_cmesh_uniform_bounds</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const int level, const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *first_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_begin, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *last_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_end, int8_t *first_tree_shared)</td></tr>
+<tr class="memdesc:a29ec6f551778d4e14bfbf2e370942065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the section of a uniform forest for the current rank.  <a href="t8__cmesh_8h.html#a29ec6f551778d4e14bfbf2e370942065">More...</a><br /></td></tr>
+<tr class="separator:a29ec6f551778d4e14bfbf2e370942065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa603507cd41e8a3dcbf74ef0a1f7328b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#aa603507cd41e8a3dcbf74ef0a1f7328b">t8_cmesh_ref</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
 <tr class="memdesc:aa603507cd41e8a3dcbf74ef0a1f7328b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the reference counter of a cmesh.  <a href="t8__cmesh_8h.html#aa603507cd41e8a3dcbf74ef0a1f7328b">More...</a><br /></td></tr>
 <tr class="separator:aa603507cd41e8a3dcbf74ef0a1f7328b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2044,13 +2045,13 @@ If an attribute with the given package_id and key already exists, then it will g
 </dl>
 <dl class="section see"><dt>See also</dt><dd>t8_cmesh_set_partition_offset </dd>
 <dd>
-<a class="el" href="t8__cmesh_8h.html#ae640d2a19a094bfdceaa7d33084a9b8b" title="Declare if a derived cmesh should be partitioned according to a uniform refinement of a given level f...">t8_cmesh_set_partition_uniform</a> </dd></dl>
+<a class="el" href="t8__cmesh_8h.html#afe5beafd837a0a0d006805f656269609" title="Declare if a derived cmesh should be partitioned according to a uniform refinement of a given level f...">t8_cmesh_set_partition_uniform</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>A value of <em>set_face_knowledge</em> other than -1 or 3 is not yet supported. </dd></dl>
 
 </div>
 </div>
-<a id="ae640d2a19a094bfdceaa7d33084a9b8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae640d2a19a094bfdceaa7d33084a9b8b">&#9670;&nbsp;</a></span>t8_cmesh_set_partition_uniform()</h2>
+<a id="afe5beafd837a0a0d006805f656269609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5beafd837a0a0d006805f656269609">&#9670;&nbsp;</a></span>t8_cmesh_set_partition_uniform()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2064,14 +2065,14 @@ If an attribute with the given package_id and key already exists, then it will g
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>element_level</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *&#160;</td>
-          <td class="paramname"><em>ts</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *&#160;</td>
+          <td class="paramname"><em>scheme</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2086,7 +2087,7 @@ If an attribute with the given package_id and key already exists, then it will g
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">cmesh</td><td>The cmesh to be updated. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">element_level</td><td>The refinement_level. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>The element scheme describing the refinement pattern. We take ownership. This can be prevented by referencing <b>ts</b> before calling this function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>The element scheme describing the refinement pattern. We take ownership. This can be prevented by referencing <b>scheme</b> before calling this function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2131,8 +2132,8 @@ If an attribute with the given package_id and key already exists, then it will g
 
 </div>
 </div>
-<a id="a7b2e34579894e8d47ebfc44e80e8626b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b2e34579894e8d47ebfc44e80e8626b">&#9670;&nbsp;</a></span>t8_cmesh_set_refine()</h2>
+<a id="a042c985a68e3f76d21fdabe37ef9d189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042c985a68e3f76d21fdabe37ef9d189">&#9670;&nbsp;</a></span>t8_cmesh_set_refine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2146,13 +2147,13 @@ If an attribute with the given package_id and key already exists, then it will g
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>level</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *&#160;</td>
           <td class="paramname"><em>scheme</em>&#160;</td>
         </tr>
         <tr>
@@ -2473,8 +2474,8 @@ If an attribute with the given package_id and key already exists, then it will g
 
 </div>
 </div>
-<a id="a7ef78a54b591c6cb7e5de364c7032849"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ef78a54b591c6cb7e5de364c7032849">&#9670;&nbsp;</a></span>t8_cmesh_uniform_bounds()</h2>
+<a id="a29ec6f551778d4e14bfbf2e370942065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29ec6f551778d4e14bfbf2e370942065">&#9670;&nbsp;</a></span>t8_cmesh_uniform_bounds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2488,14 +2489,14 @@ If an attribute with the given package_id and key already exists, then it will g
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>level</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *&#160;</td>
-          <td class="paramname"><em>ts</em>, </td>
+          <td class="paramtype">const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *&#160;</td>
+          <td class="paramname"><em>scheme</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2540,7 +2541,7 @@ If an attribute with the given package_id and key already exists, then it will g
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh to be considered. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The uniform refinement level to be created. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>The element scheme for which to compute the bounds. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>The element scheme for which to compute the bounds. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">first_local_tree</td><td>The first tree that contains elements belonging to the calling processor. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">child_in_tree_begin</td><td>The global index of the first element belonging to the calling processor. Not computed if NULL. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">last_local_tree</td><td>The last tree that contains elements belonging to the calling processor. </td></tr>

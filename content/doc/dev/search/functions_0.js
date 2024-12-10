@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['deactivate_5ftree_1493',['deactivate_tree',['../structt8__geometry__handler.html#a3ce7364bd4883e3df83b607b9e8bb5ad',1,'t8_geometry_handler']]],
-  ['decompose_1494',['decompose',['../classt8__lagrange__element.html#aaf699a7ebe45ff17b20d5666dadb8cc4',1,'t8_lagrange_element']]]
+  ['add_5feclass_5fscheme_1584',['add_eclass_scheme',['../classt8__scheme__builder.html#a756f48f06d08001d10641f416467d570',1,'t8_scheme_builder']]]
 ];

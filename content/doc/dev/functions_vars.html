@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">3.0.0.76-d675e</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.6-e04eae</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -159,18 +159,15 @@ $(function() {
 <li>eclass
 : <a class="el" href="structt8__cghost.html#a9cffc0a915d4db7694ecb9ccfed9be19">t8_cghost</a>
 , <a class="el" href="structt8__ctree.html#a465d269adfe60a279cc3dc5ce9cdae88">t8_ctree</a>
-, <a class="el" href="structt8__eclass__scheme.html#a2ca2c9c4824ad3886eb095f2e66e205c">t8_eclass_scheme</a>
+, <a class="el" href="classt8__default__scheme__common.html#a0bc4c33e0df7b207b03726c33ed737f8">t8_default_scheme_common&lt; TUnderlyingEclassScheme &gt;</a>
 , <a class="el" href="structt8__stash__class.html#a45366a8322dd037d24cfb2bd90670060">t8_stash_class</a>
 , <a class="el" href="structt8__tree.html#a5533491ed47f12c4afe62702e4fdf855">t8_tree</a>
-</li>
-<li>eclass_schemes
-: <a class="el" href="structt8__scheme__cxx.html#aeb55971c38b4c917b0441a42c1046461">t8_scheme_cxx</a>
 </li>
 <li>element_offsets
 : <a class="el" href="structt8__forest.html#af859f62ef37f16b7699d0c57534b4cf2">t8_forest</a>
 </li>
 <li>element_size
-: <a class="el" href="structt8__eclass__scheme.html#a58ceb81070cc1a68eb37a92ed287ae79">t8_eclass_scheme</a>
+: <a class="el" href="classt8__default__scheme__common.html#a1e844a8f053755b5022e812deeb0f849">t8_default_scheme_common&lt; TUnderlyingEclassScheme &gt;</a>
 </li>
 <li>elements
 : <a class="el" href="structt8__tree.html#a94e340daaf414146002193a5884116f0">t8_tree</a>
@@ -446,7 +443,6 @@ $(function() {
 : <a class="el" href="structt8__cmesh.html#a0f7b9157355206a86a6e327708b13b68">t8_cmesh</a>
 , <a class="el" href="structt8__forest.html#a420bb85f0ac44944c7e04d5d710c59a4">t8_forest</a>
 , <a class="el" href="structt8__forest__ghost.html#a40e44b8f7f10915deff501732185866e">t8_forest_ghost</a>
-, <a class="el" href="structt8__scheme__cxx.html#a44579e71fbcf69dc378b61e9f9a55f82">t8_scheme_cxx</a>
 </li>
 <li>recv_requests
 : <a class="el" href="structt8__ghost__data__exchange__t.html#a06196b2fc3ae23db67ac48ec355d93c8">t8_ghost_data_exchange_t</a>
@@ -462,10 +458,8 @@ $(function() {
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>scheme
-: <a class="el" href="structt8__element__array__t.html#afb5625f904d69a8748b712b1a5947ae9">t8_element_array_t</a>
-</li>
-<li>scheme_cxx
-: <a class="el" href="structt8__forest.html#a304778207ef621f3ae85161d6f269e13">t8_forest</a>
+: <a class="el" href="structt8__element__array__t.html#a9efee184a15b1635d0f22204137fbd54">t8_element_array_t</a>
+, <a class="el" href="structt8__forest.html#a361011062f41c2dc7a79cd7a23302b82">t8_forest</a>
 </li>
 <li>send_buffers
 : <a class="el" href="structt8__ghost__data__exchange__t.html#acaa04d4c52c21e027ae1acfe27cbf3e8">t8_ghost_data_exchange_t</a>
@@ -499,7 +493,7 @@ $(function() {
 : <a class="el" href="structt8__cmesh.html#a7e1926d5e95da7d4ee5db5ef36290efc">t8_cmesh</a>
 </li>
 <li>set_partition_scheme
-: <a class="el" href="structt8__cmesh.html#a53ac9cc52f286701b1392c663408b786">t8_cmesh</a>
+: <a class="el" href="structt8__cmesh.html#a8b417a589c7ac769a6e0b2e418f74b50">t8_cmesh</a>
 </li>
 <li>stash
 : <a class="el" href="structt8__cmesh.html#a8cd04fd30455ce17719573ad556858c8">t8_cmesh</a>
@@ -510,6 +504,9 @@ $(function() {
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>t8code_data
 : <a class="el" href="structt8__forest.html#a7ad3b9940890af8853cff020ffd2abe4">t8_forest</a>
+</li>
+<li>tree_class
+: <a class="el" href="structt8__element__array__t.html#a220cf3eaf2b3f9cc0caf2fbdf654e28b">t8_element_array_t</a>
 </li>
 <li>tree_offsets
 : <a class="el" href="structt8__cmesh.html#a68a1a0da2ce018002a076ab2aa01a610">t8_cmesh</a>
@@ -523,7 +520,7 @@ $(function() {
 : <a class="el" href="structt8__cmesh.html#a5e01668c149230caaa48f344b0cbfddd">t8_cmesh</a>
 </li>
 <li>ts_context
-: <a class="el" href="structt8__eclass__scheme.html#aaf16793349e86b890d03c21a1b82043d">t8_eclass_scheme</a>
+: <a class="el" href="classt8__default__scheme__common.html#a57cfb71df5691e5b67a888d6d76f3edd">t8_default_scheme_common&lt; TUnderlyingEclassScheme &gt;</a>
 </li>
 <li>type
 : <a class="el" href="structt8__dtet.html#aa54f6a407907961760455faa41dd67d9">t8_dtet</a>

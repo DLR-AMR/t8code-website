@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">3.0.0.76-d675e</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.6-e04eae</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -89,19 +89,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3316ba2a848a255bebb43b5a552e9bc5"><td class="memItemLeft" align="right" valign="top"><a id="a3316ba2a848a255bebb43b5a552e9bc5"></a>
-<a class="el" href="structt8__scheme__cxx.html">t8_scheme_cxx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__c__interface_8h.html#a3316ba2a848a255bebb43b5a552e9bc5">t8_scheme_new_default_cxx</a> (void)</td></tr>
-<tr class="memdesc:a3316ba2a848a255bebb43b5a552e9bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default element implementation of t8code. <br /></td></tr>
-<tr class="separator:a3316ba2a848a255bebb43b5a552e9bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a421ebcb3a2bec6e4eb91547113202c6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__c__interface_8h.html#a421ebcb3a2bec6e4eb91547113202c6b">t8_eclass_scheme_is_default</a> (<a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *ts)</td></tr>
-<tr class="memdesc:a421ebcb3a2bec6e4eb91547113202c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given eclass_scheme is one of the default schemes.  <a href="t8__default__c__interface_8h.html#a421ebcb3a2bec6e4eb91547113202c6b">More...</a><br /></td></tr>
-<tr class="separator:a421ebcb3a2bec6e4eb91547113202c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e34dedcfdb7a259a2816afe2da1a727"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__c__interface_8h.html#a2e34dedcfdb7a259a2816afe2da1a727">t8_scheme_new_default</a> (void)</td></tr>
+<tr class="memdesc:a2e34dedcfdb7a259a2816afe2da1a727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default scheme implementation of t8code.  <a href="t8__default__c__interface_8h.html#a2e34dedcfdb7a259a2816afe2da1a727">More...</a><br /></td></tr>
+<tr class="separator:a2e34dedcfdb7a259a2816afe2da1a727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1995edd5388ddcd03ddbf2dc86846eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__default__c__interface_8h.html#af1995edd5388ddcd03ddbf2dc86846eb">t8_eclass_scheme_is_default</a> (const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass)</td></tr>
+<tr class="memdesc:af1995edd5388ddcd03ddbf2dc86846eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given eclass_scheme is one of the default schemes.  <a href="t8__default__c__interface_8h.html#af1995edd5388ddcd03ddbf2dc86846eb">More...</a><br /></td></tr>
+<tr class="separator:af1995edd5388ddcd03ddbf2dc86846eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>C interface definition to the default element implementation. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a421ebcb3a2bec6e4eb91547113202c6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a421ebcb3a2bec6e4eb91547113202c6b">&#9670;&nbsp;</a></span>t8_eclass_scheme_is_default()</h2>
+<a id="af1995edd5388ddcd03ddbf2dc86846eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1995edd5388ddcd03ddbf2dc86846eb">&#9670;&nbsp;</a></span>t8_eclass_scheme_is_default()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -109,9 +108,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_eclass_scheme_is_default </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="t8__element_8h.html#a8e03f65f2a4bb4e98dcbe87685a16db9">t8_eclass_scheme_c</a> *&#160;</td>
-          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *&#160;</td>
+          <td class="paramname"><em>scheme</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td>
+          <td class="paramname"><em>eclass</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -119,11 +128,33 @@ Functions</h2></td></tr>
 <p>Check whether a given eclass_scheme is one of the default schemes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ts</td><td>A (pointer to a) scheme </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>A (pointer to a) scheme </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eclass</td><td>The eclass to check </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True (non-zero) if <em>ts</em> is one of the default schemes, false (zero) otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True (non-zero) if <em>scheme</em> is one of the default schemes, false (zero) otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a2e34dedcfdb7a259a2816afe2da1a727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e34dedcfdb7a259a2816afe2da1a727">&#9670;&nbsp;</a></span>t8_scheme_new_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a>* t8_scheme_new_default </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the default scheme implementation of t8code. </p>
+<p>Return the default scheme implementation of t8code. </p>
 
 </div>
 </div>
