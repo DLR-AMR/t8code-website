@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>t8: src/t8_schemes/t8_default/t8_default_quad/t8_dquad_bits.h Source File</title>
+<title>t8: src/t8_schemes/t8_default/t8_default_quad/t8_default_quad_bits.hxx Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.94-e6b2b</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.97-8aac2</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -75,10 +75,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">t8_dquad_bits.h</div>  </div>
+<div class="title">t8_default_quad_bits.hxx</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="t8__dquad__bits_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="t8__default__quad__bits_8hxx.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  This file is part of t8code.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">  t8code is a C library to manage a collection (a forest) of multiple</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  connected adaptive space-trees of general element classes in parallel.</span></div>
@@ -104,20 +104,18 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define T8_DQUAD_BITS_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__element_8h.html">t8_element.h</a>&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__dquad_8h.html">t8_schemes/t8_default/t8_default_quad/t8_dquad.h</a>&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;t8_schemes/t8_default/t8_default_quad/t8_default_quad.hxx&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;T8_EXTERN_C_BEGIN ();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="t8__dquad__bits_8h.html#ad2c82af7361b5e741ba43dfd2b3c592e">t8_dquad_compute_reference_coords</a> (<span class="keyword">const</span> <a class="code" href="structt8__dquad.html">t8_dquad_t</a> *elem, <span class="keyword">const</span> <span class="keywordtype">double</span> *ref_coords, <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_coords,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="t8__default__quad__bits_8hxx.html#a0b3179ca6dc67d79e4736d40217bd774">t8_dquad_compute_reference_coords</a> (<span class="keyword">const</span> t8_pquad_t *elem, <span class="keyword">const</span> <span class="keywordtype">double</span> *ref_coords, <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_coords,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                   <span class="keywordtype">double</span> *out_coords);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;T8_EXTERN_C_END ();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DQUAD_BITS_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructt8__dquad_html"><div class="ttname"><a href="structt8__dquad.html">t8_dquad</a></div><div class="ttdef"><b>Definition:</b> t8_dquad.h:53</div></div>
-<div class="ttc" id="at8__dquad_8h_html"><div class="ttname"><a href="t8__dquad_8h.html">t8_dquad.h</a></div><div class="ttdoc">TODO: document this.</div></div>
-<div class="ttc" id="at8__dquad__bits_8h_html_ad2c82af7361b5e741ba43dfd2b3c592e"><div class="ttname"><a href="t8__dquad__bits_8h.html#ad2c82af7361b5e741ba43dfd2b3c592e">t8_dquad_compute_reference_coords</a></div><div class="ttdeci">void t8_dquad_compute_reference_coords(const t8_dquad_t *elem, const double *ref_coords, const size_t num_coords, double *out_coords)</div><div class="ttdoc">Convert points in the reference space of a quad element to points in the reference space of the tree ...</div><div class="ttdef"><b>Definition:</b> t8_dquad_bits.c:27</div></div>
+<div class="ttc" id="at8__default__quad__bits_8hxx_html_a0b3179ca6dc67d79e4736d40217bd774"><div class="ttname"><a href="t8__default__quad__bits_8hxx.html#a0b3179ca6dc67d79e4736d40217bd774">t8_dquad_compute_reference_coords</a></div><div class="ttdeci">void t8_dquad_compute_reference_coords(const t8_pquad_t *elem, const double *ref_coords, const size_t num_coords, double *out_coords)</div><div class="ttdoc">Convert points in the reference space of a quad element to points in the reference space of the tree ...</div><div class="ttdef"><b>Definition:</b> t8_default_quad_bits.cxx:27</div></div>
 <div class="ttc" id="at8__element_8h_html"><div class="ttname"><a href="t8__element_8h.html">t8_element.h</a></div><div class="ttdoc">This file defines the opaque element structure and provides some constants for element classes.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
