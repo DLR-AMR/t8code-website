@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.129-adfd3</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.139-72c07</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -124,8 +124,8 @@ $(function() {
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> scheme-&gt;eclass_schemes.size ();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classt8__scheme.html">t8_scheme</a> *</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classt8__scheme__builder.html#ab1b3a973584f1c61bfd3871132c483de">   65</a></span>&#160;  <a class="code" href="classt8__scheme__builder.html#ab1b3a973584f1c61bfd3871132c483de">build_scheme</a> ()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <a class="code" href="classt8__scheme.html">t8_scheme</a> *</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classt8__scheme__builder.html#abebc93b9bda44cd79430530b133f99fd">   65</a></span>&#160;  <a class="code" href="classt8__scheme__builder.html#abebc93b9bda44cd79430530b133f99fd">build_scheme</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> scheme;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
@@ -137,7 +137,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_SCHEME_BUILDER_HXX */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclasst8__scheme__builder_html"><div class="ttname"><a href="classt8__scheme__builder.html">t8_scheme_builder</a></div><div class="ttdoc">The scheme builder adds eclass schemes to a scheme container and returns it.</div><div class="ttdef"><b>Definition:</b> t8_scheme_builder.hxx:36</div></div>
 <div class="ttc" id="aclasst8__scheme__builder_html_a756f48f06d08001d10641f416467d570"><div class="ttname"><a href="classt8__scheme__builder.html#a756f48f06d08001d10641f416467d570">t8_scheme_builder::add_eclass_scheme</a></div><div class="ttdeci">size_t add_eclass_scheme(_Args &amp;&amp;...args)</div><div class="ttdoc">Add a new element class scheme to the scheme.</div><div class="ttdef"><b>Definition:</b> t8_scheme_builder.hxx:51</div></div>
-<div class="ttc" id="aclasst8__scheme__builder_html_ab1b3a973584f1c61bfd3871132c483de"><div class="ttname"><a href="classt8__scheme__builder.html#ab1b3a973584f1c61bfd3871132c483de">t8_scheme_builder::build_scheme</a></div><div class="ttdeci">t8_scheme * build_scheme() const</div><div class="ttdoc">Build the scheme.</div><div class="ttdef"><b>Definition:</b> t8_scheme_builder.hxx:65</div></div>
+<div class="ttc" id="aclasst8__scheme__builder_html_abebc93b9bda44cd79430530b133f99fd"><div class="ttname"><a href="classt8__scheme__builder.html#abebc93b9bda44cd79430530b133f99fd">t8_scheme_builder::build_scheme</a></div><div class="ttdeci">const t8_scheme * build_scheme() const</div><div class="ttdoc">Build the scheme.</div><div class="ttdef"><b>Definition:</b> t8_scheme_builder.hxx:65</div></div>
 <div class="ttc" id="aclasst8__scheme_html"><div class="ttname"><a href="classt8__scheme.html">t8_scheme</a></div><div class="ttdoc">This class holds one or more element schemes.</div><div class="ttdef"><b>Definition:</b> t8_scheme.hxx:65</div></div>
 <div class="ttc" id="aclasst8__scheme_html_a33f12c5d7d0853ba11075c0ef7de86d1"><div class="ttname"><a href="classt8__scheme.html#a33f12c5d7d0853ba11075c0ef7de86d1">t8_scheme::scheme_var</a></div><div class="ttdeci">std::variant&lt; t8_default_scheme_vertex, t8_default_scheme_line, t8_default_scheme_quad, t8_default_scheme_tri, t8_default_scheme_hex, t8_default_scheme_tet, t8_default_scheme_prism, t8_default_scheme_pyramid &gt; scheme_var</div><div class="ttdoc">Variant to hold an eclass scheme.</div><div class="ttdef"><b>Definition:</b> t8_scheme.hxx:96</div></div>
 <div class="ttc" id="at8_8h_html_a8316c6b1b62566cd058ff3c3a88d3504"><div class="ttname"><a href="t8_8h.html#a8316c6b1b62566cd058ff3c3a88d3504">t8_debugf</a></div><div class="ttdeci">void t8_debugf(const char *fmt,...)</div><div class="ttdoc">Log a message, no matter what rank, with priority SC_LP_DEBUG.</div><div class="ttdef"><b>Definition:</b> t8.c:123</div></div>
