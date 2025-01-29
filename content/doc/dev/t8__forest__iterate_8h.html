@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.257-c2958</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.273-7c765</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -100,6 +100,12 @@ typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_it
 <tr class="memitem:a738431225a63390f5ff3141220d69128"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__iterate_8h.html#a738431225a63390f5ff3141220d69128">t8_forest_query_fn</a>) (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int is_leaf, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_leaf_index, sc_array_t *queries, sc_array_t *query_indices, int *query_matches, const size_t num_active_queries)</td></tr>
 <tr class="memdesc:a738431225a63390f5ff3141220d69128"><td class="mdescLeft">&#160;</td><td class="mdescRight">A call-back function used by t8_forest_search for queries.  <a href="t8__forest__iterate_8h.html#a738431225a63390f5ff3141220d69128">More...</a><br /></td></tr>
 <tr class="separator:a738431225a63390f5ff3141220d69128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf96d8cc6dcdf48a295788b0fa16f608"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__iterate_8h.html#abf96d8cc6dcdf48a295788b0fa16f608">t8_forest_partition_search_fn</a>) (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast)</td></tr>
+<tr class="memdesc:abf96d8cc6dcdf48a295788b0fa16f608"><td class="mdescLeft">&#160;</td><td class="mdescRight">A call-back function used by <a class="el" href="t8__forest__iterate_8h.html#a35e96597c7a7bcf24f93749e1d6988c3">t8_forest_search_partition</a> describing a search-criterion.  <a href="t8__forest__iterate_8h.html#abf96d8cc6dcdf48a295788b0fa16f608">More...</a><br /></td></tr>
+<tr class="separator:abf96d8cc6dcdf48a295788b0fa16f608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1bf6bae5235ff7b4a059372a059e14"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__iterate_8h.html#ada1bf6bae5235ff7b4a059372a059e14">t8_forest_partition_query_fn</a>) (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast, void *queries, sc_array_t *query_indices, int *query_matches, const size_t num_active_queries)</td></tr>
+<tr class="memdesc:ada1bf6bae5235ff7b4a059372a059e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">A call-back function used by <a class="el" href="t8__forest__iterate_8h.html#a35e96597c7a7bcf24f93749e1d6988c3">t8_forest_search_partition</a> for queries.  <a href="t8__forest__iterate_8h.html#ada1bf6bae5235ff7b4a059372a059e14">More...</a><br /></td></tr>
+<tr class="separator:ada1bf6bae5235ff7b4a059372a059e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -115,10 +121,72 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_search</b> 
 <tr class="memitem:a0bf6c7e6e226f7df8307df121aa81391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__iterate_8h.html#a0bf6c7e6e226f7df8307df121aa81391">t8_forest_iterate_replace</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest_new, <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest_old, <a class="el" href="t8__forest__general_8h.html#a38ad7a6d7102f314ede498a46533b494">t8_forest_replace_t</a> replace_fn)</td></tr>
 <tr class="memdesc:a0bf6c7e6e226f7df8307df121aa81391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given two forest where the elements in one forest are either direct children or parents of the elements in the other forest compare the two forests and for each refined element or coarsened family in the old one, call a callback function providing the local indices of the old and new elements.  <a href="t8__forest__iterate_8h.html#a0bf6c7e6e226f7df8307df121aa81391">More...</a><br /></td></tr>
 <tr class="separator:a0bf6c7e6e226f7df8307df121aa81391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e96597c7a7bcf24f93749e1d6988c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__iterate_8h.html#a35e96597c7a7bcf24f93749e1d6988c3">t8_forest_search_partition</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8__forest__iterate_8h.html#abf96d8cc6dcdf48a295788b0fa16f608">t8_forest_partition_search_fn</a> search_fn, <a class="el" href="t8__forest__iterate_8h.html#ada1bf6bae5235ff7b4a059372a059e14">t8_forest_partition_query_fn</a> query_fn, sc_array_t *queries)</td></tr>
+<tr class="memdesc:a35e96597c7a7bcf24f93749e1d6988c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a top-down search of the global partition, executing a callback on each intermediate element.  <a href="t8__forest__iterate_8h.html#a35e96597c7a7bcf24f93749e1d6988c3">More...</a><br /></td></tr>
+<tr class="separator:a35e96597c7a7bcf24f93749e1d6988c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We define various routines to iterate through (parts of) a forest and execute callback functions on the leaf elements. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ada1bf6bae5235ff7b4a059372a059e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1bf6bae5235ff7b4a059372a059e14">&#9670;&nbsp;</a></span>t8_forest_partition_query_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* t8_forest_partition_query_fn) (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast, void *queries, sc_array_t *query_indices, int *query_matches, const size_t num_active_queries)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A call-back function used by <a class="el" href="t8__forest__iterate_8h.html#a35e96597c7a7bcf24f93749e1d6988c3">t8_forest_search_partition</a> for queries. </p>
+<p>Is called on an element and all queries are checked on that element. All positive queries are passed further down to the children of the element. The results of the check are stored in <em>query_matches</em>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>the forest </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltreeid</td><td>the local tree id of the current tree in the cmesh. Since the cmesh has to be replicated, it coincides with the global tree id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>the element for which the query is executed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfirst</td><td>the first processor that owns part of <em>element</em>. Guaranteed to be non-empty. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plast</td><td>the last processor that owns part of <em>element</em>. Guaranteed to be non-empty. if this is equal to <em>pfirst</em>, then the recursion will stop for <em>element's</em> branch after this function returns. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">queries</td><td>an array of queries that are checked by the function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">query_indices</td><td>an array of size_t entries, where each entry is an index of a query in <em>queries</em>. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">query_matches</td><td>an array of length <em>num_active_queries</em>. If the element is not a leaf must be set to true or false at the i-th index for each query, specifying whether the element 'matches' the query of the i-th query index or not. When the element is a leaf we can return before all entries are set. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_active_queries</td><td>The number of currently active queries (equals the number of entries of <em>query_matches</em> and entries of <em>query_indices</em>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abf96d8cc6dcdf48a295788b0fa16f608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf96d8cc6dcdf48a295788b0fa16f608">&#9670;&nbsp;</a></span>t8_forest_partition_search_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* t8_forest_partition_search_fn) (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A call-back function used by <a class="el" href="t8__forest__iterate_8h.html#a35e96597c7a7bcf24f93749e1d6988c3">t8_forest_search_partition</a> describing a search-criterion. </p>
+<p>Is called on an element and the search criterion should be checked on that element. Return true if the search criterion is met, false otherwise.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>the forest </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltreeid</td><td>the local tree id of the current tree in the cmesh. Since the cmesh has to be replicated, it coincides with the global tree id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>the element for which the search criterion is checked </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfirst</td><td>the first processor that owns part of <em>element</em>. Guaranteed to be non-empty. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plast</td><td>the last processor that owns part of <em>element</em>. Guaranteed to be non-empty. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>non-zero if the search criterion is met, zero otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a738431225a63390f5ff3141220d69128"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a738431225a63390f5ff3141220d69128">&#9670;&nbsp;</a></span>t8_forest_query_fn</h2>
 
@@ -224,6 +292,58 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_search</b> 
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>To pass a user pointer to <em>replace_fn</em> use <a class="el" href="t8__forest__general_8h.html#a7bc48a9274b531319b4e28f983050152">t8_forest_set_user_data</a> and <a class="el" href="t8__forest__general_8h.html#a384b80956287ea7345216785ce63f698">t8_forest_get_user_data</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a35e96597c7a7bcf24f93749e1d6988c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35e96597c7a7bcf24f93749e1d6988c3">&#9670;&nbsp;</a></span>t8_forest_search_partition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_forest_search_partition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
+          <td class="paramname"><em>forest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__forest__iterate_8h.html#abf96d8cc6dcdf48a295788b0fa16f608">t8_forest_partition_search_fn</a>&#160;</td>
+          <td class="paramname"><em>search_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__forest__iterate_8h.html#ada1bf6bae5235ff7b4a059372a059e14">t8_forest_partition_query_fn</a>&#160;</td>
+          <td class="paramname"><em>query_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_array_t *&#160;</td>
+          <td class="paramname"><em>queries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform a top-down search of the global partition, executing a callback on each intermediate element. </p>
+<p>The search will enter each tree at least once. The recursion will only go down branches that are split between multiple processors. This is not a collective function. It does not communicate. The function expects the coarse mesh to be replicated. If the callback returns false for an element, its descendants are not further searched. To pass user data to <b>search_fn</b> function use <a class="el" href="t8__forest__general_8h.html#a7bc48a9274b531319b4e28f983050152">t8_forest_set_user_data</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>the forest to be searched </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">search_fn</td><td>a search callback function called on elements </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">query_fn</td><td>a query callback function called for all active queries of an element </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">queries</td><td>an array of queries that are checked by the function </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
