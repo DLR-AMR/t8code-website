@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['find_5fowner_5fdata_5ft_1432',['find_owner_data_t',['../structfind__owner__data__t.html',1,'']]]
+  ['addable_1454',['Addable',['../structAddable.html',1,'']]],
+  ['addassignable_1455',['AddAssignable',['../structAddAssignable.html',1,'']]]
 ];
