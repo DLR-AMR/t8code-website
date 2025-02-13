@@ -1189,7 +1189,7 @@ var searchData=
   ['t8_5fwindows_2eh_1409',['t8_windows.h',['../t8__windows_8h.html',1,'']]],
   ['t8code_20_2d_20parallel_20algorithms_20and_20data_20structures_20for_20tree_2dbased_20adaptive_20mesh_20refinement_20with_20arbitrary_20element_20shapes_2e_1410',['t8code - Parallel algorithms and data structures for tree-based adaptive mesh refinement with arbitrary element shapes.',['../index.html',1,'']]],
   ['t8code_5fdata_1411',['t8code_data',['../structt8__forest.html#a7ad3b9940890af8853cff020ffd2abe4',1,'t8_forest']]],
-  ['t8type_1412',['T8Type',['../classT8Type.html',1,'T8Type&lt; T, Parameter, competence &gt;'],['../classT8Type.html#ad930c29591fdcf8497ae5aedaff19301',1,'T8Type::T8Type()']]],
+  ['t8type_1412',['T8Type',['../classT8Type.html',1,'T8Type&lt; T, Parameter, competence &gt;'],['../classT8Type.html#aa709fdf352d80185cd3dda189c55c972',1,'T8Type::T8Type()']]],
   ['tree_5fclass_1413',['tree_class',['../structt8__element__array__t.html#a220cf3eaf2b3f9cc0caf2fbdf654e28b',1,'t8_element_array_t']]],
   ['tree_5fcompatible_5fwith_5fgeom_1414',['tree_compatible_with_geom',['../structt8__geometry__handler.html#a1695420f6aa51bd73fcdd94c12018c18',1,'t8_geometry_handler']]],
   ['tree_5fnegative_5fvolume_1415',['tree_negative_volume',['../structt8__geometry__handler.html#a9340eec842bc93e0fbdd38b6100cd7b1',1,'t8_geometry_handler']]],

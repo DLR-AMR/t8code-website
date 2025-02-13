@@ -750,7 +750,7 @@ var searchData=
   ['t8_5fstash_5fjoinface_5fsort_2531',['t8_stash_joinface_sort',['../t8__cmesh__stash_8c.html#aa78203cb246164093bf5cff8b002800c',1,'t8_stash_joinface_sort(const t8_stash_t stash):&#160;t8_cmesh_stash.c'],['../t8__cmesh__stash_8h.html#a91822cc8045c3c7bccf8758ee2703734',1,'t8_stash_joinface_sort(t8_stash_t stash):&#160;t8_cmesh_stash.c']]],
   ['t8_5ftriangle_5fpoint_5finside_2532',['t8_triangle_point_inside',['../t8__geometry__helpers_8h.html#ad858d045c1bd43284c82691b0b9ae30c',1,'t8_geometry_helpers.c']]],
   ['t8_5fvertex_5fpoint_5finside_2533',['t8_vertex_point_inside',['../t8__geometry__helpers_8h.html#a3130db310c0cf36db0b63a7f18016399',1,'t8_geometry_helpers.c']]],
-  ['t8type_2534',['T8Type',['../classT8Type.html#ad930c29591fdcf8497ae5aedaff19301',1,'T8Type']]],
+  ['t8type_2534',['T8Type',['../classT8Type.html#aa709fdf352d80185cd3dda189c55c972',1,'T8Type']]],
   ['tree_5fcompatible_5fwith_5fgeom_2535',['tree_compatible_with_geom',['../structt8__geometry__handler.html#a1695420f6aa51bd73fcdd94c12018c18',1,'t8_geometry_handler']]],
   ['tree_5fnegative_5fvolume_2536',['tree_negative_volume',['../structt8__geometry__handler.html#a9340eec842bc93e0fbdd38b6100cd7b1',1,'t8_geometry_handler']]]
 ];
