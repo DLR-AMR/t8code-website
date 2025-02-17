@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.413-f5d47b</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.417-2874f</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -100,28 +100,31 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__cmesh_8h.html">t8_cmesh.h</a>&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__cmesh__types_8h.html">t8_cmesh/t8_cmesh_types.h</a>&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__geometry__handler_8hxx.html">t8_geometry/t8_geometry_handler.hxx</a>&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> geometry_type, <span class="keyword">typename</span>... _args&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">inline</span> geometry_type *</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="t8__cmesh_8hxx.html#a034036660d74508b44d8933827c9e1ad">   43</a></span>&#160;<a class="code" href="t8__cmesh_8hxx.html#a034036660d74508b44d8933827c9e1ad">t8_cmesh_register_geometry</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, _args &amp;&amp;...args)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">if</span> (cmesh-&gt;<a class="code" href="structt8__cmesh.html#aa511a3d169238b8610212ac77f328f1c">geometry_handler</a> == NULL) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">/* The handler was not constructed, do it now. */</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    cmesh-&gt;<a class="code" href="structt8__cmesh.html#aa511a3d169238b8610212ac77f328f1c">geometry_handler</a> = <span class="keyword">new</span> <a class="code" href="structt8__geometry__handler.html">t8_geometry_handler</a> ();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> cmesh-&gt;<a class="code" href="structt8__cmesh.html#aa511a3d169238b8610212ac77f328f1c">geometry_handler</a>-&gt;<a class="code" href="structt8__geometry__handler.html#a293d2ac087369735fc230ca663691c4b">register_geometry</a>&lt;geometry_type&gt; (std::forward&lt;_args&gt; (args)...);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef T8_CMESH_HXX</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define T8_CMESH_HXX</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__cmesh_8h.html">t8_cmesh.h</a>&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__cmesh__types_8h.html">t8_cmesh/t8_cmesh_types.h</a>&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__geometry__handler_8hxx.html">t8_geometry/t8_geometry_handler.hxx</a>&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> geometry_type, <span class="keyword">typename</span>... _args&gt;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">inline</span> geometry_type *</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="t8__cmesh_8hxx.html#a034036660d74508b44d8933827c9e1ad">   44</a></span>&#160;<a class="code" href="t8__cmesh_8hxx.html#a034036660d74508b44d8933827c9e1ad">t8_cmesh_register_geometry</a> (<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, _args &amp;&amp;...args)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">if</span> (cmesh-&gt;<a class="code" href="structt8__cmesh.html#aa511a3d169238b8610212ac77f328f1c">geometry_handler</a> == NULL) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/* The handler was not constructed, do it now. */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    cmesh-&gt;<a class="code" href="structt8__cmesh.html#aa511a3d169238b8610212ac77f328f1c">geometry_handler</a> = <span class="keyword">new</span> <a class="code" href="structt8__geometry__handler.html">t8_geometry_handler</a> ();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">return</span> cmesh-&gt;<a class="code" href="structt8__cmesh.html#aa511a3d169238b8610212ac77f328f1c">geometry_handler</a>-&gt;<a class="code" href="structt8__geometry__handler.html#a293d2ac087369735fc230ca663691c4b">register_geometry</a>&lt;geometry_type&gt; (std::forward&lt;_args&gt; (args)...);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_CMESH_HXX */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:88</div></div>
 <div class="ttc" id="astructt8__cmesh_html_aa511a3d169238b8610212ac77f328f1c"><div class="ttname"><a href="structt8__cmesh.html#aa511a3d169238b8610212ac77f328f1c">t8_cmesh::geometry_handler</a></div><div class="ttdeci">t8_geometry_handler_c * geometry_handler</div><div class="ttdoc">Handles all geometries that are used by trees in this cmesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:138</div></div>
 <div class="ttc" id="astructt8__geometry__handler_html"><div class="ttname"><a href="structt8__geometry__handler.html">t8_geometry_handler</a></div><div class="ttdef"><b>Definition:</b> t8_geometry_handler.hxx:38</div></div>
 <div class="ttc" id="astructt8__geometry__handler_html_a293d2ac087369735fc230ca663691c4b"><div class="ttname"><a href="structt8__geometry__handler.html#a293d2ac087369735fc230ca663691c4b">t8_geometry_handler::register_geometry</a></div><div class="ttdeci">geometry_type * register_geometry(_args &amp;&amp;...args)</div><div class="ttdoc">Register a geometry with the geometry handler.</div><div class="ttdef"><b>Definition:</b> t8_geometry_handler.hxx:70</div></div>
 <div class="ttc" id="at8__cmesh_8h_html"><div class="ttname"><a href="t8__cmesh_8h.html">t8_cmesh.h</a></div><div class="ttdoc">We define the coarse mesh of trees in this file.</div></div>
-<div class="ttc" id="at8__cmesh_8hxx_html_a034036660d74508b44d8933827c9e1ad"><div class="ttname"><a href="t8__cmesh_8hxx.html#a034036660d74508b44d8933827c9e1ad">t8_cmesh_register_geometry</a></div><div class="ttdeci">geometry_type * t8_cmesh_register_geometry(t8_cmesh_t cmesh, _args &amp;&amp;...args)</div><div class="ttdoc">Create and register a geometry with the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh.hxx:43</div></div>
+<div class="ttc" id="at8__cmesh_8hxx_html_a034036660d74508b44d8933827c9e1ad"><div class="ttname"><a href="t8__cmesh_8hxx.html#a034036660d74508b44d8933827c9e1ad">t8_cmesh_register_geometry</a></div><div class="ttdeci">geometry_type * t8_cmesh_register_geometry(t8_cmesh_t cmesh, _args &amp;&amp;...args)</div><div class="ttdoc">Create and register a geometry with the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh.hxx:44</div></div>
 <div class="ttc" id="at8__cmesh__types_8h_html"><div class="ttname"><a href="t8__cmesh__types_8h.html">t8_cmesh_types.h</a></div><div class="ttdoc">We define here the datatypes needed for internal cmesh routines.</div></div>
 <div class="ttc" id="at8__geometry__handler_8hxx_html"><div class="ttname"><a href="t8__geometry__handler_8hxx.html">t8_geometry_handler.hxx</a></div><div class="ttdoc">General geometry definitions.</div></div>
 </div><!-- fragment --></div><!-- contents -->
