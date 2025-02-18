@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.423-3035</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.430-e1f83</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -71,7 +71,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">t8_default_scheme_vertex Class Reference</div>  </div>
 </div><!--header-->
@@ -199,9 +200,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08cecbeb60eafed0b9dc61c7c6fe59ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#a08cecbeb60eafed0b9dc61c7c6fe59ba">element_get_face_neighbor_inside</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *neigh, int face, int *neigh_face) const</td></tr>
 <tr class="memdesc:a08cecbeb60eafed0b9dc61c7c6fe59ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the face neighbor of a given element if this face neighbor is inside the root tree.  <a href="classt8__default__scheme__vertex.html#a08cecbeb60eafed0b9dc61c7c6fe59ba">More...</a><br /></td></tr>
 <tr class="separator:a08cecbeb60eafed0b9dc61c7c6fe59ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0ca9b317ed12b2c3c6d50fc381d040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#a1e0ca9b317ed12b2c3c6d50fc381d040">element_set_linear_id</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int level, <a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a> id) const</td></tr>
-<tr class="memdesc:a1e0ca9b317ed12b2c3c6d50fc381d040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the entries of an allocated element according to a given linear id in a uniform refinement.  <a href="classt8__default__scheme__vertex.html#a1e0ca9b317ed12b2c3c6d50fc381d040">More...</a><br /></td></tr>
-<tr class="separator:a1e0ca9b317ed12b2c3c6d50fc381d040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50c023fdb44e8929f95e5b65b823cb54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#a50c023fdb44e8929f95e5b65b823cb54">element_get_linear_id</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, int level) const</td></tr>
 <tr class="memdesc:a50c023fdb44e8929f95e5b65b823cb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the linear id of a given element in a hypothetical uniform refinement of a given level.  <a href="classt8__default__scheme__vertex.html#a50c023fdb44e8929f95e5b65b823cb54">More...</a><br /></td></tr>
 <tr class="separator:a50c023fdb44e8929f95e5b65b823cb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,9 +227,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2af7a9aec84fc586dadb429f92e000c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#a2af7a9aec84fc586dadb429f92e000c0">refines_irregular</a> (void) const</td></tr>
 <tr class="memdesc:a2af7a9aec84fc586dadb429f92e000c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if there is one element in the tree, that does not refine into 2^dim children.  <a href="classt8__default__scheme__vertex.html#a2af7a9aec84fc586dadb429f92e000c0">More...</a><br /></td></tr>
 <tr class="separator:a2af7a9aec84fc586dadb429f92e000c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b2b5f3ea7395703cd93cf66ddbfa1f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#a7b2b5f3ea7395703cd93cf66ddbfa1f4">element_is_valid</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t) const</td></tr>
-<tr class="memdesc:a7b2b5f3ea7395703cd93cf66ddbfa1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given element can be considered as 'valid' and it is safe to perform any of the above algorithms on it.  <a href="classt8__default__scheme__vertex.html#a7b2b5f3ea7395703cd93cf66ddbfa1f4">More...</a><br /></td></tr>
-<tr class="separator:a7b2b5f3ea7395703cd93cf66ddbfa1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c1946d888a5b067ce2d34a83d678299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#a8c1946d888a5b067ce2d34a83d678299">element_to_string</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, char *debug_string, const int string_size) const</td></tr>
 <tr class="memdesc:a8c1946d888a5b067ce2d34a83d678299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a given element.  <a href="classt8__default__scheme__vertex.html#a8c1946d888a5b067ce2d34a83d678299">More...</a><br /></td></tr>
 <tr class="separator:a8c1946d888a5b067ce2d34a83d678299"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,6 +304,15 @@ constexpr TUnderlying &amp;&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memitem:abba1bcc85b8fb7b29cfdb0e60d225774 inherit pub_methods_structt8__crtp__operator"><td class="memItemLeft" align="right" valign="top"><a id="abba1bcc85b8fb7b29cfdb0e60d225774"></a>
 constexpr const TUnderlying &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>underlying</b> () const noexcept</td></tr>
 <tr class="separator:abba1bcc85b8fb7b29cfdb0e60d225774 inherit pub_methods_structt8__crtp__operator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1cb8685e71d345d124a84f39d479fd3b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#a1cb8685e71d345d124a84f39d479fd3b">element_set_linear_id</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int level, const <a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a> id)</td></tr>
+<tr class="memdesc:a1cb8685e71d345d124a84f39d479fd3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the entries of an allocated element according to a given linear id in a uniform refinement.  <a href="classt8__default__scheme__vertex.html#a1cb8685e71d345d124a84f39d479fd3b">More...</a><br /></td></tr>
+<tr class="separator:a1cb8685e71d345d124a84f39d479fd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c3cc065540ad06be9e48ec072ec79a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#a61c3cc065540ad06be9e48ec072ec79a">element_is_valid</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t)</td></tr>
+<tr class="memdesc:a61c3cc065540ad06be9e48ec072ec79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a given element can be considered as 'valid' and it is safe to perform any of the above algorithms on it.  <a href="classt8__default__scheme__vertex.html#a61c3cc065540ad06be9e48ec072ec79a">More...</a><br /></td></tr>
+<tr class="separator:a61c3cc065540ad06be9e48ec072ec79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -1881,12 +1885,12 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>In debugging mode, an element that was passed to <a class="el" href="classt8__default__scheme__vertex.html#ace746977e8f599fd938f6702373e00a0">element_init</a> must pass <a class="el" href="classt8__default__scheme__vertex.html#a7b2b5f3ea7395703cd93cf66ddbfa1f4">element_is_valid</a>. </dd>
+<dl class="section note"><dt>Note</dt><dd>In debugging mode, an element that was passed to <a class="el" href="classt8__default__scheme__vertex.html#ace746977e8f599fd938f6702373e00a0">element_init</a> must pass <a class="el" href="classt8__default__scheme__vertex.html#a61c3cc065540ad06be9e48ec072ec79a">element_is_valid</a>. </dd>
 <dd>
 If an element was created by <a class="el" href="classt8__default__scheme__vertex.html#a8ddc31ab972a292ab900a9d13777f6bf">element_new</a> then <a class="el" href="classt8__default__scheme__vertex.html#ace746977e8f599fd938f6702373e00a0">element_init</a> may not be called for it. Thus, <a class="el" href="classt8__default__scheme__vertex.html#a8ddc31ab972a292ab900a9d13777f6bf">element_new</a> should initialize an element in the same way as a call to <a class="el" href="classt8__default__scheme__vertex.html#ace746977e8f599fd938f6702373e00a0">element_init</a> would. Thus, if <em>called_new</em> is true this function should usually do nothing. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classt8__default__scheme__vertex.html#a8ddc31ab972a292ab900a9d13777f6bf" title="Allocate memory for an array of vertices and initialize them.">element_new</a> </dd>
 <dd>
-<a class="el" href="classt8__default__scheme__vertex.html#a7b2b5f3ea7395703cd93cf66ddbfa1f4" title="Query whether a given element can be considered as &#39;valid&#39; and it is safe to perform any of the above...">element_is_valid</a> </dd></dl>
+<a class="el" href="classt8__default__scheme__vertex.html#a61c3cc065540ad06be9e48ec072ec79a" title="Query whether a given element can be considered as &#39;valid&#39; and it is safe to perform any of the above...">element_is_valid</a> </dd></dl>
 
 </div>
 </div>
@@ -1967,20 +1971,28 @@ If an element was created by <a class="el" href="classt8__default__scheme__verte
 
 </div>
 </div>
-<a id="a7b2b5f3ea7395703cd93cf66ddbfa1f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b2b5f3ea7395703cd93cf66ddbfa1f4">&#9670;&nbsp;</a></span>element_is_valid()</h2>
+<a id="a61c3cc065540ad06be9e48ec072ec79a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c3cc065540ad06be9e48ec072ec79a">&#9670;&nbsp;</a></span>element_is_valid()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int t8_default_scheme_vertex::element_is_valid </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Query whether a given element can be considered as 'valid' and it is safe to perform any of the above algorithms on it. </p>
@@ -2211,20 +2223,23 @@ We recommend to use the assertion T8_ASSERT (element_is_valid (elem)) in the imp
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Not every element that is created in t8code will be created by a call to this function. However, if an element is not created using <a class="el" href="classt8__default__scheme__vertex.html#a8ddc31ab972a292ab900a9d13777f6bf">element_new</a>, then it is guaranteed that <a class="el" href="classt8__default__scheme__vertex.html#ace746977e8f599fd938f6702373e00a0">element_init</a> is called on it. </dd>
 <dd>
-In debugging mode, an element that was created with <a class="el" href="classt8__default__scheme__vertex.html#a8ddc31ab972a292ab900a9d13777f6bf">element_new</a> must pass <a class="el" href="classt8__default__scheme__vertex.html#a7b2b5f3ea7395703cd93cf66ddbfa1f4">element_is_valid</a>. </dd>
+In debugging mode, an element that was created with <a class="el" href="classt8__default__scheme__vertex.html#a8ddc31ab972a292ab900a9d13777f6bf">element_new</a> must pass <a class="el" href="classt8__default__scheme__vertex.html#a61c3cc065540ad06be9e48ec072ec79a">element_is_valid</a>. </dd>
 <dd>
 If an element was created by <a class="el" href="classt8__default__scheme__vertex.html#a8ddc31ab972a292ab900a9d13777f6bf">element_new</a> then <a class="el" href="classt8__default__scheme__vertex.html#ace746977e8f599fd938f6702373e00a0">element_init</a> may not be called for it. Thus, <a class="el" href="classt8__default__scheme__vertex.html#a8ddc31ab972a292ab900a9d13777f6bf">element_new</a> should initialize an element in the same way as a call to <a class="el" href="classt8__default__scheme__vertex.html#ace746977e8f599fd938f6702373e00a0">element_init</a> would. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classt8__default__scheme__vertex.html#ace746977e8f599fd938f6702373e00a0" title="Initialize an array of allocated vertex elements.">element_init</a> </dd>
 <dd>
-<a class="el" href="classt8__default__scheme__vertex.html#a7b2b5f3ea7395703cd93cf66ddbfa1f4" title="Query whether a given element can be considered as &#39;valid&#39; and it is safe to perform any of the above...">element_is_valid</a> </dd></dl>
+<a class="el" href="classt8__default__scheme__vertex.html#a61c3cc065540ad06be9e48ec072ec79a" title="Query whether a given element can be considered as &#39;valid&#39; and it is safe to perform any of the above...">element_is_valid</a> </dd></dl>
 
 </div>
 </div>
-<a id="a1e0ca9b317ed12b2c3c6d50fc381d040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e0ca9b317ed12b2c3c6d50fc381d040">&#9670;&nbsp;</a></span>element_set_linear_id()</h2>
+<a id="a1cb8685e71d345d124a84f39d479fd3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb8685e71d345d124a84f39d479fd3b">&#9670;&nbsp;</a></span>element_set_linear_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void t8_default_scheme_vertex::element_set_linear_id </td>
@@ -2235,21 +2250,26 @@ If an element was created by <a class="el" href="classt8__default__scheme__verte
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>level</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a>&#160;</td>
           <td class="paramname"><em>id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Initialize the entries of an allocated element according to a given linear id in a uniform refinement. </p>
