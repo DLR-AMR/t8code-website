@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.651-ce2b</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.654-140d3</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -255,9 +255,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5423713da47d7471762d6eaa947d8db3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__pyramid.html#a5423713da47d7471762d6eaa947d8db3">element_to_string</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, char *debug_string, const int string_size) const</td></tr>
 <tr class="memdesc:a5423713da47d7471762d6eaa947d8db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a given element.  <a href="classt8__default__scheme__pyramid.html#a5423713da47d7471762d6eaa947d8db3">More...</a><br /></td></tr>
 <tr class="separator:a5423713da47d7471762d6eaa947d8db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae623c52f09b47eb511afe5da9032ff5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__pyramid.html#ae623c52f09b47eb511afe5da9032ff5d">get_root</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const</td></tr>
-<tr class="memdesc:ae623c52f09b47eb511afe5da9032ff5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills an element with the root element.  <a href="classt8__default__scheme__pyramid.html#ae623c52f09b47eb511afe5da9032ff5d">More...</a><br /></td></tr>
-<tr class="separator:ae623c52f09b47eb511afe5da9032ff5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3185e32fcc8c97d11fc832e6db29b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__pyramid.html#a5b3185e32fcc8c97d11fc832e6db29b3">set_to_root</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const</td></tr>
+<tr class="memdesc:a5b3185e32fcc8c97d11fc832e6db29b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills an element with the root element.  <a href="classt8__default__scheme__pyramid.html#a5b3185e32fcc8c97d11fc832e6db29b3">More...</a><br /></td></tr>
+<tr class="separator:a5b3185e32fcc8c97d11fc832e6db29b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb65972a9ab6b7efb01bd7232b8d8d41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__pyramid.html#afb65972a9ab6b7efb01bd7232b8d8d41">element_MPI_Pack</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **const elements, const unsigned int count, void *send_buffer, int buffer_size, int *position, sc_MPI_Comm comm) const</td></tr>
 <tr class="memdesc:afb65972a9ab6b7efb01bd7232b8d8d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack multiple elements into contiguous memory, so they can be sent via MPI.  <a href="classt8__default__scheme__pyramid.html#afb65972a9ab6b7efb01bd7232b8d8d41">More...</a><br /></td></tr>
 <tr class="separator:afb65972a9ab6b7efb01bd7232b8d8d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2530,32 +2530,6 @@ If an element was created by <a class="el" href="classt8__default__scheme__pyram
 
 </div>
 </div>
-<a id="ae623c52f09b47eb511afe5da9032ff5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae623c52f09b47eb511afe5da9032ff5d">&#9670;&nbsp;</a></span>get_root()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void t8_default_scheme_pyramid::get_root </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>elem</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Fills an element with the root element. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>The element to be filled with root. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a6a0c0407f3e0a58b80e51d67e781f027"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a0c0407f3e0a58b80e51d67e781f027">&#9670;&nbsp;</a></span>refines_irregular()</h2>
 
@@ -2577,6 +2551,32 @@ If an element was created by <a class="el" href="classt8__default__scheme__pyram
 <li><dl class="section return"><dt>Returns</dt><dd>1, because pyramids refine irregularly </dd></dl>
 </li>
 </ul>
+
+</div>
+</div>
+<a id="a5b3185e32fcc8c97d11fc832e6db29b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b3185e32fcc8c97d11fc832e6db29b3">&#9670;&nbsp;</a></span>set_to_root()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_default_scheme_pyramid::set_to_root </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fills an element with the root element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>The element to be filled with root. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

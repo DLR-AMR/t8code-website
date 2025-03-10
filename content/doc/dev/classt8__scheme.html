@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.651-ce2b</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.654-140d3</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -270,9 +270,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:abbacc81b501a6b2f842d38f8fe767df0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__scheme.html#abbacc81b501a6b2f842d38f8fe767df0">element_destroy</a> (const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **elem) const</td></tr>
 <tr class="memdesc:abbacc81b501a6b2f842d38f8fe767df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate an array of elements.  <a href="classt8__scheme.html#abbacc81b501a6b2f842d38f8fe767df0">More...</a><br /></td></tr>
 <tr class="separator:abbacc81b501a6b2f842d38f8fe767df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12778280e3593a3167627de90a5c71fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__scheme.html#a12778280e3593a3167627de90a5c71fa">get_root</a> (const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const</td></tr>
-<tr class="memdesc:a12778280e3593a3167627de90a5c71fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">create the root element  <a href="classt8__scheme.html#a12778280e3593a3167627de90a5c71fa">More...</a><br /></td></tr>
-<tr class="separator:a12778280e3593a3167627de90a5c71fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae950879e9d7dc59518d0f5908bfbd78e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__scheme.html#ae950879e9d7dc59518d0f5908bfbd78e">set_to_root</a> (const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const</td></tr>
+<tr class="memdesc:ae950879e9d7dc59518d0f5908bfbd78e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create the root element  <a href="classt8__scheme.html#ae950879e9d7dc59518d0f5908bfbd78e">More...</a><br /></td></tr>
+<tr class="separator:ae950879e9d7dc59518d0f5908bfbd78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42e3c7a9f56253e11e36156e3cd52a8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__scheme.html#a42e3c7a9f56253e11e36156e3cd52a8f">element_MPI_Pack</a> (const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **const elements, const unsigned int count, void *send_buffer, int buffer_size, int *position, sc_MPI_Comm comm) const</td></tr>
 <tr class="memdesc:a42e3c7a9f56253e11e36156e3cd52a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack multiple elements into contiguous memory, so they can be sent via MPI.  <a href="classt8__scheme.html#a42e3c7a9f56253e11e36156e3cd52a8f">More...</a><br /></td></tr>
 <tr class="separator:a42e3c7a9f56253e11e36156e3cd52a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3429,51 +3429,6 @@ t8_element_init </dd>
 
 </div>
 </div>
-<a id="a12778280e3593a3167627de90a5c71fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12778280e3593a3167627de90a5c71fa">&#9670;&nbsp;</a></span>get_root()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void t8_scheme::get_root </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td>
-          <td class="paramname"><em>tree_class</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>elem</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>create the root element </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tree_class</td><td>The eclass of the current tree. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>The element that is filled with the root </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a5585e34278986190d562fa76c47d6470"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5585e34278986190d562fa76c47d6470">&#9670;&nbsp;</a></span>refines_irregular()</h2>
 
@@ -3506,6 +3461,51 @@ t8_element_init </dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if there is one element in the tree that does not refine into 2^dim children. </dd></dl>
+
+</div>
+</div>
+<a id="ae950879e9d7dc59518d0f5908bfbd78e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae950879e9d7dc59518d0f5908bfbd78e">&#9670;&nbsp;</a></span>set_to_root()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_scheme::set_to_root </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td>
+          <td class="paramname"><em>tree_class</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>create the root element </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tree_class</td><td>The eclass of the current tree. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>The element that is filled with the root </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

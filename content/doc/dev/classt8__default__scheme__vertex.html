@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.651-ce2b</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.654-140d3</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -230,9 +230,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c1946d888a5b067ce2d34a83d678299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#a8c1946d888a5b067ce2d34a83d678299">element_to_string</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, char *debug_string, const int string_size) const</td></tr>
 <tr class="memdesc:a8c1946d888a5b067ce2d34a83d678299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a given element.  <a href="classt8__default__scheme__vertex.html#a8c1946d888a5b067ce2d34a83d678299">More...</a><br /></td></tr>
 <tr class="separator:a8c1946d888a5b067ce2d34a83d678299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa46bdc9e7c38c18700f6e7d24781bae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#aa46bdc9e7c38c18700f6e7d24781bae9">get_root</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const</td></tr>
-<tr class="memdesc:aa46bdc9e7c38c18700f6e7d24781bae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills an element with the root element.  <a href="classt8__default__scheme__vertex.html#aa46bdc9e7c38c18700f6e7d24781bae9">More...</a><br /></td></tr>
-<tr class="separator:aa46bdc9e7c38c18700f6e7d24781bae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957b574d3b78c7888ea898b0bafa1fa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#a957b574d3b78c7888ea898b0bafa1fa6">set_to_root</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const</td></tr>
+<tr class="memdesc:a957b574d3b78c7888ea898b0bafa1fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills an element with the root element.  <a href="classt8__default__scheme__vertex.html#a957b574d3b78c7888ea898b0bafa1fa6">More...</a><br /></td></tr>
+<tr class="separator:a957b574d3b78c7888ea898b0bafa1fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79ee9d6833f6610fad9e68ce14da5f79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__vertex.html#a79ee9d6833f6610fad9e68ce14da5f79">element_MPI_Pack</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **const elements, const unsigned int count, void *send_buffer, int buffer_size, int *position, sc_MPI_Comm comm) const</td></tr>
 <tr class="memdesc:a79ee9d6833f6610fad9e68ce14da5f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack multiple elements into contiguous memory, so they can be sent via MPI.  <a href="classt8__default__scheme__vertex.html#a79ee9d6833f6610fad9e68ce14da5f79">More...</a><br /></td></tr>
 <tr class="separator:a79ee9d6833f6610fad9e68ce14da5f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2463,32 +2463,6 @@ If an element was created by <a class="el" href="classt8__default__scheme__verte
 
 </div>
 </div>
-<a id="aa46bdc9e7c38c18700f6e7d24781bae9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa46bdc9e7c38c18700f6e7d24781bae9">&#9670;&nbsp;</a></span>get_root()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void t8_default_scheme_vertex::get_root </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
-          <td class="paramname"><em>elem</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Fills an element with the root element. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>The element to be filled with root. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a2af7a9aec84fc586dadb429f92e000c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2af7a9aec84fc586dadb429f92e000c0">&#9670;&nbsp;</a></span>refines_irregular()</h2>
 
@@ -2510,6 +2484,32 @@ If an element was created by <a class="el" href="classt8__default__scheme__verte
 <li><dl class="section return"><dt>Returns</dt><dd>0, because vertices refine regularly </dd></dl>
 </li>
 </ul>
+
+</div>
+</div>
+<a id="a957b574d3b78c7888ea898b0bafa1fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957b574d3b78c7888ea898b0bafa1fa6">&#9670;&nbsp;</a></span>set_to_root()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_default_scheme_vertex::set_to_root </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fills an element with the root element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>The element to be filled with root. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
