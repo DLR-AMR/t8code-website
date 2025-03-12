@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.680-4b5f9</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.682-86c69</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -310,6 +310,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
 <tr class="memitem:a5ab5fa2729b78c865fd7995bc8d7d36b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a5ab5fa2729b78c865fd7995bc8d7d36b">t8_forest_element_points_inside</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const double *points, int num_points, int *is_inside, const double tolerance)</td></tr>
 <tr class="memdesc:a5ab5fa2729b78c865fd7995bc8d7d36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a batch of points lies inside an element.  <a href="t8__forest__general_8h.html#a5ab5fa2729b78c865fd7995bc8d7d36b">More...</a><br /></td></tr>
 <tr class="separator:a5ab5fa2729b78c865fd7995bc8d7d36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bab5008ba8b6da28cf42bcf4264c941"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a8bab5008ba8b6da28cf42bcf4264c941">t8_forest_element_find_owner</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass)</td></tr>
+<tr class="memdesc:a8bab5008ba8b6da28cf42bcf4264c941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the owner process of a given element.  <a href="t8__forest__general_8h.html#a8bab5008ba8b6da28cf42bcf4264c941">More...</a><br /></td></tr>
+<tr class="separator:a8bab5008ba8b6da28cf42bcf4264c941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a982c7024da7c0e7def53e6817d486617"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a982c7024da7c0e7def53e6817d486617">t8_forest_new_uniform</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const int level, const int do_face_ghost, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a982c7024da7c0e7def53e6817d486617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a uniformly refined forest on a coarse mesh.  <a href="t8__forest__general_8h.html#a982c7024da7c0e7def53e6817d486617">More...</a><br /></td></tr>
 <tr class="separator:a982c7024da7c0e7def53e6817d486617"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -597,6 +600,64 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The global tree-id of the tree in which <em>neigh</em> is in. -1 if there exists no neighbor across that face. </dd></dl>
+
+</div>
+</div>
+<a id="a8bab5008ba8b6da28cf42bcf4264c941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bab5008ba8b6da28cf42bcf4264c941">&#9670;&nbsp;</a></span>t8_forest_element_find_owner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_forest_element_find_owner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
+          <td class="paramname"><em>forest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>gtreeid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td>
+          <td class="paramname"><em>eclass</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find the owner process of a given element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global id of the tree in which the element lies. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>The element to look for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eclass</td><td>The element class of the tree <em>gtreeid</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The mpirank of the process that owns <em>element</em>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The element must not exist in the forest, but an ancestor of its first descendant has to. If the element's owner is not unique, the owner of the element's first descendant is returned. </dd>
+<dd>
+<em>forest</em> must be committed before calling this function. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__forest__private_8h.html#a428cfc4ddf6d2f0f577c9284b56ae4b1" title="Find the owner process of a given element, if bounds for the owner process are known.">t8_forest_element_find_owner_ext</a> </dd>
+<dd>
+<a class="el" href="t8__forest__private_8h.html#abd513f2b8546ef1799418417848b5780" title="Constant time algorithm to compute lower and upper bounds for the owner processes of a given element.">t8_forest_element_owners_bounds</a> </dd></dl>
 
 </div>
 </div>

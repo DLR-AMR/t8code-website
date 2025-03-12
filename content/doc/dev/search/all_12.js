@@ -715,7 +715,7 @@ var searchData=
   ['t8_5fforest_5felement_5fface_5fcentroid_936',['t8_forest_element_face_centroid',['../t8__forest__geometrical_8h.html#a41ea72b578fb1820111d9184bf025d42',1,'t8_forest.cxx']]],
   ['t8_5fforest_5felement_5fface_5fneighbor_937',['t8_forest_element_face_neighbor',['../t8__forest__general_8h.html#ad20e5a07dcd639b9ad6d186388a96d06',1,'t8_forest.cxx']]],
   ['t8_5fforest_5felement_5fface_5fnormal_938',['t8_forest_element_face_normal',['../t8__forest__geometrical_8h.html#abc2919d07d71d2468b7bd3a43f4d51f5',1,'t8_forest.cxx']]],
-  ['t8_5fforest_5felement_5ffind_5fowner_939',['t8_forest_element_find_owner',['../t8__forest__private_8h.html#a8bab5008ba8b6da28cf42bcf4264c941',1,'t8_forest.cxx']]],
+  ['t8_5fforest_5felement_5ffind_5fowner_939',['t8_forest_element_find_owner',['../t8__forest__general_8h.html#a8bab5008ba8b6da28cf42bcf4264c941',1,'t8_forest.cxx']]],
   ['t8_5fforest_5felement_5ffind_5fowner_5fext_940',['t8_forest_element_find_owner_ext',['../t8__forest__private_8h.html#a428cfc4ddf6d2f0f577c9284b56ae4b1',1,'t8_forest.cxx']]],
   ['t8_5fforest_5felement_5ffind_5fowner_5fold_941',['t8_forest_element_find_owner_old',['../t8__forest__private_8h.html#a6b0a1311180ec13164c6ad0142c6669e',1,'t8_forest.cxx']]],
   ['t8_5fforest_5felement_5ffrom_5fref_5fcoords_942',['t8_forest_element_from_ref_coords',['../t8__forest__geometrical_8h.html#a6041bacfd0553fdd54e283b83160c837',1,'t8_forest.cxx']]],
