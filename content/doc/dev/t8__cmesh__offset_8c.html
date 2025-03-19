@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.691-27461</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.721-59a86</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -144,9 +144,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af29d511e2224d2aca455c5eba3978c23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#af29d511e2224d2aca455c5eba3978c23">t8_offset_range_send</a> (const int start, const int end, const int mpirank, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_from, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_to)</td></tr>
 <tr class="memdesc:af29d511e2224d2aca455c5eba3978c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of processes in a given range [a,b] that send to a given other process in a repartitioning setting.  <a href="t8__cmesh__offset_8c.html#af29d511e2224d2aca455c5eba3978c23">More...</a><br /></td></tr>
 <tr class="separator:af29d511e2224d2aca455c5eba3978c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ca2c27beda4c415e396ce140039e696"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a2ca2c27beda4c415e396ce140039e696">t8_offset_print</a> (const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> offset, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:a2ca2c27beda4c415e396ce140039e696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print an offset array.  <a href="t8__cmesh__offset_8c.html#a2ca2c27beda4c415e396ce140039e696">More...</a><br /></td></tr>
-<tr class="separator:a2ca2c27beda4c415e396ce140039e696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac94d782020ba766207bbd688226828"><td class="memItemLeft" align="right" valign="top"><a id="a3ac94d782020ba766207bbd688226828"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_offset_print</b> (__attribute__((unused)) const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> offset, __attribute__((unused)) sc_MPI_Comm comm)</td></tr>
+<tr class="separator:a3ac94d782020ba766207bbd688226828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TODO: document this file. </p>
@@ -889,43 +889,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The MPI rank of the next smaller rank than <em>current_owner</em> that has <em>gtree</em> as local tree. -1 if non such rank exists. </dd></dl>
-
-</div>
-</div>
-<a id="a2ca2c27beda4c415e396ce140039e696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ca2c27beda4c415e396ce140039e696">&#9670;&nbsp;</a></span>t8_offset_print()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void t8_offset_print </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sc_MPI_Comm&#160;</td>
-          <td class="paramname"><em>comm</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Print an offset array. </p>
-<p>Useful for debugging. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The offset to print </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>An mpi communicator matching the offset size. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

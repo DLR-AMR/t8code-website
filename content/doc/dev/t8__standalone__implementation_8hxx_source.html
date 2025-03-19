@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.691-27461</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.721-59a86</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -658,7 +658,7 @@ $(function() {
 <div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    }</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160; </div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (0 &lt;= <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (<span class="keywordtype">id</span> &lt; (<span class="keywordtype">size_t</span>) <a class="code" href="structt8__standalone__scheme.html#a7320f1426863cb91ea3b001efeda560c">element_count_leaves</a> (elem, level));</div>
 <div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (1 &lt;= level &amp;&amp; level &lt;= T8_ELEMENT_MAXLEVEL[TEclass]);</div>
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;    <a class="code" href="structt8__standalone__element.html">t8_standalone_element&lt;TEclass&gt;</a> child;</div>
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160; </div>
@@ -734,7 +734,7 @@ $(function() {
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;      }</div>
 <div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;      <span class="keywordtype">id</span> += parent_id;</div>
 <div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;    }</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;    <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (<span class="keywordtype">id</span> &gt;= 0);</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;    <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (<span class="keywordtype">id</span> &lt; (<span class="keywordtype">size_t</span>) <a class="code" href="structt8__standalone__scheme.html#a7320f1426863cb91ea3b001efeda560c">element_count_leaves</a> ((<a class="code" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *) &amp;ancestor, level));</div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;    <span class="keywordflow">return</span> id;</div>
 <div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;  }</div>
 <div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160; </div>
@@ -1132,32 +1132,31 @@ $(function() {
 <div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;  <span class="keyword">static</span> constexpr <a class="code" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a></div>
 <div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;  num_descendants_at_leveldiff ([[maybe_unused]] <span class="keyword">const</span> <a class="code" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, <span class="keyword">const</span> t8_element_level leveldiff) noexcept</div>
 <div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;  {</div>
-<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;    <span class="keywordflow">if</span> (leveldiff &lt; 0)</div>
-<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;    <span class="keywordflow">if</span> constexpr (TEclass == <a class="code" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a167f5fdb54e588169c384c32d79fc59c">T8_ECLASS_PYRAMID</a>) {</div>
-<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;      SC_ABORT (<span class="stringliteral">&quot;Not implemented yet.\n&quot;</span>);</div>
-<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;    }</div>
-<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;    <span class="keywordflow">return</span> 1LL &lt;&lt; (T8_ELEMENT_DIM[TEclass] * leveldiff);</div>
-<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;  }</div>
-<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160; </div>
-<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">void</span></div>
-<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;  element_compute_coords (<span class="keyword">const</span> <a class="code" href="structt8__standalone__element.html">t8_standalone_element&lt;TEclass&gt;</a> *elem, <span class="keyword">const</span> <span class="keywordtype">int</span> vertex, <span class="keywordtype">int</span> coords[]) noexcept</div>
-<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;  {</div>
-<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;    <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (0 &lt;= vertex &amp;&amp; vertex &lt; <a class="code" href="structt8__standalone__scheme.html#a3fdf58ff403924e798772b01d8f9eb8e">element_get_num_corners</a> ((<span class="keyword">const</span> <a class="code" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *) elem));</div>
-<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160; </div>
-<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;    <span class="keywordflow">if</span> constexpr (T8_ELEMENT_NUM_EQUATIONS[TEclass]) {</div>
-<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;      SC_ABORT (<span class="stringliteral">&quot;Only implemented for hypercubes.\n&quot;</span>);</div>
-<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;    }</div>
-<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;      <span class="comment">//Hypercubes</span></div>
-<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> idim = 0; idim &lt; T8_ELEMENT_DIM[TEclass]; idim++) {</div>
-<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;        coords[idim] = elem-&gt;coords[idim] + ((vertex &amp; (1 &lt;&lt; idim)) &gt;&gt; idim) * element_get_len (elem-&gt;level);</div>
-<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;      }</div>
-<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;    }</div>
-<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;  }</div>
-<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;};</div>
-<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160; </div>
-<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_STANDALONE_IMPLEMENTATION_HXX */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;    <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (leveldiff &lt;= <a class="code" href="structt8__standalone__scheme.html#a0e60c011d267dcc856ff77e3c48765eb">get_maxlevel</a> ());</div>
+<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;    <span class="keywordflow">if</span> constexpr (TEclass == <a class="code" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a167f5fdb54e588169c384c32d79fc59c">T8_ECLASS_PYRAMID</a>) {</div>
+<div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;      SC_ABORT (<span class="stringliteral">&quot;Not implemented yet.\n&quot;</span>);</div>
+<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;    }</div>
+<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;    <span class="keywordflow">return</span> 1LL &lt;&lt; (T8_ELEMENT_DIM[TEclass] * leveldiff);</div>
+<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;  }</div>
+<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160; </div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">void</span></div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;  element_compute_coords (<span class="keyword">const</span> <a class="code" href="structt8__standalone__element.html">t8_standalone_element&lt;TEclass&gt;</a> *elem, <span class="keyword">const</span> <span class="keywordtype">int</span> vertex, <span class="keywordtype">int</span> coords[]) noexcept</div>
+<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;  {</div>
+<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;    <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (0 &lt;= vertex &amp;&amp; vertex &lt; <a class="code" href="structt8__standalone__scheme.html#a3fdf58ff403924e798772b01d8f9eb8e">element_get_num_corners</a> ((<span class="keyword">const</span> <a class="code" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *) elem));</div>
+<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160; </div>
+<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;    <span class="keywordflow">if</span> constexpr (T8_ELEMENT_NUM_EQUATIONS[TEclass]) {</div>
+<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;      SC_ABORT (<span class="stringliteral">&quot;Only implemented for hypercubes.\n&quot;</span>);</div>
+<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;    }</div>
+<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;      <span class="comment">//Hypercubes</span></div>
+<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> idim = 0; idim &lt; T8_ELEMENT_DIM[TEclass]; idim++) {</div>
+<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;        coords[idim] = elem-&gt;coords[idim] + ((vertex &amp; (1 &lt;&lt; idim)) &gt;&gt; idim) * element_get_len (elem-&gt;level);</div>
+<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;      }</div>
+<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;    }</div>
+<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;  }</div>
+<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;};</div>
+<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160; </div>
+<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_STANDALONE_IMPLEMENTATION_HXX */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclasst8__scheme_html"><div class="ttname"><a href="classt8__scheme.html">t8_scheme</a></div><div class="ttdoc">This class holds one or more element schemes.</div><div class="ttdef"><b>Definition:</b> t8_scheme.hxx:67</div></div>
 <div class="ttc" id="astructt8__standalone__element_html"><div class="ttname"><a href="structt8__standalone__element.html">t8_standalone_element</a></div><div class="ttdef"><b>Definition:</b> t8_standalone_elements.hxx:55</div></div>
 <div class="ttc" id="astructt8__standalone__element_html_a3dad2625453a01d3585676ba0ae42e01"><div class="ttname"><a href="structt8__standalone__element.html#a3dad2625453a01d3585676ba0ae42e01">t8_standalone_element::coords</a></div><div class="ttdeci">t8_element_coords&lt; TEclass &gt; coords</div><div class="ttdoc">The coordinates of the anchor vertex of the element.</div><div class="ttdef"><b>Definition:</b> t8_standalone_elements.hxx:60</div></div>
@@ -1227,7 +1226,7 @@ $(function() {
 <div class="ttc" id="astructt8__standalone__scheme_html_af303185962c4752994785883d9d993f8"><div class="ttname"><a href="structt8__standalone__scheme.html#af303185962c4752994785883d9d993f8">t8_standalone_scheme::get_eclass</a></div><div class="ttdeci">constexpr t8_eclass_t get_eclass(void) const</div><div class="ttdoc">Return the tree class of this scheme.</div><div class="ttdef"><b>Definition:</b> t8_standalone_implementation.hxx:108</div></div>
 <div class="ttc" id="astructt8__standalone__scheme_html_af5ef743496029ba655fbb9f08cae4ca9"><div class="ttname"><a href="structt8__standalone__scheme.html#af5ef743496029ba655fbb9f08cae4ca9">t8_standalone_scheme::element_face_get_child_face</a></div><div class="ttdeci">static constexpr int element_face_get_child_face([[maybe_unused]] const t8_element_t *elem, [[maybe_unused]] const int face, [[maybe_unused]] const int face_child) noexcept</div><div class="ttdoc">Given a face of an element and a child number of a child of that face, return the face number of the ...</div><div class="ttdef"><b>Definition:</b> t8_standalone_implementation.hxx:717</div></div>
 <div class="ttc" id="at8_8h_html_a03692467b9ffc84d4d0c37e042679225"><div class="ttname"><a href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a></div><div class="ttdeci">int64_t t8_gloidx_t</div><div class="ttdoc">A type for global indexing that holds really big numbers.</div><div class="ttdef"><b>Definition:</b> t8.h:107</div></div>
-<div class="ttc" id="at8_8h_html_a8316c6b1b62566cd058ff3c3a88d3504"><div class="ttname"><a href="t8_8h.html#a8316c6b1b62566cd058ff3c3a88d3504">t8_debugf</a></div><div class="ttdeci">void t8_debugf(const char *fmt,...)</div><div class="ttdoc">Log a message, no matter what rank, with priority SC_LP_DEBUG.</div><div class="ttdef"><b>Definition:</b> t8.c:123</div></div>
+<div class="ttc" id="at8_8h_html_a8316c6b1b62566cd058ff3c3a88d3504"><div class="ttname"><a href="t8_8h.html#a8316c6b1b62566cd058ff3c3a88d3504">t8_debugf</a></div><div class="ttdeci">void t8_debugf(const char *fmt,...)</div><div class="ttdoc">Log a message, no matter what rank, with priority SC_LP_DEBUG.</div></div>
 <div class="ttc" id="at8_8h_html_ae5c6845909c4725136233464e6db11bb"><div class="ttname"><a href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a></div><div class="ttdeci">uint64_t t8_linearidx_t</div><div class="ttdoc">A type for storing SFC indices.</div><div class="ttdef"><b>Definition:</b> t8.h:116</div></div>
 <div class="ttc" id="at8_8h_html_afee33776137ab765a38d5c84424104b8"><div class="ttname"><a href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a></div><div class="ttdeci">#define T8_ASSERT(c)</div><div class="ttdoc">Widely used assertion.</div><div class="ttdef"><b>Definition:</b> t8.h:71</div></div>
 <div class="ttc" id="at8__eclass_8h_html"><div class="ttname"><a href="t8__eclass_8h.html">t8_eclass.h</a></div><div class="ttdoc">We define all possible element classes that occur in hybrid meshes.</div></div>
