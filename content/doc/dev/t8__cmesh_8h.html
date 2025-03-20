@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.732-f3d09</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.735-9adbe</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -1948,10 +1948,11 @@ If an attribute with the given package_id and key already exists, then it will g
     <tr><td class="paramdir">[in]</td><td class="paramname">tree2</td><td>The tree id of the second of the two trees. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">face1</td><td>The face number of the first tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">face2</td><td>The face number of the second tree. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">orientation</td><td>Specify how face1 and face2 are oriented to each other TODO: orientation needs to be carefully defined for all element classes. TODO: document orientation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">orientation</td><td>Specify how face1 and face2 are oriented to each other</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>The orientation is defined as: Let my_face and other_face be the two face numbers of the connecting trees. We chose a main_face from them as follows: Either both trees have the same element class, then the face with the lower face number is the main_face or the trees belong to different classes in which case the face belonging to the tree with the lower class according to the ordering triangle &lt; quad, hex &lt; tet &lt; prism &lt; pyramid, is the main_face. Then face corner 0 of the main_face connects to a face corner k in the other face. The face orientation is defined as the number k. If the classes are equal and my_face == other_face, treating either of both faces as the main_face leads to the same result. See <a href="https://arxiv.org/pdf/1611.02929.pdf">https://arxiv.org/pdf/1611.02929.pdf</a> for more details. </dd></dl>
 
 </div>
 </div>
