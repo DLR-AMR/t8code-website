@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.735-9adbe</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.743-c067</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -134,6 +134,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>element_deinit</b> ([
 <tr class="memitem:adcf1e870b3f28bb5398488c70af57a49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common.html#adcf1e870b3f28bb5398488c70af57a49">element_count_leaves</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *t, int level) const</td></tr>
 <tr class="memdesc:adcf1e870b3f28bb5398488c70af57a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many leaf descendants of a given uniform level an element would produce.  <a href="classt8__default__scheme__common.html#adcf1e870b3f28bb5398488c70af57a49">More...</a><br /></td></tr>
 <tr class="separator:adcf1e870b3f28bb5398488c70af57a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245fab3a8718157d38b0dd336624a28a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common.html#a245fab3a8718157d38b0dd336624a28a">element_is_refinable</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const</td></tr>
+<tr class="memdesc:a245fab3a8718157d38b0dd336624a28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if an element is refinable.  <a href="classt8__default__scheme__common.html#a245fab3a8718157d38b0dd336624a28a">More...</a><br /></td></tr>
+<tr class="separator:a245fab3a8718157d38b0dd336624a28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a119611a4eb7382b13f36ff6fd6e1d351"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__default__scheme__common.html#a119611a4eb7382b13f36ff6fd6e1d351">element_get_num_siblings</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) const</td></tr>
 <tr class="memdesc:a119611a4eb7382b13f36ff6fd6e1d351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the number of siblings of an element.  <a href="classt8__default__scheme__common.html#a119611a4eb7382b13f36ff6fd6e1d351">More...</a><br /></td></tr>
 <tr class="separator:a119611a4eb7382b13f36ff6fd6e1d351"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -361,6 +364,43 @@ template&lt;class TUnderlyingEclassScheme &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The shape of the element. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is overwritten by the pyramid implementation. </dd></dl>
+
+</div>
+</div>
+<a id="a245fab3a8718157d38b0dd336624a28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a245fab3a8718157d38b0dd336624a28a">&#9670;&nbsp;</a></span>element_is_refinable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TUnderlyingEclassScheme &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classt8__default__scheme__common.html">t8_default_scheme_common</a>&lt; TUnderlyingEclassScheme &gt;::element_is_refinable </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates if an element is refinable. </p>
+<p>Possible reasons for being not refinable could be that the element has reached its max level. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the element is refinable. </dd></dl>
 
 </div>
 </div>

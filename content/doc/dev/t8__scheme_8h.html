@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.735-9adbe</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.743-c067</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -124,6 +124,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1222e51682c331a2dabf5a27cc257bb8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__scheme_8h.html#a1222e51682c331a2dabf5a27cc257bb8">t8_element_is_equal</a> (const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2)</td></tr>
 <tr class="memdesc:a1222e51682c331a2dabf5a27cc257bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two elements are equal.  <a href="t8__scheme_8h.html#a1222e51682c331a2dabf5a27cc257bb8">More...</a><br /></td></tr>
 <tr class="separator:a1222e51682c331a2dabf5a27cc257bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc35009384a344fa9dabb60a62943886"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__scheme_8h.html#abc35009384a344fa9dabb60a62943886">element_is_refinable</a> (const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem)</td></tr>
+<tr class="memdesc:abc35009384a344fa9dabb60a62943886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if an element is refinable.  <a href="t8__scheme_8h.html#abc35009384a344fa9dabb60a62943886">More...</a><br /></td></tr>
+<tr class="separator:abc35009384a344fa9dabb60a62943886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0c781c661c5b150858d6f3a15de801c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__scheme_8h.html#ac0c781c661c5b150858d6f3a15de801c">t8_element_get_parent</a> (const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *parent)</td></tr>
 <tr class="memdesc:ac0c781c661c5b150858d6f3a15de801c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the parent of a given element <b>elem</b> and store it in <b>parent</b>.  <a href="t8__scheme_8h.html#ac0c781c661c5b150858d6f3a15de801c">More...</a><br /></td></tr>
 <tr class="separator:ac0c781c661c5b150858d6f3a15de801c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,6 +288,51 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="abc35009384a344fa9dabb60a62943886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc35009384a344fa9dabb60a62943886">&#9670;&nbsp;</a></span>element_is_refinable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int element_is_refinable </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *&#160;</td>
+          <td class="paramname"><em>scheme</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td>
+          <td class="paramname"><em>tree_class</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates if an element is refinable. </p>
+<p>Possible reasons for being not refinable could be that the element has reached its max level. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>The scheme of the forest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tree_class</td><td>The eclass of tree the elements are part of. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The element to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the element is refinable, 0 otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="afa35e385792c1c9f069903a01a1e9836"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa35e385792c1c9f069903a01a1e9836">&#9670;&nbsp;</a></span>t8_element_compare()</h2>
 
