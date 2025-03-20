@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.743-c067</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.815-8a326</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -122,6 +122,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a68452e2231d8b3281029cceb4132824b"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a68452e2231d8b3281029cceb4132824b">element_MPI_Unpack</a> (void *recvbuf, const int buffer_size, int *position, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **elements, const unsigned int count, sc_MPI_Comm comm) const noexcept</td></tr>
 <tr class="memdesc:a68452e2231d8b3281029cceb4132824b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack multiple elements from contiguous memory that was received via MPI.  <a href="structt8__standalone__scheme.html#a68452e2231d8b3281029cceb4132824b">More...</a><br /></td></tr>
 <tr class="separator:a68452e2231d8b3281029cceb4132824b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f63ec27654fb89fdfafcb02c885416"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a16f63ec27654fb89fdfafcb02c885416">element_transform_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1,[[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2,[[maybe_unused]] const int orientation,[[maybe_unused]] const int sign,[[maybe_unused]] const int is_smaller_face) noexcept</td></tr>
+<tr class="memdesc:a16f63ec27654fb89fdfafcb02c885416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suppose we have two trees that share a common face f.  <a href="structt8__standalone__scheme.html#a16f63ec27654fb89fdfafcb02c885416">More...</a><br /></td></tr>
+<tr class="separator:a16f63ec27654fb89fdfafcb02c885416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31dc674de1686b2cc690d92f7f83086"><td class="memItemLeft" align="right" valign="top"><a id="ae31dc674de1686b2cc690d92f7f83086"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>element_transform_face</b> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1,[[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2,[[maybe_unused]] const int orientation,[[maybe_unused]] const int sign,[[maybe_unused]] const int is_smaller_face) noexcept</td></tr>
+<tr class="separator:ae31dc674de1686b2cc690d92f7f83086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5123e07eeed9f95914deb672883b5c4"><td class="memItemLeft" align="right" valign="top"><a id="ad5123e07eeed9f95914deb672883b5c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>element_transform_face</b> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2,[[maybe_unused]] int orientation, const int sign,[[maybe_unused]] const int is_smaller_face) noexcept</td></tr>
+<tr class="separator:ad5123e07eeed9f95914deb672883b5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58a6d2d5f450c9dbfff59e1b65b79e1"><td class="memItemLeft" align="right" valign="top"><a id="ad58a6d2d5f450c9dbfff59e1b65b79e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>element_transform_face</b> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1,[[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2,[[maybe_unused]] int orientation,[[maybe_unused]] const int sign,[[maybe_unused]] const int is_smaller_face) noexcept</td></tr>
+<tr class="separator:ad58a6d2d5f450c9dbfff59e1b65b79e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -146,12 +158,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6aebbdf67fedfa88262acecf462b761c"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="t8__element__shape_8h.html#aab8844a13783f0c1ab05e1d027fd545a">t8_element_shape_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a6aebbdf67fedfa88262acecf462b761c">element_get_shape</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem) noexcept</td></tr>
 <tr class="memdesc:a6aebbdf67fedfa88262acecf462b761c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shape of an allocated element according its type.  <a href="structt8__standalone__scheme.html#a6aebbdf67fedfa88262acecf462b761c">More...</a><br /></td></tr>
 <tr class="separator:a6aebbdf67fedfa88262acecf462b761c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe10a80789b742d68d8c9eae28b2c43e"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#abe10a80789b742d68d8c9eae28b2c43e">element_get_face_corner</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, [[maybe_unused]] const int face, [[maybe_unused]] const int corner) noexcept</td></tr>
-<tr class="memdesc:abe10a80789b742d68d8c9eae28b2c43e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the corner number of an element's face corner.  <a href="structt8__standalone__scheme.html#abe10a80789b742d68d8c9eae28b2c43e">More...</a><br /></td></tr>
-<tr class="separator:abe10a80789b742d68d8c9eae28b2c43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76c48befd3397650623c417ba43d63cb"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a76c48befd3397650623c417ba43d63cb">element_get_corner_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, [[maybe_unused]] const int corner, [[maybe_unused]] const int face) noexcept</td></tr>
-<tr class="memdesc:a76c48befd3397650623c417ba43d63cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the face numbers of the faces sharing an element's corner.  <a href="structt8__standalone__scheme.html#a76c48befd3397650623c417ba43d63cb">More...</a><br /></td></tr>
-<tr class="separator:a76c48befd3397650623c417ba43d63cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f294bb211547673fe50757291c3ba90"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a7f294bb211547673fe50757291c3ba90">element_get_face_corner</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int face, const int corner) noexcept</td></tr>
+<tr class="memdesc:a7f294bb211547673fe50757291c3ba90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the corner number of an element's face corner.  <a href="structt8__standalone__scheme.html#a7f294bb211547673fe50757291c3ba90">More...</a><br /></td></tr>
+<tr class="separator:a7f294bb211547673fe50757291c3ba90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848e6b950d9b49c13131c954ff7fc37c"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a848e6b950d9b49c13131c954ff7fc37c">element_get_corner_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int corner, const int face) noexcept</td></tr>
+<tr class="memdesc:a848e6b950d9b49c13131c954ff7fc37c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the face numbers of the faces sharing an element's corner.  <a href="structt8__standalone__scheme.html#a848e6b950d9b49c13131c954ff7fc37c">More...</a><br /></td></tr>
+<tr class="separator:a848e6b950d9b49c13131c954ff7fc37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cc20e3925da58a71a6e919a9f9b7eee"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="t8__element__shape_8h.html#aab8844a13783f0c1ab05e1d027fd545a">t8_element_shape_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a6cc20e3925da58a71a6e919a9f9b7eee">element_get_face_shape</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int face) noexcept</td></tr>
 <tr class="memdesc:a6cc20e3925da58a71a6e919a9f9b7eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the shape of the face of an element.  <a href="structt8__standalone__scheme.html#a6cc20e3925da58a71a6e919a9f9b7eee">More...</a><br /></td></tr>
 <tr class="separator:a6cc20e3925da58a71a6e919a9f9b7eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,39 +221,39 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4928a7b5adc63e8b786994aef0f904c5"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a4928a7b5adc63e8b786994aef0f904c5">element_get_num_face_children</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int face) noexcept</td></tr>
 <tr class="memdesc:a4928a7b5adc63e8b786994aef0f904c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of children of an element's face when the element is refined.  <a href="structt8__standalone__scheme.html#a4928a7b5adc63e8b786994aef0f904c5">More...</a><br /></td></tr>
 <tr class="separator:a4928a7b5adc63e8b786994aef0f904c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad82393135dc0a28969e9dabff1f05bc9"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#ad82393135dc0a28969e9dabff1f05bc9">element_get_children_at_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] int face, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *children[], [[maybe_unused]] const int num_children, [[maybe_unused]] int *child_indices) noexcept</td></tr>
-<tr class="memdesc:ad82393135dc0a28969e9dabff1f05bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an element and a face of the element, compute all children of the element that touch the face.  <a href="structt8__standalone__scheme.html#ad82393135dc0a28969e9dabff1f05bc9">More...</a><br /></td></tr>
-<tr class="separator:ad82393135dc0a28969e9dabff1f05bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ef743496029ba655fbb9f08cae4ca9"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#af5ef743496029ba655fbb9f08cae4ca9">element_face_get_child_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int face, [[maybe_unused]] const int face_child) noexcept</td></tr>
-<tr class="memdesc:af5ef743496029ba655fbb9f08cae4ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a face of an element and a child number of a child of that face, return the face number of the child of the element that matches the child face.  <a href="structt8__standalone__scheme.html#af5ef743496029ba655fbb9f08cae4ca9">More...</a><br /></td></tr>
-<tr class="separator:af5ef743496029ba655fbb9f08cae4ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22e395517c3e4f92b069f4d4a8ef22b9"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a22e395517c3e4f92b069f4d4a8ef22b9">element_face_get_parent_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int face) noexcept</td></tr>
-<tr class="memdesc:a22e395517c3e4f92b069f4d4a8ef22b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a face of an element return the face number of the parent of the element that matches the element's face.  <a href="structt8__standalone__scheme.html#a22e395517c3e4f92b069f4d4a8ef22b9">More...</a><br /></td></tr>
-<tr class="separator:a22e395517c3e4f92b069f4d4a8ef22b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7020437c04a28a6e3515f7821fc9dfe0"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a7020437c04a28a6e3515f7821fc9dfe0">element_get_first_descendant_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int face, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *first_desc, [[maybe_unused]] const t8_element_level level) noexcept</td></tr>
-<tr class="memdesc:a7020437c04a28a6e3515f7821fc9dfe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the first descendant of an element at a given level that touches a given face.  <a href="structt8__standalone__scheme.html#a7020437c04a28a6e3515f7821fc9dfe0">More...</a><br /></td></tr>
-<tr class="separator:a7020437c04a28a6e3515f7821fc9dfe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc54566864d8b70fbe3d1827917ee9c1"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#acc54566864d8b70fbe3d1827917ee9c1">element_get_last_descendant_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int face, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *last_desc, [[maybe_unused]] const t8_element_level level) noexcept</td></tr>
-<tr class="memdesc:acc54566864d8b70fbe3d1827917ee9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the last descendant of an element at a given level that touches a given face.  <a href="structt8__standalone__scheme.html#acc54566864d8b70fbe3d1827917ee9c1">More...</a><br /></td></tr>
-<tr class="separator:acc54566864d8b70fbe3d1827917ee9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a477fb5f4020dcf6be3b663ae5dee3bd1"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a477fb5f4020dcf6be3b663ae5dee3bd1">element_is_root_boundary</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int face) noexcept</td></tr>
-<tr class="memdesc:a477fb5f4020dcf6be3b663ae5dee3bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute whether a given element shares a given face with its root tree.  <a href="structt8__standalone__scheme.html#a477fb5f4020dcf6be3b663ae5dee3bd1">More...</a><br /></td></tr>
-<tr class="separator:a477fb5f4020dcf6be3b663ae5dee3bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54c86fd14cdec0a08c4d2180b29c1cdd"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a54c86fd14cdec0a08c4d2180b29c1cdd">element_get_tree_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int face) noexcept</td></tr>
-<tr class="memdesc:a54c86fd14cdec0a08c4d2180b29c1cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an element and a face of this element.  <a href="structt8__standalone__scheme.html#a54c86fd14cdec0a08c4d2180b29c1cdd">More...</a><br /></td></tr>
-<tr class="separator:a54c86fd14cdec0a08c4d2180b29c1cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a419cd0166a0d571b4b9c33b7b8c19040"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a419cd0166a0d571b4b9c33b7b8c19040">element_get_face_neighbor_inside</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *neigh, [[maybe_unused]] const int face, [[maybe_unused]] int *neigh_face) noexcept</td></tr>
-<tr class="memdesc:a419cd0166a0d571b4b9c33b7b8c19040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the face neighbor of a given element if this face neighbor is inside the root tree.  <a href="structt8__standalone__scheme.html#a419cd0166a0d571b4b9c33b7b8c19040">More...</a><br /></td></tr>
-<tr class="separator:a419cd0166a0d571b4b9c33b7b8c19040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d98ccc5a2cf600b35049ba441dd58b6"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a9d98ccc5a2cf600b35049ba441dd58b6">element_get_children_at_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int face, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *children[], const int num_children, [[maybe_unused]] int *child_indices) noexcept</td></tr>
+<tr class="memdesc:a9d98ccc5a2cf600b35049ba441dd58b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an element and a face of the element, compute all children of the element that touch the face.  <a href="structt8__standalone__scheme.html#a9d98ccc5a2cf600b35049ba441dd58b6">More...</a><br /></td></tr>
+<tr class="separator:a9d98ccc5a2cf600b35049ba441dd58b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6da3b3d9bf2a9eab88ddc795c264afc"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#ac6da3b3d9bf2a9eab88ddc795c264afc">element_face_get_child_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int face, [[maybe_unused]] const int face_child) noexcept</td></tr>
+<tr class="memdesc:ac6da3b3d9bf2a9eab88ddc795c264afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a face of an element and a child number of a child of that face, return the face number of the child of the element that matches the child face.  <a href="structt8__standalone__scheme.html#ac6da3b3d9bf2a9eab88ddc795c264afc">More...</a><br /></td></tr>
+<tr class="separator:ac6da3b3d9bf2a9eab88ddc795c264afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef28d8a2feca33ef22c32969a46b864e"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#aef28d8a2feca33ef22c32969a46b864e">element_face_get_parent_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int face) noexcept</td></tr>
+<tr class="memdesc:aef28d8a2feca33ef22c32969a46b864e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a face of an element return the face number of the parent of the element that matches the element's face.  <a href="structt8__standalone__scheme.html#aef28d8a2feca33ef22c32969a46b864e">More...</a><br /></td></tr>
+<tr class="separator:aef28d8a2feca33ef22c32969a46b864e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb113ca47b3ffc8e5ecb65000a943f1"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a0eb113ca47b3ffc8e5ecb65000a943f1">element_get_first_descendant_face</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int face, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *first_desc, const t8_element_level level) noexcept</td></tr>
+<tr class="memdesc:a0eb113ca47b3ffc8e5ecb65000a943f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the first descendant of an element at a given level that touches a given face.  <a href="structt8__standalone__scheme.html#a0eb113ca47b3ffc8e5ecb65000a943f1">More...</a><br /></td></tr>
+<tr class="separator:a0eb113ca47b3ffc8e5ecb65000a943f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528dac6e73c1c9f5dc262325f54155ad"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a528dac6e73c1c9f5dc262325f54155ad">element_get_last_descendant_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int face, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *last_desc, const t8_element_level level) noexcept</td></tr>
+<tr class="memdesc:a528dac6e73c1c9f5dc262325f54155ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the last descendant of an element at a given level that touches a given face.  <a href="structt8__standalone__scheme.html#a528dac6e73c1c9f5dc262325f54155ad">More...</a><br /></td></tr>
+<tr class="separator:a528dac6e73c1c9f5dc262325f54155ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a3ebd2ceea871448f111a8ee33ed6f"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#af4a3ebd2ceea871448f111a8ee33ed6f">element_is_root_boundary</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int face) noexcept</td></tr>
+<tr class="memdesc:af4a3ebd2ceea871448f111a8ee33ed6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute whether a given element shares a given face with its root tree.  <a href="structt8__standalone__scheme.html#af4a3ebd2ceea871448f111a8ee33ed6f">More...</a><br /></td></tr>
+<tr class="separator:af4a3ebd2ceea871448f111a8ee33ed6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f14671a6d813d14a02acf8a84485f0"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a66f14671a6d813d14a02acf8a84485f0">element_get_tree_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int face) noexcept</td></tr>
+<tr class="memdesc:a66f14671a6d813d14a02acf8a84485f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an element and a face of this element.  <a href="structt8__standalone__scheme.html#a66f14671a6d813d14a02acf8a84485f0">More...</a><br /></td></tr>
+<tr class="separator:a66f14671a6d813d14a02acf8a84485f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb78136ca2da2343631641677d99e3d"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#aadb78136ca2da2343631641677d99e3d">element_get_face_neighbor_inside</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *neigh, const int face, int *neigh_face) noexcept</td></tr>
+<tr class="memdesc:aadb78136ca2da2343631641677d99e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the face neighbor of a given element if this face neighbor is inside the root tree.  <a href="structt8__standalone__scheme.html#aadb78136ca2da2343631641677d99e3d">More...</a><br /></td></tr>
+<tr class="separator:aadb78136ca2da2343631641677d99e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a578cf12dbf034511b822f39ea4408b54"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a578cf12dbf034511b822f39ea4408b54">element_transform_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2, [[maybe_unused]] const int orientation, [[maybe_unused]] const int sign, [[maybe_unused]] const int is_smaller_face) noexcept</td></tr>
 <tr class="memdesc:a578cf12dbf034511b822f39ea4408b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suppose we have two trees that share a common face f.  <a href="structt8__standalone__scheme.html#a578cf12dbf034511b822f39ea4408b54">More...</a><br /></td></tr>
 <tr class="separator:a578cf12dbf034511b822f39ea4408b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a3020c3696eb5b27ec164344398bf6c"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a4a3020c3696eb5b27ec164344398bf6c">element_extrude_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *face, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int root_face, [[maybe_unused]] const <a class="el" href="classt8__scheme.html">t8_scheme</a> *face_scheme) noexcept</td></tr>
 <tr class="memdesc:a4a3020c3696eb5b27ec164344398bf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a boundary face inside a root tree's face construct the element inside the root tree that has the given face as a face.  <a href="structt8__standalone__scheme.html#a4a3020c3696eb5b27ec164344398bf6c">More...</a><br /></td></tr>
 <tr class="separator:a4a3020c3696eb5b27ec164344398bf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72ffa8f178dfa68c6941326531ba7fc3"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a72ffa8f178dfa68c6941326531ba7fc3">element_get_boundary_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int face, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *boundary, [[maybe_unused]] const <a class="el" href="classt8__scheme.html">t8_scheme</a> *boundary_scheme) noexcept</td></tr>
-<tr class="memdesc:a72ffa8f178dfa68c6941326531ba7fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the boundary element at a specific face.  <a href="structt8__standalone__scheme.html#a72ffa8f178dfa68c6941326531ba7fc3">More...</a><br /></td></tr>
-<tr class="separator:a72ffa8f178dfa68c6941326531ba7fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a696aad83ab71275a0e89d32d3cd2bb56"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a696aad83ab71275a0e89d32d3cd2bb56">element_get_boundary_face</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int face, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *boundary, [[maybe_unused]] const <a class="el" href="classt8__scheme.html">t8_scheme</a> *boundary_scheme) noexcept</td></tr>
+<tr class="memdesc:a696aad83ab71275a0e89d32d3cd2bb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the boundary element at a specific face.  <a href="structt8__standalone__scheme.html#a696aad83ab71275a0e89d32d3cd2bb56">More...</a><br /></td></tr>
+<tr class="separator:a696aad83ab71275a0e89d32d3cd2bb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b7988c76b1416521f211835429c39e9"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a9b7988c76b1416521f211835429c39e9">element_set_linear_id</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const t8_element_level level, <a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a> id) noexcept</td></tr>
 <tr class="memdesc:a9b7988c76b1416521f211835429c39e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the entries of an allocated element according to a given linear id in a uniform refinement.  <a href="structt8__standalone__scheme.html#a9b7988c76b1416521f211835429c39e9">More...</a><br /></td></tr>
 <tr class="separator:a9b7988c76b1416521f211835429c39e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -756,8 +768,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="af5ef743496029ba655fbb9f08cae4ca9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5ef743496029ba655fbb9f08cae4ca9">&#9670;&nbsp;</a></span>element_face_get_child_face()</h2>
+<a id="ac6da3b3d9bf2a9eab88ddc795c264afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6da3b3d9bf2a9eab88ddc795c264afc">&#9670;&nbsp;</a></span>element_face_get_child_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -776,7 +788,7 @@ template&lt;t8_eclass TEclass&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>face</em>, </td>
         </tr>
         <tr>
@@ -817,8 +829,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="a22e395517c3e4f92b069f4d4a8ef22b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22e395517c3e4f92b069f4d4a8ef22b9">&#9670;&nbsp;</a></span>element_face_get_parent_face()</h2>
+<a id="aef28d8a2feca33ef22c32969a46b864e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef28d8a2feca33ef22c32969a46b864e">&#9670;&nbsp;</a></span>element_face_get_parent_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -837,7 +849,7 @@ template&lt;t8_eclass TEclass&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>face</em>&#160;</td>
         </tr>
         <tr>
@@ -915,8 +927,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="a72ffa8f178dfa68c6941326531ba7fc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72ffa8f178dfa68c6941326531ba7fc3">&#9670;&nbsp;</a></span>element_get_boundary_face()</h2>
+<a id="a696aad83ab71275a0e89d32d3cd2bb56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a696aad83ab71275a0e89d32d3cd2bb56">&#9670;&nbsp;</a></span>element_get_boundary_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -929,13 +941,13 @@ template&lt;t8_eclass TEclass&gt; </div>
         <tr>
           <td class="memname">static constexpr void <a class="el" href="structt8__standalone__scheme.html">t8_standalone_scheme</a>&lt; TEclass &gt;::element_get_boundary_face </td>
           <td>(</td>
-          <td class="paramtype">[[maybe_unused] ] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
           <td class="paramname"><em>elem</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>face</em>, </td>
         </tr>
         <tr>
@@ -969,7 +981,7 @@ template&lt;t8_eclass TEclass&gt; </div>
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The input element. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>The index of the face of which to construct the boundary element. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">boundary</td><td>An allocated element of dimension of <em>element</em> minus 1. The entries will be filled with the entries of the face of <em>element</em>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">boundary_scheme</td><td>The scheme for the eclass of the boundary face. If <em>elem</em> is of class T8_ECLASS_VERTEX, then <em>boundary</em> must be NULL and will not be modified. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">boundary_scheme</td><td>The scheme collection If <em>elem</em> is of class T8_ECLASS_VERTEX, then <em>boundary</em> must be NULL and will not be modified. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1125,8 +1137,8 @@ t8_element_child_eclass </dd></dl>
 
 </div>
 </div>
-<a id="ad82393135dc0a28969e9dabff1f05bc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad82393135dc0a28969e9dabff1f05bc9">&#9670;&nbsp;</a></span>element_get_children_at_face()</h2>
+<a id="a9d98ccc5a2cf600b35049ba441dd58b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d98ccc5a2cf600b35049ba441dd58b6">&#9670;&nbsp;</a></span>element_get_children_at_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1145,19 +1157,19 @@ template&lt;t8_eclass TEclass&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>face</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
           <td class="paramname"><em>children</em>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>num_children</em>, </td>
         </tr>
         <tr>
@@ -1193,8 +1205,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="a76c48befd3397650623c417ba43d63cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76c48befd3397650623c417ba43d63cb">&#9670;&nbsp;</a></span>element_get_corner_face()</h2>
+<a id="a848e6b950d9b49c13131c954ff7fc37c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848e6b950d9b49c13131c954ff7fc37c">&#9670;&nbsp;</a></span>element_get_corner_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1213,13 +1225,13 @@ template&lt;t8_eclass TEclass&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>corner</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>face</em>&#160;</td>
         </tr>
         <tr>
@@ -1248,8 +1260,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="abe10a80789b742d68d8c9eae28b2c43e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe10a80789b742d68d8c9eae28b2c43e">&#9670;&nbsp;</a></span>element_get_face_corner()</h2>
+<a id="a7f294bb211547673fe50757291c3ba90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f294bb211547673fe50757291c3ba90">&#9670;&nbsp;</a></span>element_get_face_corner()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1268,13 +1280,13 @@ template&lt;t8_eclass TEclass&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>face</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>corner</em>&#160;</td>
         </tr>
         <tr>
@@ -1305,8 +1317,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="a419cd0166a0d571b4b9c33b7b8c19040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a419cd0166a0d571b4b9c33b7b8c19040">&#9670;&nbsp;</a></span>element_get_face_neighbor_inside()</h2>
+<a id="aadb78136ca2da2343631641677d99e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadb78136ca2da2343631641677d99e3d">&#9670;&nbsp;</a></span>element_get_face_neighbor_inside()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1325,19 +1337,19 @@ template&lt;t8_eclass TEclass&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
           <td class="paramname"><em>neigh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>face</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] int *&#160;</td>
+          <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>neigh_face</em>&#160;</td>
         </tr>
         <tr>
@@ -1364,6 +1376,8 @@ template&lt;t8_eclass TEclass&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if <em>neigh</em> is inside the root tree. False if not. In this case <em>neigh's</em> data can be arbitrary on output. </dd></dl>
+<p>Adapt coordinates</p>
+<p>check inside root</p>
 
 </div>
 </div>
@@ -1469,8 +1483,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="a7020437c04a28a6e3515f7821fc9dfe0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7020437c04a28a6e3515f7821fc9dfe0">&#9670;&nbsp;</a></span>element_get_first_descendant_face()</h2>
+<a id="a0eb113ca47b3ffc8e5ecb65000a943f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb113ca47b3ffc8e5ecb65000a943f1">&#9670;&nbsp;</a></span>element_get_first_descendant_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1483,25 +1497,25 @@ template&lt;t8_eclass TEclass&gt; </div>
         <tr>
           <td class="memname">static constexpr void <a class="el" href="structt8__standalone__scheme.html">t8_standalone_scheme</a>&lt; TEclass &gt;::element_get_first_descendant_face </td>
           <td>(</td>
-          <td class="paramtype">[[maybe_unused] ] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
           <td class="paramname"><em>elem</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>face</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
           <td class="paramname"><em>first_desc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const t8_element_level&#160;</td>
+          <td class="paramtype">const t8_element_level&#160;</td>
           <td class="paramname"><em>level</em>&#160;</td>
         </tr>
         <tr>
@@ -1584,8 +1598,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="acc54566864d8b70fbe3d1827917ee9c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc54566864d8b70fbe3d1827917ee9c1">&#9670;&nbsp;</a></span>element_get_last_descendant_face()</h2>
+<a id="a528dac6e73c1c9f5dc262325f54155ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528dac6e73c1c9f5dc262325f54155ad">&#9670;&nbsp;</a></span>element_get_last_descendant_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1604,19 +1618,19 @@ template&lt;t8_eclass TEclass&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>face</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
           <td class="paramname"><em>last_desc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const t8_element_level&#160;</td>
+          <td class="paramtype">const t8_element_level&#160;</td>
           <td class="paramname"><em>level</em>&#160;</td>
         </tr>
         <tr>
@@ -2216,8 +2230,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="a54c86fd14cdec0a08c4d2180b29c1cdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54c86fd14cdec0a08c4d2180b29c1cdd">&#9670;&nbsp;</a></span>element_get_tree_face()</h2>
+<a id="a66f14671a6d813d14a02acf8a84485f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f14671a6d813d14a02acf8a84485f0">&#9670;&nbsp;</a></span>element_get_tree_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2236,7 +2250,7 @@ template&lt;t8_eclass TEclass&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>face</em>&#160;</td>
         </tr>
         <tr>
@@ -2457,8 +2471,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="a477fb5f4020dcf6be3b663ae5dee3bd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a477fb5f4020dcf6be3b663ae5dee3bd1">&#9670;&nbsp;</a></span>element_is_root_boundary()</h2>
+<a id="af4a3ebd2ceea871448f111a8ee33ed6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a3ebd2ceea871448f111a8ee33ed6f">&#9670;&nbsp;</a></span>element_is_root_boundary()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2471,13 +2485,13 @@ template&lt;t8_eclass TEclass&gt; </div>
         <tr>
           <td class="memname">static constexpr int <a class="el" href="structt8__standalone__scheme.html">t8_standalone_scheme</a>&lt; TEclass &gt;::element_is_root_boundary </td>
           <td>(</td>
-          <td class="paramtype">[[maybe_unused] ] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
           <td class="paramname"><em>elem</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>face</em>&#160;</td>
         </tr>
         <tr>
@@ -2864,7 +2878,7 @@ template&lt;t8_eclass TEclass&gt; </div>
 </div>
 </div>
 <a id="a578cf12dbf034511b822f39ea4408b54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a578cf12dbf034511b822f39ea4408b54">&#9670;&nbsp;</a></span>element_transform_face()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a578cf12dbf034511b822f39ea4408b54">&#9670;&nbsp;</a></span>element_transform_face() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2913,6 +2927,79 @@ template&lt;t8_eclass TEclass&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Suppose we have two trees that share a common face f. </p>
+<p>Given an element e that is a subface of f in one of the trees and given the orientation of the tree connection, construct the face element of the respective tree neighbor that logically coincides with e but lies in the coordinate system of the neighbor tree. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">elem1</td><td>The face element. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem2</td><td>On return the face element <em>elem1</em> with respective to the coordinate system of the other tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">orientation</td><td>The orientation of the tree-tree connection. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__cmesh_8h.html#a7a3c52997f3d6eb9d02870c34171693b" title="Insert a face-connection between two trees in a cmesh.">t8_cmesh_set_join</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sign</td><td>Depending on the topological orientation of the two tree faces, either 0 (both faces have opposite orientation) or 1 (both faces have the same top. orientation). <a class="el" href="t8__eclass_8h.html#a62982c7b72a0ab0b8d836beaf97bc430">t8_eclass_face_orientation</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_smaller_face</td><td>Flag to declare whether <em>elem1</em> belongs to the smaller face. A face f of tree T is smaller than f' of T' if either the eclass of T is smaller or if the classes are equal and f&lt;f'. The orientation is defined in relation to the smaller face. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd><em>elem1</em> and <em>elem2</em> may point to the same element. </dd></dl>
+
+</div>
+</div>
+<a id="a16f63ec27654fb89fdfafcb02c885416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f63ec27654fb89fdfafcb02c885416">&#9670;&nbsp;</a></span>element_transform_face() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structt8__standalone__scheme.html">t8_standalone_scheme</a>&lt; <a class="el" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9ac4ce741ff4e19d3e94aa1eb0c0e7abbd">T8_ECLASS_VERTEX</a> &gt;::element_transform_face </td>
+          <td>(</td>
+          <td class="paramtype">[[maybe_unused] ] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramname"><em>orientation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramname"><em>sign</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] const int&#160;</td>
+          <td class="paramname"><em>is_smaller_face</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
