@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.848-27dd</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.852-8eb6d</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -248,12 +248,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a578cf12dbf034511b822f39ea4408b54"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a578cf12dbf034511b822f39ea4408b54">element_transform_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem1, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem2, [[maybe_unused]] const int orientation, [[maybe_unused]] const int sign, [[maybe_unused]] const int is_smaller_face) noexcept</td></tr>
 <tr class="memdesc:a578cf12dbf034511b822f39ea4408b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suppose we have two trees that share a common face f.  <a href="structt8__standalone__scheme.html#a578cf12dbf034511b822f39ea4408b54">More...</a><br /></td></tr>
 <tr class="separator:a578cf12dbf034511b822f39ea4408b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a3020c3696eb5b27ec164344398bf6c"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a4a3020c3696eb5b27ec164344398bf6c">element_extrude_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *face, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int root_face, [[maybe_unused]] const <a class="el" href="classt8__scheme.html">t8_scheme</a> *face_scheme) noexcept</td></tr>
-<tr class="memdesc:a4a3020c3696eb5b27ec164344398bf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a boundary face inside a root tree's face construct the element inside the root tree that has the given face as a face.  <a href="structt8__standalone__scheme.html#a4a3020c3696eb5b27ec164344398bf6c">More...</a><br /></td></tr>
-<tr class="separator:a4a3020c3696eb5b27ec164344398bf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a696aad83ab71275a0e89d32d3cd2bb56"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a696aad83ab71275a0e89d32d3cd2bb56">element_get_boundary_face</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int face, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *boundary, [[maybe_unused]] const <a class="el" href="classt8__scheme.html">t8_scheme</a> *boundary_scheme) noexcept</td></tr>
-<tr class="memdesc:a696aad83ab71275a0e89d32d3cd2bb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the boundary element at a specific face.  <a href="structt8__standalone__scheme.html#a696aad83ab71275a0e89d32d3cd2bb56">More...</a><br /></td></tr>
-<tr class="separator:a696aad83ab71275a0e89d32d3cd2bb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b8a30a9d33a1e566977a4e0fde153b"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a67b8a30a9d33a1e566977a4e0fde153b">element_extrude_face</a> ([[maybe_unused]] const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *face, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, [[maybe_unused]] const int root_face, [[maybe_unused]] const <a class="el" href="classt8__scheme.html">t8_scheme</a> *scheme) noexcept</td></tr>
+<tr class="memdesc:a67b8a30a9d33a1e566977a4e0fde153b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a boundary face inside a root tree's face construct the element inside the root tree that has the given face as a face.  <a href="structt8__standalone__scheme.html#a67b8a30a9d33a1e566977a4e0fde153b">More...</a><br /></td></tr>
+<tr class="separator:a67b8a30a9d33a1e566977a4e0fde153b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a645fe5af8716371a983c48020abc76"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a0a645fe5af8716371a983c48020abc76">element_get_boundary_face</a> (const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int face, [[maybe_unused]] <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *boundary, [[maybe_unused]] const <a class="el" href="classt8__scheme.html">t8_scheme</a> *scheme) noexcept</td></tr>
+<tr class="memdesc:a0a645fe5af8716371a983c48020abc76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the boundary element at a specific face.  <a href="structt8__standalone__scheme.html#a0a645fe5af8716371a983c48020abc76">More...</a><br /></td></tr>
+<tr class="separator:a0a645fe5af8716371a983c48020abc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b7988c76b1416521f211835429c39e9"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__standalone__scheme.html#a9b7988c76b1416521f211835429c39e9">element_set_linear_id</a> (<a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const t8_element_level level, <a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a> id) noexcept</td></tr>
 <tr class="memdesc:a9b7988c76b1416521f211835429c39e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the entries of an allocated element according to a given linear id in a uniform refinement.  <a href="structt8__standalone__scheme.html#a9b7988c76b1416521f211835429c39e9">More...</a><br /></td></tr>
 <tr class="separator:a9b7988c76b1416521f211835429c39e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -706,8 +706,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="a4a3020c3696eb5b27ec164344398bf6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a3020c3696eb5b27ec164344398bf6c">&#9670;&nbsp;</a></span>element_extrude_face()</h2>
+<a id="a67b8a30a9d33a1e566977a4e0fde153b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b8a30a9d33a1e566977a4e0fde153b">&#9670;&nbsp;</a></span>element_extrude_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -739,7 +739,7 @@ template&lt;t8_eclass TEclass&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">[[maybe_unused] ] const <a class="el" href="classt8__scheme.html">t8_scheme</a> *&#160;</td>
-          <td class="paramname"><em>face_scheme</em>&#160;</td>
+          <td class="paramname"><em>scheme</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -758,9 +758,9 @@ template&lt;t8_eclass TEclass&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>A face element. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">face_scheme</td><td>The scheme for the face element. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>An allocated element. The entries will be filled with the data of the element that has <em>face</em> as a face and lies within the root tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">root_face</td><td>The index of the face of the root tree in which <em>face</em> lies. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>The scheme collection with a scheme for the eclass of the face. </td></tr>
   </table>
   </dd>
 </dl>
@@ -927,8 +927,8 @@ template&lt;t8_eclass TEclass&gt; </div>
 
 </div>
 </div>
-<a id="a696aad83ab71275a0e89d32d3cd2bb56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a696aad83ab71275a0e89d32d3cd2bb56">&#9670;&nbsp;</a></span>element_get_boundary_face()</h2>
+<a id="a0a645fe5af8716371a983c48020abc76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a645fe5af8716371a983c48020abc76">&#9670;&nbsp;</a></span>element_get_boundary_face()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -960,7 +960,7 @@ template&lt;t8_eclass TEclass&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">[[maybe_unused] ] const <a class="el" href="classt8__scheme.html">t8_scheme</a> *&#160;</td>
-          <td class="paramname"><em>boundary_scheme</em>&#160;</td>
+          <td class="paramname"><em>scheme</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -981,7 +981,7 @@ template&lt;t8_eclass TEclass&gt; </div>
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>The input element. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>The index of the face of which to construct the boundary element. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">boundary</td><td>An allocated element of dimension of <em>element</em> minus 1. The entries will be filled with the entries of the face of <em>element</em>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">boundary_scheme</td><td>The scheme collection If <em>elem</em> is of class T8_ECLASS_VERTEX, then <em>boundary</em> must be NULL and will not be modified. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>The scheme containing an eclass scheme for the boundary face. If <em>elem</em> is of class T8_ECLASS_VERTEX, then <em>boundary</em> must be NULL and will not be modified. </td></tr>
   </table>
   </dd>
 </dl>
