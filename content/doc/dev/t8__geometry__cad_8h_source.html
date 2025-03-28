@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.862-515e</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.876-73e03</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -107,7 +107,7 @@ $(function() {
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__geometry_8h.html">t8_geometry/t8_geometry.h</a>&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__geometry__with__vertices_8h.html">t8_geometry/t8_geometry_with_vertices.h</a>&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#if T8_WITH_OCC</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#if T8_ENABLE_OCC</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__geometry__cad.html">t8_geometry_cad</a> <a class="code" href="structt8__geometry__cad.html">t8_geometry_cad_c</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
@@ -121,7 +121,7 @@ $(function() {
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;T8_EXTERN_C_END ();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_WITH_OCC */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_ENABLE_OCC */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_GEOMETRY_CAD_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__geometry__cad_html"><div class="ttname"><a href="structt8__geometry__cad.html">t8_geometry_cad</a></div><div class="ttdoc">This geometry uses OpenCASCADE CAD geometries to curve the trees to the actual shape of the underlyin...</div><div class="ttdef"><b>Definition:</b> t8_geometry_cad.hxx:50</div></div>

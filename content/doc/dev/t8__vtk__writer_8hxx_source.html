@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.862-515e</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.876-73e03</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -116,7 +116,7 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;t8_vtk.h&gt;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__vec_8hxx.html">t8_types/t8_vec.hxx</a>&gt;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if T8_WITH_VTK</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if T8_ENABLE_VTK</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;vtkUnstructuredGrid.h&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;vtkXMLPUnstructuredGridWriter.h&gt;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;vtkDoubleArray.h&gt;</span></div>
@@ -143,7 +143,7 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#include &lt;vtkMPICommunicator.h&gt;</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#include &lt;vtkMPIController.h&gt;</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_ENABLE_MPI */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_WITH_VTK */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_ENABLE_VTK */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> gr<span class="keywordtype">id</span>_t&gt;</div>
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classvtk__writer.html">   74</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvtk__writer.html">vtk_writer</a> {</div>
@@ -161,13 +161,13 @@ $(function() {
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  {</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#if T8_WITH_VTK</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#if T8_ENABLE_VTK</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  grid_to_vtkUnstructuredGrid (<span class="keyword">const</span> grid_t grid, vtkSmartPointer&lt;vtkUnstructuredGrid&gt; unstructuredGrid)</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    this-&gt;t8_grid_to_vtkUnstructuredGrid (grid, unstructuredGrid);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_WITH_VTK */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_ENABLE_VTK */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classvtk__writer.html#abf6c2a51a24ff4704dd733e0a72e32bf">  126</a></span>&#160;  <a class="code" href="classvtk__writer.html#abf6c2a51a24ff4704dd733e0a72e32bf">write_with_API</a> (<span class="keyword">const</span> grid_t grid)</div>
@@ -221,7 +221,7 @@ $(function() {
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  }</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#if T8_WITH_VTK</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#if T8_ENABLE_VTK</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  t8_grid_element_to_vtk_cell (<span class="keyword">const</span> grid_t grid, <span class="keyword">const</span> <a class="code" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, <span class="keyword">const</span> <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> itree,</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                               <span class="keyword">const</span> <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> offset, <span class="keyword">const</span> <span class="keywordtype">int</span> is_ghost, <span class="keyword">const</span> <span class="keywordtype">int</span> elem_id, <span class="keywordtype">long</span> <span class="keywordtype">int</span> *point_id,</div>
@@ -449,12 +449,12 @@ $(function() {
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <a class="code" href="t8_8h.html#a876569da34fe618166a85c01f7b92cb4">T8_FREE</a> (dataArrays);</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  }</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_WITH_VTK */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_ENABLE_VTK */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160; </div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  write_vtk ([[maybe_unused]] <span class="keyword">const</span> grid_t grid)</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  {</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="preprocessor">#if T8_WITH_VTK</span></div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="preprocessor">#if T8_ENABLE_VTK</span></div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <a class="code" href="t8_8h.html#afee33776137ab765a38d5c84424104b8">T8_ASSERT</a> (!fileprefix.empty ());</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160; </div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <span class="comment">/* </span></div>
