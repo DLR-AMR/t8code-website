@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.880-c41409</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.889-3f4b8</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -165,7 +165,7 @@ $(function() {
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="structt8__cmesh.html#ae16f79bc83a4635714c3a71e5de7fb67">  130</a></span>&#160;  int8_t <a class="code" href="structt8__cmesh.html#ae16f79bc83a4635714c3a71e5de7fb67">first_tree_shared</a>; </div>
 <div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="structt8__cmesh.html#a68a1a0da2ce018002a076ab2aa01a610">  133</a></span>&#160;  <a class="code" href="structt8__shmem__array.html">t8_shmem_array_t</a> <a class="code" href="structt8__cmesh.html#a68a1a0da2ce018002a076ab2aa01a610">tree_offsets</a>; </div>
 <div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="structt8__cmesh.html#aa511a3d169238b8610212ac77f328f1c">  138</a></span>&#160;  <a class="code" href="structt8__geometry__handler.html">t8_geometry_handler_c</a> *<a class="code" href="structt8__cmesh.html#aa511a3d169238b8610212ac77f328f1c">geometry_handler</a>; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#ifdef T8_ENABLE_DEBUG</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#if T8_ENABLE_DEBUG</span></div>
 <div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="structt8__cmesh.html#af8dcc35853c0a40fe331905d5f91bb45">  141</a></span>&#160;  <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> <a class="code" href="structt8__cmesh.html#af8dcc35853c0a40fe331905d5f91bb45">inserted_trees</a>;  </div>
 <div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="structt8__cmesh.html#a8fdaad976109702bfcf72eb3c082c206">  143</a></span>&#160;  <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> <a class="code" href="structt8__cmesh.html#a8fdaad976109702bfcf72eb3c082c206">inserted_ghosts</a>; </div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#endif</span></div>
