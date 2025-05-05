@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1008-d9ed</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1148-ec16</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -102,8 +102,26 @@ $(function() {
 <li>get_geometry()
 : <a class="el" href="structt8__geometry__handler.html#a1b24d6e38bcc4685891613f00204b055">t8_geometry_handler</a>
 </li>
+<li>get_global_number_of_vertices()
+: <a class="el" href="structt8__cmesh__vertex__connectivity.html#aece5e01b63a5276520f4992137a45a1c">t8_cmesh_vertex_connectivity</a>
+</li>
+<li>get_global_vertex()
+: <a class="el" href="classt8__cmesh__vertex__conn__tree__to__vertex.html#a70317c346150fa3247a28cf43930b595">t8_cmesh_vertex_conn_tree_to_vertex</a>
+</li>
+<li>get_global_vertex_of_tree()
+: <a class="el" href="structt8__cmesh__vertex__connectivity.html#a69b5b85d6c6901acc9970ea0240c8146">t8_cmesh_vertex_connectivity</a>
+</li>
+<li>get_global_vertices()
+: <a class="el" href="classt8__cmesh__vertex__conn__tree__to__vertex.html#a9141bc7ba8bd5ae4d65b2347b158d227">t8_cmesh_vertex_conn_tree_to_vertex</a>
+</li>
+<li>get_global_vertices_of_tree()
+: <a class="el" href="structt8__cmesh__vertex__connectivity.html#ad7c28c7bd3b1366b45b8e830348099bf">t8_cmesh_vertex_connectivity</a>
+</li>
 <li>get_linear_id_at_level()
 : <a class="el" href="classt8__element__array__iterator.html#a6dd2d6a47459e2e6f834f9e25ce4d460">t8_element_array_iterator</a>
+</li>
+<li>get_local_number_of_vertices()
+: <a class="el" href="structt8__cmesh__vertex__connectivity.html#adeb7b2294f490e3ca8e96d2708bb5f07">t8_cmesh_vertex_connectivity</a>
 </li>
 <li>get_maxlevel()
 : <a class="el" href="classt8__default__scheme__hex.html#a1c288ee3fbfdaca7e2d02e481e6f4579">t8_default_scheme_hex</a>
@@ -126,17 +144,34 @@ $(function() {
 <li>get_num_geometries()
 : <a class="el" href="structt8__geometry__handler.html#a4932c5f6c4665b3c16dd754ccc69094e">t8_geometry_handler</a>
 </li>
+<li>get_num_trees_at_vertex()
+: <a class="el" href="structt8__cmesh__vertex__connectivity.html#a62b6873f5c74163bf16997a26ff10737">t8_cmesh_vertex_connectivity</a>
+</li>
+<li>get_state()
+: <a class="el" href="classt8__cmesh__vertex__conn__vertex__to__tree.html#a612ab452e1e1b4bbc10d8fb9ae9cee2d">t8_cmesh_vertex_conn_vertex_to_tree</a>
+, <a class="el" href="structt8__cmesh__vertex__connectivity.html#abb69dbea015077a6efe2eee2f1dee994">t8_cmesh_vertex_connectivity</a>
+</li>
 <li>get_tree_geometry()
 : <a class="el" href="structt8__geometry__handler.html#a2348e0830dee8da367e6336627655bfe">t8_geometry_handler</a>
 </li>
 <li>get_tree_geometry_type()
 : <a class="el" href="structt8__geometry__handler.html#acec6fdbce50778374bdd4be4fe007022">t8_geometry_handler</a>
 </li>
+<li>get_tree_list_of_vertex()
+: <a class="el" href="classt8__cmesh__vertex__conn__vertex__to__tree.html#a514673b4bf36c17664b9482323ed86f9">t8_cmesh_vertex_conn_vertex_to_tree</a>
+, <a class="el" href="structt8__cmesh__vertex__connectivity.html#ac18fc2d799e8b10d66b0c475b13b2d39">t8_cmesh_vertex_connectivity</a>
+</li>
+<li>get_tree_to_vertex_state()
+: <a class="el" href="structt8__cmesh__vertex__connectivity.html#a5a37d74f8cedcdfa3d1d6166df1e4f56">t8_cmesh_vertex_connectivity</a>
+</li>
 <li>get_type()
 : <a class="el" href="classt8__lagrange__element.html#abe2b0c49787be3b0b0988b6b425772ad">t8_lagrange_element</a>
 </li>
 <li>get_unique_geometry()
 : <a class="el" href="structt8__geometry__handler.html#a18a3973681ce624d3172417828882f00">t8_geometry_handler</a>
+</li>
+<li>get_vertex_to_tree_state()
+: <a class="el" href="structt8__cmesh__vertex__connectivity.html#ab08b0dee9517ff25613690af5044559a">t8_cmesh_vertex_connectivity</a>
 </li>
 <li>t8_geom_check_tree_compatibility()
 : <a class="el" href="structt8__geometry.html#ae63c57302e57f271250601cfff83a29b">t8_geometry</a>
@@ -274,10 +309,10 @@ $(function() {
 , <a class="el" href="structt8__geometry__zero.html#a31ca862ae5dba664b4ba86ae3d5b4331">t8_geometry_zero</a>
 </li>
 <li>t8_geometry_analytic()
-: <a class="el" href="structt8__geometry__analytic.html#a1d92dcb5b2e231d66810c15ea0f895c2">t8_geometry_analytic</a>
+: <a class="el" href="structt8__geometry__analytic.html#a9e497623c8d9a806e0c58c14b633c33c">t8_geometry_analytic</a>
 </li>
 <li>t8_geometry_cad()
-: <a class="el" href="structt8__geometry__cad.html#af377aa853c2b4ba492995f224999a341">t8_geometry_cad</a>
+: <a class="el" href="structt8__geometry__cad.html#a42bf3a826539802095a4638c35f4e47f">t8_geometry_cad</a>
 </li>
 <li>t8_geometry_handler()
 : <a class="el" href="structt8__geometry__handler.html#a889d6a6f82adbba56601343984a5d2da">t8_geometry_handler</a>

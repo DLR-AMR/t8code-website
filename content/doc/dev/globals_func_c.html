@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1008-d9ed</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1148-ec16</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -111,8 +111,8 @@ $(function() {
 , <a class="el" href="t8__cmesh__partition_8h.html#aba78fbb12978d4bab3c852ef088ef13c">t8_cmesh_partition.h</a>
 </li>
 <li>t8_cmesh_gather_treecount_nocommit()
-: <a class="el" href="t8__cmesh__partition_8cxx.html#ab0e1b58092b77d21644381de997536f3">t8_cmesh_partition.cxx</a>
-, <a class="el" href="t8__cmesh__partition_8h.html#a17543b647903cab0d65c3fa95ec0ded8">t8_cmesh_partition.h</a>
+: <a class="el" href="t8__cmesh__partition_8h.html#a17543b647903cab0d65c3fa95ec0ded8">t8_cmesh_partition.h</a>
+, <a class="el" href="t8__cmesh__partition_8cxx.html#ab0e1b58092b77d21644381de997536f3">t8_cmesh_partition.cxx</a>
 </li>
 <li>t8_cmesh_gather_trees_per_eclass()
 : <a class="el" href="t8__cmesh__partition_8cxx.html#a29c1f9022e212e050636cefa6769636a">t8_cmesh_partition.cxx</a>
@@ -134,8 +134,8 @@ $(function() {
 , <a class="el" href="t8__cmesh_8h.html#ab3ab0fe2910c94cf5f0129444ce9f72f">t8_cmesh.h</a>
 </li>
 <li>t8_cmesh_get_first_tree()
-: <a class="el" href="t8__cmesh_8h.html#a9485e978693347df639b3d8989ba5b5f">t8_cmesh.h</a>
-, <a class="el" href="t8__cmesh_8cxx.html#a454adaebd92a359b563e3118c5ff60ef">t8_cmesh.cxx</a>
+: <a class="el" href="t8__cmesh_8cxx.html#a454adaebd92a359b563e3118c5ff60ef">t8_cmesh.cxx</a>
+, <a class="el" href="t8__cmesh_8h.html#a9485e978693347df639b3d8989ba5b5f">t8_cmesh.h</a>
 </li>
 <li>t8_cmesh_get_first_treeid()
 : <a class="el" href="t8__cmesh_8cxx.html#a421c2f23981bf08c2342335206fba833">t8_cmesh.cxx</a>
@@ -149,6 +149,14 @@ $(function() {
 : <a class="el" href="t8__cmesh_8cxx.html#ac7d033fa276c808bc890c22ec6b72133">t8_cmesh.cxx</a>
 , <a class="el" href="t8__cmesh_8h.html#a8fbf614bbd9983be78c441d9e2d79d40">t8_cmesh.h</a>
 </li>
+<li>t8_cmesh_get_global_vertex_of_tree()
+: <a class="el" href="t8__cmesh__vertex__connectivity_8cxx.html#a5995740c81e1a1bf388e7d415d484e82">t8_cmesh_vertex_connectivity.cxx</a>
+, <a class="el" href="t8__cmesh__vertex__connectivity_8h.html#a5995740c81e1a1bf388e7d415d484e82">t8_cmesh_vertex_connectivity.h</a>
+</li>
+<li>t8_cmesh_get_global_vertices_of_tree()
+: <a class="el" href="t8__cmesh__vertex__connectivity_8cxx.html#a1dbd0bc7d59a05d6cd8c2ca116bd714d">t8_cmesh_vertex_connectivity.cxx</a>
+, <a class="el" href="t8__cmesh__vertex__connectivity_8h.html#a1dbd0bc7d59a05d6cd8c2ca116bd714d">t8_cmesh_vertex_connectivity.h</a>
+</li>
 <li>t8_cmesh_get_local_id()
 : <a class="el" href="t8__cmesh_8cxx.html#a1d94ebad2638d3797d68fcfc527a0229">t8_cmesh.cxx</a>
 , <a class="el" href="t8__cmesh_8h.html#a01f49edd8ad89226d0a9421e76cd36e3">t8_cmesh.h</a>
@@ -161,17 +169,29 @@ $(function() {
 : <a class="el" href="t8__cmesh_8cxx.html#a4e03de8f3d0e92763420739856e76e83">t8_cmesh.cxx</a>
 , <a class="el" href="t8__cmesh_8h.html#a5c1ccdbe0ac6b6acc33010f2c73820cc">t8_cmesh.h</a>
 </li>
+<li>t8_cmesh_get_num_global_vertices()
+: <a class="el" href="t8__cmesh__vertex__connectivity_8cxx.html#a6bd26871a46182216cd4023f0f6f5324">t8_cmesh_vertex_connectivity.cxx</a>
+, <a class="el" href="t8__cmesh__vertex__connectivity_8h.html#a6bd26871a46182216cd4023f0f6f5324">t8_cmesh_vertex_connectivity.h</a>
+</li>
 <li>t8_cmesh_get_num_local_trees()
 : <a class="el" href="t8__cmesh_8cxx.html#ad050275c83d8057d82ba6e635c3afcca">t8_cmesh.cxx</a>
 , <a class="el" href="t8__cmesh_8h.html#a691014dc464eb5eb421b04c8675b931f">t8_cmesh.h</a>
+</li>
+<li>t8_cmesh_get_num_local_vertices()
+: <a class="el" href="t8__cmesh__vertex__connectivity_8cxx.html#ae7b3e479528d452cf65f41255eeb6797">t8_cmesh_vertex_connectivity.cxx</a>
+, <a class="el" href="t8__cmesh__vertex__connectivity_8h.html#ae7b3e479528d452cf65f41255eeb6797">t8_cmesh_vertex_connectivity.h</a>
 </li>
 <li>t8_cmesh_get_num_trees()
 : <a class="el" href="t8__cmesh_8cxx.html#aa0903cbf5cae6c0974b985ff2a7b2540">t8_cmesh.cxx</a>
 , <a class="el" href="t8__cmesh_8h.html#acb2c4614cb13dd7507a3c39b548d3d05">t8_cmesh.h</a>
 </li>
+<li>t8_cmesh_get_num_trees_at_vertex()
+: <a class="el" href="t8__cmesh__vertex__connectivity_8cxx.html#aea5a09e5893c597e6aa4b4ae635d115d">t8_cmesh_vertex_connectivity.cxx</a>
+, <a class="el" href="t8__cmesh__vertex__connectivity_8h.html#aea5a09e5893c597e6aa4b4ae635d115d">t8_cmesh_vertex_connectivity.h</a>
+</li>
 <li>t8_cmesh_get_partition_table()
-: <a class="el" href="t8__cmesh_8cxx.html#ad683a21c124bb8d498a1ea34fbe30328">t8_cmesh.cxx</a>
-, <a class="el" href="t8__cmesh_8h.html#a4918cb34d7d837ead1c8963adda4363c">t8_cmesh.h</a>
+: <a class="el" href="t8__cmesh_8h.html#a4918cb34d7d837ead1c8963adda4363c">t8_cmesh.h</a>
+, <a class="el" href="t8__cmesh_8cxx.html#ad683a21c124bb8d498a1ea34fbe30328">t8_cmesh.cxx</a>
 </li>
 <li>t8_cmesh_get_tree()
 : <a class="el" href="t8__cmesh_8cxx.html#af8c8148b0e6cd8dc0e98f4007be5f418">t8_cmesh.cxx</a>
@@ -214,8 +234,8 @@ $(function() {
 , <a class="el" href="t8__cmesh_8h.html#a3348d07b3c2953bcbb8b2e1aa919f182">t8_cmesh.h</a>
 </li>
 <li>t8_cmesh_is_partitioned()
-: <a class="el" href="t8__cmesh_8h.html#a5359776a889e05190ea0fab6dfc30193">t8_cmesh.h</a>
-, <a class="el" href="t8__cmesh_8cxx.html#a3bb508381751c3587ae7251c7f8852f6">t8_cmesh.cxx</a>
+: <a class="el" href="t8__cmesh_8cxx.html#a3bb508381751c3587ae7251c7f8852f6">t8_cmesh.cxx</a>
+, <a class="el" href="t8__cmesh_8h.html#a5359776a889e05190ea0fab6dfc30193">t8_cmesh.h</a>
 </li>
 <li>t8_cmesh_ltreeid_to_ghostid()
 : <a class="el" href="t8__cmesh_8cxx.html#aa63da50bb45a384868f9dbb65ee93840">t8_cmesh.cxx</a>
@@ -329,8 +349,8 @@ $(function() {
 : <a class="el" href="t8__cmesh__examples_8h.html#ad34c80253ff9e8751871c6efcb5cbddd">t8_cmesh_examples.h</a>
 </li>
 <li>t8_cmesh_new_translate_vertices_to_attributes()
-: <a class="el" href="t8__cmesh_8h.html#a40da6be4bf5fa17dcfa3d97633d41f22">t8_cmesh.h</a>
-, <a class="el" href="t8__cmesh_8cxx.html#a40da6be4bf5fa17dcfa3d97633d41f22">t8_cmesh.cxx</a>
+: <a class="el" href="t8__cmesh_8cxx.html#a40da6be4bf5fa17dcfa3d97633d41f22">t8_cmesh.cxx</a>
+, <a class="el" href="t8__cmesh_8h.html#a40da6be4bf5fa17dcfa3d97633d41f22">t8_cmesh.h</a>
 </li>
 <li>t8_cmesh_new_triangulated_spherical_surface_cube()
 : <a class="el" href="t8__cmesh__examples_8h.html#af51f5cca5a5d6a4c6c04c8289aefe373">t8_cmesh_examples.h</a>
@@ -350,8 +370,8 @@ $(function() {
 , <a class="el" href="t8__cmesh__partition_8h.html#a5db99235f5d93dbe2fdd9f7358ee0bdf">t8_cmesh_partition.h</a>
 </li>
 <li>t8_cmesh_offset_percent()
-: <a class="el" href="t8__cmesh__partition_8cxx.html#a42cb23dba20fcaf37ed92553fd0244ed">t8_cmesh_partition.cxx</a>
-, <a class="el" href="t8__cmesh__partition_8h.html#ab198d1c88099209d8ecf2124dd6e8cc4">t8_cmesh_partition.h</a>
+: <a class="el" href="t8__cmesh__partition_8h.html#ab198d1c88099209d8ecf2124dd6e8cc4">t8_cmesh_partition.h</a>
+, <a class="el" href="t8__cmesh__partition_8cxx.html#a42cb23dba20fcaf37ed92553fd0244ed">t8_cmesh_partition.cxx</a>
 </li>
 <li>t8_cmesh_offset_random()
 : <a class="el" href="t8__cmesh__partition_8cxx.html#a764d6a5690d07bf8617e7ae42ba55e5a">t8_cmesh_partition.cxx</a>
@@ -375,12 +395,12 @@ $(function() {
 , <a class="el" href="t8__cmesh_8hxx.html#a034036660d74508b44d8933827c9e1ad">t8_cmesh.hxx</a>
 </li>
 <li>t8_cmesh_set_attribute()
-: <a class="el" href="t8__cmesh_8cxx.html#a765a470fe473fc5c8f9b025603045327">t8_cmesh.cxx</a>
-, <a class="el" href="t8__cmesh_8h.html#afde53c4f92fdc2993ced62e2986a8bfa">t8_cmesh.h</a>
+: <a class="el" href="t8__cmesh_8h.html#afde53c4f92fdc2993ced62e2986a8bfa">t8_cmesh.h</a>
+, <a class="el" href="t8__cmesh_8cxx.html#a765a470fe473fc5c8f9b025603045327">t8_cmesh.cxx</a>
 </li>
 <li>t8_cmesh_set_attribute_gloidx_array()
-: <a class="el" href="t8__cmesh_8h.html#ad0d1703216f125ec0d57e4b1034bbe16">t8_cmesh.h</a>
-, <a class="el" href="t8__cmesh_8cxx.html#ae81643700fffbc1c9450b3445bef7628">t8_cmesh.cxx</a>
+: <a class="el" href="t8__cmesh_8cxx.html#ae81643700fffbc1c9450b3445bef7628">t8_cmesh.cxx</a>
+, <a class="el" href="t8__cmesh_8h.html#ad0d1703216f125ec0d57e4b1034bbe16">t8_cmesh.h</a>
 </li>
 <li>t8_cmesh_set_attribute_string()
 : <a class="el" href="t8__cmesh_8cxx.html#aafccb952c205b62661c6214456c22e78">t8_cmesh.cxx</a>
@@ -394,6 +414,10 @@ $(function() {
 : <a class="el" href="t8__cmesh_8cxx.html#afdcc093b4cd3ab3350fb25f911607cbd">t8_cmesh.cxx</a>
 , <a class="el" href="t8__cmesh_8h.html#ad1566488382697810dd5ce7f096f479e">t8_cmesh.h</a>
 </li>
+<li>t8_cmesh_set_global_vertices_of_tree()
+: <a class="el" href="t8__cmesh__vertex__connectivity_8cxx.html#aa89f9436d4ad133c721d70e85eb0c1b0">t8_cmesh_vertex_connectivity.cxx</a>
+, <a class="el" href="t8__cmesh__vertex__connectivity_8h.html#aa89f9436d4ad133c721d70e85eb0c1b0">t8_cmesh_vertex_connectivity.h</a>
+</li>
 <li>t8_cmesh_set_join()
 : <a class="el" href="t8__cmesh_8cxx.html#a075014afd0b9f3f8530b02a09ffee45d">t8_cmesh.cxx</a>
 , <a class="el" href="t8__cmesh_8h.html#a7a3c52997f3d6eb9d02870c34171693b">t8_cmesh.h</a>
@@ -403,8 +427,8 @@ $(function() {
 , <a class="el" href="t8__cmesh__helpers_8h.html#a9409922a181df3aac03f5ca58a1446d3">t8_cmesh_helpers.h</a>
 </li>
 <li>t8_cmesh_set_join_by_vertices()
-: <a class="el" href="t8__cmesh__helpers_8h.html#a3c2798c3ad7e46482ffb1fabbebb3b9f">t8_cmesh_helpers.h</a>
-, <a class="el" href="t8__cmesh__helpers_8cxx.html#a3c2798c3ad7e46482ffb1fabbebb3b9f">t8_cmesh_helpers.cxx</a>
+: <a class="el" href="t8__cmesh__helpers_8cxx.html#a3c2798c3ad7e46482ffb1fabbebb3b9f">t8_cmesh_helpers.cxx</a>
+, <a class="el" href="t8__cmesh__helpers_8h.html#a3c2798c3ad7e46482ffb1fabbebb3b9f">t8_cmesh_helpers.h</a>
 </li>
 <li>t8_cmesh_set_partition_offsets()
 : <a class="el" href="t8__cmesh_8cxx.html#aef6375ec7b82c96a966472293fc2cfa1">t8_cmesh.cxx</a>
@@ -430,8 +454,8 @@ $(function() {
 , <a class="el" href="t8__cmesh_8h.html#ad318211db9da3414ff89983b3e24c118">t8_cmesh.h</a>
 </li>
 <li>t8_cmesh_set_tree_geometry()
-: <a class="el" href="t8__cmesh_8h.html#af63ca9ee92aa14f63cc8a70bd14cf8ed">t8_cmesh.h</a>
-, <a class="el" href="t8__cmesh__geometry_8cxx.html#ac6b19252637a1d1afd0a7019053e988c">t8_cmesh_geometry.cxx</a>
+: <a class="el" href="t8__cmesh__geometry_8cxx.html#ac6b19252637a1d1afd0a7019053e988c">t8_cmesh_geometry.cxx</a>
+, <a class="el" href="t8__cmesh_8h.html#af63ca9ee92aa14f63cc8a70bd14cf8ed">t8_cmesh.h</a>
 </li>
 <li>t8_cmesh_set_tree_vertices()
 : <a class="el" href="t8__cmesh_8cxx.html#a9e2cc0254f1107eb4966ab272d45bd57">t8_cmesh.cxx</a>
@@ -460,8 +484,8 @@ $(function() {
 , <a class="el" href="t8__cmesh_8h.html#a180934c9441c17e11cbb597af9ebc01b">t8_cmesh.h</a>
 </li>
 <li>t8_cmesh_treeid_is_local_tree()
-: <a class="el" href="t8__cmesh_8h.html#ad78c708349d14effdf93b3b2646f691e">t8_cmesh.h</a>
-, <a class="el" href="t8__cmesh_8cxx.html#ad78c708349d14effdf93b3b2646f691e">t8_cmesh.cxx</a>
+: <a class="el" href="t8__cmesh_8cxx.html#ad78c708349d14effdf93b3b2646f691e">t8_cmesh.cxx</a>
+, <a class="el" href="t8__cmesh_8h.html#ad78c708349d14effdf93b3b2646f691e">t8_cmesh.h</a>
 </li>
 <li>t8_cmesh_trees_add_ghost()
 : <a class="el" href="t8__cmesh__trees_8h.html#a6752807674c7e7dbcbeebd8b04774f5f">t8_cmesh_trees.h</a>

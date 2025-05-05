@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3d_1759',['operator=',['../classt8__default__scheme__common.html#ac0c1f5ae3062d1df8a4680cc1dd09f7c',1,'t8_default_scheme_common::operator=(t8_default_scheme_common &amp;&amp;other) noexcept'],['../classt8__default__scheme__common.html#ac6adfdf73c09f637afaf18e6f4477c5e',1,'t8_default_scheme_common::operator=(const t8_default_scheme_common &amp;other)'],['../structt8__standalone__scheme.html#a50d9ae94cd497905d92a3c37ade9bffc',1,'t8_standalone_scheme::operator=(t8_standalone_scheme &amp;&amp;other) noexcept'],['../structt8__standalone__scheme.html#aa66a00519cf78431bd71a511552d3128',1,'t8_standalone_scheme::operator=(const t8_standalone_scheme &amp;other)']]]
+  ['map_5fon_5fface_1831',['map_on_face',['../classt8__lagrange__element.html#afa1ffa723282b8792c82f4fb0e4f7118',1,'t8_lagrange_element']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_2706',['x',['../structt8__dhex.html#a1c5f32a3c938511eacca97f5ad31ce5a',1,'t8_dhex::x()'],['../structt8__dtet.html#a891d3f8d12454db88871789512a2f1ef',1,'t8_dtet::x()']]]
+  ['vertex_5fconnectivity_2795',['vertex_connectivity',['../structt8__cmesh.html#aa95fa2a8373b5a6de71a4af56be15bc7',1,'t8_cmesh']]]
 ];

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['vtk_5fwriter_2515',['vtk_writer',['../classvtk__writer.html#aa6d937d4b89db4d3fce065c83ce32bf7',1,'vtk_writer::vtk_writer(const bool write_treeid, const bool write_mpirank, const bool write_level, const bool write_element_id, const bool write_ghosts, const bool curved_flag, std::string fileprefix, const int num_data, t8_vtk_data_field_t *data, sc_MPI_Comm comm)'],['../classvtk__writer.html#a9717d4964defaef206b44933a7e815a7',1,'vtk_writer::vtk_writer(std::string fileprefix, sc_MPI_Comm comm)']]]
+  ['unref_2599',['unref',['../structt8__geometry__handler.html#ad2a9c5ff15d61a92e70ceb9a3879639d',1,'t8_geometry_handler::unref()'],['../classt8__scheme.html#a4d3a78bc332b7868397b835c8317ac47',1,'t8_scheme::unref()']]],
+  ['update_5fforest_2600',['update_forest',['../classt8__search__base.html#afe8df0114d97d73660629ca747b66521',1,'t8_search_base::update_forest()'],['../classt8__partition__search__base.html#a82b2b4955073beb2399a7374d8c253ed',1,'t8_partition_search_base::update_forest()']]],
+  ['update_5fuser_5fdata_2601',['update_user_data',['../classt8__search.html#ae56d782795b9440d7d9e140ba6bfb6a7',1,'t8_search::update_user_data()'],['../classt8__partition__search.html#af812dcda0de46b439b11b144f65a6e33',1,'t8_partition_search::update_user_data()']]]
 ];
