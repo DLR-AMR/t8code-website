@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1156-6cff</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1161-93f89</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -149,7 +149,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classt8__default__scheme__common.html">   87</a></span>&#160;<span class="keyword">class </span><a class="code" href="classt8__default__scheme__common.html">t8_default_scheme_common</a>: <span class="keyword">public</span> <a class="code" href="structt8__crtp__operator.html">t8_crtp_operator</a>&lt;TUnderlyingEclassScheme, t8_default_scheme_common&gt; {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">friend</span> TUnderlyingEclassScheme;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="classt8__default__scheme__common.html">t8_default_scheme_common</a> (<span class="keyword">const</span> <a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, <span class="keyword">const</span> <span class="keywordtype">size_t</span> elem_size)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="classt8__default__scheme__common.html">t8_default_scheme_common</a> (<span class="keyword">const</span> <a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, <span class="keyword">const</span> <span class="keywordtype">size_t</span> elem_size) noexcept</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    : <a class="code" href="classt8__default__scheme__common.html#a1e844a8f053755b5022e812deeb0f849">element_size</a> (elem_size), <a class="code" href="classt8__default__scheme__common.html#a3655aaa7c577bf21c3c3e2aec755c68b">scheme_context</a> (sc_mempool_new (elem_size)), <a class="code" href="classt8__default__scheme__common.html#a0bc4c33e0df7b207b03726c33ed737f8">eclass</a> (tree_class) {};</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; <span class="keyword">protected</span>:</div>
@@ -165,9 +165,9 @@ $(function() {
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classt8__default__scheme__common.html#a5b5a90da2b2f16ac12b7b606b670255a">  112</a></span>&#160;  <a class="code" href="classt8__default__scheme__common.html#a5b5a90da2b2f16ac12b7b606b670255a">t8_default_scheme_common</a> (<a class="code" href="classt8__default__scheme__common.html">t8_default_scheme_common</a> &amp;&amp;other) noexcept</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    : <a class="code" href="classt8__default__scheme__common.html#a1e844a8f053755b5022e812deeb0f849">element_size</a> (other.element_size), <a class="code" href="classt8__default__scheme__common.html#a3655aaa7c577bf21c3c3e2aec755c68b">scheme_context</a> (other.scheme_context), <a class="code" href="classt8__default__scheme__common.html#a0bc4c33e0df7b207b03726c33ed737f8">eclass</a> (other.eclass)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    other.scheme_context = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    : <a class="code" href="classt8__default__scheme__common.html#a1e844a8f053755b5022e812deeb0f849">element_size</a> (other.element_size), <a class="code" href="classt8__default__scheme__common.html#a3655aaa7c577bf21c3c3e2aec755c68b">scheme_context</a> (std::exchange (other.scheme_context, <span class="keyword">nullptr</span>)),</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <a class="code" href="classt8__default__scheme__common.html#a0bc4c33e0df7b207b03726c33ed737f8">eclass</a> (other.eclass)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="classt8__default__scheme__common.html">t8_default_scheme_common</a> &amp;</div>
