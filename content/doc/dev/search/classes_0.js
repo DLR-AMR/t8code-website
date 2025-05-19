@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['addable_1494',['Addable',['../structAddable.html',1,'']]],
-  ['addassignable_1495',['AddAssignable',['../structAddAssignable.html',1,'']]]
+  ['addable_1497',['Addable',['../structAddable.html',1,'']]],
+  ['addassignable_1498',['AddAssignable',['../structAddAssignable.html',1,'']]]
 ];

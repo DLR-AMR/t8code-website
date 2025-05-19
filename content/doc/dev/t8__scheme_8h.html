@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1280-281a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1287-d443</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -148,6 +148,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9f801b5ac2e3306ffe0d68b95c3fc8a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__scheme_8h.html#a9f801b5ac2e3306ffe0d68b95c3fc8a3">t8_element_get_num_children</a> (const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem)</td></tr>
 <tr class="memdesc:a9f801b5ac2e3306ffe0d68b95c3fc8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the number of children of an element when it is refined.  <a href="t8__scheme_8h.html#a9f801b5ac2e3306ffe0d68b95c3fc8a3">More...</a><br /></td></tr>
 <tr class="separator:a9f801b5ac2e3306ffe0d68b95c3fc8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f469f715ca5e1e5c2b6af78b5445a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__scheme_8h.html#a26f469f715ca5e1e5c2b6af78b5445a6">t8_get_max_num_children</a> (const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class)</td></tr>
+<tr class="memdesc:a26f469f715ca5e1e5c2b6af78b5445a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the max number of children of an eclass.  <a href="t8__scheme_8h.html#a26f469f715ca5e1e5c2b6af78b5445a6">More...</a><br /></td></tr>
+<tr class="separator:a26f469f715ca5e1e5c2b6af78b5445a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4781c3acf05e60ebd6c974b12fcf4787"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__scheme_8h.html#a4781c3acf05e60ebd6c974b12fcf4787">t8_element_get_num_face_children</a> (const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem, const int face)</td></tr>
 <tr class="memdesc:a4781c3acf05e60ebd6c974b12fcf4787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the number of children of an element's face when the element is refined.  <a href="t8__scheme_8h.html#a4781c3acf05e60ebd6c974b12fcf4787">More...</a><br /></td></tr>
 <tr class="separator:a4781c3acf05e60ebd6c974b12fcf4787"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3191,6 +3194,44 @@ If an element was created by <a class="el" href="t8__scheme_8h.html#aebd772f965b
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero if <b>fam</b> is not a family, nonzero if it is. </dd></dl>
+
+</div>
+</div>
+<a id="a26f469f715ca5e1e5c2b6af78b5445a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f469f715ca5e1e5c2b6af78b5445a6">&#9670;&nbsp;</a></span>t8_get_max_num_children()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_get_max_num_children </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *&#160;</td>
+          <td class="paramname"><em>scheme</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td>
+          <td class="paramname"><em>tree_class</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the max number of children of an eclass. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>The scheme of the forest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tree_class</td><td>The eclass of tree the elements are part of. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The max number of children of <em>element</em>. </dd></dl>
 
 </div>
 </div>
