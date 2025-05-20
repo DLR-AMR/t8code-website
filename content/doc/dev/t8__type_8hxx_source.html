@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1287-d443</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1290-41f24</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -143,27 +143,33 @@ $(function() {
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> std::move (value_);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  T value_;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">namespace </span>std</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Parameter, <span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class</span>... competence&gt;</div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01T8Type_3_01T_00_01Parameter_00_01competence_8_8_8_01_4_01_4.html">  112</a></span>&#160;<span class="keyword">struct </span>hash&lt;<a class="code" href="classT8Type.html">T8Type</a>&lt;T, Parameter, competence...&gt;&gt;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">using</span> <a class="code" href="classT8Type.html">T8TypeImpl</a> = <a class="code" href="classT8Type.html">T8Type</a>&lt;T, Parameter, competence...&gt;;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">using</span> checkIfHashable = <span class="keyword">typename</span> std::enable_if&lt;T8TypeImpl::is_hashable, void&gt;::type;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">size_t</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  operator() (<a class="code" href="classT8Type.html">T8Type&lt;T, Parameter, competence...&gt;</a> <span class="keyword">const</span>&amp; x)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> std::hash&lt;T&gt; {}(x.get ());</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}  <span class="comment">// namespace std</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_TYPE_HXX */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  constexpr</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classT8Type.html#a108d3f985b2ccb2b3fd4c83d1128f588">  100</a></span>&#160;  <span class="keyword">operator</span> value_type ()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> get ();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  T value_;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">namespace </span>std</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Parameter, <span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class</span>... competence&gt;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01T8Type_3_01T_00_01Parameter_00_01competence_8_8_8_01_4_01_4.html">  126</a></span>&#160;<span class="keyword">struct </span>hash&lt;<a class="code" href="classT8Type.html">T8Type</a>&lt;T, Parameter, competence...&gt;&gt;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">using</span> <a class="code" href="classT8Type.html">T8TypeImpl</a> = <a class="code" href="classT8Type.html">T8Type</a>&lt;T, Parameter, competence...&gt;;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">using</span> checkIfHashable = <span class="keyword">typename</span> std::enable_if&lt;T8TypeImpl::is_hashable, void&gt;::type;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">size_t</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  operator() (<a class="code" href="classT8Type.html">T8Type&lt;T, Parameter, competence...&gt;</a> <span class="keyword">const</span>&amp; x)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span> std::hash&lt;T&gt; {}(x.get ());</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;};</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}  <span class="comment">// namespace std</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_TYPE_HXX */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclassT8Type_html"><div class="ttname"><a href="classT8Type.html">T8Type</a></div><div class="ttdoc">An implementation of strong type with additional competences.</div><div class="ttdef"><b>Definition:</b> t8_type.hxx:47</div></div>
 <div class="ttc" id="aclassT8Type_html_aa709fdf352d80185cd3dda189c55c972"><div class="ttname"><a href="classT8Type.html#aa709fdf352d80185cd3dda189c55c972">T8Type::T8Type</a></div><div class="ttdeci">constexpr T8Type(T &amp;&amp;value, typename std::enable_if&lt;!std::is_reference&lt; T_ref &gt; {}, std::nullptr_t &gt;::type=nullptr)</div><div class="ttdoc">Construct a new T8Type object.</div><div class="ttdef"><b>Definition:</b> t8_type.hxx:66</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
