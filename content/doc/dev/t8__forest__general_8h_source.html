@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1299-52fb4</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1305-66e3</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -131,7 +131,7 @@ $(function() {
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> *       seems dangerous to expose to the user. */</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="t8__forest__general_8h.html#a4b9fc747748d8bdb998b643c0082331f">  116</a></span>&#160;<span class="keyword">typedef</span> int (*<a class="code" href="t8__forest__general_8h.html#a4b9fc747748d8bdb998b643c0082331f">t8_forest_adapt_t</a>) (<a class="code" href="structt8__forest.html">t8_forest_t</a> forest, <a class="code" href="structt8__forest.html">t8_forest_t</a> forest_from, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> which_tree,</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                  <span class="keyword">const</span> <a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> lelement_id, <span class="keyword">const</span> <a class="code" href="classt8__scheme.html">t8_scheme_c</a> *scheme,</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> is_family, <span class="keyword">const</span> <span class="keywordtype">int</span> num_elements, <a class="code" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *<a class="code" href="structt8__tree.html#a94e340daaf414146002193a5884116f0">elements</a>[]);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">int</span> is_family, <span class="keyword">const</span> <span class="keywordtype">int</span> num_elements, <a class="code" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elements[]);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">void</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<a class="code" href="t8__forest__general_8h.html#a8671e8128c5b13943cbf7187fe688cbb">t8_forest_init</a> (<a class="code" href="structt8__forest.html">t8_forest_t</a> *pforest);</div>
@@ -361,7 +361,6 @@ $(function() {
 <div class="ttc" id="astructt8__forest_html"><div class="ttname"><a href="structt8__forest.html">t8_forest</a></div><div class="ttdoc">This structure is private to the implementation.</div><div class="ttdef"><b>Definition:</b> t8_forest_types.h:69</div></div>
 <div class="ttc" id="astructt8__tree_html"><div class="ttname"><a href="structt8__tree.html">t8_tree</a></div><div class="ttdoc">The t8 tree datatype.</div><div class="ttdef"><b>Definition:</b> t8_forest_types.h:143</div></div>
 <div class="ttc" id="astructt8__tree_html_a5533491ed47f12c4afe62702e4fdf855"><div class="ttname"><a href="structt8__tree.html#a5533491ed47f12c4afe62702e4fdf855">t8_tree::eclass</a></div><div class="ttdeci">t8_eclass_t eclass</div><div class="ttdoc">The element class of this tree.</div><div class="ttdef"><b>Definition:</b> t8_forest_types.h:145</div></div>
-<div class="ttc" id="astructt8__tree_html_a94e340daaf414146002193a5884116f0"><div class="ttname"><a href="structt8__tree.html#a94e340daaf414146002193a5884116f0">t8_tree::elements</a></div><div class="ttdeci">t8_element_array_t elements</div><div class="ttdoc">locally stored leaf elements</div><div class="ttdef"><b>Definition:</b> t8_forest_types.h:144</div></div>
 <div class="ttc" id="at8_8h_html_a03692467b9ffc84d4d0c37e042679225"><div class="ttname"><a href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a></div><div class="ttdeci">int64_t t8_gloidx_t</div><div class="ttdoc">A type for global indexing that holds really big numbers.</div><div class="ttdef"><b>Definition:</b> t8.h:107</div></div>
 <div class="ttc" id="at8_8h_html_af85f71e058c1c9e64d8f7b04f6504fc0"><div class="ttname"><a href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a></div><div class="ttdeci">int32_t t8_locidx_t</div><div class="ttdoc">A type for processor-local indexing.</div><div class="ttdef"><b>Definition:</b> t8.h:96</div></div>
 <div class="ttc" id="at8__cmesh_8h_html"><div class="ttname"><a href="t8__cmesh_8h.html">t8_cmesh.h</a></div><div class="ttdoc">We define the coarse mesh of trees in this file.</div></div>
