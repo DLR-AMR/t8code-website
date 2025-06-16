@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1400-9536</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1424-357a9</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -105,136 +105,135 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__cmesh_8h.html">t8_cmesh.h</a>&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;p4est_connectivity.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;p8est_connectivity.h&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__cmesh__geometry_8h.html">t8_cmesh/t8_cmesh_geometry.h</a>&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;T8_EXTERN_C_BEGIN ();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a20a5ee9b32cbbfc1598ac8012f2751b8">t8_cmesh_new_from_p4est</a> (p4est_connectivity_t *conn, sc_MPI_Comm comm, <span class="keywordtype">int</span> do_partition);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a3c027c43c669ed008480f8533097fd04">t8_cmesh_new_from_p8est</a> (p8est_connectivity_t *conn, sc_MPI_Comm comm, <span class="keywordtype">int</span> do_partition);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="t8__cmesh__examples_8h.html#a3bca2dc00d0fe702d50aa72bbf56d163">   72</a></span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a3bca2dc00d0fe702d50aa72bbf56d163">t8_cmesh_new_empty</a> (sc_MPI_Comm comm, <span class="keyword">const</span> <span class="keywordtype">int</span> do_partition, <span class="keyword">const</span> <span class="keywordtype">int</span> dimension);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#ad3e5738807dc66bbfebb41e3dbb6e013">t8_cmesh_new_from_class</a> (<a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a722fe4dd63617d1056819258d8d9716d">t8_cmesh_new_hypercube</a> (<a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_MPI_Comm comm, <span class="keywordtype">int</span> do_bcast, <span class="keywordtype">int</span> do_partition, <span class="keywordtype">int</span> periodic);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;t8_cmesh_new_hypercube_pad (<span class="keyword">const</span> <a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_MPI_Comm comm, <span class="keyword">const</span> <span class="keywordtype">double</span> *boundary, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_x,</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                            <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_y, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_z, <span class="keyword">const</span> <span class="keywordtype">int</span> use_axis_aligned);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;t8_cmesh_new_hypercube_pad_ext (<span class="keyword">const</span> <a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_MPI_Comm comm, <span class="keyword">const</span> <span class="keywordtype">double</span> *boundary,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_x, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_y, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_z,</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> periodic_x, <span class="keyword">const</span> <span class="keywordtype">int</span> periodic_y, <span class="keyword">const</span> <span class="keywordtype">int</span> periodic_z,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> use_axis_aligned, <span class="keyword">const</span> <span class="keywordtype">int</span> set_partition, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> offset);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="t8__cmesh__examples_8h.html#a94f7a51c22371715a4c784a93e3c0c9b">  188</a></span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a94f7a51c22371715a4c784a93e3c0c9b">t8_cmesh_new_hypercube_hybrid</a> (sc_MPI_Comm comm, <span class="keywordtype">int</span> do_partition, <span class="keywordtype">int</span> periodic);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#aff7de3a49dc89461f31014f2bb709664">t8_cmesh_new_periodic</a> (sc_MPI_Comm comm, <span class="keywordtype">int</span> dim);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a4d4f3ef65dd883327f1185d11c3ba317">t8_cmesh_new_periodic_tri</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a2edce3b6374a23dc9de59bee710a5b0d">t8_cmesh_new_periodic_hybrid</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a41ab2486deddbf7671a54cbe760b5d5c">t8_cmesh_new_periodic_line_more_trees</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#acec0fa088ab79fc5689010d749d1cda0">t8_cmesh_new_bigmesh</a> (<a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, <span class="keywordtype">int</span> num_trees, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a0afc3e297d8bfaecd40d0babb744f4ad">t8_cmesh_new_line_zigzag</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a1c6a731c461509b77a0502538cf7fc9a">t8_cmesh_new_prism_cake</a> (sc_MPI_Comm comm, <span class="keywordtype">int</span> num_of_prisms);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a8eb3f912815e5428afdbfac82e2dedfa">t8_cmesh_new_prism_deformed</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a8de0ef173b9708d4fa250d0d3bf858ce">t8_cmesh_new_pyramid_deformed</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a104155b43fca8aa257bebceb9f7736df">t8_cmesh_new_prism_cake_funny_oriented</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a539ead8049133ddd30333929a8772192">t8_cmesh_new_prism_geometry</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a12b49f17fd850f650c5d5ff3550e3e8c">t8_cmesh_new_brick_2d</a> (<a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_x, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_y, <span class="keywordtype">int</span> x_periodic, <span class="keywordtype">int</span> y_periodic, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#acde2d8c8afb7a12f59ae064347b1a8bb">t8_cmesh_new_brick_3d</a> (<a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_x, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_y, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_z, <span class="keywordtype">int</span> x_periodic, <span class="keywordtype">int</span> y_periodic,</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                       <span class="keywordtype">int</span> z_periodic, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#ac19050f9ae9ce46c947b21cf8a3caa45">t8_cmesh_new_disjoint_bricks</a> (<a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_x, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_y, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_z, <span class="keywordtype">int</span> x_periodic, <span class="keywordtype">int</span> y_periodic,</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                              <span class="keywordtype">int</span> z_periodic, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#ad34c80253ff9e8751871c6efcb5cbddd">t8_cmesh_new_tet_orientation_test</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a673cd95deb8bb412a9c13c73907e88a7">t8_cmesh_new_hybrid_gate</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#abfe1c05420f4730e838293fdb0bbd2c8">t8_cmesh_new_hybrid_gate_deformed</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a5e81c3898ec576517d854b0b22dfcc45">t8_cmesh_new_full_hybrid</a> (sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#aea7e66e8b942e28e592c83fc04cf306a">t8_cmesh_new_pyramid_cake</a> (sc_MPI_Comm comm, <span class="keywordtype">int</span> num_of_pyra);</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a50cd0d42f38fa6f73b261feb84f62e40">t8_cmesh_new_long_brick_pyramid</a> (sc_MPI_Comm comm, <span class="keywordtype">int</span> num_cubes);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a66d57f01c6e198254ad1dcaa93bde1f4">t8_cmesh_new_row_of_cubes</a> (<a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_trees, <span class="keyword">const</span> <span class="keywordtype">int</span> set_attributes, <span class="keyword">const</span> <span class="keywordtype">int</span> do_partition, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#aa04743c4bfd797cba455eddefd91648d">t8_cmesh_new_quadrangulated_disk</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a33627fce6afdfb06be16fb355c6f2470">t8_cmesh_new_triangulated_spherical_surface_octahedron</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#aaaf63af0cfd87d7ef367cab6e6c05282">t8_cmesh_new_triangulated_spherical_surface_icosahedron</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#af51f5cca5a5d6a4c6c04c8289aefe373">t8_cmesh_new_triangulated_spherical_surface_cube</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#adeee8ac30c92cfe5be99cef5bebb589c">t8_cmesh_new_quadrangulated_spherical_surface</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#ae5f77d9104c19cffbd89cd46b52a3648">t8_cmesh_new_prismed_spherical_shell_octahedron</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> inner_radius, <span class="keyword">const</span> <span class="keywordtype">double</span> shell_thickness,</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                                                 <span class="keyword">const</span> <span class="keywordtype">int</span> num_levels, <span class="keyword">const</span> <span class="keywordtype">int</span> num_layers, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a427dbdaaccd27e2385c9ed5f9361498a">t8_cmesh_new_prismed_spherical_shell_icosahedron</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> inner_radius, <span class="keyword">const</span> <span class="keywordtype">double</span> shell_thickness,</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                                                  <span class="keyword">const</span> <span class="keywordtype">int</span> num_levels, <span class="keyword">const</span> <span class="keywordtype">int</span> num_layers, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#acafd6d62b40c39af0a471ccd10917ca0">t8_cmesh_new_cubed_spherical_shell</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> inner_radius, <span class="keyword">const</span> <span class="keywordtype">double</span> shell_thickness, <span class="keyword">const</span> <span class="keywordtype">int</span> num_trees,</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">int</span> num_layers, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160; </div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a8c4c2bffecfba23548f9d5c2b800973a">t8_cmesh_new_cubed_sphere</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_CMESH_EXAMPLES */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;T8_EXTERN_C_BEGIN ();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a20a5ee9b32cbbfc1598ac8012f2751b8">t8_cmesh_new_from_p4est</a> (p4est_connectivity_t *conn, sc_MPI_Comm comm, <span class="keywordtype">int</span> do_partition);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a3c027c43c669ed008480f8533097fd04">t8_cmesh_new_from_p8est</a> (p8est_connectivity_t *conn, sc_MPI_Comm comm, <span class="keywordtype">int</span> do_partition);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="t8__cmesh__examples_8h.html#a3bca2dc00d0fe702d50aa72bbf56d163">   71</a></span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a3bca2dc00d0fe702d50aa72bbf56d163">t8_cmesh_new_empty</a> (sc_MPI_Comm comm, <span class="keyword">const</span> <span class="keywordtype">int</span> do_partition, <span class="keyword">const</span> <span class="keywordtype">int</span> dimension);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#ad3e5738807dc66bbfebb41e3dbb6e013">t8_cmesh_new_from_class</a> (<a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a722fe4dd63617d1056819258d8d9716d">t8_cmesh_new_hypercube</a> (<a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_MPI_Comm comm, <span class="keywordtype">int</span> do_bcast, <span class="keywordtype">int</span> do_partition, <span class="keywordtype">int</span> periodic);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;t8_cmesh_new_hypercube_pad (<span class="keyword">const</span> <a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_MPI_Comm comm, <span class="keyword">const</span> <span class="keywordtype">double</span> *boundary, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_x,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                            <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_y, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_z, <span class="keyword">const</span> <span class="keywordtype">int</span> use_axis_aligned);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;t8_cmesh_new_hypercube_pad_ext (<span class="keyword">const</span> <a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_MPI_Comm comm, <span class="keyword">const</span> <span class="keywordtype">double</span> *boundary,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_x, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_y, <a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> polygons_z,</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> periodic_x, <span class="keyword">const</span> <span class="keywordtype">int</span> periodic_y, <span class="keyword">const</span> <span class="keywordtype">int</span> periodic_z,</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> use_axis_aligned, <span class="keyword">const</span> <span class="keywordtype">int</span> set_partition, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> offset);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="t8__cmesh__examples_8h.html#a94f7a51c22371715a4c784a93e3c0c9b">  187</a></span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a94f7a51c22371715a4c784a93e3c0c9b">t8_cmesh_new_hypercube_hybrid</a> (sc_MPI_Comm comm, <span class="keywordtype">int</span> do_partition, <span class="keywordtype">int</span> periodic);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#aff7de3a49dc89461f31014f2bb709664">t8_cmesh_new_periodic</a> (sc_MPI_Comm comm, <span class="keywordtype">int</span> dim);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a4d4f3ef65dd883327f1185d11c3ba317">t8_cmesh_new_periodic_tri</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a2edce3b6374a23dc9de59bee710a5b0d">t8_cmesh_new_periodic_hybrid</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a41ab2486deddbf7671a54cbe760b5d5c">t8_cmesh_new_periodic_line_more_trees</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#acec0fa088ab79fc5689010d749d1cda0">t8_cmesh_new_bigmesh</a> (<a class="code" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, <span class="keywordtype">int</span> num_trees, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a0afc3e297d8bfaecd40d0babb744f4ad">t8_cmesh_new_line_zigzag</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a1c6a731c461509b77a0502538cf7fc9a">t8_cmesh_new_prism_cake</a> (sc_MPI_Comm comm, <span class="keywordtype">int</span> num_of_prisms);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a8eb3f912815e5428afdbfac82e2dedfa">t8_cmesh_new_prism_deformed</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a8de0ef173b9708d4fa250d0d3bf858ce">t8_cmesh_new_pyramid_deformed</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a104155b43fca8aa257bebceb9f7736df">t8_cmesh_new_prism_cake_funny_oriented</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a539ead8049133ddd30333929a8772192">t8_cmesh_new_prism_geometry</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a12b49f17fd850f650c5d5ff3550e3e8c">t8_cmesh_new_brick_2d</a> (<a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_x, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_y, <span class="keywordtype">int</span> x_periodic, <span class="keywordtype">int</span> y_periodic, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#acde2d8c8afb7a12f59ae064347b1a8bb">t8_cmesh_new_brick_3d</a> (<a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_x, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_y, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_z, <span class="keywordtype">int</span> x_periodic, <span class="keywordtype">int</span> y_periodic,</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                       <span class="keywordtype">int</span> z_periodic, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#ac19050f9ae9ce46c947b21cf8a3caa45">t8_cmesh_new_disjoint_bricks</a> (<a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_x, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_y, <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_z, <span class="keywordtype">int</span> x_periodic, <span class="keywordtype">int</span> y_periodic,</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                              <span class="keywordtype">int</span> z_periodic, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#ad34c80253ff9e8751871c6efcb5cbddd">t8_cmesh_new_tet_orientation_test</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a673cd95deb8bb412a9c13c73907e88a7">t8_cmesh_new_hybrid_gate</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#abfe1c05420f4730e838293fdb0bbd2c8">t8_cmesh_new_hybrid_gate_deformed</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a5e81c3898ec576517d854b0b22dfcc45">t8_cmesh_new_full_hybrid</a> (sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#aea7e66e8b942e28e592c83fc04cf306a">t8_cmesh_new_pyramid_cake</a> (sc_MPI_Comm comm, <span class="keywordtype">int</span> num_of_pyra);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a50cd0d42f38fa6f73b261feb84f62e40">t8_cmesh_new_long_brick_pyramid</a> (sc_MPI_Comm comm, <span class="keywordtype">int</span> num_cubes);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a66d57f01c6e198254ad1dcaa93bde1f4">t8_cmesh_new_row_of_cubes</a> (<a class="code" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_trees, <span class="keyword">const</span> <span class="keywordtype">int</span> set_attributes, <span class="keyword">const</span> <span class="keywordtype">int</span> do_partition, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#aa04743c4bfd797cba455eddefd91648d">t8_cmesh_new_quadrangulated_disk</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a33627fce6afdfb06be16fb355c6f2470">t8_cmesh_new_triangulated_spherical_surface_octahedron</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#aaaf63af0cfd87d7ef367cab6e6c05282">t8_cmesh_new_triangulated_spherical_surface_icosahedron</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#af51f5cca5a5d6a4c6c04c8289aefe373">t8_cmesh_new_triangulated_spherical_surface_cube</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; </div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#adeee8ac30c92cfe5be99cef5bebb589c">t8_cmesh_new_quadrangulated_spherical_surface</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#ae5f77d9104c19cffbd89cd46b52a3648">t8_cmesh_new_prismed_spherical_shell_octahedron</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> inner_radius, <span class="keyword">const</span> <span class="keywordtype">double</span> shell_thickness,</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                                                 <span class="keyword">const</span> <span class="keywordtype">int</span> num_levels, <span class="keyword">const</span> <span class="keywordtype">int</span> num_layers, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a427dbdaaccd27e2385c9ed5f9361498a">t8_cmesh_new_prismed_spherical_shell_icosahedron</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> inner_radius, <span class="keyword">const</span> <span class="keywordtype">double</span> shell_thickness,</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                                                  <span class="keyword">const</span> <span class="keywordtype">int</span> num_levels, <span class="keyword">const</span> <span class="keywordtype">int</span> num_layers, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#acafd6d62b40c39af0a471ccd10917ca0">t8_cmesh_new_cubed_spherical_shell</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> inner_radius, <span class="keyword">const</span> <span class="keywordtype">double</span> shell_thickness, <span class="keyword">const</span> <span class="keywordtype">int</span> num_trees,</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">int</span> num_layers, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<a class="code" href="t8__cmesh__examples_8h.html#a8c4c2bffecfba23548f9d5c2b800973a">t8_cmesh_new_cubed_sphere</a> (<span class="keyword">const</span> <span class="keywordtype">double</span> radius, sc_MPI_Comm comm);</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160; </div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160; </div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_CMESH_EXAMPLES */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:90</div></div>
 <div class="ttc" id="at8_8h_html_a03692467b9ffc84d4d0c37e042679225"><div class="ttname"><a href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a></div><div class="ttdeci">int64_t t8_gloidx_t</div><div class="ttdoc">A type for global indexing that holds really big numbers.</div><div class="ttdef"><b>Definition:</b> t8.h:107</div></div>
 <div class="ttc" id="at8_8h_html_af85f71e058c1c9e64d8f7b04f6504fc0"><div class="ttname"><a href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a></div><div class="ttdeci">int32_t t8_locidx_t</div><div class="ttdoc">A type for processor-local indexing.</div><div class="ttdef"><b>Definition:</b> t8.h:96</div></div>
@@ -275,7 +274,6 @@ $(function() {
 <div class="ttc" id="at8__cmesh__examples_8h_html_aea7e66e8b942e28e592c83fc04cf306a"><div class="ttname"><a href="t8__cmesh__examples_8h.html#aea7e66e8b942e28e592c83fc04cf306a">t8_cmesh_new_pyramid_cake</a></div><div class="ttdeci">t8_cmesh_t t8_cmesh_new_pyramid_cake(sc_MPI_Comm comm, int num_of_pyra)</div><div class="ttdoc">Construct a mesh out of num_of_pyra many pyramids.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_examples.cxx:2636</div></div>
 <div class="ttc" id="at8__cmesh__examples_8h_html_af51f5cca5a5d6a4c6c04c8289aefe373"><div class="ttname"><a href="t8__cmesh__examples_8h.html#af51f5cca5a5d6a4c6c04c8289aefe373">t8_cmesh_new_triangulated_spherical_surface_cube</a></div><div class="ttdeci">t8_cmesh_t t8_cmesh_new_triangulated_spherical_surface_cube(const double radius, sc_MPI_Comm comm)</div><div class="ttdoc">Construct a triangulated spherical surface of given radius: cube version.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_examples.cxx:3148</div></div>
 <div class="ttc" id="at8__cmesh__examples_8h_html_aff7de3a49dc89461f31014f2bb709664"><div class="ttname"><a href="t8__cmesh__examples_8h.html#aff7de3a49dc89461f31014f2bb709664">t8_cmesh_new_periodic</a></div><div class="ttdeci">t8_cmesh_t t8_cmesh_new_periodic(sc_MPI_Comm comm, int dim)</div><div class="ttdoc">Construct a unit interval/square/cube coarse mesh that is periodic in each direction.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_examples.cxx:1776</div></div>
-<div class="ttc" id="at8__cmesh__geometry_8h_html"><div class="ttname"><a href="t8__cmesh__geometry_8h.html">t8_cmesh_geometry.h</a></div><div class="ttdoc">Internal functions that we need for the cmesh geometry.</div></div>
 <div class="ttc" id="at8__eclass_8h_html_a343c2af26e5b41822905b164cab176ec"><div class="ttname"><a href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a></div><div class="ttdeci">enum t8_eclass t8_eclass_t</div><div class="ttdoc">This enumeration contains all possible element classes.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->

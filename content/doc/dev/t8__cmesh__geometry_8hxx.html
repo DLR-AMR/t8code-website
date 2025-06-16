@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>t8: src/t8_cmesh/t8_cmesh_geometry.h File Reference</title>
+<title>t8: src/t8_cmesh/t8_cmesh_geometry.hxx File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1400-9536</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1424-357a9</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -77,7 +77,7 @@ $(function() {
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">t8_cmesh_geometry.h File Reference</div>  </div>
+<div class="title">t8_cmesh_geometry.hxx File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -86,27 +86,28 @@ $(function() {
 <div class="textblock"><code>#include &lt;<a class="el" href="t8_8h_source.html">t8.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__cmesh_8h_source.html">t8_cmesh.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__cmesh__types_8h_source.html">t8_cmesh/t8_cmesh_types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="t8__geometry__hash_8hxx_source.html">t8_geometry/t8_geometry_hash.hxx</a>&gt;</code><br />
 </div>
-<p><a href="t8__cmesh__geometry_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="t8__cmesh__geometry_8hxx_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae447333ff05116f21ca1d7ce4ed8d81b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__geometry_8h.html#ae447333ff05116f21ca1d7ce4ed8d81b">t8_cmesh_get_tree_geom_hash</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
-<tr class="memdesc:ae447333ff05116f21ca1d7ce4ed8d81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hash of the geometry stored for a tree in a cmesh.  <a href="t8__cmesh__geometry_8h.html#ae447333ff05116f21ca1d7ce4ed8d81b">More...</a><br /></td></tr>
-<tr class="separator:ae447333ff05116f21ca1d7ce4ed8d81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b61e70083fb214b25a9ca98fa9e6fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry__hash_8hxx.html#a10c610e48142563fb6e6519e617e220d">t8_geometry_hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__geometry_8hxx.html#a53b61e70083fb214b25a9ca98fa9e6fd">t8_cmesh_get_tree_geom_hash</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
+<tr class="memdesc:a53b61e70083fb214b25a9ca98fa9e6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hash of the geometry stored for a tree in a cmesh.  <a href="t8__cmesh__geometry_8hxx.html#a53b61e70083fb214b25a9ca98fa9e6fd">More...</a><br /></td></tr>
+<tr class="separator:a53b61e70083fb214b25a9ca98fa9e6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal functions that we need for the cmesh geometry. </p>
 <p>TODO: document this file </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ae447333ff05116f21ca1d7ce4ed8d81b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae447333ff05116f21ca1d7ce4ed8d81b">&#9670;&nbsp;</a></span>t8_cmesh_get_tree_geom_hash()</h2>
+<a id="a53b61e70083fb214b25a9ca98fa9e6fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b61e70083fb214b25a9ca98fa9e6fd">&#9670;&nbsp;</a></span>t8_cmesh_get_tree_geom_hash()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t t8_cmesh_get_tree_geom_hash </td>
+          <td class="memname"><a class="el" href="t8__geometry__hash_8hxx.html#a10c610e48142563fb6e6519e617e220d">t8_geometry_hash</a> t8_cmesh_get_tree_geom_hash </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
           <td class="paramname"><em>cmesh</em>, </td>
@@ -133,7 +134,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The hash of the tree's geometry or if only one geometry exists, its hash. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The hash of the tree's geometry. If the tree does not have a geometry, returns t8_geometry_empty_hash. </dd></dl>
 
 </div>
 </div>

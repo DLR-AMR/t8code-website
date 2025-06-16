@@ -159,7 +159,11 @@ var menudata={children:[
 {text:"t",url:"globals_type.html#index_t"},
 {text:"v",url:"globals_type.html#index_v"}]},
 {text:"Enumerations",url:"globals_enum.html"},
-{text:"Enumerator",url:"globals_eval.html"},
+{text:"Enumerator",url:"globals_eval.html",children:[
+{text:"e",url:"globals_eval.html#index_e"},
+{text:"g",url:"globals_eval.html#index_g"},
+{text:"l",url:"globals_eval.html#index_l"},
+{text:"m",url:"globals_eval.html#index_m"}]},
 {text:"Macros",url:"globals_defs.html",children:[
 {text:"1",url:"globals_defs.html#index_a1"},
 {text:"a",url:"globals_defs.html#index_a"},
