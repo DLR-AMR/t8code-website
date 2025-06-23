@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1545-780f</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1566-04cb8</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -175,9 +175,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a50cd0d42f38fa6f73b261feb84f62e40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a50cd0d42f38fa6f73b261feb84f62e40">t8_cmesh_new_long_brick_pyramid</a> (sc_MPI_Comm comm, int num_cubes)</td></tr>
 <tr class="memdesc:a50cd0d42f38fa6f73b261feb84f62e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a bigger mesh, consisting of many cubes made by pyramids.  <a href="t8__cmesh__examples_8h.html#a50cd0d42f38fa6f73b261feb84f62e40">More...</a><br /></td></tr>
 <tr class="separator:a50cd0d42f38fa6f73b261feb84f62e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66d57f01c6e198254ad1dcaa93bde1f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#a66d57f01c6e198254ad1dcaa93bde1f4">t8_cmesh_new_row_of_cubes</a> (<a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_trees, const int set_attributes, const int do_partition, sc_MPI_Comm comm)</td></tr>
-<tr class="memdesc:a66d57f01c6e198254ad1dcaa93bde1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <em>num_trees</em> many cubes each of length 1 connected along the x-axis without any additional attributes than the tree-vertices, or with additional attributes.  <a href="t8__cmesh__examples_8h.html#a66d57f01c6e198254ad1dcaa93bde1f4">More...</a><br /></td></tr>
-<tr class="separator:a66d57f01c6e198254ad1dcaa93bde1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c09e61960a203b456472f98a6d025d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#af5c09e61960a203b456472f98a6d025d">t8_cmesh_new_row_of_cubes</a> (<a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> num_trees, const int set_attributes, const int do_partition, sc_MPI_Comm comm, const int package_id)</td></tr>
+<tr class="memdesc:af5c09e61960a203b456472f98a6d025d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <em>num_trees</em> many cubes each of length 1 connected along the x-axis without any additional attributes than the tree-vertices, or with additional attributes.  <a href="t8__cmesh__examples_8h.html#af5c09e61960a203b456472f98a6d025d">More...</a><br /></td></tr>
+<tr class="separator:af5c09e61960a203b456472f98a6d025d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa04743c4bfd797cba455eddefd91648d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__examples_8h.html#aa04743c4bfd797cba455eddefd91648d">t8_cmesh_new_quadrangulated_disk</a> (const double radius, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:aa04743c4bfd797cba455eddefd91648d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a quadrangulated disk of given radius.  <a href="t8__cmesh__examples_8h.html#aa04743c4bfd797cba455eddefd91648d">More...</a><br /></td></tr>
 <tr class="separator:aa04743c4bfd797cba455eddefd91648d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1479,8 +1479,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a66d57f01c6e198254ad1dcaa93bde1f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66d57f01c6e198254ad1dcaa93bde1f4">&#9670;&nbsp;</a></span>t8_cmesh_new_row_of_cubes()</h2>
+<a id="af5c09e61960a203b456472f98a6d025d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5c09e61960a203b456472f98a6d025d">&#9670;&nbsp;</a></span>t8_cmesh_new_row_of_cubes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1507,7 +1507,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">sc_MPI_Comm&#160;</td>
-          <td class="paramname"><em>comm</em>&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>package_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1522,7 +1528,9 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">num_trees</td><td>The number of trees along the x-axis </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">set_attributes</td><td>If 1, set tree_id and num_trees as additional attribute for each tree. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator used to commit the cmesh </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">do_partition</td><td>Partition the cmesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator used to commit the cmesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">package_id</td><td>The package id to use for the cmesh. Cannot be the t8 or sc package id. </td></tr>
   </table>
   </dd>
 </dl>
