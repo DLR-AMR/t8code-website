@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1566-04cb8</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1582-0d77</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -135,6 +135,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_copy_trees<
 <tr class="memitem:a107dbe1c2a792b2026370c948af6bb10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__private_8h.html#a107dbe1c2a792b2026370c948af6bb10">t8_forest_get_tree_leaf_element_array_mutable</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid)</td></tr>
 <tr class="memdesc:a107dbe1c2a792b2026370c948af6bb10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the array of leaf elements of a tree.  <a href="t8__forest__private_8h.html#a107dbe1c2a792b2026370c948af6bb10">More...</a><br /></td></tr>
 <tr class="separator:a107dbe1c2a792b2026370c948af6bb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbb024983c47e6e6613b8873ac33df7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__private_8h.html#a0cbb024983c47e6e6613b8873ac33df7">t8_forest_bin_search_lower</a> (const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *elements, const <a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a> element_id, const int element_level)</td></tr>
+<tr class="memdesc:a0cbb024983c47e6e6613b8873ac33df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for a linear element id in a sorted array of elements.  <a href="t8__forest__private_8h.html#a0cbb024983c47e6e6613b8873ac33df7">More...</a><br /></td></tr>
+<tr class="separator:a0cbb024983c47e6e6613b8873ac33df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b0a1311180ec13164c6ad0142c6669e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__private_8h.html#a6b0a1311180ec13164c6ad0142c6669e">t8_forest_element_find_owner_old</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass, sc_array_t *all_owners_of_tree)</td></tr>
 <tr class="memdesc:a6b0a1311180ec13164c6ad0142c6669e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the owner process of a given element, deprecated version.  <a href="t8__forest__private_8h.html#a6b0a1311180ec13164c6ad0142c6669e">More...</a><br /></td></tr>
 <tr class="separator:a6b0a1311180ec13164c6ad0142c6669e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +175,53 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_copy_trees<
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We define routines for a forest of elements that are not part of the official <a class="el" href="t8__forest_8h.html" title="Includes all headers based on previous t8_forest.h.">t8_forest.h</a> interface but used internally. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a0cbb024983c47e6e6613b8873ac33df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cbb024983c47e6e6613b8873ac33df7">&#9670;&nbsp;</a></span>t8_forest_bin_search_lower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> t8_forest_bin_search_lower </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *&#160;</td>
+          <td class="paramname"><em>elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a>&#160;</td>
+          <td class="paramname"><em>element_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>element_level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Search for a linear element id in a sorted array of elements. </p>
+<p>If the element does not exist, return the largest index i such that the element at position i has a smaller id than the given one. If no such i exists, return -1. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">elements</td><td>An array of elements. Must be sorted according to linear id at maximum level. Must correspond to a valid refinement (i.e. contain no duplicate elements or elements and their descendants). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element_id</td><td>The linear id of the element to search for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element_level</td><td>The level of the element to search for. Thus, the level at which <em>element_id</em> was computed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The largest index <em>i</em> of an element with linear_id smaller than or equal to <em>element_id</em> in <em>elements</em> if it exists. -1 if no such element was found in <em>elements</em>.</dd></dl>
+<p>Search for a linear element id in a sorted array of elements.</p>
+<p>If the element does not exist, return the largest index i such that the element at position i has a smaller id than the given one. If no such i exists, return -1. </p>
+
+</div>
+</div>
 <a id="a8e2e09dce7e3c3c6884f1f4d27b48af2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e2e09dce7e3c3c6884f1f4d27b48af2">&#9670;&nbsp;</a></span>t8_forest_compute_elements_offset()</h2>
 
