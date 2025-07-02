@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1592-640e7</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1625-7e64</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1695420f6aa51bd73fcdd94c12018c18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__handler.html#a1695420f6aa51bd73fcdd94c12018c18">tree_compatible_with_geom</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid)</td></tr>
 <tr class="memdesc:a1695420f6aa51bd73fcdd94c12018c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for compatibility of the tree with the assigned geometry.  <a href="structt8__geometry__handler.html#a1695420f6aa51bd73fcdd94c12018c18">More...</a><br /></td></tr>
 <tr class="separator:a1695420f6aa51bd73fcdd94c12018c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f04386d2e6ae11d8afd2bac0cae7c40"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__handler.html#a2f04386d2e6ae11d8afd2bac0cae7c40">get_tree_bounding_box</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, double bounds[6])</td></tr>
+<tr class="memdesc:a2f04386d2e6ae11d8afd2bac0cae7c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bounding box of the tree.  <a href="structt8__geometry__handler.html#a2f04386d2e6ae11d8afd2bac0cae7c40">More...</a><br /></td></tr>
+<tr class="separator:a2f04386d2e6ae11d8afd2bac0cae7c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab54c5c0a7d50b235339adafcd72da348"><td class="memItemLeft" align="right" valign="top"><a id="ab54c5c0a7d50b235339adafcd72da348"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__handler.html#ab54c5c0a7d50b235339adafcd72da348">ref</a> ()</td></tr>
 <tr class="memdesc:ab54c5c0a7d50b235339adafcd72da348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the reference count of the geometry handler. <br /></td></tr>
@@ -391,6 +394,59 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 
 <p>Get the number of registered geometries. </p>
 <dl class="section return"><dt>Returns</dt><dd>The number of registered geometries. </dd></dl>
+
+</div>
+</div>
+<a id="a2f04386d2e6ae11d8afd2bac0cae7c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f04386d2e6ae11d8afd2bac0cae7c40">&#9670;&nbsp;</a></span>get_tree_bounding_box()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool t8_geometry_handler::get_tree_bounding_box </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>gtreeid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>bounds</em>[6]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the bounding box of the tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtreeid</td><td>The global tree id of the tree for which the bounding box should be returned. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bounds</td><td>The bounding box of the tree, in the format [xmin, xmax, ymin, ymax, zmin, zmax].</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function updates the active tree to the provided <em>gtreeid</em>. </dd></dl>
 
 </div>
 </div>
