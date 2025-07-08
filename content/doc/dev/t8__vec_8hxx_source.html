@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1665-4540a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1673-b758a</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -103,8 +103,8 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef T8_VEC_HXX</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define T8_VEC_HXX</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;t8_types/t8_type.hxx&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;t8_types/t8_operators.hxx&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__type_8hxx.html">t8_types/t8_type.hxx</a>&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__operators_8hxx.html">t8_types/t8_operators.hxx</a>&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8_8h.html">t8.h</a>&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// template &lt;std::size_t N&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// using t8_point_t = std::array&lt;double, N&gt;;</span></div>
@@ -279,12 +279,14 @@ $(function() {
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_VEC_HXX */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclassT8Type_html"><div class="ttname"><a href="classT8Type.html">T8Type</a></div><div class="ttdoc">An implementation of strong type with additional competences.</div><div class="ttdef"><b>Definition:</b> t8_type.hxx:47</div></div>
-<div class="ttc" id="astructEqualityComparable_html"><div class="ttname"><a href="structEqualityComparable.html">EqualityComparable</a></div><div class="ttdoc">A template for equality comparable types.</div><div class="ttdef"><b>Definition:</b> t8_operators.hxx:208</div></div>
-<div class="ttc" id="astructRandomAccessible_html"><div class="ttname"><a href="structRandomAccessible.html">RandomAccessible</a></div><div class="ttdoc">A template for random accessible types.</div><div class="ttdef"><b>Definition:</b> t8_operators.hxx:240</div></div>
-<div class="ttc" id="astructSwapable_html"><div class="ttname"><a href="structSwapable.html">Swapable</a></div><div class="ttdoc">A template for swapping types.</div><div class="ttdef"><b>Definition:</b> t8_operators.hxx:193</div></div>
+<div class="ttc" id="astructEqualityComparable_html"><div class="ttname"><a href="structEqualityComparable.html">EqualityComparable</a></div><div class="ttdoc">A template for equality comparable types.</div><div class="ttdef"><b>Definition:</b> t8_operators.hxx:213</div></div>
+<div class="ttc" id="astructRandomAccessible_html"><div class="ttname"><a href="structRandomAccessible.html">RandomAccessible</a></div><div class="ttdoc">A template for random accessible types.</div><div class="ttdef"><b>Definition:</b> t8_operators.hxx:245</div></div>
+<div class="ttc" id="astructSwapable_html"><div class="ttname"><a href="structSwapable.html">Swapable</a></div><div class="ttdoc">A template for swapping types.</div><div class="ttdef"><b>Definition:</b> t8_operators.hxx:198</div></div>
 <div class="ttc" id="astructt8__point__tag_html"><div class="ttname"><a href="structt8__point__tag.html">t8_point_tag</a></div><div class="ttdef"><b>Definition:</b> t8_vec.hxx:47</div></div>
 <div class="ttc" id="astructt8__vec__tag_html"><div class="ttname"><a href="structt8__vec__tag.html">t8_vec_tag</a></div><div class="ttdef"><b>Definition:</b> t8_vec.hxx:42</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
+<div class="ttc" id="at8__operators_8hxx_html"><div class="ttname"><a href="t8__operators_8hxx.html">t8_operators.hxx</a></div><div class="ttdoc">This file provides the CRTP pattern for operators.</div></div>
+<div class="ttc" id="at8__type_8hxx_html"><div class="ttname"><a href="t8__type_8hxx.html">t8_type.hxx</a></div><div class="ttdoc">This files gives a template for strong types in t8code.</div></div>
 <div class="ttc" id="at8__vec_8h_html_a0c184f175257ed9e59ddaa96d88a9b43"><div class="ttname"><a href="t8__vec_8h.html#a0c184f175257ed9e59ddaa96d88a9b43">t8_norm</a></div><div class="ttdeci">double t8_norm(const double vec[3])</div><div class="ttdoc">Vector norm.</div><div class="ttdef"><b>Definition:</b> t8_vec.cxx:28</div></div>
 <div class="ttc" id="at8__vec_8h_html_a258ea8fc865c451b5e17b0a182d58236"><div class="ttname"><a href="t8__vec_8h.html#a258ea8fc865c451b5e17b0a182d58236">t8_cross_2D</a></div><div class="ttdeci">double t8_cross_2D(const double vec_x[2], const double vec_y[2])</div><div class="ttdoc">Cross product of X and Y.</div><div class="ttdef"><b>Definition:</b> t8_vec.cxx:115</div></div>
 <div class="ttc" id="at8__vec_8h_html_a31e2376739d3bbe14c76a95ff4a7c9d6"><div class="ttname"><a href="t8__vec_8h.html#a31e2376739d3bbe14c76a95ff4a7c9d6">t8_orthogonal_tripod</a></div><div class="ttdeci">void t8_orthogonal_tripod(const double v1[3], double v2[3], double v3[3])</div><div class="ttdoc">Compute an orthogonal coordinate system from a given vector.</div><div class="ttdef"><b>Definition:</b> t8_vec.cxx:157</div></div>

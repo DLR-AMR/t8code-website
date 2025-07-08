@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['subtractable_1542',['Subtractable',['../structSubtractable.html',1,'']]],
-  ['swapable_1543',['Swapable',['../structSwapable.html',1,'']]]
+  ['subtractable_1557',['Subtractable',['../structSubtractable.html',1,'']]],
+  ['swapable_1558',['Swapable',['../structSwapable.html',1,'']]]
 ];
