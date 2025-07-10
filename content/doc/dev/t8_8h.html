@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1695-da5de</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1706-63e47</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -263,6 +263,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8
 <tr class="memitem:a3793c5b342657f8b7af99137ea5af193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a3793c5b342657f8b7af99137ea5af193">t8_errorf</a> (const char *fmt,...)</td></tr>
 <tr class="memdesc:a3793c5b342657f8b7af99137ea5af193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message, no matter what rank, with priority SC_LP_ERROR.  <a href="t8_8h.html#a3793c5b342657f8b7af99137ea5af193">More...</a><br /></td></tr>
 <tr class="separator:a3793c5b342657f8b7af99137ea5af193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d07f77074625d5982fe2fa3fb6cdc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#aa0d07f77074625d5982fe2fa3fb6cdc8">t8_set_external_log_fcn</a> (void(*log_fcn)(int category, int priority, const char *msg))</td></tr>
+<tr class="memdesc:aa0d07f77074625d5982fe2fa3fb6cdc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom logging function to be used by t8code.  <a href="t8_8h.html#aa0d07f77074625d5982fe2fa3fb6cdc8">More...</a><br /></td></tr>
+<tr class="separator:aa0d07f77074625d5982fe2fa3fb6cdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb9af1fd94631c8b7d1f63d6149003d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#acb9af1fd94631c8b7d1f63d6149003d9">t8_init</a> (int log_threshold)</td></tr>
 <tr class="memdesc:acb9af1fd94631c8b7d1f63d6149003d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register t8code with libsc and print version and variable information.  <a href="t8_8h.html#acb9af1fd94631c8b7d1f63d6149003d9">More...</a><br /></td></tr>
 <tr class="separator:acb9af1fd94631c8b7d1f63d6149003d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -827,6 +830,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A void * pointing to entry <em>it</em> in <em>array</em>. </dd></dl>
+
+</div>
+</div>
+<a id="aa0d07f77074625d5982fe2fa3fb6cdc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d07f77074625d5982fe2fa3fb6cdc8">&#9670;&nbsp;</a></span>t8_set_external_log_fcn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_set_external_log_fcn </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(int category, int priority, const char *msg)&#160;</td>
+          <td class="paramname"><em>log_fcn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a custom logging function to be used by t8code. </p>
+<p>When setting a custom logging function, the t8code internal logging function will be ignored. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">log_fcn</td><td>A function pointer to a logging function </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
