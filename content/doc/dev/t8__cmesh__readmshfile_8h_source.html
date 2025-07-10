@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1673-b758a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1695-da5de</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -107,28 +107,27 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__eclass_8h.html">t8_eclass.h</a>&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="t8__cmesh_8h.html">t8_cmesh.h</a>&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* The supported .msh file versions.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * Currently, we support gmsh&#39;s file version 2 and 4 in ASCII format.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define T8_CMESH_N_SUPPORTED_MSH_FILE_VERSIONS 2</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="t8__cmesh__readmshfile_8h.html#aaadd8b84a3b0cde432b960fb78d289d2">   38</a></span>&#160;<span class="preprocessor">#define T8_CMESH_N_SUPPORTED_MSH_FILE_VERSIONS 2</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> t8_cmesh_supported_msh_file_versions[T8_CMESH_N_SUPPORTED_MSH_FILE_VERSIONS] = { 2, 4 };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;T8_EXTERN_C_BEGIN ();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/* put declarations here */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="t8__cmesh__readmshfile_8h.html#a4c665fa7955cb6cbc9f36cd73f3129a4">t8_cmesh_from_msh_file</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix, <span class="keywordtype">int</span> partition, sc_MPI_Comm comm, <span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> master,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        <span class="keywordtype">int</span> use_cad_geometry);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_CMESH_READMSHFILE_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:90</div></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="t8__cmesh__readmshfile_8h.html#a5f9764a6567838ca59c483adffa3c8c1">   41</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="t8__cmesh__readmshfile_8h.html#a5f9764a6567838ca59c483adffa3c8c1">t8_cmesh_supported_msh_file_versions</a>[<a class="code" href="t8__cmesh__readmshfile_8h.html#aaadd8b84a3b0cde432b960fb78d289d2">T8_CMESH_N_SUPPORTED_MSH_FILE_VERSIONS</a>] = { 2, 4 };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;T8_EXTERN_C_BEGIN ();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/* put declarations here */</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="structt8__cmesh.html">t8_cmesh_t</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="t8__cmesh__readmshfile_8h.html#a4c665fa7955cb6cbc9f36cd73f3129a4">t8_cmesh_from_msh_file</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *fileprefix, <span class="keywordtype">int</span> partition, sc_MPI_Comm comm, <span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> master,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        <span class="keywordtype">int</span> use_cad_geometry);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_CMESH_READMSHFILE_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructt8__cmesh_html"><div class="ttname"><a href="structt8__cmesh.html">t8_cmesh</a></div><div class="ttdoc">This structure holds the connectivity data of the coarse mesh.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:99</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
 <div class="ttc" id="at8__cmesh_8h_html"><div class="ttname"><a href="t8__cmesh_8h.html">t8_cmesh.h</a></div><div class="ttdoc">We define the coarse mesh of trees in this file.</div></div>
-<div class="ttc" id="at8__cmesh__readmshfile_8h_html_a4c665fa7955cb6cbc9f36cd73f3129a4"><div class="ttname"><a href="t8__cmesh__readmshfile_8h.html#a4c665fa7955cb6cbc9f36cd73f3129a4">t8_cmesh_from_msh_file</a></div><div class="ttdeci">t8_cmesh_t t8_cmesh_from_msh_file(const char *fileprefix, int partition, sc_MPI_Comm comm, int dim, int master, int use_cad_geometry)</div><div class="ttdoc">Read a .msh file and create a cmesh from it.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_readmshfile.cxx:1859</div></div>
+<div class="ttc" id="at8__cmesh__readmshfile_8h_html_a4c665fa7955cb6cbc9f36cd73f3129a4"><div class="ttname"><a href="t8__cmesh__readmshfile_8h.html#a4c665fa7955cb6cbc9f36cd73f3129a4">t8_cmesh_from_msh_file</a></div><div class="ttdeci">t8_cmesh_t t8_cmesh_from_msh_file(const char *fileprefix, int partition, sc_MPI_Comm comm, int dim, int master, int use_cad_geometry)</div><div class="ttdoc">Read a .msh file and create a cmesh from it.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_readmshfile.cxx:1879</div></div>
+<div class="ttc" id="at8__cmesh__readmshfile_8h_html_a5f9764a6567838ca59c483adffa3c8c1"><div class="ttname"><a href="t8__cmesh__readmshfile_8h.html#a5f9764a6567838ca59c483adffa3c8c1">t8_cmesh_supported_msh_file_versions</a></div><div class="ttdeci">const int t8_cmesh_supported_msh_file_versions[T8_CMESH_N_SUPPORTED_MSH_FILE_VERSIONS]</div><div class="ttdoc">The gmsh file versions that are supported.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_readmshfile.h:41</div></div>
+<div class="ttc" id="at8__cmesh__readmshfile_8h_html_aaadd8b84a3b0cde432b960fb78d289d2"><div class="ttname"><a href="t8__cmesh__readmshfile_8h.html#aaadd8b84a3b0cde432b960fb78d289d2">T8_CMESH_N_SUPPORTED_MSH_FILE_VERSIONS</a></div><div class="ttdeci">#define T8_CMESH_N_SUPPORTED_MSH_FILE_VERSIONS</div><div class="ttdoc">The supported .msh file versions.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_readmshfile.h:38</div></div>
 <div class="ttc" id="at8__eclass_8h_html"><div class="ttname"><a href="t8__eclass_8h.html">t8_eclass.h</a></div><div class="ttdoc">We define all possible element classes that occur in hybrid meshes.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->

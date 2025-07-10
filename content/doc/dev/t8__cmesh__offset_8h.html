@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1673-b758a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1695-da5de</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -342,7 +342,7 @@ Functions</h2></td></tr>
 <li>if a process is not empty its first tree must be bigger than the last tree of the previous non-empty process, or equal to it if it is shared. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">mpisize</td><td>The number of MPI ranks, also the number of entries in <em>offset</em> minus 1. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The partition to be considered. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset_shmem</td><td>The partition to be considered. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_trees</td><td>The total number of global trees in the partition. </td></tr>
   </table>
   </dd>
@@ -692,7 +692,7 @@ Functions</h2></td></tr>
 <p>Find the next higher rank that is not empty. </p>
 <p>returns mpisize if this rank does not exist. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">proc</td><td>An MPI rank. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rank</td><td>An MPI rank. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mpisize</td><td>The number of total MPI ranks. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>An array with at least <em>mpisize</em> + 1 entries. </td></tr>
   </table>
@@ -1035,8 +1035,8 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">proca</td><td>Mpi rank of the possible sending process. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">procb</td><td>Mpi rank of the possible receiver. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset_from</td><td>The partition table of the current partition. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset_to</td><td>The partition table of the next partition. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t8_offset_from</td><td>The partition table of the current partition. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t8_offset_to</td><td>The partition table of the next partition. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1092,7 +1092,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">proc_send</td><td>Mpi rank of the possible sending process. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">proc_recv</td><td>Mpi rank of the possible receiver. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">proc_to</td><td>Mpi rank of the possible receiver. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gtree</td><td>A global tree id. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset_from</td><td>The partition table of the current partition. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset_to</td><td>The partition table of the next partition. </td></tr>

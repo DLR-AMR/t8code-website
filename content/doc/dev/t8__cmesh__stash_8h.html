@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1673-b758a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1695-da5de</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -108,7 +108,8 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a2a2f33a45758263dbb7f8fad84742fff"><td class="memItemLeft" align="right" valign="top"><a id="a2a2f33a45758263dbb7f8fad84742fff"></a>
-typedef struct <a class="el" href="structt8__stash.html">t8_stash</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>t8_stash_t</b></td></tr>
+typedef struct <a class="el" href="structt8__stash.html">t8_stash</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a></td></tr>
+<tr class="memdesc:a2a2f33a45758263dbb7f8fad84742fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque pointer to a stash data structure. <br /></td></tr>
 <tr class="separator:a2a2f33a45758263dbb7f8fad84742fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c467a22d0fece802ca34a38b3193587"><td class="memItemLeft" align="right" valign="top"><a id="a4c467a22d0fece802ca34a38b3193587"></a>
 typedef struct <a class="el" href="structt8__stash__class.html">t8_stash_class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a4c467a22d0fece802ca34a38b3193587">t8_stash_class_struct_t</a></td></tr>
@@ -127,55 +128,55 @@ typedef struct <a class="el" href="structt8__stash__joinface.html">t8_stash_join
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a62076f294ec4b6c8a8afd3572714d3f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a62076f294ec4b6c8a8afd3572714d3f2">t8_stash_init</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> *pstash)</td></tr>
+<tr class="memitem:a62076f294ec4b6c8a8afd3572714d3f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a62076f294ec4b6c8a8afd3572714d3f2">t8_stash_init</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> *pstash)</td></tr>
 <tr class="memdesc:a62076f294ec4b6c8a8afd3572714d3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a stash data structure.  <a href="t8__cmesh__stash_8h.html#a62076f294ec4b6c8a8afd3572714d3f2">More...</a><br /></td></tr>
 <tr class="separator:a62076f294ec4b6c8a8afd3572714d3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53fbbebc0b275d72acfefae71dfec28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a53fbbebc0b275d72acfefae71dfec28c">t8_stash_destroy</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> *pstash)</td></tr>
+<tr class="memitem:a53fbbebc0b275d72acfefae71dfec28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a53fbbebc0b275d72acfefae71dfec28c">t8_stash_destroy</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> *pstash)</td></tr>
 <tr class="memdesc:a53fbbebc0b275d72acfefae71dfec28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free all memory associated in a stash structure.  <a href="t8__cmesh__stash_8h.html#a53fbbebc0b275d72acfefae71dfec28c">More...</a><br /></td></tr>
 <tr class="separator:a53fbbebc0b275d72acfefae71dfec28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4620f033cdb93c13b1460f392fd0fcc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a4620f033cdb93c13b1460f392fd0fcc3">t8_stash_add_class</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> id, <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass)</td></tr>
+<tr class="memitem:a4620f033cdb93c13b1460f392fd0fcc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a4620f033cdb93c13b1460f392fd0fcc3">t8_stash_add_class</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> id, <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass)</td></tr>
 <tr class="memdesc:a4620f033cdb93c13b1460f392fd0fcc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the eclass of a tree.  <a href="t8__cmesh__stash_8h.html#a4620f033cdb93c13b1460f392fd0fcc3">More...</a><br /></td></tr>
 <tr class="separator:a4620f033cdb93c13b1460f392fd0fcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a704b00f620c3783587d8fd50b3e5a579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a704b00f620c3783587d8fd50b3e5a579">t8_stash_add_facejoin</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gid1, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gid2, int face1, int face2, int orientation)</td></tr>
+<tr class="memitem:a704b00f620c3783587d8fd50b3e5a579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a704b00f620c3783587d8fd50b3e5a579">t8_stash_add_facejoin</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gid1, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gid2, int face1, int face2, int orientation)</td></tr>
 <tr class="memdesc:a704b00f620c3783587d8fd50b3e5a579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a face connection to a stash.  <a href="t8__cmesh__stash_8h.html#a704b00f620c3783587d8fd50b3e5a579">More...</a><br /></td></tr>
 <tr class="separator:a704b00f620c3783587d8fd50b3e5a579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f7d59fb5d7afe393fd326e17f914dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a17f7d59fb5d7afe393fd326e17f914dc">t8_stash_class_sort</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash)</td></tr>
+<tr class="memitem:a17f7d59fb5d7afe393fd326e17f914dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a17f7d59fb5d7afe393fd326e17f914dc">t8_stash_class_sort</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash)</td></tr>
 <tr class="memdesc:a17f7d59fb5d7afe393fd326e17f914dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort the entries in the class array by the order given in the enum definition of t8_eclass.  <a href="t8__cmesh__stash_8h.html#a17f7d59fb5d7afe393fd326e17f914dc">More...</a><br /></td></tr>
 <tr class="separator:a17f7d59fb5d7afe393fd326e17f914dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74ec32d354f11c0685fa4322ad748151"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a74ec32d354f11c0685fa4322ad748151">t8_stash_class_bsearch</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> tree_id)</td></tr>
+<tr class="memitem:a74ec32d354f11c0685fa4322ad748151"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a74ec32d354f11c0685fa4322ad748151">t8_stash_class_bsearch</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> tree_id)</td></tr>
 <tr class="memdesc:a74ec32d354f11c0685fa4322ad748151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for an entry with a given tree index in the class-stash.  <a href="t8__cmesh__stash_8h.html#a74ec32d354f11c0685fa4322ad748151">More...</a><br /></td></tr>
 <tr class="separator:a74ec32d354f11c0685fa4322ad748151"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91822cc8045c3c7bccf8758ee2703734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a91822cc8045c3c7bccf8758ee2703734">t8_stash_joinface_sort</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash)</td></tr>
+<tr class="memitem:a91822cc8045c3c7bccf8758ee2703734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a91822cc8045c3c7bccf8758ee2703734">t8_stash_joinface_sort</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash)</td></tr>
 <tr class="memdesc:a91822cc8045c3c7bccf8758ee2703734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort then entries in the facejoin array in order of the first treeid.  <a href="t8__cmesh__stash_8h.html#a91822cc8045c3c7bccf8758ee2703734">More...</a><br /></td></tr>
 <tr class="separator:a91822cc8045c3c7bccf8758ee2703734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e6bf9a48c44372fade1708fd965fc26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a1e6bf9a48c44372fade1708fd965fc26">t8_stash_add_attribute</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> id, int package_id, int key, size_t size, void *const attr, int copy)</td></tr>
+<tr class="memitem:a1e6bf9a48c44372fade1708fd965fc26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a1e6bf9a48c44372fade1708fd965fc26">t8_stash_add_attribute</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> id, int package_id, int key, size_t size, void *const attr, int copy)</td></tr>
 <tr class="memdesc:a1e6bf9a48c44372fade1708fd965fc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an attribute to a tree.  <a href="t8__cmesh__stash_8h.html#a1e6bf9a48c44372fade1708fd965fc26">More...</a><br /></td></tr>
 <tr class="separator:a1e6bf9a48c44372fade1708fd965fc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a593065c9c50a710683794ebaf0ab94f5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a593065c9c50a710683794ebaf0ab94f5">t8_stash_get_attribute_size</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash, size_t index)</td></tr>
+<tr class="memitem:a593065c9c50a710683794ebaf0ab94f5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a593065c9c50a710683794ebaf0ab94f5">t8_stash_get_attribute_size</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash, size_t index)</td></tr>
 <tr class="memdesc:a593065c9c50a710683794ebaf0ab94f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size (in bytes) of an attribute in the stash.  <a href="t8__cmesh__stash_8h.html#a593065c9c50a710683794ebaf0ab94f5">More...</a><br /></td></tr>
 <tr class="separator:a593065c9c50a710683794ebaf0ab94f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc1388bb6fc2148de24afeb94f348eaf"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#afc1388bb6fc2148de24afeb94f348eaf">t8_stash_get_attribute</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash, size_t index)</td></tr>
+<tr class="memitem:afc1388bb6fc2148de24afeb94f348eaf"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#afc1388bb6fc2148de24afeb94f348eaf">t8_stash_get_attribute</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash, size_t index)</td></tr>
 <tr class="memdesc:afc1388bb6fc2148de24afeb94f348eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the pointer to an attribute in the stash.  <a href="t8__cmesh__stash_8h.html#afc1388bb6fc2148de24afeb94f348eaf">More...</a><br /></td></tr>
 <tr class="separator:afc1388bb6fc2148de24afeb94f348eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e2b9a9f8eb017507bacfb1a71e99e55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a8e2b9a9f8eb017507bacfb1a71e99e55">t8_stash_get_attribute_tree_id</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash, size_t index)</td></tr>
+<tr class="memitem:a8e2b9a9f8eb017507bacfb1a71e99e55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a8e2b9a9f8eb017507bacfb1a71e99e55">t8_stash_get_attribute_tree_id</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash, size_t index)</td></tr>
 <tr class="memdesc:a8e2b9a9f8eb017507bacfb1a71e99e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the id of the tree a given attribute belongs to.  <a href="t8__cmesh__stash_8h.html#a8e2b9a9f8eb017507bacfb1a71e99e55">More...</a><br /></td></tr>
 <tr class="separator:a8e2b9a9f8eb017507bacfb1a71e99e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3cf42fd17d04e7f3ea499fb92b2fb9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#ab3cf42fd17d04e7f3ea499fb92b2fb9a">t8_stash_get_attribute_key</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash, size_t index)</td></tr>
+<tr class="memitem:ab3cf42fd17d04e7f3ea499fb92b2fb9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#ab3cf42fd17d04e7f3ea499fb92b2fb9a">t8_stash_get_attribute_key</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash, size_t index)</td></tr>
 <tr class="memdesc:ab3cf42fd17d04e7f3ea499fb92b2fb9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the key of a given attribute.  <a href="t8__cmesh__stash_8h.html#ab3cf42fd17d04e7f3ea499fb92b2fb9a">More...</a><br /></td></tr>
 <tr class="separator:ab3cf42fd17d04e7f3ea499fb92b2fb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ddb08ffed7ae072547f0341dd6096c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a58ddb08ffed7ae072547f0341dd6096c">t8_stash_get_attribute_id</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash, size_t index)</td></tr>
+<tr class="memitem:a58ddb08ffed7ae072547f0341dd6096c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a58ddb08ffed7ae072547f0341dd6096c">t8_stash_get_attribute_id</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash, size_t index)</td></tr>
 <tr class="memdesc:a58ddb08ffed7ae072547f0341dd6096c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the package_id of a given attribute.  <a href="t8__cmesh__stash_8h.html#a58ddb08ffed7ae072547f0341dd6096c">More...</a><br /></td></tr>
 <tr class="separator:a58ddb08ffed7ae072547f0341dd6096c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaec3865dee74afb7e9defdebce7d6ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#adaec3865dee74afb7e9defdebce7d6ed">t8_stash_attribute_is_owned</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash, size_t index)</td></tr>
+<tr class="memitem:adaec3865dee74afb7e9defdebce7d6ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#adaec3865dee74afb7e9defdebce7d6ed">t8_stash_attribute_is_owned</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash, size_t index)</td></tr>
 <tr class="memdesc:adaec3865dee74afb7e9defdebce7d6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if an attribute in the stash is owned by the stash, that is, it was copied in the call to <em>t8_stash_add_attribute</em>.  <a href="t8__cmesh__stash_8h.html#adaec3865dee74afb7e9defdebce7d6ed">More...</a><br /></td></tr>
 <tr class="separator:adaec3865dee74afb7e9defdebce7d6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6c8be53f77151a0d1abf9b13ffda7fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#af6c8be53f77151a0d1abf9b13ffda7fe">t8_stash_attribute_sort</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash)</td></tr>
+<tr class="memitem:af6c8be53f77151a0d1abf9b13ffda7fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#af6c8be53f77151a0d1abf9b13ffda7fe">t8_stash_attribute_sort</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash)</td></tr>
 <tr class="memdesc:af6c8be53f77151a0d1abf9b13ffda7fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort the attributes array of a stash in the order (treeid, packageid, key) *.  <a href="t8__cmesh__stash_8h.html#af6c8be53f77151a0d1abf9b13ffda7fe">More...</a><br /></td></tr>
 <tr class="separator:af6c8be53f77151a0d1abf9b13ffda7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95a0250bc8e93cad363090a53e2b1c05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a95a0250bc8e93cad363090a53e2b1c05">t8_stash_bcast</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash, int root, sc_MPI_Comm comm, const size_t elem_counts[3])</td></tr>
+<tr class="memitem:a95a0250bc8e93cad363090a53e2b1c05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a95a0250bc8e93cad363090a53e2b1c05">t8_stash_bcast</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash, int root, sc_MPI_Comm comm, const size_t elem_counts[3])</td></tr>
 <tr class="memdesc:a95a0250bc8e93cad363090a53e2b1c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast a stash on the root process to all processes in a communicator.  <a href="t8__cmesh__stash_8h.html#a95a0250bc8e93cad363090a53e2b1c05">More...</a><br /></td></tr>
 <tr class="separator:a95a0250bc8e93cad363090a53e2b1c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a284f3e4c0f381ee9e819fd964d0fa498"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a284f3e4c0f381ee9e819fd964d0fa498">t8_stash_is_equal</a> (<a class="el" href="structt8__stash.html">t8_stash_t</a> stash_a, <a class="el" href="structt8__stash.html">t8_stash_t</a> stash_b)</td></tr>
+<tr class="memitem:a284f3e4c0f381ee9e819fd964d0fa498"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__stash_8h.html#a284f3e4c0f381ee9e819fd964d0fa498">t8_stash_is_equal</a> (<a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash_a, <a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> stash_b)</td></tr>
 <tr class="memdesc:a284f3e4c0f381ee9e819fd964d0fa498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check two stashes for equal content and return true if so.  <a href="t8__cmesh__stash_8h.html#a284f3e4c0f381ee9e819fd964d0fa498">More...</a><br /></td></tr>
 <tr class="separator:a284f3e4c0f381ee9e819fd964d0fa498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -226,7 +227,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void t8_stash_add_attribute </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em>, </td>
         </tr>
         <tr>
@@ -298,7 +299,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void t8_stash_add_class </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em>, </td>
         </tr>
         <tr>
@@ -342,7 +343,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void t8_stash_add_facejoin </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em>, </td>
         </tr>
         <tr>
@@ -387,8 +388,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">stash</td><td>The stash to be updated. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id1</td><td>The global id of the first tree. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id2</td><td>The global id of the second tree, </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gid1</td><td>The global id of the first tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gid2</td><td>The global id of the second tree, </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">face1</td><td>The face number of the face of the first tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">face2</td><td>The face number of the face of the second tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">orientation</td><td>The orientation of the faces to each other. </td></tr>
@@ -407,7 +408,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_stash_attribute_is_owned </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em>, </td>
         </tr>
         <tr>
@@ -445,7 +446,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void t8_stash_attribute_sort </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em></td><td>)</td>
           <td></td>
         </tr>
@@ -469,9 +470,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structt8__stash.html">t8_stash_t</a> t8_stash_bcast </td>
+          <td class="memname"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> t8_stash_bcast </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em>, </td>
         </tr>
         <tr>
@@ -522,7 +523,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">ssize_t t8_stash_class_bsearch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em>, </td>
         </tr>
         <tr>
@@ -560,7 +561,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void t8_stash_class_sort </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em></td><td>)</td>
           <td></td>
         </tr>
@@ -586,7 +587,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void t8_stash_destroy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> *&#160;</td>
           <td class="paramname"><em>pstash</em></td><td>)</td>
           <td></td>
         </tr>
@@ -612,7 +613,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void* t8_stash_get_attribute </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em>, </td>
         </tr>
         <tr>
@@ -650,7 +651,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_stash_get_attribute_id </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em>, </td>
         </tr>
         <tr>
@@ -688,7 +689,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_stash_get_attribute_key </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em>, </td>
         </tr>
         <tr>
@@ -726,7 +727,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">size_t t8_stash_get_attribute_size </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em>, </td>
         </tr>
         <tr>
@@ -764,7 +765,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_stash_get_attribute_tree_id </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em>, </td>
         </tr>
         <tr>
@@ -802,7 +803,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void t8_stash_init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a> *&#160;</td>
           <td class="paramname"><em>pstash</em></td><td>)</td>
           <td></td>
         </tr>
@@ -828,13 +829,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int t8_stash_is_equal </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash_a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash_b</em>&#160;</td>
         </tr>
         <tr>
@@ -866,7 +867,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void t8_stash_joinface_sort </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__stash.html">t8_stash_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__stash_8h.html#a2a2f33a45758263dbb7f8fad84742fff">t8_stash_t</a>&#160;</td>
           <td class="paramname"><em>stash</em></td><td>)</td>
           <td></td>
         </tr>

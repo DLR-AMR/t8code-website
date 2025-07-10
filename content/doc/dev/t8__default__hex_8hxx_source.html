@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1673-b758a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1695-da5de</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -78,7 +78,7 @@ $(function() {
 <div class="title">t8_default_hex.hxx</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="t8__default__hex_8hxx.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  This file is part of t8code.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">  t8code is a C library to manage a collection (a forest) of multiple</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  connected adaptive space-trees of general element classes in parallel.</span></div>
@@ -113,11 +113,11 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* Forward declaration of the scheme so we can use it as an argument in the eclass schemes function. */</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span><a class="code" href="classt8__scheme.html">t8_scheme</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">typedef</span> p8est_quadrant_t t8_phex_t;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="t8__default__hex_8hxx.html#aced5e536a06f100a8724aae35d4b7a6c">   43</a></span>&#160;<span class="keyword">typedef</span> p8est_quadrant_t <a class="code" href="t8__default__hex_8hxx.html#aced5e536a06f100a8724aae35d4b7a6c">t8_phex_t</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classt8__default__scheme__hex.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="classt8__default__scheme__hex.html">t8_default_scheme_hex</a>: <span class="keyword">public</span> <a class="code" href="classt8__default__scheme__common.html">t8_default_scheme_common</a>&lt;t8_default_scheme_hex&gt; {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classt8__default__scheme__hex.html#a9df910c8bc336d56ed2978d40315f893">   48</a></span>&#160;  <a class="code" href="classt8__default__scheme__hex.html#a9df910c8bc336d56ed2978d40315f893">t8_default_scheme_hex</a> () noexcept: <a class="code" href="classt8__default__scheme__common.html">t8_default_scheme_common</a> (<a class="code" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a5780818d0b9120d3267db871196f866a">T8_ECLASS_HEX</a>, sizeof (t8_phex_t)) {};</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classt8__default__scheme__hex.html#a9df910c8bc336d56ed2978d40315f893">   48</a></span>&#160;  <a class="code" href="classt8__default__scheme__hex.html#a9df910c8bc336d56ed2978d40315f893">t8_default_scheme_hex</a> () noexcept: <a class="code" href="classt8__default__scheme__common.html">t8_default_scheme_common</a> (<a class="code" href="t8__eclass_8h.html#ab20dcd46b3a346d537c1fe8626d579f9a5780818d0b9120d3267db871196f866a">T8_ECLASS_HEX</a>, sizeof (<a class="code" href="t8__default__hex_8hxx.html#aced5e536a06f100a8724aae35d4b7a6c">t8_phex_t</a>)) {};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classt8__default__scheme__hex.html#a849e75abc3de3a4a348729b74a067a00">   51</a></span>&#160;  <a class="code" href="classt8__default__scheme__hex.html#a849e75abc3de3a4a348729b74a067a00">~t8_default_scheme_hex</a> () {};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
@@ -341,6 +341,7 @@ $(function() {
 <div class="ttc" id="aclasst8__scheme_html"><div class="ttname"><a href="classt8__scheme.html">t8_scheme</a></div><div class="ttdoc">This class holds one or more element schemes.</div><div class="ttdef"><b>Definition:</b> t8_scheme.hxx:67</div></div>
 <div class="ttc" id="at8_8h_html_ae5c6845909c4725136233464e6db11bb"><div class="ttname"><a href="t8_8h.html#ae5c6845909c4725136233464e6db11bb">t8_linearidx_t</a></div><div class="ttdeci">uint64_t t8_linearidx_t</div><div class="ttdoc">A type for storing SFC indices.</div><div class="ttdef"><b>Definition:</b> t8.h:116</div></div>
 <div class="ttc" id="at8__default__common_8hxx_html"><div class="ttname"><a href="t8__default__common_8hxx.html">t8_default_common.hxx</a></div><div class="ttdoc">We provide some functions that are useful across element classes.</div></div>
+<div class="ttc" id="at8__default__hex_8hxx_html_aced5e536a06f100a8724aae35d4b7a6c"><div class="ttname"><a href="t8__default__hex_8hxx.html#aced5e536a06f100a8724aae35d4b7a6c">t8_phex_t</a></div><div class="ttdeci">p8est_quadrant_t t8_phex_t</div><div class="ttdoc">The class holding a hexahedral element in the default scheme.</div><div class="ttdef"><b>Definition:</b> t8_default_hex.hxx:37</div></div>
 <div class="ttc" id="at8__default__quad_8hxx_html"><div class="ttname"><a href="t8__default__quad_8hxx.html">t8_default_quad.hxx</a></div><div class="ttdoc">We use a p4est_quadrant_t object as storage for the T8 quadrant.</div></div>
 <div class="ttc" id="at8__dhex_8h_html"><div class="ttname"><a href="t8__dhex_8h.html">t8_dhex.h</a></div><div class="ttdoc">TODO: document this.</div></div>
 <div class="ttc" id="at8__dhex__bits_8h_html"><div class="ttname"><a href="t8__dhex__bits_8h.html">t8_dhex_bits.h</a></div><div class="ttdoc">Definitions of hex-specific functions.</div></div>

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1673-b758a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1695-da5de</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -104,8 +104,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ab0e1b58092b77d21644381de997536f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#ab0e1b58092b77d21644381de997536f3">t8_cmesh_gather_treecount_nocommit</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ab0e1b58092b77d21644381de997536f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the same task as <a class="el" href="t8__cmesh__partition_8h.html#aba78fbb12978d4bab3c852ef088ef13c">t8_cmesh_gather_treecount</a>, but do not perform the debugging check whether cmesh is committed.  <a href="t8__cmesh__partition_8cxx.html#ab0e1b58092b77d21644381de997536f3">More...</a><br /></td></tr>
 <tr class="separator:ab0e1b58092b77d21644381de997536f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0efb7a72dc310c00de384819b8e5df56"><td class="memItemLeft" align="right" valign="top"><a id="a0efb7a72dc310c00de384819b8e5df56"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_partition_receive_message</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm, const int proc_recv, sc_MPI_Status *status, const int *local_procid, const int recv_first, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> *num_ghosts)</td></tr>
+<tr class="memitem:a0efb7a72dc310c00de384819b8e5df56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#a0efb7a72dc310c00de384819b8e5df56">t8_cmesh_partition_receive_message</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm, const int proc_recv, sc_MPI_Status *status, const int *local_procid, const int recv_first, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> *num_ghosts)</td></tr>
+<tr class="memdesc:a0efb7a72dc310c00de384819b8e5df56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a partition message from another process.  <a href="t8__cmesh__partition_8cxx.html#a0efb7a72dc310c00de384819b8e5df56">More...</a><br /></td></tr>
 <tr class="separator:a0efb7a72dc310c00de384819b8e5df56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad83e3a97eff87e965a42d6d248e423a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8cxx.html#ad83e3a97eff87e965a42d6d248e423a5">t8_cmesh_partition</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ad83e3a97eff87e965a42d6d248e423a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a cmesh which is to be partitioned, execute the partition task.  <a href="t8__cmesh__partition_8cxx.html#ad83e3a97eff87e965a42d6d248e423a5">More...</a><br /></td></tr>
@@ -459,6 +459,78 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_offset_print
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">cmesh</td><td>The cmesh to be partitioned </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator This function is usually called within <a class="el" href="t8__cmesh_8h.html#ac819795480f1b8fe562e3561761a0184">t8_cmesh_commit</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0efb7a72dc310c00de384819b8e5df56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0efb7a72dc310c00de384819b8e5df56">&#9670;&nbsp;</a></span>t8_cmesh_partition_receive_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_cmesh_partition_receive_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>proc_recv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Status *&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>local_procid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>recv_first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> *&#160;</td>
+          <td class="paramname"><em>num_ghosts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receive a partition message from another process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh to receive the partition message for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator to use for the communication. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">proc_recv</td><td>The rank of the process to receive the message from. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">status</td><td>The MPI status object containing the message information. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">local_procid</td><td>The local process id's of the processes that we receive from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recv_first</td><td>The first process rank that we receive from. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">num_ghosts</td><td>The number of ghosts that we received in this message. </td></tr>
   </table>
   </dd>
 </dl>

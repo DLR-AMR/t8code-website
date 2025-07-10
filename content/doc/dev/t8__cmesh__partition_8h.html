@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1673-b758a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1695-da5de</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -103,8 +103,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a17543b647903cab0d65c3fa95ec0ded8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8h.html#a17543b647903cab0d65c3fa95ec0ded8">t8_cmesh_gather_treecount_nocommit</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a17543b647903cab0d65c3fa95ec0ded8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the same task as <a class="el" href="t8__cmesh__partition_8h.html#aba78fbb12978d4bab3c852ef088ef13c">t8_cmesh_gather_treecount</a>, but do not perform the debugging check whether cmesh is committed.  <a href="t8__cmesh__partition_8h.html#a17543b647903cab0d65c3fa95ec0ded8">More...</a><br /></td></tr>
 <tr class="separator:a17543b647903cab0d65c3fa95ec0ded8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c259e56690025ed5e45f3dddbd75f34"><td class="memItemLeft" align="right" valign="top"><a id="a8c259e56690025ed5e45f3dddbd75f34"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_offset_print</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
+<tr class="memitem:a8c259e56690025ed5e45f3dddbd75f34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8h.html#a8c259e56690025ed5e45f3dddbd75f34">t8_cmesh_offset_print</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a8c259e56690025ed5e45f3dddbd75f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the offset array of a cmesh to stdout.  <a href="t8__cmesh__partition_8h.html#a8c259e56690025ed5e45f3dddbd75f34">More...</a><br /></td></tr>
 <tr class="separator:a8c259e56690025ed5e45f3dddbd75f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2effd859b22c8534efc23e249c93ce7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__partition_8h.html#a2effd859b22c8534efc23e249c93ce7b">t8_cmesh_offset_concentrate</a> (int proc, sc_MPI_Comm comm, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> num_trees)</td></tr>
 <tr class="memdesc:a2effd859b22c8534efc23e249c93ce7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a valid partition table that concentrates all trees at a given process.  <a href="t8__cmesh__partition_8h.html#a2effd859b22c8534efc23e249c93ce7b">More...</a><br /></td></tr>
@@ -365,6 +365,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_offset_print
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A shared memory offset array storing the new offsets. Its associated communicator is <em>comm</em>. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is MPI collective. </dd></dl>
+
+</div>
+</div>
+<a id="a8c259e56690025ed5e45f3dddbd75f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c259e56690025ed5e45f3dddbd75f34">&#9670;&nbsp;</a></span>t8_cmesh_offset_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_cmesh_offset_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print the offset array of a cmesh to stdout. </p>
+<p>This function is used for debugging purposes. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>A cmesh that is committed and partitioned. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>A valid MPI communicator for cmesh. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

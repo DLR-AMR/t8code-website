@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1673-b758a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1695-da5de</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -101,6 +101,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure holds the connectivity data of the coarse mesh.  <a href="structt8__cmesh.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cghost.html">t8_cghost</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure holds the data of a coarse ghost including the information.  <a href="structt8__cghost.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__ctree.html">t8_ctree</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure holds the data of a local tree including the information about face neighbors.  <a href="structt8__ctree.html#details">More...</a><br /></td></tr>
@@ -109,8 +110,10 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure holds the information associated to an attribute of a tree.  <a href="structt8__attribute__info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure holds the trees and ghosts of a cmesh.  <a href="structt8__cmesh__trees.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__part__tree.html">t8_part_tree</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structt8__part__tree.html" title="t8_part_tree This structure holds the data of a trees in a partition.">t8_part_tree</a> This structure holds the data of a trees in a partition.  <a href="structt8__part__tree.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cprofile.html">t8_cprofile</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is used to profile cmesh algorithms.  <a href="structt8__cprofile.html#details">More...</a><br /></td></tr>
@@ -119,30 +122,39 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a029ea34aacce8b03456166b2f90bb4ef"><td class="memItemLeft" align="right" valign="top"><a id="a029ea34aacce8b03456166b2f90bb4ef"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_VERTICES_ATTRIBUTE_KEY</b>&#160;&#160;&#160;0            /* Used to store vertex coordinates. */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a029ea34aacce8b03456166b2f90bb4ef">T8_CMESH_VERTICES_ATTRIBUTE_KEY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a029ea34aacce8b03456166b2f90bb4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store vertex coordinates. <br /></td></tr>
 <tr class="separator:a029ea34aacce8b03456166b2f90bb4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d13d09f29ee5d1a0ba56f371002aab4"><td class="memItemLeft" align="right" valign="top"><a id="a0d13d09f29ee5d1a0ba56f371002aab4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_GLOBAL_VERTICES_ATTRIBUTE_KEY</b>&#160;&#160;&#160;1     /* Used to store global vertex ids. */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a0d13d09f29ee5d1a0ba56f371002aab4">T8_CMESH_GLOBAL_VERTICES_ATTRIBUTE_KEY</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a0d13d09f29ee5d1a0ba56f371002aab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store global vertex ids. <br /></td></tr>
 <tr class="separator:a0d13d09f29ee5d1a0ba56f371002aab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a820ac30c767790731c39ae3c4f7a7d18"><td class="memItemLeft" align="right" valign="top"><a id="a820ac30c767790731c39ae3c4f7a7d18"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_GEOMETRY_ATTRIBUTE_KEY</b>&#160;&#160;&#160;2            /* Used to store the name of a tree's geometry. */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a820ac30c767790731c39ae3c4f7a7d18">T8_CMESH_GEOMETRY_ATTRIBUTE_KEY</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a820ac30c767790731c39ae3c4f7a7d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store the name of a tree's geometry. <br /></td></tr>
 <tr class="separator:a820ac30c767790731c39ae3c4f7a7d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e729deb6873da383ac2a24d4a33e17c"><td class="memItemLeft" align="right" valign="top"><a id="a7e729deb6873da383ac2a24d4a33e17c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_CAD_EDGE_ATTRIBUTE_KEY</b>&#160;&#160;&#160;3            /* Used to store which edge is linked to which geometry */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a7e729deb6873da383ac2a24d4a33e17c">T8_CMESH_CAD_EDGE_ATTRIBUTE_KEY</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a7e729deb6873da383ac2a24d4a33e17c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store which edge is linked to which geometry. <br /></td></tr>
 <tr class="separator:a7e729deb6873da383ac2a24d4a33e17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a073924a011d7e52150e4eb0c284d0450"><td class="memItemLeft" align="right" valign="top"><a id="a073924a011d7e52150e4eb0c284d0450"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_CAD_EDGE_PARAMETERS_ATTRIBUTE_KEY</b>&#160;&#160;&#160;4 /* Used to store edge parameters */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a073924a011d7e52150e4eb0c284d0450">T8_CMESH_CAD_EDGE_PARAMETERS_ATTRIBUTE_KEY</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a073924a011d7e52150e4eb0c284d0450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store edge parameters. <br /></td></tr>
 <tr class="separator:a073924a011d7e52150e4eb0c284d0450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a013c530f653bb0a2e750dae1a7489cd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_CAD_FACE_ATTRIBUTE_KEY</b></td></tr>
+<tr class="memitem:a013c530f653bb0a2e750dae1a7489cd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a013c530f653bb0a2e750dae1a7489cd4">T8_CMESH_CAD_FACE_ATTRIBUTE_KEY</a></td></tr>
+<tr class="memdesc:a013c530f653bb0a2e750dae1a7489cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store which face is linked to which surface.  <a href="t8__cmesh__types_8h.html#a013c530f653bb0a2e750dae1a7489cd4">More...</a><br /></td></tr>
 <tr class="separator:a013c530f653bb0a2e750dae1a7489cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30f18b52bbbbe808a266b99cfad1e5c0"><td class="memItemLeft" align="right" valign="top"><a id="a30f18b52bbbbe808a266b99cfad1e5c0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_CAD_FACE_PARAMETERS_ATTRIBUTE_KEY</b>&#160;&#160;&#160;  T8_CMESH_CAD_FACE_ATTRIBUTE_KEY + 1 /* Used to store face parameters */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a30f18b52bbbbe808a266b99cfad1e5c0">T8_CMESH_CAD_FACE_PARAMETERS_ATTRIBUTE_KEY</a>&#160;&#160;&#160;<a class="el" href="t8__cmesh__types_8h.html#a013c530f653bb0a2e750dae1a7489cd4">T8_CMESH_CAD_FACE_ATTRIBUTE_KEY</a> + 1</td></tr>
+<tr class="memdesc:a30f18b52bbbbe808a266b99cfad1e5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store face parameters. <br /></td></tr>
 <tr class="separator:a30f18b52bbbbe808a266b99cfad1e5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfced66f43abf3d96e167774663f9918"><td class="memItemLeft" align="right" valign="top"><a id="adfced66f43abf3d96e167774663f9918"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_LAGRANGE_POLY_DEGREE_KEY</b>&#160;&#160;&#160;T8_CMESH_CAD_FACE_PARAMETERS_ATTRIBUTE_KEY + <a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#adfced66f43abf3d96e167774663f9918">T8_CMESH_LAGRANGE_POLY_DEGREE_KEY</a>&#160;&#160;&#160;<a class="el" href="t8__cmesh__types_8h.html#a30f18b52bbbbe808a266b99cfad1e5c0">T8_CMESH_CAD_FACE_PARAMETERS_ATTRIBUTE_KEY</a> + <a class="el" href="t8__eclass_8h.html#ac706fa304ce1d9dbcf71c3f7d84f1855">T8_ECLASS_MAX_FACES</a></td></tr>
+<tr class="memdesc:adfced66f43abf3d96e167774663f9918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store parameters of lagrangian polynomials. <br /></td></tr>
 <tr class="separator:adfced66f43abf3d96e167774663f9918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada4d0f317e6884c014b64e81385f4ce"><td class="memItemLeft" align="right" valign="top"><a id="aada4d0f317e6884c014b64e81385f4ce"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_CMESH_NEXT_POSSIBLE_KEY</b>&#160;&#160;&#160;  T8_CMESH_LAGRANGE_POLY_DEGREE_KEY + 1 /* The next free value for a t8code attribute key */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#aada4d0f317e6884c014b64e81385f4ce">T8_CMESH_NEXT_POSSIBLE_KEY</a>&#160;&#160;&#160;<a class="el" href="t8__cmesh__types_8h.html#adfced66f43abf3d96e167774663f9918">T8_CMESH_LAGRANGE_POLY_DEGREE_KEY</a> + 1</td></tr>
+<tr class="memdesc:aada4d0f317e6884c014b64e81385f4ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next free value for a t8code attribute key. <br /></td></tr>
 <tr class="separator:aada4d0f317e6884c014b64e81385f4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d21c23e1959f38260ab76a9f9e73175"><td class="memItemLeft" align="right" valign="top"><a id="a1d21c23e1959f38260ab76a9f9e73175"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a1d21c23e1959f38260ab76a9f9e73175">T8_CPROFILE_NUM_STATS</a>&#160;&#160;&#160;11</td></tr>
@@ -152,19 +164,23 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a2ed0fe7894fdae4d95bd13048af72067"><td class="memItemLeft" align="right" valign="top"><a id="a2ed0fe7894fdae4d95bd13048af72067"></a>
-typedef struct <a class="el" href="structt8__part__tree.html">t8_part_tree</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>t8_part_tree_t</b></td></tr>
+typedef struct <a class="el" href="structt8__part__tree.html">t8_part_tree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a2ed0fe7894fdae4d95bd13048af72067">t8_part_tree_t</a></td></tr>
+<tr class="memdesc:a2ed0fe7894fdae4d95bd13048af72067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque pointer to a <a class="el" href="structt8__part__tree.html" title="t8_part_tree This structure holds the data of a trees in a partition.">t8_part_tree</a>. <br /></td></tr>
 <tr class="separator:a2ed0fe7894fdae4d95bd13048af72067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00a479f8b928c625e3a81c0f573b1a5d"><td class="memItemLeft" align="right" valign="top"><a id="a00a479f8b928c625e3a81c0f573b1a5d"></a>
-typedef struct <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_t</b></td></tr>
+typedef struct <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a00a479f8b928c625e3a81c0f573b1a5d">t8_cmesh_trees_t</a></td></tr>
+<tr class="memdesc:a00a479f8b928c625e3a81c0f573b1a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque pointer to a tree. <br /></td></tr>
 <tr class="separator:a00a479f8b928c625e3a81c0f573b1a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc1cfd87a10a977011f25a96724cf23e"><td class="memItemLeft" align="right" valign="top"><a id="abc1cfd87a10a977011f25a96724cf23e"></a>
-typedef struct <a class="el" href="structt8__cprofile.html">t8_cprofile</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cprofile_t</b></td></tr>
+typedef struct <a class="el" href="structt8__cprofile.html">t8_cprofile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#abc1cfd87a10a977011f25a96724cf23e">t8_cprofile_t</a></td></tr>
+<tr class="memdesc:abc1cfd87a10a977011f25a96724cf23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque pointer to a tree. <br /></td></tr>
 <tr class="separator:abc1cfd87a10a977011f25a96724cf23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a649d492ef5d274bfe72e5e30f8d3f848"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structt8__cmesh.html">t8_cmesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a649d492ef5d274bfe72e5e30f8d3f848">t8_cmesh_struct_t</a></td></tr>
 <tr class="memdesc:a649d492ef5d274bfe72e5e30f8d3f848"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure holds the connectivity data of the coarse mesh.  <a href="t8__cmesh__types_8h.html#a649d492ef5d274bfe72e5e30f8d3f848">More...</a><br /></td></tr>
 <tr class="separator:a649d492ef5d274bfe72e5e30f8d3f848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1943cbf226d6914eb3d03dfd9e21afa1"><td class="memItemLeft" align="right" valign="top"><a id="a1943cbf226d6914eb3d03dfd9e21afa1"></a>
-typedef struct <a class="el" href="structt8__cghost.html">t8_cghost</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cghost_struct_t</b></td></tr>
+typedef struct <a class="el" href="structt8__cghost.html">t8_cghost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a1943cbf226d6914eb3d03dfd9e21afa1">t8_cghost_struct_t</a></td></tr>
+<tr class="memdesc:a1943cbf226d6914eb3d03dfd9e21afa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure holds the data of a coarse ghost including the information. <br /></td></tr>
 <tr class="separator:a1943cbf226d6914eb3d03dfd9e21afa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91782c3acc835c7cf34af299b7d86a29"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structt8__ctree.html">t8_ctree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a91782c3acc835c7cf34af299b7d86a29">t8_ctree_struct_t</a></td></tr>
 <tr class="memdesc:a91782c3acc835c7cf34af299b7d86a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure holds the data of a local tree including the information about face neighbors.  <a href="t8__cmesh__types_8h.html#a91782c3acc835c7cf34af299b7d86a29">More...</a><br /></td></tr>
@@ -173,10 +189,12 @@ typedef struct <a class="el" href="structt8__cghost.html">t8_cghost</a>&#160;</t
 <tr class="memdesc:a74e0d99a09de67d1143365630b0edc9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure holds the information associated to an attribute of a tree.  <a href="t8__cmesh__types_8h.html#a74e0d99a09de67d1143365630b0edc9e">More...</a><br /></td></tr>
 <tr class="separator:a74e0d99a09de67d1143365630b0edc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a879737ad62fab9b9b25200c9c27989da"><td class="memItemLeft" align="right" valign="top"><a id="a879737ad62fab9b9b25200c9c27989da"></a>
-typedef struct <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_trees_struct_t</b></td></tr>
+typedef struct <a class="el" href="structt8__cmesh__trees.html">t8_cmesh_trees</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a879737ad62fab9b9b25200c9c27989da">t8_cmesh_trees_struct_t</a></td></tr>
+<tr class="memdesc:a879737ad62fab9b9b25200c9c27989da"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure holds the trees and ghosts of a cmesh. <br /></td></tr>
 <tr class="separator:a879737ad62fab9b9b25200c9c27989da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be9aa15a7ab31bf3108963939ad7b14"><td class="memItemLeft" align="right" valign="top"><a id="a9be9aa15a7ab31bf3108963939ad7b14"></a>
-typedef struct <a class="el" href="structt8__part__tree.html">t8_part_tree</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_part_tree_struct_t</b></td></tr>
+typedef struct <a class="el" href="structt8__part__tree.html">t8_part_tree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a9be9aa15a7ab31bf3108963939ad7b14">t8_part_tree_struct_t</a></td></tr>
+<tr class="memdesc:a9be9aa15a7ab31bf3108963939ad7b14"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structt8__part__tree.html" title="t8_part_tree This structure holds the data of a trees in a partition.">t8_part_tree</a> This structure holds the data of a trees in a partition. <br /></td></tr>
 <tr class="separator:a9be9aa15a7ab31bf3108963939ad7b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89afb718a8becd3f083de8c0c6b2eb41"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structt8__cprofile.html">t8_cprofile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__types_8h.html#a89afb718a8becd3f083de8c0c6b2eb41">t8_cprofile_struct_t</a></td></tr>
 <tr class="memdesc:a89afb718a8becd3f083de8c0c6b2eb41"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is used to profile cmesh algorithms.  <a href="t8__cmesh__types_8h.html#a89afb718a8becd3f083de8c0c6b2eb41">More...</a><br /></td></tr>
@@ -196,10 +214,13 @@ typedef struct <a class="el" href="structt8__part__tree.html">t8_part_tree</a>&#
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  T8_CMESH_CAD_EDGE_PARAMETERS_ATTRIBUTE_KEY \</div>
-<div class="line">  +<a class="code" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a> <span class="comment">/* Used to store which face is linked to which surface */</span></div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="t8__cmesh__types_8h.html#a073924a011d7e52150e4eb0c284d0450">T8_CMESH_CAD_EDGE_PARAMETERS_ATTRIBUTE_KEY</a> \</div>
+<div class="line">  +<a class="code" href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a></div>
+<div class="ttc" id="at8__cmesh__types_8h_html_a073924a011d7e52150e4eb0c284d0450"><div class="ttname"><a href="t8__cmesh__types_8h.html#a073924a011d7e52150e4eb0c284d0450">T8_CMESH_CAD_EDGE_PARAMETERS_ATTRIBUTE_KEY</a></div><div class="ttdeci">#define T8_CMESH_CAD_EDGE_PARAMETERS_ATTRIBUTE_KEY</div><div class="ttdoc">Used to store edge parameters.</div><div class="ttdef"><b>Definition:</b> t8_cmesh_types.h:66</div></div>
 <div class="ttc" id="at8__eclass_8h_html_a601ebe78feea681a24e339646a017c2b"><div class="ttname"><a href="t8__eclass_8h.html#a601ebe78feea681a24e339646a017c2b">T8_ECLASS_MAX_EDGES</a></div><div class="ttdeci">#define T8_ECLASS_MAX_EDGES</div><div class="ttdoc">The maximum number of boundary edges an element class can have.</div><div class="ttdef"><b>Definition:</b> t8_eclass.h:69</div></div>
 </div><!-- fragment -->
+<p>Used to store which face is linked to which surface. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -236,7 +257,7 @@ typedef struct <a class="el" href="structt8__part__tree.html">t8_part_tree</a>&#
 <p>This structure holds the connectivity data of the coarse mesh. </p>
 <p>It can either be replicated, then each process stores a copy of the whole mesh, or partitioned. In the latter case, each process only stores a local portion of the mesh plus information about ghost elements.</p>
 <p>The coarse mesh is a collection of coarse trees that can be identified along faces. TODO: this description is outdated. rewrite it. The array ctrees stores these coarse trees sorted by their (global) tree_id. If the mesh if partitioned it is partitioned according to an (possible only virtually existing) underlying fine mesh. Therefore the ctrees array can store duplicated trees on different processes, if each of these processes owns elements of the same tree in the fine mesh.</p>
-<p>Each tree stores information about its face-neighbours in an array of t8_ctree_fneighbor. </p><dl class="section see"><dt>See also</dt><dd>t8_ctree_fneighbor</dd></dl>
+<p>Each tree stores information about its face-neighbours.</p>
 <p>If partitioned the ghost trees are stored in a hash table that is backed up by an array. The hash value of a ghost tree is its tree_id modulo the number of ghosts on this process. </p>
 
 </div>
@@ -273,7 +294,7 @@ typedef struct <a class="el" href="structt8__part__tree.html">t8_part_tree</a>&#
 </div><div class="memdoc">
 
 <p>This structure holds the data of a local tree including the information about face neighbors. </p>
-<p>For those the tree_to_face index is computed as follows. Let F be the maximal number of faces of any eclass of the cmesh's dimension, then ttf % F is the face number and ttf / F is the orientation. (<a class="el" href="t8__eclass_8h.html#a803f35807b96762457efead899f4f6e3">t8_eclass_max_num_faces</a>) The orientation is determined as follows. Let my_face and other_face be the two face numbers of the connecting trees. We chose a main_face from them as follows: Either both trees have the same element class, then the face with the lower face number is the main_face or the trees belong to different classes in which case the face belonging to the tree with the lower class according to the ordering triangle &lt; quad, hex &lt; tet &lt; prism &lt; pyramid, is the main_face. Then face corner 0 of the main_face connects to a face corner k in the other face. The face orientation is defined as the number k. If the classes are equal and my_face == other_face, treating either of both faces as the main_face leads to the same result. See <a href="https://arxiv.org/pdf/1611.02929.pdf">https://arxiv.org/pdf/1611.02929.pdf</a> for more details. </p>
+<p>For those the tree_to_face index is computed as follows. Let F be the maximal number of faces of any eclass of the cmesh's dimension, then ttf % F is the face number and ttf / F is the orientation. (<em>t8_eclass_max_num_faces</em>) The orientation is determined as follows. Let my_face and other_face be the two face numbers of the connecting trees. We chose a main_face from them as follows: Either both trees have the same element class, then the face with the lower face number is the main_face or the trees belong to different classes in which case the face belonging to the tree with the lower class according to the ordering triangle &lt; quad, hex &lt; tet &lt; prism &lt; pyramid, is the main_face. Then face corner 0 of the main_face connects to a face corner k in the other face. The face orientation is defined as the number k. If the classes are equal and my_face == other_face, treating either of both faces as the main_face leads to the same result. See <a href="https://arxiv.org/pdf/1611.02929.pdf">https://arxiv.org/pdf/1611.02929.pdf</a> for more details. </p>
 
 </div>
 </div>

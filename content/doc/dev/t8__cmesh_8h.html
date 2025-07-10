@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1673-b758a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1695-da5de</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -183,14 +183,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ac819795480f1b8fe562e3561761a0184"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#ac819795480f1b8fe562e3561761a0184">t8_cmesh_commit</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ac819795480f1b8fe562e3561761a0184"><td class="mdescLeft">&#160;</td><td class="mdescRight">After allocating and adding properties to a cmesh, finish its construction.  <a href="t8__cmesh_8h.html#ac819795480f1b8fe562e3561761a0184">More...</a><br /></td></tr>
 <tr class="separator:ac819795480f1b8fe562e3561761a0184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a696fd0bd7ecd3e1825eb6da17d074214"><td class="memItemLeft" align="right" valign="top"><a id="a696fd0bd7ecd3e1825eb6da17d074214"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_save</b> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const char *fileprefix)</td></tr>
+<tr class="memitem:a696fd0bd7ecd3e1825eb6da17d074214"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a696fd0bd7ecd3e1825eb6da17d074214">t8_cmesh_save</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const char *fileprefix)</td></tr>
+<tr class="memdesc:a696fd0bd7ecd3e1825eb6da17d074214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the cmesh to a file with the given fileprefix.  <a href="t8__cmesh_8h.html#a696fd0bd7ecd3e1825eb6da17d074214">More...</a><br /></td></tr>
 <tr class="separator:a696fd0bd7ecd3e1825eb6da17d074214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b0bdf7bc48d733dd4d12c957182b8c9"><td class="memItemLeft" align="right" valign="top"><a id="a0b0bdf7bc48d733dd4d12c957182b8c9"></a>
-<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_load</b> (const char *filename, sc_MPI_Comm comm)</td></tr>
+<tr class="memitem:a0b0bdf7bc48d733dd4d12c957182b8c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#a0b0bdf7bc48d733dd4d12c957182b8c9">t8_cmesh_load</a> (const char *filename, sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a0b0bdf7bc48d733dd4d12c957182b8c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a cmesh from a file.  <a href="t8__cmesh_8h.html#a0b0bdf7bc48d733dd4d12c957182b8c9">More...</a><br /></td></tr>
 <tr class="separator:a0b0bdf7bc48d733dd4d12c957182b8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab74a3c75158f9b82487381ec3d971553"><td class="memItemLeft" align="right" valign="top"><a id="ab74a3c75158f9b82487381ec3d971553"></a>
-<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_load_and_distribute</b> (const char *fileprefix, int num_files, sc_MPI_Comm comm, <a class="el" href="t8__cmesh__save_8h.html#ae12f5643269ba009a0ad549cb4c37845">t8_load_mode_t</a> mode, int procs_per_node)</td></tr>
+<tr class="memitem:ab74a3c75158f9b82487381ec3d971553"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#ab74a3c75158f9b82487381ec3d971553">t8_cmesh_load_and_distribute</a> (const char *fileprefix, int num_files, sc_MPI_Comm comm, <a class="el" href="t8__cmesh__save_8h.html#ae12f5643269ba009a0ad549cb4c37845">t8_load_mode_t</a> mode, int procs_per_node)</td></tr>
+<tr class="memdesc:ab74a3c75158f9b82487381ec3d971553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a cmesh from multiple files and distribute it across the processes.  <a href="t8__cmesh_8h.html#ab74a3c75158f9b82487381ec3d971553">More...</a><br /></td></tr>
 <tr class="separator:ab74a3c75158f9b82487381ec3d971553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade54f37296ef5eabcfbe647355d3fc52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8h.html#ade54f37296ef5eabcfbe647355d3fc52">t8_cmesh_comm_is_valid</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ade54f37296ef5eabcfbe647355d3fc52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given MPI communicator assigns the same rank and mpisize as stored in a cmesh.  <a href="t8__cmesh_8h.html#ade54f37296ef5eabcfbe647355d3fc52">More...</a><br /></td></tr>
@@ -451,6 +451,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 <p>TODO: this function is MPI collective. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">cmesh</td><td>Must be created with <a class="el" href="t8__cmesh_8h.html#a0519e5e1547bdc72c73b478bbc1f6e70">t8_cmesh_init</a> (TODO: or bcast) and specialized with t8_cmesh_set_* calls first (?). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator to use. </td></tr>
   </table>
   </dd>
 </dl>
@@ -545,6 +546,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>Source-cmesh, which trees get printed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator to use for printing. </td></tr>
   </table>
   </dd>
 </dl>
@@ -628,7 +630,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>A key used to identify the attribute under all attributes of this tree with the same <em>package_id</em>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tree_id</td><td>The local number of the tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltree_id</td><td>The local number of the tree. </td></tr>
   </table>
   </dd>
 </dl>
@@ -878,7 +880,7 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
 <p>TODO: Should we refer to indices or consequently use cghost_t? </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh to be considered. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ghost_id</td><td>The local id of the ghost whose eclass will be returned. 0 &lt;= <em>tree_id</em> &lt; cmesh.num_ghosts. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lghost_id</td><td>The local id of the ghost whose eclass will be returned. 0 &lt;= <em>tree_id</em> &lt; cmesh.num_ghosts. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1223,7 +1225,7 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
 <p>TODO: Should we refer to indices or consequently use ctree_t? </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh to be considered. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tree_id</td><td>The local id of the tree whose eclass will be returned. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltree_id</td><td>The local id of the tree whose eclass will be returned. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1479,6 +1481,102 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
 
 </div>
 </div>
+<a id="a0b0bdf7bc48d733dd4d12c957182b8c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b0bdf7bc48d733dd4d12c957182b8c9">&#9670;&nbsp;</a></span>t8_cmesh_load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_cmesh_load </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load a cmesh from a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The name of the file to load the cmesh from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab74a3c75158f9b82487381ec3d971553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74a3c75158f9b82487381ec3d971553">&#9670;&nbsp;</a></span>t8_cmesh_load_and_distribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_cmesh_load_and_distribute </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileprefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_files</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__cmesh__save_8h.html#ae12f5643269ba009a0ad549cb4c37845">t8_load_mode_t</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>procs_per_node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load a cmesh from multiple files and distribute it across the processes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileprefix</td><td>The prefix of the files to load the cmesh from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_files</td><td>The number of files to load. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator to use. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>The load mode to use, see <a class="el" href="t8__cmesh__save_8h.html#ae12f5643269ba009a0ad549cb4c37845">t8_load_mode_t</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">procs_per_node</td><td>The number of processes per node, only relevant in JUQUEEN mode.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd><em>procs_per_node</em> is only relevant in mode==JUQUEEN. If <em>num_files</em> = 1 a replicated cmesh is constructed. </dd></dl>
+
+</div>
+</div>
 <a id="aa63da50bb45a384868f9dbb65ee93840"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa63da50bb45a384868f9dbb65ee93840">&#9670;&nbsp;</a></span>t8_cmesh_ltreeid_to_ghostid()</h2>
 
@@ -1625,6 +1723,44 @@ No check is performed whether the attribute actually stored <em>data_count</em> 
   </dd>
 </dl>
 <p>If no geometry is registered and cmesh is modified from another cmesh then the other cmesh's geometries are used. </p><dl class="section note"><dt>Note</dt><dd>If you need to use <a class="el" href="t8__cmesh_8h.html#a6c7e46e449c518574728e836d0a3289a">t8_cmesh_bcast</a>, then all geometries must be registered <em>after</em> the bcast operation, not before. </dd></dl>
+
+</div>
+</div>
+<a id="a696fd0bd7ecd3e1825eb6da17d074214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a696fd0bd7ecd3e1825eb6da17d074214">&#9670;&nbsp;</a></span>t8_cmesh_save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_cmesh_save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramname"><em>cmesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileprefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save the cmesh to a file with the given fileprefix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>The cmesh to save. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileprefix</td><td>The prefix of the file to save the cmesh to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Currently, it is only legal to save cmeshes that use the linear geometry. </dd></dl>
 
 </div>
 </div>
@@ -1986,8 +2122,8 @@ If an attribute with the given package_id and key already exists, then it will g
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">cmesh</td><td>The cmesh to be updated. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tree1</td><td>The tree id of the first of the two trees. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tree2</td><td>The tree id of the second of the two trees. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtree1</td><td>The tree id of the first of the two trees. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtree2</td><td>The tree id of the second of the two trees. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">face1</td><td>The face number of the first tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">face2</td><td>The face number of the second tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">orientation</td><td>Specify how face1 and face2 are oriented to each other</td></tr>
@@ -2245,7 +2381,7 @@ If an attribute with the given package_id and key already exists, then it will g
 <p>It is not allowed to call this function after <a class="el" href="t8__cmesh_8h.html#ac819795480f1b8fe562e3561761a0184">t8_cmesh_commit</a>. It is not allowed to call this function multiple times for the same tree. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">cmesh</td><td>The cmesh to be updated. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tree_id</td><td>The global number of the tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gtree_id</td><td>The global number of the tree. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tree_class</td><td>The element class of this tree. </td></tr>
   </table>
   </dd>

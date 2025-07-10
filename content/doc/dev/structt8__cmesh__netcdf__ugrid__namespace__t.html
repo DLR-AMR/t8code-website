@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1673-b758a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1695-da5de</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -76,53 +76,72 @@ $(function() {
 <div class="title">t8_cmesh_netcdf_ugrid_namespace_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains the Definitions for the NetCDF-dimensions/-variables/-attributes (vary whether a 2D or 3D Mesh will be outputted)  
+ <a href="structt8__cmesh__netcdf__ugrid__namespace__t.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a69406d399d8290d76c019452e9405cc6"><td class="memItemLeft" align="right" valign="top"><a id="a69406d399d8290d76c019452e9405cc6"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>mesh</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#a69406d399d8290d76c019452e9405cc6">mesh</a></td></tr>
+<tr class="memdesc:a69406d399d8290d76c019452e9405cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the mesh. <br /></td></tr>
 <tr class="separator:a69406d399d8290d76c019452e9405cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbd75b349cd35f9806a9f8c5e96885ba"><td class="memItemLeft" align="right" valign="top"><a id="adbd75b349cd35f9806a9f8c5e96885ba"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>dim_nMesh_node</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#adbd75b349cd35f9806a9f8c5e96885ba">dim_nMesh_node</a></td></tr>
+<tr class="memdesc:adbd75b349cd35f9806a9f8c5e96885ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the dimension for the number of nodes in the mesh. <br /></td></tr>
 <tr class="separator:adbd75b349cd35f9806a9f8c5e96885ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accf430081859b7bc1e3fbcb8eb20a74e"><td class="memItemLeft" align="right" valign="top"><a id="accf430081859b7bc1e3fbcb8eb20a74e"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>dim_nMesh_elem</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#accf430081859b7bc1e3fbcb8eb20a74e">dim_nMesh_elem</a></td></tr>
+<tr class="memdesc:accf430081859b7bc1e3fbcb8eb20a74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the dimension for the number of elements in the mesh. <br /></td></tr>
 <tr class="separator:accf430081859b7bc1e3fbcb8eb20a74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf135c6d21480383564e3164ab2850d5"><td class="memItemLeft" align="right" valign="top"><a id="abf135c6d21480383564e3164ab2850d5"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>dim_nMaxMesh_elem_nodes</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#abf135c6d21480383564e3164ab2850d5">dim_nMaxMesh_elem_nodes</a></td></tr>
+<tr class="memdesc:abf135c6d21480383564e3164ab2850d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the dimension for the maximum number of nodes per element in the mesh. <br /></td></tr>
 <tr class="separator:abf135c6d21480383564e3164ab2850d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d45da9e6371fbe4e580bd8c93a06d3d"><td class="memItemLeft" align="right" valign="top"><a id="a2d45da9e6371fbe4e580bd8c93a06d3d"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>var_Mesh_node_x</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#a2d45da9e6371fbe4e580bd8c93a06d3d">var_Mesh_node_x</a></td></tr>
+<tr class="memdesc:a2d45da9e6371fbe4e580bd8c93a06d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the variable for the x-coordinates of the nodes in the mesh. <br /></td></tr>
 <tr class="separator:a2d45da9e6371fbe4e580bd8c93a06d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21f0ab2d376f5416e34e7d730b4aedc6"><td class="memItemLeft" align="right" valign="top"><a id="a21f0ab2d376f5416e34e7d730b4aedc6"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>var_Mesh_node_y</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#a21f0ab2d376f5416e34e7d730b4aedc6">var_Mesh_node_y</a></td></tr>
+<tr class="memdesc:a21f0ab2d376f5416e34e7d730b4aedc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the variable for the y-coordinates of the nodes in the mesh. <br /></td></tr>
 <tr class="separator:a21f0ab2d376f5416e34e7d730b4aedc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c6e4b401be36bec59211d2fb5091fb7"><td class="memItemLeft" align="right" valign="top"><a id="a9c6e4b401be36bec59211d2fb5091fb7"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>var_Mesh_node_z</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#a9c6e4b401be36bec59211d2fb5091fb7">var_Mesh_node_z</a></td></tr>
+<tr class="memdesc:a9c6e4b401be36bec59211d2fb5091fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the variable for the z-coordinates of the nodes in the mesh. <br /></td></tr>
 <tr class="separator:a9c6e4b401be36bec59211d2fb5091fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1879e7d8f668755505fabfff6e87a8fb"><td class="memItemLeft" align="right" valign="top"><a id="a1879e7d8f668755505fabfff6e87a8fb"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>var_Mesh_elem_types</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#a1879e7d8f668755505fabfff6e87a8fb">var_Mesh_elem_types</a></td></tr>
+<tr class="memdesc:a1879e7d8f668755505fabfff6e87a8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the variable for the element types in the mesh. <br /></td></tr>
 <tr class="separator:a1879e7d8f668755505fabfff6e87a8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4597fbc002c6676656fa39a67075778b"><td class="memItemLeft" align="right" valign="top"><a id="a4597fbc002c6676656fa39a67075778b"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>var_Mesh_elem_tree_id</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#a4597fbc002c6676656fa39a67075778b">var_Mesh_elem_tree_id</a></td></tr>
+<tr class="memdesc:a4597fbc002c6676656fa39a67075778b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the variable for the element tree id in the mesh. <br /></td></tr>
 <tr class="separator:a4597fbc002c6676656fa39a67075778b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a9d8a5580e3523f9b25ae2b7c320a0d"><td class="memItemLeft" align="right" valign="top"><a id="a0a9d8a5580e3523f9b25ae2b7c320a0d"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>var_Mesh_elem_node</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#a0a9d8a5580e3523f9b25ae2b7c320a0d">var_Mesh_elem_node</a></td></tr>
+<tr class="memdesc:a0a9d8a5580e3523f9b25ae2b7c320a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the variable for the element nodes in the mesh. <br /></td></tr>
 <tr class="separator:a0a9d8a5580e3523f9b25ae2b7c320a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed99941c7518907fb1be9021e8e3e7a8"><td class="memItemLeft" align="right" valign="top"><a id="aed99941c7518907fb1be9021e8e3e7a8"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>att_elem_shape_type</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#aed99941c7518907fb1be9021e8e3e7a8">att_elem_shape_type</a></td></tr>
+<tr class="memdesc:aed99941c7518907fb1be9021e8e3e7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the attribute for the element shape type. <br /></td></tr>
 <tr class="separator:aed99941c7518907fb1be9021e8e3e7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a258d1fd43558630654faad28b88f869f"><td class="memItemLeft" align="right" valign="top"><a id="a258d1fd43558630654faad28b88f869f"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>att_elem_node_connectivity</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#a258d1fd43558630654faad28b88f869f">att_elem_node_connectivity</a></td></tr>
+<tr class="memdesc:a258d1fd43558630654faad28b88f869f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the attribute for the element node connectivity. <br /></td></tr>
 <tr class="separator:a258d1fd43558630654faad28b88f869f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef94585782413aa05be90e5cb33d8b44"><td class="memItemLeft" align="right" valign="top"><a id="aef94585782413aa05be90e5cb33d8b44"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>att_elem_tree_id</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#aef94585782413aa05be90e5cb33d8b44">att_elem_tree_id</a></td></tr>
+<tr class="memdesc:aef94585782413aa05be90e5cb33d8b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the attribute for the element tree id. <br /></td></tr>
 <tr class="separator:aef94585782413aa05be90e5cb33d8b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48ba6495e6bb3812869f337b6c4cb612"><td class="memItemLeft" align="right" valign="top"><a id="a48ba6495e6bb3812869f337b6c4cb612"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>att_elem_node</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__netcdf__ugrid__namespace__t.html#a48ba6495e6bb3812869f337b6c4cb612">att_elem_node</a></td></tr>
+<tr class="memdesc:a48ba6495e6bb3812869f337b6c4cb612"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the attribute for the element nodes. <br /></td></tr>
 <tr class="separator:a48ba6495e6bb3812869f337b6c4cb612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains the Definitions for the NetCDF-dimensions/-variables/-attributes (vary whether a 2D or 3D Mesh will be outputted) </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/t8_cmesh/t8_cmesh_netcdf.c</li>
 </ul>
 </div><!-- contents -->

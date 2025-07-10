@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1673-b758a</span>
+   &#160;<span id="projectnumber">4.0.0-RC1.1695-da5de</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -144,8 +144,8 @@ Functions</h2></td></tr>
 <tr class="memitem:af29d511e2224d2aca455c5eba3978c23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#af29d511e2224d2aca455c5eba3978c23">t8_offset_range_send</a> (const int start, const int end, const int mpirank, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_from, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *offset_to)</td></tr>
 <tr class="memdesc:af29d511e2224d2aca455c5eba3978c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of processes in a given range [a,b] that send to a given other process in a repartitioning setting.  <a href="t8__cmesh__offset_8c.html#af29d511e2224d2aca455c5eba3978c23">More...</a><br /></td></tr>
 <tr class="separator:af29d511e2224d2aca455c5eba3978c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ac94d782020ba766207bbd688226828"><td class="memItemLeft" align="right" valign="top"><a id="a3ac94d782020ba766207bbd688226828"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_offset_print</b> (__attribute__((unused)) const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> offset, __attribute__((unused)) sc_MPI_Comm comm)</td></tr>
+<tr class="memitem:a3ac94d782020ba766207bbd688226828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh__offset_8c.html#a3ac94d782020ba766207bbd688226828">t8_offset_print</a> (__attribute__((unused)) const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> offset, __attribute__((unused)) sc_MPI_Comm comm)</td></tr>
+<tr class="memdesc:a3ac94d782020ba766207bbd688226828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the offsets of a partition.  <a href="t8__cmesh__offset_8c.html#a3ac94d782020ba766207bbd688226828">More...</a><br /></td></tr>
 <tr class="separator:a3ac94d782020ba766207bbd688226828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -338,7 +338,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_offset_print</b> (
 <li>if a process is not empty its first tree must be bigger than the last tree of the previous non-empty process, or equal to it if it is shared. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">mpisize</td><td>The number of MPI ranks, also the number of entries in <em>offset</em> minus 1. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The partition to be considered. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset_shmem</td><td>The partition to be considered. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_trees</td><td>The total number of global trees in the partition. </td></tr>
   </table>
   </dd>
@@ -688,7 +688,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_offset_print</b> (
 <p>Find the next higher rank that is not empty. </p>
 <p>returns mpisize if this rank does not exist. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">proc</td><td>An MPI rank. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rank</td><td>An MPI rank. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mpisize</td><td>The number of total MPI ranks. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>An array with at least <em>mpisize</em> + 1 entries. </td></tr>
   </table>
@@ -892,6 +892,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_offset_print</b> (
 
 </div>
 </div>
+<a id="a3ac94d782020ba766207bbd688226828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac94d782020ba766207bbd688226828">&#9670;&nbsp;</a></span>t8_offset_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_offset_print </td>
+          <td>(</td>
+          <td class="paramtype">__attribute__((unused)) const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">__attribute__((unused)) sc_MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print the offsets of a partition. </p>
+<p>This function prints the offsets of a partition in a debug message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The offsets to print. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>The MPI communicator to use for printing. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af29d511e2224d2aca455c5eba3978c23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af29d511e2224d2aca455c5eba3978c23">&#9670;&nbsp;</a></span>t8_offset_range_send()</h2>
 
@@ -994,8 +1032,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_offset_print</b> (
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">proca</td><td>Mpi rank of the possible sending process. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">procb</td><td>Mpi rank of the possible receiver. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset_from</td><td>The partition table of the current partition. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset_to</td><td>The partition table of the next partition. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t8_offset_from</td><td>The partition table of the current partition. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t8_offset_to</td><td>The partition table of the next partition. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1051,7 +1089,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_offset_print</b> (
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">proc_send</td><td>Mpi rank of the possible sending process. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">proc_recv</td><td>Mpi rank of the possible receiver. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">proc_to</td><td>Mpi rank of the possible receiver. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gtree</td><td>A global tree id. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset_from</td><td>The partition table of the current partition. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset_to</td><td>The partition table of the next partition. </td></tr>
