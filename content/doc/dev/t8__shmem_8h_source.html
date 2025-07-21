@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1721-e73f</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.53-b696</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -199,9 +199,13 @@ $(function() {
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keywordtype">void</span></div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<a class="code" href="t8__shmem_8h.html#a4f2ba9fa946c8268a1b14e6b4be72832">t8_shmem_array_destroy</a> (<a class="code" href="structt8__shmem__array.html">t8_shmem_array_t</a> *parray);</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_SHMEM_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<a class="code" href="t8__shmem_8h.html#a6d199ab7c6b5a8512a1410c10db7895a">t8_shmem_array_binary_search</a> (<a class="code" href="structt8__shmem__array.html">t8_shmem_array_t</a> array, <span class="keyword">const</span> <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> value, <span class="keyword">const</span> <span class="keywordtype">int</span> size,</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                              <span class="keywordtype">int</span> (*compare) (<a class="code" href="structt8__shmem__array.html">t8_shmem_array_t</a>, <span class="keyword">const</span> <span class="keywordtype">int</span>, <span class="keyword">const</span> <a class="code" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>));</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !T8_SHMEM_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructt8__shmem__array_html"><div class="ttname"><a href="structt8__shmem__array.html">t8_shmem_array</a></div><div class="ttdoc">Shared memory array structure.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:35</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
 <div class="ttc" id="at8_8h_html_a03692467b9ffc84d4d0c37e042679225"><div class="ttname"><a href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a></div><div class="ttdeci">int64_t t8_gloidx_t</div><div class="ttdoc">A type for global indexing that holds really big numbers.</div><div class="ttdef"><b>Definition:</b> t8.h:107</div></div>
@@ -215,6 +219,7 @@ $(function() {
 <div class="ttc" id="at8__shmem_8h_html_a5ce41cc552c7fa97cbb57b4ed7b066ed"><div class="ttname"><a href="t8__shmem_8h.html#a5ce41cc552c7fa97cbb57b4ed7b066ed">t8_shmem_array_index</a></div><div class="ttdeci">const void * t8_shmem_array_index(t8_shmem_array_t array, size_t index)</div><div class="ttdoc">Return a read-only pointer to an element in a t8_shmem_array.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:464</div></div>
 <div class="ttc" id="at8__shmem_8h_html_a5fe205228ed5c05c0780dc62f7aa155b"><div class="ttname"><a href="t8__shmem_8h.html#a5fe205228ed5c05c0780dc62f7aa155b">t8_shmem_array_end_writing</a></div><div class="ttdeci">void t8_shmem_array_end_writing(t8_shmem_array_t array)</div><div class="ttdoc">Disable writing mode for a shmem array.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:164</div></div>
 <div class="ttc" id="at8__shmem_8h_html_a6118807dfe8ca463f93ab12a99955e32"><div class="ttname"><a href="t8__shmem_8h.html#a6118807dfe8ca463f93ab12a99955e32">t8_shmem_init</a></div><div class="ttdeci">void t8_shmem_init(sc_MPI_Comm comm)</div><div class="ttdoc">Initialize shared memory usage for a communicator.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:64</div></div>
+<div class="ttc" id="at8__shmem_8h_html_a6d199ab7c6b5a8512a1410c10db7895a"><div class="ttname"><a href="t8__shmem_8h.html#a6d199ab7c6b5a8512a1410c10db7895a">t8_shmem_array_binary_search</a></div><div class="ttdeci">int t8_shmem_array_binary_search(t8_shmem_array_t array, const t8_gloidx_t value, const int size, int(*compare)(t8_shmem_array_t, const int, const t8_gloidx_t))</div><div class="ttdoc">Perform a binary search in a t8_shmem_array.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:531</div></div>
 <div class="ttc" id="at8__shmem_8h_html_a774c19063a099b4cfe2271c129bb510f"><div class="ttname"><a href="t8__shmem_8h.html#a774c19063a099b4cfe2271c129bb510f">t8_shmem_array_set_gloidx</a></div><div class="ttdeci">void t8_shmem_array_set_gloidx(t8_shmem_array_t array, int index, t8_gloidx_t value)</div><div class="ttdoc">Set an entry of a t8_shmem array that is used to store t8_gloidx_t.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:444</div></div>
 <div class="ttc" id="at8__shmem_8h_html_a7e6f3333aaa111a1d627a7718bb008dc"><div class="ttname"><a href="t8__shmem_8h.html#a7e6f3333aaa111a1d627a7718bb008dc">t8_shmem_set_type</a></div><div class="ttdeci">void t8_shmem_set_type(sc_MPI_Comm comm, sc_shmem_type_t type)</div><div class="ttdoc">Set a shared memory type of a communicator.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:95</div></div>
 <div class="ttc" id="at8__shmem_8h_html_a88e4ac42ae3e0a37506b01006f20a90d"><div class="ttname"><a href="t8__shmem_8h.html#a88e4ac42ae3e0a37506b01006f20a90d">t8_shmem_array_get_gloidx</a></div><div class="ttdeci">t8_gloidx_t t8_shmem_array_get_gloidx(t8_shmem_array_t array, int index)</div><div class="ttdoc">Return an entry of a shared memory array that stores t8_gloidx_t.</div><div class="ttdef"><b>Definition:</b> t8_shmem.c:433</div></div>

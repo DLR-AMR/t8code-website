@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1721-e73f</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.53-b696</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -96,7 +96,10 @@ $(function() {
 <code>#include &lt;<a class="el" href="t8__vec_8h_source.html">t8_types/t8_vec.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="t8__eclass_8h_source.html">t8_eclass.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="t8__cmesh__types_8h_source.html">t8_cmesh_types.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="t8__vector__algorithms_8hxx_source.html">t8_vector_helper/t8_vector_algorithms.hxx</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="t8__cmesh_8hxx_source.html">t8_cmesh.hxx</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="t8__cmesh__trees_8h_source.html">t8_cmesh_trees.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="t8__element_8h_source.html">t8_element.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -260,9 +263,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__
 <tr class="memitem:a618dc79a821baea6e45af2491e70e381"><td class="memItemLeft" align="right" valign="top"><a id="a618dc79a821baea6e45af2491e70e381"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_debug_print_trees</b> ([[maybe_unused]] const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, [[maybe_unused]] sc_MPI_Comm comm)</td></tr>
 <tr class="separator:a618dc79a821baea6e45af2491e70e381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90c5bb97d9fd0848b84ddfc9d2114fcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#a90c5bb97d9fd0848b84ddfc9d2114fcf">t8_cmesh_uniform_bounds</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const int level, const <a class="el" href="classt8__scheme.html">t8_scheme</a> *scheme, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *first_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_begin, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *last_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_end, int8_t *first_tree_shared)</td></tr>
-<tr class="memdesc:a90c5bb97d9fd0848b84ddfc9d2114fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the section of a uniform forest for the current rank.  <a href="t8__cmesh_8cxx.html#a90c5bb97d9fd0848b84ddfc9d2114fcf">More...</a><br /></td></tr>
-<tr class="separator:a90c5bb97d9fd0848b84ddfc9d2114fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33c87df23d49e495d5332e217f5e8d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#aa33c87df23d49e495d5332e217f5e8d7">t8_cmesh_uniform_bounds_equal_element_count</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const int level, const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *tree_scheme, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *first_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_begin, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *last_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_end, int8_t *first_tree_shared)</td></tr>
+<tr class="memdesc:aa33c87df23d49e495d5332e217f5e8d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the section of a uniform forest for the current rank.  <a href="t8__cmesh_8cxx.html#aa33c87df23d49e495d5332e217f5e8d7">More...</a><br /></td></tr>
+<tr class="separator:aa33c87df23d49e495d5332e217f5e8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad64b181f1b69fb799c8b756d956c67d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#aad64b181f1b69fb799c8b756d956c67d">find_bounds_in_offset</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array, const int guess, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> value)</td></tr>
+<tr class="memdesc:aad64b181f1b69fb799c8b756d956c67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the bounds of a value in a given offset array.  <a href="t8__cmesh_8cxx.html#aad64b181f1b69fb799c8b756d956c67d">More...</a><br /></td></tr>
+<tr class="separator:aad64b181f1b69fb799c8b756d956c67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a429af0981e7da4aee52215cdfd04bef5"><td class="memItemLeft" align="right" valign="top"><a id="a429af0981e7da4aee52215cdfd04bef5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_uniform_bounds_for_irregular_refinement</b> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const int level, const <a class="el" href="classt8__scheme.html">t8_scheme</a> *scheme, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *first_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_begin, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *last_local_tree, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *child_in_tree_end, int8_t *first_tree_shared, sc_MPI_Comm comm)</td></tr>
+<tr class="separator:a429af0981e7da4aee52215cdfd04bef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d70bd31ef635c85fc2a761f9070a258"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__cmesh_8cxx.html#a1d70bd31ef635c85fc2a761f9070a258">t8_cmesh_get_local_bounding_box</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, double bounds[6])</td></tr>
 <tr class="memdesc:a1d70bd31ef635c85fc2a761f9070a258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the process local bounding box of the cmesh.  <a href="t8__cmesh_8cxx.html#a1d70bd31ef635c85fc2a761f9070a258">More...</a><br /></td></tr>
 <tr class="separator:a1d70bd31ef635c85fc2a761f9070a258"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,6 +279,60 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_cmesh_debug_print_
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file collects all general cmesh routines that need c++ compilation. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="aad64b181f1b69fb799c8b756d956c67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad64b181f1b69fb799c8b756d956c67d">&#9670;&nbsp;</a></span>find_bounds_in_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int find_bounds_in_offset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>guess</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find the bounds of a value in a given offset array. </p>
+<p>Used for a binary search to find the rank that contains the value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">array</td><td>The offset array. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">guess</td><td>The index to start searching from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The value to find the bounds for.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if the value is within the bounds, -1 if it is below the bounds, and 1 otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a9cb2e85d4fb304e334fa2e9bfdc93d30"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9cb2e85d4fb304e334fa2e9bfdc93d30">&#9670;&nbsp;</a></span>t8_cmesh_alloc_offsets()</h2>
 
@@ -2239,14 +2302,14 @@ If an attribute with the given package_id and key already exists, then it will g
 
 </div>
 </div>
-<a id="a90c5bb97d9fd0848b84ddfc9d2114fcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90c5bb97d9fd0848b84ddfc9d2114fcf">&#9670;&nbsp;</a></span>t8_cmesh_uniform_bounds()</h2>
+<a id="aa33c87df23d49e495d5332e217f5e8d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa33c87df23d49e495d5332e217f5e8d7">&#9670;&nbsp;</a></span>t8_cmesh_uniform_bounds_equal_element_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_cmesh_uniform_bounds </td>
+          <td class="memname">void t8_cmesh_uniform_bounds_equal_element_count </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
           <td class="paramname"><em>cmesh</em>, </td>
@@ -2261,7 +2324,7 @@ If an attribute with the given package_id and key already exists, then it will g
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *&#160;</td>
-          <td class="paramname"><em>scheme</em>, </td>
+          <td class="paramname"><em>tree_scheme</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2308,10 +2371,10 @@ If an attribute with the given package_id and key already exists, then it will g
     <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The uniform refinement level to be created. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>The element scheme for which to compute the bounds. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">first_local_tree</td><td>The first tree that contains elements belonging to the calling processor. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">child_in_tree_begin</td><td>The global index of the first element belonging to the calling processor. Not computed if NULL. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">child_in_tree_begin</td><td>The tree-local index of the first element belonging to the calling processor. Not computed if NULL. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">last_local_tree</td><td>The last tree that contains elements belonging to the calling processor. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">child_in_tree_end</td><td>The global index of the first element that does not belonging to the calling processor anymore. Not computed if NULL. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">first_tree_shared</td><td>If not NULL, 1 or 0 is stored here depending on whether <em>first_local_tree</em> is the same as <em>last_local_tree</em> on the next process. <em>cmesh</em> must be committed before calling this function. * </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">child_in_tree_end</td><td>The tree-local index of the first element that does not belonging to the calling processor anymore. Not computed if NULL. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">first_tree_shared</td><td>If not NULL, 1 or 0 is stored here depending on whether <em>first_local_tree</em> is the same as <em>last_local_tree</em> on the previous process. <em>cmesh</em> must be committed before calling this function. </td></tr>
   </table>
   </dd>
 </dl>
