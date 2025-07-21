@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['pack_2043',['pack',['../classt8__data__handler.html#a375a99b1038f014eeba3573e76bac200',1,'t8_data_handler']]],
-  ['pack_5fvector_5fprefix_2044',['pack_vector_prefix',['../classt8__abstract__vector__handler.html#a7399c66d21935f2835b7e107c443e421',1,'t8_abstract_vector_handler::pack_vector_prefix()'],['../classt8__vector__handler.html#a78b5c28f32c4da7caa2ca9a87fe4d327',1,'t8_vector_handler::pack_vector_prefix()']]]
+  ['operator_20value_5ftype_2107',['operator value_type',['../classT8Type.html#a108d3f985b2ccb2b3fd4c83d1128f588',1,'T8Type']]],
+  ['operator_28_29_2108',['operator()',['../structt8__msh__node__hasher.html#a9af301f3475755c9b5e403bbd269d32e',1,'t8_msh_node_hasher::operator()()'],['../structt8__msh__node__equal.html#a70409ea32f58c48a0ef345e70a882bc3',1,'t8_msh_node_equal::operator()()']]],
+  ['operator_3d_2109',['operator=',['../classt8__default__scheme__common.html#ac0c1f5ae3062d1df8a4680cc1dd09f7c',1,'t8_default_scheme_common::operator=(t8_default_scheme_common &amp;&amp;other) noexcept'],['../classt8__default__scheme__common.html#ac6adfdf73c09f637afaf18e6f4477c5e',1,'t8_default_scheme_common::operator=(const t8_default_scheme_common &amp;other)'],['../structt8__standalone__scheme.html#a50d9ae94cd497905d92a3c37ade9bffc',1,'t8_standalone_scheme::operator=(t8_standalone_scheme &amp;&amp;other) noexcept'],['../structt8__standalone__scheme.html#aa66a00519cf78431bd71a511552d3128',1,'t8_standalone_scheme::operator=(const t8_standalone_scheme &amp;other)']]],
+  ['operator_3d_3d_2110',['operator==',['../classt8__cmesh__vertex__conn__vertex__to__tree.html#a3c7cf7bb12735d57e62316ba7148c94a',1,'t8_cmesh_vertex_conn_vertex_to_tree']]]
 ];

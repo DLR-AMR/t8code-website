@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.55-e7ec1</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.60-4a04</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -90,8 +90,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9717d4964defaef206b44933a7e815a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtk__writer.html#a9717d4964defaef206b44933a7e815a7">vtk_writer</a> (std::string fileprefix, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a9717d4964defaef206b44933a7e815a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new vtk writer object.  <a href="classvtk__writer.html#a9717d4964defaef206b44933a7e815a7">More...</a><br /></td></tr>
 <tr class="separator:a9717d4964defaef206b44933a7e815a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26066f3b59a2f2c62c3a627f3308a23e"><td class="memItemLeft" align="right" valign="top"><a id="a26066f3b59a2f2c62c3a627f3308a23e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>grid_to_vtkUnstructuredGrid</b> (const grid_t grid, vtkSmartPointer&lt; vtkUnstructuredGrid &gt; unstructuredGrid)</td></tr>
+<tr class="memitem:a26066f3b59a2f2c62c3a627f3308a23e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtk__writer.html#a26066f3b59a2f2c62c3a627f3308a23e">grid_to_vtkUnstructuredGrid</a> (const grid_t grid, vtkSmartPointer&lt; vtkUnstructuredGrid &gt; unstructuredGrid)</td></tr>
+<tr class="memdesc:a26066f3b59a2f2c62c3a627f3308a23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a grid to a vtkUnstructuredGrid.  <a href="classvtk__writer.html#a26066f3b59a2f2c62c3a627f3308a23e">More...</a><br /></td></tr>
 <tr class="separator:a26066f3b59a2f2c62c3a627f3308a23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf6c2a51a24ff4704dd733e0a72e32bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtk__writer.html#abf6c2a51a24ff4704dd733e0a72e32bf">write_with_API</a> (const grid_t grid)</td></tr>
 <tr class="memdesc:abf6c2a51a24ff4704dd733e0a72e32bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vtk-writer function that uses the vtk API.  <a href="classvtk__writer.html#abf6c2a51a24ff4704dd733e0a72e32bf">More...</a><br /></td></tr>
@@ -121,10 +121,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>grid_to_vtkUnstructur
 <tr class="memdesc:adae6248a3ea67b4027cfe04f4d4bab84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the fileprefix for the output files.  <a href="classvtk__writer.html#adae6248a3ea67b4027cfe04f4d4bab84">More...</a><br /></td></tr>
 <tr class="separator:adae6248a3ea67b4027cfe04f4d4bab84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a795d569ea7b904f694f698e7ca3ab626"><td class="memItemLeft" align="right" valign="top"><a id="a795d569ea7b904f694f698e7ca3ab626"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>write_ASCII</b> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtk__writer.html#a795d569ea7b904f694f698e7ca3ab626">write_ASCII</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest)</td></tr>
+<tr class="memdesc:a795d569ea7b904f694f698e7ca3ab626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a forest to a VTK file in ASCII format. <br /></td></tr>
 <tr class="separator:a795d569ea7b904f694f698e7ca3ab626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa1d099e0eccae2b703aa711da55930"><td class="memItemLeft" align="right" valign="top"><a id="afaa1d099e0eccae2b703aa711da55930"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>write_ASCII</b> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> forest)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtk__writer.html#afaa1d099e0eccae2b703aa711da55930">write_ASCII</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> forest)</td></tr>
+<tr class="memdesc:afaa1d099e0eccae2b703aa711da55930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a cmesh to a VTK file in ASCII format. <br /></td></tr>
 <tr class="separator:afaa1d099e0eccae2b703aa711da55930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -292,6 +294,53 @@ template&lt;typename grid_t &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a26066f3b59a2f2c62c3a627f3308a23e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26066f3b59a2f2c62c3a627f3308a23e">&#9670;&nbsp;</a></span>grid_to_vtkUnstructuredGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename grid_t &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvtk__writer.html">vtk_writer</a>&lt; grid_t &gt;::grid_to_vtkUnstructuredGrid </td>
+          <td>(</td>
+          <td class="paramtype">const grid_t&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vtkSmartPointer&lt; vtkUnstructuredGrid &gt;&#160;</td>
+          <td class="paramname"><em>unstructuredGrid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert a grid to a vtkUnstructuredGrid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">grid</td><td>The forest or cmesh that is translated. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">unstructuredGrid</td><td>The vtkUnstructuredGrid to fill with the data of <em>grid</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1a48303fc5e6ee997e46692c5f32e72c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a48303fc5e6ee997e46692c5f32e72c">&#9670;&nbsp;</a></span>set_curved_flag()</h2>
 
