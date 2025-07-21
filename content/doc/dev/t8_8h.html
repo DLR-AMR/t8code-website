@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1721-e73f</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.52-8e473</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -148,6 +148,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a4cc50faa5efd034ee328b0ff357f5bd7">T8_GLOIDX_ABS</a>(x)&#160;&#160;&#160;((<a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>) llabs ((long long) (x)))</td></tr>
 <tr class="memdesc:a4cc50faa5efd034ee328b0ff357f5bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to get the absolute value of a t8_gloidx_t. <br /></td></tr>
 <tr class="separator:a4cc50faa5efd034ee328b0ff357f5bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa19daf2e22b07e90b0ec519e944b39e4"><td class="memItemLeft" align="right" valign="top"><a id="aa19daf2e22b07e90b0ec519e944b39e4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#aa19daf2e22b07e90b0ec519e944b39e4">T8_GLOIDX_MAX</a>&#160;&#160;&#160;INT64_MAX</td></tr>
+<tr class="memdesc:aa19daf2e22b07e90b0ec519e944b39e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum possible value of a t8_gloidx_t. <br /></td></tr>
+<tr class="separator:aa19daf2e22b07e90b0ec519e944b39e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaace040933e885411fb00d591ad07f7e"><td class="memItemLeft" align="right" valign="top"><a id="aaace040933e885411fb00d591ad07f7e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#aaace040933e885411fb00d591ad07f7e">t8_compare_gloidx</a>(v,  w)&#160;&#160;&#160;sc_int64_compare (v, w)</td></tr>
 <tr class="memdesc:aaace040933e885411fb00d591ad07f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison function for t8_gloidx_t. <br /></td></tr>
@@ -211,6 +215,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="t8_8h.html#aba53f78a1fa7b88219f32eda5e73d55aa5bf07dba4b982489be8e0e91e481cd4f">T8_MPI_GHOST_FOREST</a>
 , <br />
 &#160;&#160;<a class="el" href="t8_8h.html#aba53f78a1fa7b88219f32eda5e73d55aae3dd27f9b9640c805e86ffa9e9568030">T8_MPI_GHOST_EXC_FOREST</a>
+, <br />
+&#160;&#160;<a class="el" href="t8_8h.html#aba53f78a1fa7b88219f32eda5e73d55aa82cd63f11a31cac02bf6af4ccd4f870d">T8_MPI_CMESH_UNIFORM_BOUNDS_START</a>
+, <br />
+&#160;&#160;<a class="el" href="t8_8h.html#aba53f78a1fa7b88219f32eda5e73d55aa315231359dc39b0cf0c4fcf6b26bab2f">T8_MPI_CMESH_UNIFORM_BOUNDS_END</a>
 , <br />
 &#160;&#160;<a class="el" href="t8_8h.html#aba53f78a1fa7b88219f32eda5e73d55aad860a9b203fb461f372bb8f1adf1b37e">T8_MPI_TEST_ELEMENT_PACK_TAG</a>
 , <br />
@@ -351,6 +359,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8
 <tr><td class="fieldname"><a id="aba53f78a1fa7b88219f32eda5e73d55aa5bf07dba4b982489be8e0e91e481cd4f"></a>T8_MPI_GHOST_FOREST&#160;</td><td class="fielddoc"><p>Used for for ghost layer creation. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aba53f78a1fa7b88219f32eda5e73d55aae3dd27f9b9640c805e86ffa9e9568030"></a>T8_MPI_GHOST_EXC_FOREST&#160;</td><td class="fielddoc"><p>Used for ghost data exchange. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aba53f78a1fa7b88219f32eda5e73d55aa82cd63f11a31cac02bf6af4ccd4f870d"></a>T8_MPI_CMESH_UNIFORM_BOUNDS_START&#160;</td><td class="fielddoc"><p>Used for cmesh uniform bounds computation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aba53f78a1fa7b88219f32eda5e73d55aa315231359dc39b0cf0c4fcf6b26bab2f"></a>T8_MPI_CMESH_UNIFORM_BOUNDS_END&#160;</td><td class="fielddoc"><p>Used for cmesh uniform bounds computation. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aba53f78a1fa7b88219f32eda5e73d55aad860a9b203fb461f372bb8f1adf1b37e"></a>T8_MPI_TEST_ELEMENT_PACK_TAG&#160;</td><td class="fielddoc"><p>Used for testing mpi pack and unpack functionality. </p>
 </td></tr>

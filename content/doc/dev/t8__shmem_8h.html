@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC1.1721-e73f</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.52-8e473</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -173,6 +173,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
 <tr class="memitem:a4f2ba9fa946c8268a1b14e6b4be72832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a4f2ba9fa946c8268a1b14e6b4be72832">t8_shmem_array_destroy</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> *parray)</td></tr>
 <tr class="memdesc:a4f2ba9fa946c8268a1b14e6b4be72832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free all memory associated with a <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a>.  <a href="t8__shmem_8h.html#a4f2ba9fa946c8268a1b14e6b4be72832">More...</a><br /></td></tr>
 <tr class="separator:a4f2ba9fa946c8268a1b14e6b4be72832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d199ab7c6b5a8512a1410c10db7895a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a6d199ab7c6b5a8512a1410c10db7895a">t8_shmem_array_binary_search</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> value, const int size, int(*compare)(<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>, const int, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>))</td></tr>
+<tr class="memdesc:a6d199ab7c6b5a8512a1410c10db7895a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a binary search in a <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a>.  <a href="t8__shmem_8h.html#a6d199ab7c6b5a8512a1410c10db7895a">More...</a><br /></td></tr>
+<tr class="separator:a6d199ab7c6b5a8512a1410c10db7895a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We define basic shared memory routines. </p>
@@ -324,6 +327,58 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a6d199ab7c6b5a8512a1410c10db7895a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d199ab7c6b5a8512a1410c10db7895a">&#9670;&nbsp;</a></span>t8_shmem_array_binary_search()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_shmem_array_binary_search </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>, const int, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>)&#160;</td>
+          <td class="paramname"><em>compare</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform a binary search in a <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">array</td><td>The <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a> to search in. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The value to search for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The number of elements in the array. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compare</td><td>A function that compares an element of the array with the value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The index of the element in <em>array</em> that matches <em>value</em>. </dd></dl>
 
 </div>
 </div>
