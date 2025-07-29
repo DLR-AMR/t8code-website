@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.85-4661</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.113-c9f65</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -172,6 +172,7 @@ $(function() {
 : <a class="el" href="structt8__geometry.html#af346967a5b65ed1f57ccf57745bede77">t8_geometry</a>
 , <a class="el" href="structt8__geometry__handler.html#a2f04386d2e6ae11d8afd2bac0cae7c40">t8_geometry_handler</a>
 , <a class="el" href="structt8__geometry__linear.html#afb59f4ee2ef03423c375e9a45ad09ca3">t8_geometry_linear</a>
+, <a class="el" href="structt8__geometry__linear__axis__aligned.html#afbe70e1fc87b1c27fc21219ac876f79f">t8_geometry_linear_axis_aligned</a>
 </li>
 <li>get_tree_geometry()
 : <a class="el" href="structt8__geometry__handler.html#a2348e0830dee8da367e6336627655bfe">t8_geometry_handler</a>
@@ -254,6 +255,9 @@ $(function() {
 <li>grid_to_vtkUnstructuredGrid()
 : <a class="el" href="classvtk__writer.html#a26066f3b59a2f2c62c3a627f3308a23e">vtk_writer&lt; grid_t &gt;</a>
 </li>
+<li>t8_geom_analytic_get_user_data()
+: <a class="el" href="structt8__geometry__analytic.html#ae822ba7b35a834a7915e8a4b506309a0">t8_geometry_analytic</a>
+</li>
 <li>t8_geom_check_tree_compatibility()
 : <a class="el" href="structt8__geometry.html#ae63c57302e57f271250601cfff83a29b">t8_geometry</a>
 , <a class="el" href="structt8__geometry__analytic.html#a459cc3ea3fc12e57133533b24e09e942">t8_geometry_analytic</a>
@@ -271,6 +275,12 @@ $(function() {
 </li>
 <li>t8_geom_edge_parameter_to_face_parameters()
 : <a class="el" href="structt8__geometry__cad.html#ab669e6156717cbc1bbd5317355787c32">t8_geometry_cad</a>
+</li>
+<li>t8_geom_element_centroid()
+: <a class="el" href="structt8__geometry__extended.html#abc921f2e6b60d3ff21c76d91f2fbadc6">t8_geometry_extended</a>
+</li>
+<li>t8_geom_element_volume()
+: <a class="el" href="structt8__geometry__extended.html#a60942843c61daa2c1833589d45af2b84">t8_geometry_extended</a>
 </li>
 <li>t8_geom_evaluate()
 : <a class="el" href="structt8__geometry.html#a79511346d3aec1b3edb4540f0041e6c3">t8_geometry</a>
@@ -291,10 +301,25 @@ $(function() {
 : <a class="el" href="structt8__geometry.html#a8e6d9e084a795989b603cc2c9e9cec9e">t8_geometry</a>
 , <a class="el" href="structt8__geometry__analytic.html#ae019b763cc921334a7cb7d354e03689f">t8_geometry_analytic</a>
 , <a class="el" href="structt8__geometry__cad.html#aa6c06d22d8cc22e35b33faf7e1811d19">t8_geometry_cad</a>
+, <a class="el" href="structt8__geometry__cubed__sphere.html#ade71bcc389977195fbfba40a67cc8c6d">t8_geometry_cubed_sphere</a>
+, <a class="el" href="structt8__geometry__cubed__spherical__shell.html#ae222dbd71e82f89d45dee70fe00aeae3">t8_geometry_cubed_spherical_shell</a>
 , <a class="el" href="structt8__geometry__lagrange.html#a414fefe0dfeb0c1327b2d3860ea85ff6">t8_geometry_lagrange</a>
 , <a class="el" href="structt8__geometry__linear.html#a83c9e13ab32bf44894573f27b8e2db13">t8_geometry_linear</a>
 , <a class="el" href="structt8__geometry__linear__axis__aligned.html#abc8383df8d79968d981e891048636b71">t8_geometry_linear_axis_aligned</a>
+, <a class="el" href="structt8__geometry__prismed__spherical__shell.html#aa5eb8a2a2d457a08e026e1d4af918fd9">t8_geometry_prismed_spherical_shell</a>
+, <a class="el" href="structt8__geometry__quadrangulated__disk.html#a25ff893c1bf7733532f7c1f4b7fd92a5">t8_geometry_quadrangulated_disk</a>
+, <a class="el" href="structt8__geometry__tessellated__spherical__surface.html#aacd60334ea73852210192444891ca307">t8_geometry_tessellated_spherical_surface</a>
+, <a class="el" href="structt8__geometry__triangulated__spherical__surface.html#af7b0c288298bf62d765ee241402a7dc8">t8_geometry_triangulated_spherical_surface</a>
 , <a class="el" href="structt8__geometry__zero.html#ab9995a43dbd4404fbd98ac98aa4018be">t8_geometry_zero</a>
+</li>
+<li>t8_geom_face_area()
+: <a class="el" href="structt8__geometry__extended.html#a46c01594cd0da435321a79a9949362e2">t8_geometry_extended</a>
+</li>
+<li>t8_geom_face_centroid()
+: <a class="el" href="structt8__geometry__extended.html#afdde7722afcd6a12a1aa2ffad32f110c">t8_geometry_extended</a>
+</li>
+<li>t8_geom_face_normal()
+: <a class="el" href="structt8__geometry__extended.html#acb4582aa923ab708324137c0ad1a49ac">t8_geometry_extended</a>
 </li>
 <li>t8_geom_get_cad_curve()
 : <a class="el" href="structt8__geometry__cad.html#a103bf0d43cff1135909f0959be64927a">t8_geometry_cad</a>
@@ -325,6 +350,9 @@ $(function() {
 </li>
 <li>t8_geom_get_face_parametric_bounds()
 : <a class="el" href="structt8__geometry__cad.html#a245f63374574820616157126ab76fae0">t8_geometry_cad</a>
+</li>
+<li>t8_geom_get_hash()
+: <a class="el" href="structt8__geometry.html#ad46891d5e6bbff988cb7e47862f26228">t8_geometry</a>
 </li>
 <li>t8_geom_get_name()
 : <a class="el" href="structt8__geometry.html#a841bf054ae6b3d4fc82b8750846d122f">t8_geometry</a>
@@ -389,11 +417,14 @@ $(function() {
 , <a class="el" href="structt8__geometry__with__vertices.html#aafa141b98b12adab1d259c5e371715cd">t8_geometry_with_vertices</a>
 , <a class="el" href="structt8__geometry__zero.html#a31ca862ae5dba664b4ba86ae3d5b4331">t8_geometry_zero</a>
 </li>
+<li>t8_geometry()
+: <a class="el" href="structt8__geometry.html#acb22f0f977aac3eed002336abce076d6">t8_geometry</a>
+</li>
 <li>t8_geometry_analytic()
-: <a class="el" href="structt8__geometry__analytic.html#a9e497623c8d9a806e0c58c14b633c33c">t8_geometry_analytic</a>
+: <a class="el" href="structt8__geometry__analytic.html#a1d92dcb5b2e231d66810c15ea0f895c2">t8_geometry_analytic</a>
 </li>
 <li>t8_geometry_cad()
-: <a class="el" href="structt8__geometry__cad.html#a42bf3a826539802095a4638c35f4e47f">t8_geometry_cad</a>
+: <a class="el" href="structt8__geometry__cad.html#af377aa853c2b4ba492995f224999a341">t8_geometry_cad</a>
 </li>
 <li>t8_geometry_handler()
 : <a class="el" href="structt8__geometry__handler.html#a889d6a6f82adbba56601343984a5d2da">t8_geometry_handler</a>
@@ -406,6 +437,9 @@ $(function() {
 </li>
 <li>t8_geometry_linear_axis_aligned()
 : <a class="el" href="structt8__geometry__linear__axis__aligned.html#a204073f0f97e8f04625ce90999122d27">t8_geometry_linear_axis_aligned</a>
+</li>
+<li>t8_geometry_with_vertices()
+: <a class="el" href="structt8__geometry__with__vertices.html#af71169db422615a742ffd16dd4be5fab">t8_geometry_with_vertices</a>
 </li>
 <li>t8_geometry_zero()
 : <a class="el" href="structt8__geometry__zero.html#a911227a1c1b169667236cb7db382183b">t8_geometry_zero</a>

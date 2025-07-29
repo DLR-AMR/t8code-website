@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.85-4661</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.113-c9f65</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -77,6 +77,11 @@ $(function() {
 <div class="title">t8_geometry_with_vertices Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for vertex-based geometries.  
+ <a href="structt8__geometry__with__vertices.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="t8__geometry__with__vertices_8hxx_source.html">t8_geometry_with_vertices.hxx</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for t8_geometry_with_vertices:</div>
 <div class="dyncontent">
@@ -88,8 +93,8 @@ Inheritance diagram for t8_geometry_with_vertices:</div>
 <area href="structt8__geometry__cubed__sphere.html" title="This geometry maps specifically arranged hexahedrons to a sphere." alt="t8_geometry_cubed_sphere" shape="rect" coords="273,168,536,192"/>
 <area href="structt8__geometry__cubed__spherical__shell.html" title="This geometry maps six hexaeders arranged as a cube to a spherical shell." alt="t8_geometry_cubed_spherical_shell" shape="rect" coords="273,224,536,248"/>
 <area href="structt8__geometry__lagrange.html" title="Mapping with Lagrange basis functions." alt="t8_geometry_lagrange" shape="rect" coords="273,280,536,304"/>
-<area href="structt8__geometry__linear.html" alt="t8_geometry_linear" shape="rect" coords="273,336,536,360"/>
-<area href="structt8__geometry__linear__axis__aligned.html" alt="t8_geometry_linear_axis_aligned" shape="rect" coords="273,392,536,416"/>
+<area href="structt8__geometry__linear.html" title="Linear geometry." alt="t8_geometry_linear" shape="rect" coords="273,336,536,360"/>
+<area href="structt8__geometry__linear__axis__aligned.html" title="Linear and axis-aligned geometry for cartesian grids." alt="t8_geometry_linear_axis_aligned" shape="rect" coords="273,392,536,416"/>
 <area href="structt8__geometry__prismed__spherical__shell.html" title="This geometry maps prisms arranged as octahedron (or similar) to a spherical shell." alt="t8_geometry_prismed_spherical_shell" shape="rect" coords="273,448,536,472"/>
 <area href="structt8__geometry__quadrangulated__disk.html" title="This geometry maps five quads to a disk." alt="t8_geometry_quadrangulated_disk" shape="rect" coords="273,504,536,528"/>
 <area href="structt8__geometry__tessellated__spherical__surface.html" title="This geometry maps the faces of a cube made of quads and/or triangles to a spherical surface." alt="t8_geometry_tessellated_spherical_surface" shape="rect" coords="273,560,536,584"/>
@@ -99,8 +104,8 @@ Inheritance diagram for t8_geometry_with_vertices:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af71169db422615a742ffd16dd4be5fab"><td class="memItemLeft" align="right" valign="top"><a id="af71169db422615a742ffd16dd4be5fab"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry_with_vertices</b> (std::string <a class="el" href="structt8__geometry.html#af4d0bac9de52e525bb7b5e43f19d3ff3">name</a>)</td></tr>
+<tr class="memitem:af71169db422615a742ffd16dd4be5fab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__with__vertices.html#af71169db422615a742ffd16dd4be5fab">t8_geometry_with_vertices</a> (std::string <a class="el" href="structt8__geometry.html#af4d0bac9de52e525bb7b5e43f19d3ff3">name</a>)</td></tr>
+<tr class="memdesc:af71169db422615a742ffd16dd4be5fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic constructor that sets the name.  <a href="structt8__geometry__with__vertices.html#af71169db422615a742ffd16dd4be5fab">More...</a><br /></td></tr>
 <tr class="separator:af71169db422615a742ffd16dd4be5fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac12d9f9def92fc9fe27ea8ec188a4f48"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__with__vertices.html#ac12d9f9def92fc9fe27ea8ec188a4f48">~t8_geometry_with_vertices</a> ()</td></tr>
 <tr class="memdesc:ac12d9f9def92fc9fe27ea8ec188a4f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry__with__vertices.html#ac12d9f9def92fc9fe27ea8ec188a4f48">More...</a><br /></td></tr>
@@ -115,8 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1ceb77b879cb145a3de7e87955035432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of this geometry.  <a href="structt8__geometry__with__vertices.html#a1ceb77b879cb145a3de7e87955035432">More...</a><br /></td></tr>
 <tr class="separator:a1ceb77b879cb145a3de7e87955035432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structt8__geometry"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structt8__geometry')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structt8__geometry.html">t8_geometry</a></td></tr>
-<tr class="memitem:acb22f0f977aac3eed002336abce076d6 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top"><a id="acb22f0f977aac3eed002336abce076d6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geometry</b> (std::string <a class="el" href="structt8__geometry.html#af4d0bac9de52e525bb7b5e43f19d3ff3">name</a>)</td></tr>
+<tr class="memitem:acb22f0f977aac3eed002336abce076d6 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#acb22f0f977aac3eed002336abce076d6">t8_geometry</a> (std::string <a class="el" href="structt8__geometry.html#af4d0bac9de52e525bb7b5e43f19d3ff3">name</a>)</td></tr>
+<tr class="memdesc:acb22f0f977aac3eed002336abce076d6 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic constructor that sets the name.  <a href="structt8__geometry.html#acb22f0f977aac3eed002336abce076d6">More...</a><br /></td></tr>
 <tr class="separator:acb22f0f977aac3eed002336abce076d6 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">~t8_geometry</a> ()</td></tr>
 <tr class="memdesc:af14c7f0e90f6068ca697fb06d2a8cd34 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="structt8__geometry.html#af14c7f0e90f6068ca697fb06d2a8cd34">More...</a><br /></td></tr>
@@ -139,14 +144,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af346967a5b65ed1f57ccf57745bede77 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#af346967a5b65ed1f57ccf57745bede77">get_tree_bounding_box</a> ([[maybe_unused]] const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, [[maybe_unused]] double bounds[6]) const</td></tr>
 <tr class="memdesc:af346967a5b65ed1f57ccf57745bede77 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the bounding box of the currently active tree.  <a href="structt8__geometry.html#af346967a5b65ed1f57ccf57745bede77">More...</a><br /></td></tr>
 <tr class="separator:af346967a5b65ed1f57ccf57745bede77 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad46891d5e6bbff988cb7e47862f26228 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top"><a id="ad46891d5e6bbff988cb7e47862f26228"></a>
-<a class="el" href="t8__geometry__hash_8hxx.html#a10c610e48142563fb6e6519e617e220d">t8_geometry_hash</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_geom_get_hash</b> () const</td></tr>
+<tr class="memitem:ad46891d5e6bbff988cb7e47862f26228 inherit pub_methods_structt8__geometry"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__geometry__hash_8hxx.html#a10c610e48142563fb6e6519e617e220d">t8_geometry_hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry.html#ad46891d5e6bbff988cb7e47862f26228">t8_geom_get_hash</a> () const</td></tr>
+<tr class="memdesc:ad46891d5e6bbff988cb7e47862f26228 inherit pub_methods_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hash value of this geometry.  <a href="structt8__geometry.html#ad46891d5e6bbff988cb7e47862f26228">More...</a><br /></td></tr>
 <tr class="separator:ad46891d5e6bbff988cb7e47862f26228 inherit pub_methods_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a4f1c6b662023045aec95017f7f5fd189"><td class="memItemLeft" align="right" valign="top"><a id="a4f1c6b662023045aec95017f7f5fd189"></a>
-const double *&#160;</td><td class="memItemRight" valign="bottom"><b>active_tree_vertices</b></td></tr>
+const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__geometry__with__vertices.html#a4f1c6b662023045aec95017f7f5fd189">active_tree_vertices</a></td></tr>
+<tr class="memdesc:a4f1c6b662023045aec95017f7f5fd189"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vertices of the currently active tree. <br /></td></tr>
 <tr class="separator:a4f1c6b662023045aec95017f7f5fd189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_structt8__geometry"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_structt8__geometry')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="structt8__geometry.html">t8_geometry</a></td></tr>
 <tr class="memitem:af4d0bac9de52e525bb7b5e43f19d3ff3 inherit pro_attribs_structt8__geometry"><td class="memItemLeft" align="right" valign="top"><a id="af4d0bac9de52e525bb7b5e43f19d3ff3"></a>
@@ -165,7 +171,44 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:aa933c703967334666038d45fc06d07a4 inherit pro_attribs_structt8__geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class of the currently active tree. <br /></td></tr>
 <tr class="separator:aa933c703967334666038d45fc06d07a4 inherit pro_attribs_structt8__geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for vertex-based geometries. </p>
+<p>This class implements member variables storing tree vertex information and updates them before each member function call. Derived classes should not completely overwrite the <a class="el" href="structt8__geometry__with__vertices.html#a34fb922d37517b433302c510c90e51ba">t8_geom_load_tree_data</a> function since this function takes care of the updates. Instead the derived classes <a class="el" href="structt8__geometry__with__vertices.html#a34fb922d37517b433302c510c90e51ba">t8_geom_load_tree_data</a> function should also call the function of this base class. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af71169db422615a742ffd16dd4be5fab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71169db422615a742ffd16dd4be5fab">&#9670;&nbsp;</a></span>t8_geometry_with_vertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">t8_geometry_with_vertices::t8_geometry_with_vertices </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Basic constructor that sets the name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the geometry. Used to distinct the geometry from other geometries. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac12d9f9def92fc9fe27ea8ec188a4f48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac12d9f9def92fc9fe27ea8ec188a4f48">&#9670;&nbsp;</a></span>~t8_geometry_with_vertices()</h2>
 
@@ -298,8 +341,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 
 <p>Check if the currently active tree has a negative volume. </p>
-<dl class="section return"><dt>Returns</dt><dd>True (non-zero) if the currently loaded tree has a negative volume. 0 otherwise. <br  />
- </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True (non-zero) if the currently loaded tree has a negative volume. 0 otherwise. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="structt8__geometry.html#a581ce8741bea3ad356029bc9be219ad8">t8_geometry</a>.</p>
 
