@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.117-91e92</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.139-b0882</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -85,18 +85,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9fefd604bf0926ea305946f21134c3f9"><td class="memItemLeft" align="right" valign="top"><a id="a9fefd604bf0926ea305946f21134c3f9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a9fefd604bf0926ea305946f21134c3f9">t8_cmesh_vertex_connectivity_state_t</a> { <br />
-&#160;&#160;<b>INITIALIZED</b>
+<tr class="memitem:a532ebe85283ffe47fe2e6089b8dfbf52"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a532ebe85283ffe47fe2e6089b8dfbf52">state</a> { <br />
+&#160;&#160;<a class="el" href="structt8__cmesh__vertex__connectivity.html#a532ebe85283ffe47fe2e6089b8dfbf52adee5f03c2c4e73657824e028494b18c0">INITIALIZED</a>
 , <br />
-&#160;&#160;<b>VERTEX_TO_TREE_VALID</b>
+&#160;&#160;<a class="el" href="structt8__cmesh__vertex__connectivity.html#a532ebe85283ffe47fe2e6089b8dfbf52aeb631838ae4cc11bca7ded8887ffddcd">TREE_TO_VERTEX_VALID</a>
 , <br />
-&#160;&#160;<b>TREE_TO_VERTEX_VALID</b>
-, <br />
-&#160;&#160;<b>VTT_AND_TTV_VALID</b>
+&#160;&#160;<a class="el" href="structt8__cmesh__vertex__connectivity.html#a532ebe85283ffe47fe2e6089b8dfbf52ac9f1a6384b1c466d4612f513bd8e13ea">VALID</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a9fefd604bf0926ea305946f21134c3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state this connectivity can be in. <br /></td></tr>
-<tr class="separator:a9fefd604bf0926ea305946f21134c3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a532ebe85283ffe47fe2e6089b8dfbf52"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state this connectivity can be in.  <a href="structt8__cmesh__vertex__connectivity.html#a532ebe85283ffe47fe2e6089b8dfbf52">More...</a><br /></td></tr>
+<tr class="separator:a532ebe85283ffe47fe2e6089b8dfbf52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -108,83 +106,82 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a6c29626795356e5fc678b2777e4c69e5">~t8_cmesh_vertex_connectivity</a> ()</td></tr>
 <tr class="memdesc:a6c29626795356e5fc678b2777e4c69e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a6c29626795356e5fc678b2777e4c69e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0c6c5b73aebf942b28a7a8ce3d2e616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#aa0c6c5b73aebf942b28a7a8ce3d2e616">build</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
-<tr class="memdesc:aa0c6c5b73aebf942b28a7a8ce3d2e616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a cmesh, build up the vertex_to_tree and tree_to_vertex members.  <a href="structt8__cmesh__vertex__connectivity.html#aa0c6c5b73aebf942b28a7a8ce3d2e616">More...</a><br /></td></tr>
-<tr class="separator:aa0c6c5b73aebf942b28a7a8ce3d2e616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aade2a2376e09a72f6b0047c89a8ba1b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#aade2a2376e09a72f6b0047c89a8ba1b8">set_global_vertex_ids_of_tree_vertices</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> global_tree, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *global_tree_vertices, const int num_vertices)</td></tr>
 <tr class="memdesc:aade2a2376e09a72f6b0047c89a8ba1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all global vertex ids of a local tree.  <a href="structt8__cmesh__vertex__connectivity.html#aade2a2376e09a72f6b0047c89a8ba1b8">More...</a><br /></td></tr>
 <tr class="separator:aade2a2376e09a72f6b0047c89a8ba1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315531ca04e7f080bb6a012f580fc49d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a315531ca04e7f080bb6a012f580fc49d">build_vertex_to_tree</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh)</td></tr>
-<tr class="memdesc:a315531ca04e7f080bb6a012f580fc49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to fill vtt from a cmesh with ttv information.  <a href="structt8__cmesh__vertex__connectivity.html#a315531ca04e7f080bb6a012f580fc49d">More...</a><br /></td></tr>
-<tr class="separator:a315531ca04e7f080bb6a012f580fc49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aece5e01b63a5276520f4992137a45a1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#aece5e01b63a5276520f4992137a45a1c">get_global_number_of_vertices</a> ()</td></tr>
-<tr class="memdesc:aece5e01b63a5276520f4992137a45a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total number of global vertices of a cmesh (across all processes).  <a href="structt8__cmesh__vertex__connectivity.html#aece5e01b63a5276520f4992137a45a1c">More...</a><br /></td></tr>
-<tr class="separator:aece5e01b63a5276520f4992137a45a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0cf7478fbde0ad8aebaf5dea98d839"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#afa0cf7478fbde0ad8aebaf5dea98d839">build_vertex_to_tree</a> ()</td></tr>
+<tr class="memdesc:afa0cf7478fbde0ad8aebaf5dea98d839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to fill vtt from the stored ttv information.  <a href="structt8__cmesh__vertex__connectivity.html#afa0cf7478fbde0ad8aebaf5dea98d839">More...</a><br /></td></tr>
+<tr class="separator:afa0cf7478fbde0ad8aebaf5dea98d839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33983776ef06012f8f3344826817757a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a33983776ef06012f8f3344826817757a">get_global_number_of_vertices</a> () const</td></tr>
+<tr class="memdesc:a33983776ef06012f8f3344826817757a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total number of global vertices of a cmesh (across all processes).  <a href="structt8__cmesh__vertex__connectivity.html#a33983776ef06012f8f3344826817757a">More...</a><br /></td></tr>
+<tr class="separator:a33983776ef06012f8f3344826817757a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb7b2294f490e3ca8e96d2708bb5f07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#adeb7b2294f490e3ca8e96d2708bb5f07">get_local_number_of_vertices</a> ()</td></tr>
 <tr class="memdesc:adeb7b2294f490e3ca8e96d2708bb5f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of process local global vertices of a cmesh.  <a href="structt8__cmesh__vertex__connectivity.html#adeb7b2294f490e3ca8e96d2708bb5f07">More...</a><br /></td></tr>
 <tr class="separator:adeb7b2294f490e3ca8e96d2708bb5f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb69dbea015077a6efe2eee2f1dee994"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a9fefd604bf0926ea305946f21134c3f9">t8_cmesh_vertex_connectivity_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#abb69dbea015077a6efe2eee2f1dee994">get_state</a> ()</td></tr>
-<tr class="memdesc:abb69dbea015077a6efe2eee2f1dee994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the state of the connectivity.  <a href="structt8__cmesh__vertex__connectivity.html#abb69dbea015077a6efe2eee2f1dee994">More...</a><br /></td></tr>
-<tr class="separator:abb69dbea015077a6efe2eee2f1dee994"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabb0b0e514c36b9fa7d83404fc7b3c25"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="t8__cmesh__vertex__connectivity__types_8hxx.html#a437d6ac70ab8b5f116b968931233fe26">vtt_storage_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#aabb0b0e514c36b9fa7d83404fc7b3c25">vertex_to_trees</a> (const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> vertex_id)</td></tr>
-<tr class="memdesc:aabb0b0e514c36b9fa7d83404fc7b3c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a global vertex id, return the list of trees that share this vertex.  <a href="structt8__cmesh__vertex__connectivity.html#aabb0b0e514c36b9fa7d83404fc7b3c25">More...</a><br /></td></tr>
-<tr class="separator:aabb0b0e514c36b9fa7d83404fc7b3c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58df617dc533880a80da12fdf696c2a8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a58df617dc533880a80da12fdf696c2a8">tree_to_vertices</a> (const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree)</td></tr>
-<tr class="memdesc:a58df617dc533880a80da12fdf696c2a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a local tree (or ghost) return the list of global vertices this tree has (in order of its local vertices).  <a href="structt8__cmesh__vertex__connectivity.html#a58df617dc533880a80da12fdf696c2a8">More...</a><br /></td></tr>
-<tr class="separator:a58df617dc533880a80da12fdf696c2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f23b1c996e34e84e4a865131a6f8c4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a1f23b1c996e34e84e4a865131a6f8c4d">treevertex_to_vertex</a> (const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_vertex)</td></tr>
-<tr class="memdesc:a1f23b1c996e34e84e4a865131a6f8c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a local tree (or ghost) and a local vertex of that tree return the global vertex id of that vertex.  <a href="structt8__cmesh__vertex__connectivity.html#a1f23b1c996e34e84e4a865131a6f8c4d">More...</a><br /></td></tr>
-<tr class="separator:a1f23b1c996e34e84e4a865131a6f8c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7c28c7bd3b1366b45b8e830348099bf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#ad7c28c7bd3b1366b45b8e830348099bf">get_global_vertices_of_tree</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> local_tree, const int num_vertices)</td></tr>
-<tr class="memdesc:ad7c28c7bd3b1366b45b8e830348099bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global vertex indices of a tree in its local vertex order.  <a href="structt8__cmesh__vertex__connectivity.html#ad7c28c7bd3b1366b45b8e830348099bf">More...</a><br /></td></tr>
-<tr class="separator:ad7c28c7bd3b1366b45b8e830348099bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69b5b85d6c6901acc9970ea0240c8146"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a69b5b85d6c6901acc9970ea0240c8146">get_global_vertex_of_tree</a> (const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> local_tree, const int local_tree_vertex, const int num_vertices)</td></tr>
-<tr class="memdesc:a69b5b85d6c6901acc9970ea0240c8146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a single global vertex index of a local tree's local vertex.  <a href="structt8__cmesh__vertex__connectivity.html#a69b5b85d6c6901acc9970ea0240c8146">More...</a><br /></td></tr>
-<tr class="separator:a69b5b85d6c6901acc9970ea0240c8146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1687e768f284e111978532aa6f2dc6b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="t8__cmesh__vertex__connectivity__types_8hxx.html#a6b0e43b7f9f50ec42f33303da0322976">tree_vertex_list</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a1687e768f284e111978532aa6f2dc6b7">get_tree_list_of_vertex</a> (const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> global_vertex_id)</td></tr>
-<tr class="memdesc:a1687e768f284e111978532aa6f2dc6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of global trees and local vertex ids a global vertex is connected to.  <a href="structt8__cmesh__vertex__connectivity.html#a1687e768f284e111978532aa6f2dc6b7">More...</a><br /></td></tr>
-<tr class="separator:a1687e768f284e111978532aa6f2dc6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62b6873f5c74163bf16997a26ff10737"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a62b6873f5c74163bf16997a26ff10737">get_num_trees_at_vertex</a> (const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> global_vertex_id)</td></tr>
-<tr class="memdesc:a62b6873f5c74163bf16997a26ff10737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of global trees a global vertex is connected to.  <a href="structt8__cmesh__vertex__connectivity.html#a62b6873f5c74163bf16997a26ff10737">More...</a><br /></td></tr>
-<tr class="separator:a62b6873f5c74163bf16997a26ff10737"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab08b0dee9517ff25613690af5044559a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#ab08b0dee9517ff25613690af5044559a">get_vertex_to_tree_state</a> ()</td></tr>
-<tr class="memdesc:ab08b0dee9517ff25613690af5044559a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current state of the vertex_to_tree instance.  <a href="structt8__cmesh__vertex__connectivity.html#ab08b0dee9517ff25613690af5044559a">More...</a><br /></td></tr>
-<tr class="separator:ab08b0dee9517ff25613690af5044559a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a37d74f8cedcdfa3d1d6166df1e4f56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a5a37d74f8cedcdfa3d1d6166df1e4f56">get_tree_to_vertex_state</a> ()</td></tr>
-<tr class="memdesc:a5a37d74f8cedcdfa3d1d6166df1e4f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current state of the tree_to_vertex instance.  <a href="structt8__cmesh__vertex__connectivity.html#a5a37d74f8cedcdfa3d1d6166df1e4f56">More...</a><br /></td></tr>
-<tr class="separator:a5a37d74f8cedcdfa3d1d6166df1e4f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b0be7cf9165a472bdd865619d5bfe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a532ebe85283ffe47fe2e6089b8dfbf52">state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a62b0be7cf9165a472bdd865619d5bfe8">get_state</a> () const</td></tr>
+<tr class="memdesc:a62b0be7cf9165a472bdd865619d5bfe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the state of the connectivity.  <a href="structt8__cmesh__vertex__connectivity.html#a62b0be7cf9165a472bdd865619d5bfe8">More...</a><br /></td></tr>
+<tr class="separator:a62b0be7cf9165a472bdd865619d5bfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac895b617aaa412bff510c9919ae6e8aa"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="t8__cmesh__vertex__connectivity__types_8hxx.html#a6b0e43b7f9f50ec42f33303da0322976">tree_vertex_list</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#ac895b617aaa412bff510c9919ae6e8aa">vertex_to_trees</a> (const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> vertex_id) const</td></tr>
+<tr class="memdesc:ac895b617aaa412bff510c9919ae6e8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a global vertex id, return the list of trees that share this vertex.  <a href="structt8__cmesh__vertex__connectivity.html#ac895b617aaa412bff510c9919ae6e8aa">More...</a><br /></td></tr>
+<tr class="separator:ac895b617aaa412bff510c9919ae6e8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce4ead2f9f58712a6285f659ad347db"><td class="memItemLeft" align="right" valign="top">const std::span&lt; const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a1ce4ead2f9f58712a6285f659ad347db">tree_to_vertices</a> (const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree) const</td></tr>
+<tr class="memdesc:a1ce4ead2f9f58712a6285f659ad347db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a local tree (or ghost) return the list of global vertices this tree has (in order of its local vertices).  <a href="structt8__cmesh__vertex__connectivity.html#a1ce4ead2f9f58712a6285f659ad347db">More...</a><br /></td></tr>
+<tr class="separator:a1ce4ead2f9f58712a6285f659ad347db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7396c7f5a02d6afc898035dd064362fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a7396c7f5a02d6afc898035dd064362fd">treevertex_to_vertex</a> (const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_vertex) const</td></tr>
+<tr class="memdesc:a7396c7f5a02d6afc898035dd064362fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a local tree (or ghost) and a local vertex of that tree return the global vertex id of that vertex.  <a href="structt8__cmesh__vertex__connectivity.html#a7396c7f5a02d6afc898035dd064362fd">More...</a><br /></td></tr>
+<tr class="separator:a7396c7f5a02d6afc898035dd064362fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeecda7b20e9efcd74f64efac47a2ccd7"><td class="memItemLeft" align="right" valign="top">const std::span&lt; const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#aeecda7b20e9efcd74f64efac47a2ccd7">get_global_vertices_of_tree</a> (const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> local_tree) const</td></tr>
+<tr class="memdesc:aeecda7b20e9efcd74f64efac47a2ccd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global vertex indices of a tree in its local vertex order.  <a href="structt8__cmesh__vertex__connectivity.html#aeecda7b20e9efcd74f64efac47a2ccd7">More...</a><br /></td></tr>
+<tr class="separator:aeecda7b20e9efcd74f64efac47a2ccd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3cb933a3abcddd0c31b230962e6ba45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#aa3cb933a3abcddd0c31b230962e6ba45">get_global_vertex_of_tree</a> (const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> local_tree, const int local_tree_vertex) const</td></tr>
+<tr class="memdesc:aa3cb933a3abcddd0c31b230962e6ba45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a single global vertex index of a local tree's local vertex.  <a href="structt8__cmesh__vertex__connectivity.html#aa3cb933a3abcddd0c31b230962e6ba45">More...</a><br /></td></tr>
+<tr class="separator:aa3cb933a3abcddd0c31b230962e6ba45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b2f94e3debbda4007ac999475ebe7c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="t8__cmesh__vertex__connectivity__types_8hxx.html#a6b0e43b7f9f50ec42f33303da0322976">tree_vertex_list</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a33b2f94e3debbda4007ac999475ebe7c">get_tree_list_of_vertex</a> (const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> global_vertex_id) const</td></tr>
+<tr class="memdesc:a33b2f94e3debbda4007ac999475ebe7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of global trees and local vertex ids a global vertex is connected to.  <a href="structt8__cmesh__vertex__connectivity.html#a33b2f94e3debbda4007ac999475ebe7c">More...</a><br /></td></tr>
+<tr class="separator:a33b2f94e3debbda4007ac999475ebe7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab16e1b17feff96e952cb58270e6cf53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__cmesh__vertex__connectivity.html#aab16e1b17feff96e952cb58270e6cf53">get_num_trees_at_vertex</a> (const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> global_vertex_id) const</td></tr>
+<tr class="memdesc:aab16e1b17feff96e952cb58270e6cf53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of global trees a global vertex is connected to.  <a href="structt8__cmesh__vertex__connectivity.html#aab16e1b17feff96e952cb58270e6cf53">More...</a><br /></td></tr>
+<tr class="separator:aab16e1b17feff96e952cb58270e6cf53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to hold the vertex connectivity of a cmesh. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa0c6c5b73aebf942b28a7a8ce3d2e616"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0c6c5b73aebf942b28a7a8ce3d2e616">&#9670;&nbsp;</a></span>build()</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a532ebe85283ffe47fe2e6089b8dfbf52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532ebe85283ffe47fe2e6089b8dfbf52">&#9670;&nbsp;</a></span>state</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void t8_cmesh_vertex_connectivity::build </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
-          <td class="paramname"><em>cmesh</em></td><td>)</td>
-          <td></td>
+          <td class="memname">enum <a class="el" href="structt8__cmesh__vertex__connectivity.html#a532ebe85283ffe47fe2e6089b8dfbf52">t8_cmesh_vertex_connectivity::state</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Given a cmesh, build up the vertex_to_tree and tree_to_vertex members. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>A cmesh that has been initialized, but not committed. On error, state will be set to ERROR. The cmesh must not be committed, but all tree information and neighbor information must have been set. Currently, <em>cmesh</em> has to be replicated. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>The state this connectivity can be in. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a532ebe85283ffe47fe2e6089b8dfbf52adee5f03c2c4e73657824e028494b18c0"></a>INITIALIZED&#160;</td><td class="fielddoc"><p>Initialized but not filled. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a532ebe85283ffe47fe2e6089b8dfbf52aeb631838ae4cc11bca7ded8887ffddcd"></a>TREE_TO_VERTEX_VALID&#160;</td><td class="fielddoc"><p>Ready to use, but only tree_to_vertex functionality. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a532ebe85283ffe47fe2e6089b8dfbf52ac9f1a6384b1c466d4612f513bd8e13ea"></a>VALID&#160;</td><td class="fielddoc"><p>Ready to use for full vertex connectivity. </p>
+<p>Cannot be altered anymore. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
-<a id="a315531ca04e7f080bb6a012f580fc49d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a315531ca04e7f080bb6a012f580fc49d">&#9670;&nbsp;</a></span>build_vertex_to_tree()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="afa0cf7478fbde0ad8aebaf5dea98d839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0cf7478fbde0ad8aebaf5dea98d839">&#9670;&nbsp;</a></span>build_vertex_to_tree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,8 +192,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void t8_cmesh_vertex_connectivity::build_vertex_to_tree </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
-          <td class="paramname"><em>cmesh</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -207,18 +203,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Function to fill vtt from a cmesh with ttv information. </p>
-<p>Sets all global ids and associated tree vertices from the given input cmesh. Afterwards, the vtt is set to committed and can be used. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>A committed cmesh with set tree to vertex entries (stored in this object) </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Function to fill vtt from the stored ttv information. </p>
+<p>Sets all global ids and associated tree vertices from the associated cmesh. Afterwards, this class is ready to be used and cannot be altered. </p>
 
 </div>
 </div>
-<a id="aece5e01b63a5276520f4992137a45a1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aece5e01b63a5276520f4992137a45a1c">&#9670;&nbsp;</a></span>get_global_number_of_vertices()</h2>
+<a id="a33983776ef06012f8f3344826817757a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33983776ef06012f8f3344826817757a">&#9670;&nbsp;</a></span>get_global_number_of_vertices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,7 +221,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_cmesh_vertex_connectivity::get_global_number_of_vertices </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -245,8 +236,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a69b5b85d6c6901acc9970ea0240c8146"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69b5b85d6c6901acc9970ea0240c8146">&#9670;&nbsp;</a></span>get_global_vertex_of_tree()</h2>
+<a id="aa3cb933a3abcddd0c31b230962e6ba45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3cb933a3abcddd0c31b230962e6ba45">&#9670;&nbsp;</a></span>get_global_vertex_of_tree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,12 +248,6 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_cmesh_vertex_connectivity::get_global_vertex_of_tree </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
-          <td class="paramname"><em>cmesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
           <td class="paramname"><em>local_tree</em>, </td>
         </tr>
@@ -270,18 +255,12 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>local_tree_vertex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>num_vertices</em>&#160;</td>
+          <td class="paramname"><em>local_tree_vertex</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -294,10 +273,8 @@ Public Member Functions</h2></td></tr>
 <p>Get a single global vertex index of a local tree's local vertex. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>A committed cmesh. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">local_tree</td><td>A local tree in <em>cmesh</em>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">local_tree_vertex</td><td>A local vertex of <em>local_tree</em> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_vertices</td><td>The number of vertices of <em>local_tree</em> </td></tr>
   </table>
   </dd>
 </dl>
@@ -305,8 +282,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad7c28c7bd3b1366b45b8e830348099bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7c28c7bd3b1366b45b8e830348099bf">&#9670;&nbsp;</a></span>get_global_vertices_of_tree()</h2>
+<a id="aeecda7b20e9efcd74f64efac47a2ccd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeecda7b20e9efcd74f64efac47a2ccd7">&#9670;&nbsp;</a></span>get_global_vertices_of_tree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,27 +292,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>* t8_cmesh_vertex_connectivity::get_global_vertices_of_tree </td>
+          <td class="memname">const std::span&lt;const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&gt; t8_cmesh_vertex_connectivity::get_global_vertices_of_tree </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
-          <td class="paramname"><em>cmesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
-          <td class="paramname"><em>local_tree</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>num_vertices</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"><em>local_tree</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -348,9 +309,7 @@ Public Member Functions</h2></td></tr>
 <p>Get the global vertex indices of a tree in its local vertex order. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmesh</td><td>A committed cmesh. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">local_tree</td><td>A local tree in <em>cmesh</em>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_vertices</td><td>The number of vertices of <em>local_tree</em> </td></tr>
   </table>
   </dd>
 </dl>
@@ -386,8 +345,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a62b6873f5c74163bf16997a26ff10737"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62b6873f5c74163bf16997a26ff10737">&#9670;&nbsp;</a></span>get_num_trees_at_vertex()</h2>
+<a id="aab16e1b17feff96e952cb58270e6cf53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab16e1b17feff96e952cb58270e6cf53">&#9670;&nbsp;</a></span>get_num_trees_at_vertex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +359,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>global_vertex_id</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -421,8 +380,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abb69dbea015077a6efe2eee2f1dee994"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb69dbea015077a6efe2eee2f1dee994">&#9670;&nbsp;</a></span>get_state()</h2>
+<a id="a62b0be7cf9165a472bdd865619d5bfe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62b0be7cf9165a472bdd865619d5bfe8">&#9670;&nbsp;</a></span>get_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,10 +390,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a9fefd604bf0926ea305946f21134c3f9">t8_cmesh_vertex_connectivity_state_t</a> t8_cmesh_vertex_connectivity::get_state </td>
+          <td class="memname"><a class="el" href="structt8__cmesh__vertex__connectivity.html#a532ebe85283ffe47fe2e6089b8dfbf52">state</a> t8_cmesh_vertex_connectivity::get_state </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -445,12 +404,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the state of the connectivity. </p>
-<dl class="section return"><dt>Returns</dt><dd>The current state (initialized, committed, etc) of this object. <a class="el" href="structt8__cmesh__vertex__connectivity.html#a9fefd604bf0926ea305946f21134c3f9">t8_cmesh_vertex_connectivity_state_t</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The current state (initialized, committed, etc) of this object. <a class="el" href="structt8__cmesh__vertex__connectivity.html#a532ebe85283ffe47fe2e6089b8dfbf52">state</a> </dd></dl>
 
 </div>
 </div>
-<a id="a1687e768f284e111978532aa6f2dc6b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1687e768f284e111978532aa6f2dc6b7">&#9670;&nbsp;</a></span>get_tree_list_of_vertex()</h2>
+<a id="a33b2f94e3debbda4007ac999475ebe7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b2f94e3debbda4007ac999475ebe7c">&#9670;&nbsp;</a></span>get_tree_list_of_vertex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -463,7 +422,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>global_vertex_id</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -481,62 +440,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The list of global tree ids and local vertex ids of <em>global_vertex_id</em>. </dd></dl>
-
-</div>
-</div>
-<a id="a5a37d74f8cedcdfa3d1d6166df1e4f56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a37d74f8cedcdfa3d1d6166df1e4f56">&#9670;&nbsp;</a></span>get_tree_to_vertex_state()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int t8_cmesh_vertex_connectivity::get_tree_to_vertex_state </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the current state of the tree_to_vertex instance. </p>
-<dl class="section return"><dt>Returns</dt><dd>The current state of tree_to_vertex. </dd></dl>
-
-</div>
-</div>
-<a id="ab08b0dee9517ff25613690af5044559a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab08b0dee9517ff25613690af5044559a">&#9670;&nbsp;</a></span>get_vertex_to_tree_state()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int t8_cmesh_vertex_connectivity::get_vertex_to_tree_state </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the current state of the vertex_to_tree instance. </p>
-<dl class="section return"><dt>Returns</dt><dd>The current state of vertex_to_tree. </dd></dl>
 
 </div>
 </div>
@@ -600,8 +503,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a58df617dc533880a80da12fdf696c2a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58df617dc533880a80da12fdf696c2a8">&#9670;&nbsp;</a></span>tree_to_vertices()</h2>
+<a id="a1ce4ead2f9f58712a6285f659ad347db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ce4ead2f9f58712a6285f659ad347db">&#9670;&nbsp;</a></span>tree_to_vertices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -610,11 +513,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>* t8_cmesh_vertex_connectivity::tree_to_vertices </td>
+          <td class="memname">const std::span&lt;const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&gt; t8_cmesh_vertex_connectivity::tree_to_vertices </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
           <td class="paramname"><em>ltree</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -635,8 +538,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1f23b1c996e34e84e4a865131a6f8c4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f23b1c996e34e84e4a865131a6f8c4d">&#9670;&nbsp;</a></span>treevertex_to_vertex()</h2>
+<a id="a7396c7f5a02d6afc898035dd064362fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7396c7f5a02d6afc898035dd064362fd">&#9670;&nbsp;</a></span>treevertex_to_vertex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -659,7 +562,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -681,8 +584,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aabb0b0e514c36b9fa7d83404fc7b3c25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabb0b0e514c36b9fa7d83404fc7b3c25">&#9670;&nbsp;</a></span>vertex_to_trees()</h2>
+<a id="ac895b617aaa412bff510c9919ae6e8aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac895b617aaa412bff510c9919ae6e8aa">&#9670;&nbsp;</a></span>vertex_to_trees()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -691,11 +594,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="t8__cmesh__vertex__connectivity__types_8hxx.html#a437d6ac70ab8b5f116b968931233fe26">vtt_storage_type</a>&amp; t8_cmesh_vertex_connectivity::vertex_to_trees </td>
+          <td class="memname">const <a class="el" href="t8__cmesh__vertex__connectivity__types_8hxx.html#a6b0e43b7f9f50ec42f33303da0322976">tree_vertex_list</a>&amp; t8_cmesh_vertex_connectivity::vertex_to_trees </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td>
           <td class="paramname"><em>vertex_id</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
