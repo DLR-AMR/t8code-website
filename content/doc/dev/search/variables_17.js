@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_3212',['z',['../structt8__dhex.html#adbb4779dab14e8c25bd8d98fcc182805',1,'t8_dhex::z()'],['../structt8__dtet.html#a4e43487fec279f5e0f6065446ff8ecb5',1,'t8_dtet::z()']]]
+  ['y_3278',['y',['../structt8__dhex.html#a35398db62c53056712b69baa7768c2fd',1,'t8_dhex::y()'],['../structt8__dtet.html#a3713c00dae90e93149dedcc7c022e05a',1,'t8_dtet::y()']]]
 ];

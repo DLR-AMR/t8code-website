@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.199-503a2</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.203-ec574</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -96,8 +96,10 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__search__base.html">t8_search_base</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class that performs a search in a forest.  <a href="classt8__search__base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__search.html">t8_search&lt; Udata &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that performs a search in a forest.  <a href="classt8__search.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__search__with__queries.html">t8_search_with_queries&lt; Query_T, Udata &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that performs a search in a forest with queries.  <a href="classt8__search__with__queries.html#details">More...</a><br /></td></tr>
@@ -106,8 +108,10 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that performs a search in a forest with batched queries.  <a href="classt8__search__with__batched__queries.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__partition__search__base.html">t8_partition_search_base</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that performs a search in the partition of a forest.  <a href="classt8__partition__search__base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__partition__search.html">t8_partition_search&lt; Udata &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that performs a search in the partition of a forest and supports the usage of user data.  <a href="classt8__partition__search.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt8__partition__search__with__queries.html">t8_partition_search_with_queries&lt; Query_T, Udata &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that performs a search in the partition of a forest with queries.  <a href="classt8__partition__search__with__queries.html#details">More...</a><br /></td></tr>
@@ -118,37 +122,37 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a23309c560ae34e3da9e125fe949b197d"><td class="memTemplParams" colspan="2">template&lt;typename Udata  = void&gt; </td></tr>
-<tr class="memitem:a23309c560ae34e3da9e125fe949b197d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="t8__forest__search_8hxx.html#a23309c560ae34e3da9e125fe949b197d">t8_search_element_callback</a> = std::function&lt; bool(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const bool is_leaf, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_leaf_index, Udata *user_data)&gt;</td></tr>
-<tr class="memdesc:a23309c560ae34e3da9e125fe949b197d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function type used for searching elements in a forest.  <a href="t8__forest__search_8hxx.html#a23309c560ae34e3da9e125fe949b197d">More...</a><br /></td></tr>
-<tr class="separator:a23309c560ae34e3da9e125fe949b197d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01efc97c4ca986bae69d9209efb8962a"><td class="memTemplParams" colspan="2"><a id="a01efc97c4ca986bae69d9209efb8962a"></a>
-template&lt;typename Query_T , typename Udata  = void&gt; </td></tr>
-<tr class="memitem:a01efc97c4ca986bae69d9209efb8962a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>t8_search_query_callback</b> = std::function&lt; bool(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const bool is_leaf, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_leaf_index, const Query_T &amp;query, Udata *user_data)&gt;</td></tr>
+<tr class="memitem:a580705b24a6ab90edf30c27fc4d043f0"><td class="memTemplParams" colspan="2">template&lt;typename Udata  = void&gt; </td></tr>
+<tr class="memitem:a580705b24a6ab90edf30c27fc4d043f0"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="t8__forest__search_8hxx.html#a580705b24a6ab90edf30c27fc4d043f0">t8_search_element_callback</a> = std::function&lt; bool(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const bool is_leaf, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_leaf_index, Udata *user_data)&gt;</td></tr>
+<tr class="memdesc:a580705b24a6ab90edf30c27fc4d043f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">t8_search_element_callback A callback function type used for searching elements in a forest.  <a href="t8__forest__search_8hxx.html#a580705b24a6ab90edf30c27fc4d043f0">More...</a><br /></td></tr>
+<tr class="separator:a580705b24a6ab90edf30c27fc4d043f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01efc97c4ca986bae69d9209efb8962a"><td class="memTemplParams" colspan="2">template&lt;typename Query_T , typename Udata  = void&gt; </td></tr>
+<tr class="memitem:a01efc97c4ca986bae69d9209efb8962a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="t8__forest__search_8hxx.html#a01efc97c4ca986bae69d9209efb8962a">t8_search_query_callback</a> = std::function&lt; bool(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const bool is_leaf, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_leaf_index, const Query_T &amp;query, Udata *user_data)&gt;</td></tr>
+<tr class="memdesc:a01efc97c4ca986bae69d9209efb8962a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function type used for search queries within a forest.  <a href="t8__forest__search_8hxx.html#a01efc97c4ca986bae69d9209efb8962a">More...</a><br /></td></tr>
 <tr class="separator:a01efc97c4ca986bae69d9209efb8962a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6419f5cc56bb168ca7087ada4d62d7f"><td class="memTemplParams" colspan="2">template&lt;typename Query_T , typename Udata  = void&gt; </td></tr>
-<tr class="memitem:ad6419f5cc56bb168ca7087ada4d62d7f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="t8__forest__search_8hxx.html#ad6419f5cc56bb168ca7087ada4d62d7f">t8_search_batched_queries_callback</a> = std::function&lt; void(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const bool is_leaf, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_leaf_index, const std::vector&lt; Query_T &gt; &amp;queries, const std::vector&lt; size_t &gt; &amp;active_query_indices, std::vector&lt; bool &gt; &amp;query_matches, Udata *user_data)&gt;</td></tr>
-<tr class="memdesc:ad6419f5cc56bb168ca7087ada4d62d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function type used for search queries within a forest.  <a href="t8__forest__search_8hxx.html#ad6419f5cc56bb168ca7087ada4d62d7f">More...</a><br /></td></tr>
-<tr class="separator:ad6419f5cc56bb168ca7087ada4d62d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849b544080d647d053ea21bcf3b68e50"><td class="memTemplParams" colspan="2">template&lt;typename Udata  = void&gt; </td></tr>
-<tr class="memitem:a849b544080d647d053ea21bcf3b68e50"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="t8__forest__search_8hxx.html#a849b544080d647d053ea21bcf3b68e50">t8_partition_search_element_callback</a> = std::function&lt; bool(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast, Udata *user_data)&gt;</td></tr>
-<tr class="memdesc:a849b544080d647d053ea21bcf3b68e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function type used for searching elements in the partition of a forest.  <a href="t8__forest__search_8hxx.html#a849b544080d647d053ea21bcf3b68e50">More...</a><br /></td></tr>
-<tr class="separator:a849b544080d647d053ea21bcf3b68e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42587e8f0f0c6059c3d1f2bddfa6ff45"><td class="memTemplParams" colspan="2">template&lt;typename Query_T , typename Udata  = void&gt; </td></tr>
-<tr class="memitem:a42587e8f0f0c6059c3d1f2bddfa6ff45"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="t8__forest__search_8hxx.html#a42587e8f0f0c6059c3d1f2bddfa6ff45">t8_partition_search_query_callback</a> = std::function&lt; bool(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast, const Query_T &amp;query, Udata *user_data)&gt;</td></tr>
-<tr class="memdesc:a42587e8f0f0c6059c3d1f2bddfa6ff45"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function type used for searching queries in the partition of a forest.  <a href="t8__forest__search_8hxx.html#a42587e8f0f0c6059c3d1f2bddfa6ff45">More...</a><br /></td></tr>
-<tr class="separator:a42587e8f0f0c6059c3d1f2bddfa6ff45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4905e6558f1fc9a90db239fd7d327c"><td class="memTemplParams" colspan="2">template&lt;typename Query_T , typename Udata  = void&gt; </td></tr>
-<tr class="memitem:acd4905e6558f1fc9a90db239fd7d327c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="t8__forest__search_8hxx.html#acd4905e6558f1fc9a90db239fd7d327c">t8_partition_search_batched_queries_callback</a> = std::function&lt; void(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast, const std::vector&lt; Query_T &gt; &amp;queries, const std::vector&lt; size_t &gt; &amp;active_query_indices, std::vector&lt; bool &gt; &amp;query_matches, Udata *user_data)&gt;</td></tr>
-<tr class="memdesc:acd4905e6558f1fc9a90db239fd7d327c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function type used for searching queries in the partition of a forest.  <a href="t8__forest__search_8hxx.html#acd4905e6558f1fc9a90db239fd7d327c">More...</a><br /></td></tr>
-<tr class="separator:acd4905e6558f1fc9a90db239fd7d327c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d443f275e0e219e4ab946d8776c3e44"><td class="memTemplParams" colspan="2">template&lt;typename Query_T , typename Udata  = void&gt; </td></tr>
+<tr class="memitem:a5d443f275e0e219e4ab946d8776c3e44"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="t8__forest__search_8hxx.html#a5d443f275e0e219e4ab946d8776c3e44">t8_search_batched_queries_callback</a> = std::function&lt; void(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const bool is_leaf, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_leaf_index, const std::vector&lt; Query_T &gt; &amp;queries, const std::vector&lt; size_t &gt; &amp;active_query_indices, std::vector&lt; bool &gt; &amp;query_matches, Udata *user_data)&gt;</td></tr>
+<tr class="memdesc:a5d443f275e0e219e4ab946d8776c3e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">t8_search_batched_queries_callback A callback function type used for search queries within a forest.  <a href="t8__forest__search_8hxx.html#a5d443f275e0e219e4ab946d8776c3e44">More...</a><br /></td></tr>
+<tr class="separator:a5d443f275e0e219e4ab946d8776c3e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eca8e3e41428d86a1a6794ebaf463ab"><td class="memTemplParams" colspan="2">template&lt;typename Udata  = void&gt; </td></tr>
+<tr class="memitem:a3eca8e3e41428d86a1a6794ebaf463ab"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="t8__forest__search_8hxx.html#a3eca8e3e41428d86a1a6794ebaf463ab">t8_partition_search_element_callback</a> = std::function&lt; bool(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast, Udata *user_data)&gt;</td></tr>
+<tr class="memdesc:a3eca8e3e41428d86a1a6794ebaf463ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">t8_partition_search_element_callback A callback function type used for searching elements in the partition of a forest.  <a href="t8__forest__search_8hxx.html#a3eca8e3e41428d86a1a6794ebaf463ab">More...</a><br /></td></tr>
+<tr class="separator:a3eca8e3e41428d86a1a6794ebaf463ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52812526bfe1fd5acbb67303f1e2304f"><td class="memTemplParams" colspan="2">template&lt;typename Query_T , typename Udata  = void&gt; </td></tr>
+<tr class="memitem:a52812526bfe1fd5acbb67303f1e2304f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="t8__forest__search_8hxx.html#a52812526bfe1fd5acbb67303f1e2304f">t8_partition_search_query_callback</a> = std::function&lt; bool(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast, const Query_T &amp;query, Udata *user_data)&gt;</td></tr>
+<tr class="memdesc:a52812526bfe1fd5acbb67303f1e2304f"><td class="mdescLeft">&#160;</td><td class="mdescRight">t8_partition_search_query_callback A callback function type used for searching queries in the partition of a forest.  <a href="t8__forest__search_8hxx.html#a52812526bfe1fd5acbb67303f1e2304f">More...</a><br /></td></tr>
+<tr class="separator:a52812526bfe1fd5acbb67303f1e2304f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c36d978b9e953dcc1dc71a8b469d49"><td class="memTemplParams" colspan="2">template&lt;typename Query_T , typename Udata  = void&gt; </td></tr>
+<tr class="memitem:af2c36d978b9e953dcc1dc71a8b469d49"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="t8__forest__search_8hxx.html#af2c36d978b9e953dcc1dc71a8b469d49">t8_partition_search_batched_queries_callback</a> = std::function&lt; void(const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast, const std::vector&lt; Query_T &gt; &amp;queries, const std::vector&lt; size_t &gt; &amp;active_query_indices, std::vector&lt; bool &gt; &amp;query_matches, Udata *user_data)&gt;</td></tr>
+<tr class="memdesc:af2c36d978b9e953dcc1dc71a8b469d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">t8_partition_search_batched_queries_callback A callback function type used for searching queries in the partition of a forest.  <a href="t8__forest__search_8hxx.html#af2c36d978b9e953dcc1dc71a8b469d49">More...</a><br /></td></tr>
+<tr class="separator:af2c36d978b9e953dcc1dc71a8b469d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A C++ interface for the search functionality. </p>
 <p>The user can define search and query callbacks to perform the search and query operations on the forest. Implementation details regarding the callback handling are given by <a href="https://stackoverflow.com/questions/2298242/callback-functions-in-c">https://stackoverflow.com/questions/2298242/callback-functions-in-c</a> We decided for option 4, using std::function together with templates. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="acd4905e6558f1fc9a90db239fd7d327c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd4905e6558f1fc9a90db239fd7d327c">&#9670;&nbsp;</a></span>t8_partition_search_batched_queries_callback</h2>
+<a id="af2c36d978b9e953dcc1dc71a8b469d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c36d978b9e953dcc1dc71a8b469d49">&#9670;&nbsp;</a></span>t8_partition_search_batched_queries_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,12 +160,12 @@ template&lt;typename Query_T , typename Udata  = void&gt; </td></tr>
 template&lt;typename Query_T , typename Udata  = void&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="t8__forest__search_8hxx.html#acd4905e6558f1fc9a90db239fd7d327c">t8_partition_search_batched_queries_callback</a></td>
+          <td class="memname">using <a class="el" href="t8__forest__search_8hxx.html#af2c36d978b9e953dcc1dc71a8b469d49">t8_partition_search_batched_queries_callback</a> =  std::function&lt;void ( const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast, const std::vector&lt;Query_T&gt; &amp;queries, const std::vector&lt;size_t&gt; &amp;active_query_indices, std::vector&lt;bool&gt; &amp;query_matches, Udata *user_data)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A callback function type used for searching queries in the partition of a forest. </p>
+<p>t8_partition_search_batched_queries_callback A callback function type used for searching queries in the partition of a forest. </p>
 <p>Processes a batch of queries.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -187,8 +191,8 @@ template&lt;typename Query_T , typename Udata  = void&gt; </div>
 
 </div>
 </div>
-<a id="a849b544080d647d053ea21bcf3b68e50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a849b544080d647d053ea21bcf3b68e50">&#9670;&nbsp;</a></span>t8_partition_search_element_callback</h2>
+<a id="a3eca8e3e41428d86a1a6794ebaf463ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eca8e3e41428d86a1a6794ebaf463ab">&#9670;&nbsp;</a></span>t8_partition_search_element_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,12 +200,12 @@ template&lt;typename Query_T , typename Udata  = void&gt; </div>
 template&lt;typename Udata  = void&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="t8__forest__search_8hxx.html#a849b544080d647d053ea21bcf3b68e50">t8_partition_search_element_callback</a></td>
+          <td class="memname">using <a class="el" href="t8__forest__search_8hxx.html#a3eca8e3e41428d86a1a6794ebaf463ab">t8_partition_search_element_callback</a> =  std::function&lt;bool (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast, Udata *user_data)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A callback function type used for searching elements in the partition of a forest. </p>
+<p>t8_partition_search_element_callback A callback function type used for searching elements in the partition of a forest. </p>
 <p>This callback function is invoked during the partition search process in a forest. It allows custom operations to be performed on each element encountered during the search.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -223,8 +227,8 @@ template&lt;typename Udata  = void&gt; </div>
 
 </div>
 </div>
-<a id="a42587e8f0f0c6059c3d1f2bddfa6ff45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42587e8f0f0c6059c3d1f2bddfa6ff45">&#9670;&nbsp;</a></span>t8_partition_search_query_callback</h2>
+<a id="a52812526bfe1fd5acbb67303f1e2304f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52812526bfe1fd5acbb67303f1e2304f">&#9670;&nbsp;</a></span>t8_partition_search_query_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,12 +236,12 @@ template&lt;typename Udata  = void&gt; </div>
 template&lt;typename Query_T , typename Udata  = void&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="t8__forest__search_8hxx.html#a42587e8f0f0c6059c3d1f2bddfa6ff45">t8_partition_search_query_callback</a></td>
+          <td class="memname">using <a class="el" href="t8__forest__search_8hxx.html#a52812526bfe1fd5acbb67303f1e2304f">t8_partition_search_query_callback</a> =  std::function&lt;bool (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const int pfirst, const int plast, const Query_T &amp;query, Udata *user_data)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A callback function type used for searching queries in the partition of a forest. </p>
+<p>t8_partition_search_query_callback A callback function type used for searching queries in the partition of a forest. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Query_T</td><td>The type of the query. </td></tr>
@@ -260,8 +264,8 @@ template&lt;typename Query_T , typename Udata  = void&gt; </div>
 
 </div>
 </div>
-<a id="ad6419f5cc56bb168ca7087ada4d62d7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6419f5cc56bb168ca7087ada4d62d7f">&#9670;&nbsp;</a></span>t8_search_batched_queries_callback</h2>
+<a id="a5d443f275e0e219e4ab946d8776c3e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d443f275e0e219e4ab946d8776c3e44">&#9670;&nbsp;</a></span>t8_search_batched_queries_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,12 +273,12 @@ template&lt;typename Query_T , typename Udata  = void&gt; </div>
 template&lt;typename Query_T , typename Udata  = void&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="t8__forest__search_8hxx.html#ad6419f5cc56bb168ca7087ada4d62d7f">t8_search_batched_queries_callback</a></td>
+          <td class="memname">using <a class="el" href="t8__forest__search_8hxx.html#a5d443f275e0e219e4ab946d8776c3e44">t8_search_batched_queries_callback</a> =  std::function&lt;void ( const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const bool is_leaf, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_leaf_index, const std::vector&lt;Query_T&gt; &amp;queries, const std::vector&lt;size_t&gt; &amp;active_query_indices, std::vector&lt;bool&gt; &amp;query_matches, Udata *user_data)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A callback function type used for search queries within a forest. </p>
+<p>t8_search_batched_queries_callback A callback function type used for search queries within a forest. </p>
 <p>Processes a batch of queries.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -301,8 +305,8 @@ template&lt;typename Query_T , typename Udata  = void&gt; </div>
 
 </div>
 </div>
-<a id="a23309c560ae34e3da9e125fe949b197d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23309c560ae34e3da9e125fe949b197d">&#9670;&nbsp;</a></span>t8_search_element_callback</h2>
+<a id="a580705b24a6ab90edf30c27fc4d043f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a580705b24a6ab90edf30c27fc4d043f0">&#9670;&nbsp;</a></span>t8_search_element_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,12 +314,12 @@ template&lt;typename Query_T , typename Udata  = void&gt; </div>
 template&lt;typename Udata  = void&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="t8__forest__search_8hxx.html#a23309c560ae34e3da9e125fe949b197d">t8_search_element_callback</a></td>
+          <td class="memname">using <a class="el" href="t8__forest__search_8hxx.html#a580705b24a6ab90edf30c27fc4d043f0">t8_search_element_callback</a> =  std::function&lt;bool ( const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const bool is_leaf, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_leaf_index, Udata *user_data)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A callback function type used for searching elements in a forest. </p>
+<p>t8_search_element_callback A callback function type used for searching elements in a forest. </p>
 <p>This callback function is invoked during the search process in a forest. It allows custom operations to be performed on each element encountered during the search.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -336,6 +340,44 @@ template&lt;typename Udata  = void&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the search should continue, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a01efc97c4ca986bae69d9209efb8962a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01efc97c4ca986bae69d9209efb8962a">&#9670;&nbsp;</a></span>t8_search_query_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Query_T , typename Udata  = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="t8__forest__search_8hxx.html#a01efc97c4ca986bae69d9209efb8962a">t8_search_query_callback</a> =  std::function&lt;bool ( const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const bool is_leaf, const <a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *leaf_elements, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> tree_leaf_index, const Query_T &amp;query, Udata *user_data)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A callback function type used for search queries within a forest. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Query_T</td><td>The type of the query. </td></tr>
+    <tr><td class="paramname">Udata</td><td>The type of user data, defaults to void.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forest</td><td>The forest in which the search is performed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ltreeid</td><td>The local tree ID within the forest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>The element being queried. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_leaf</td><td>A flag indicating if the element is a leaf. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">leaf_elements</td><td>The array of leaf elements. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tree_leaf_index</td><td>The index of the leaf within the tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">query</td><td>A single query to be processed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>User-defined data passed to the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
