@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.203-ec574</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.220-5672</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -324,6 +324,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vec_x</td><td>A 3D vector. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vec_y</td><td>A 3D vector. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">vec_z</td><td>On output set <em>to</em> vec_y + <em>alpha</em> * <em>vec_x</em> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>A factor for the multiplication of <em>vec_x</em>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -366,7 +367,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">vec_x</td><td>A 3D vector. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">vec_z</td><td>On output set to <em>alpha</em> * <em>vec_x</em>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vec_y</td><td>On output set to <em>alpha</em> * <em>vec_x</em>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>A factor. </td></tr>
   </table>
   </dd>
@@ -442,10 +443,10 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">vec_x</td><td>A 2D vector. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vec_y</td><td>A 2D vector. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">cross</td><td>On output, the cross product of <em>vec_x</em> and <em>vec_y</em>. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The cross product of <em>vec_x</em> and <em>vec_y</em>. </dd></dl>
 
 </div>
 </div>
@@ -729,7 +730,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>A 3D vector. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p2</td><td>A 3D vector. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p3</td><td>A 3D vector. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">Normal</td><td>vector of the triangle. (Not necessarily of length 1!) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">normal</td><td>vector of the triangle. (Not necessarily of length 1!) </td></tr>
   </table>
   </dd>
 </dl>

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.203-ec574</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.220-5672</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -253,6 +253,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aebd772f965b1fa5ff5ae10fe8c0950d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__scheme_8h.html#aebd772f965b1fa5ff5ae10fe8c0950d9">t8_element_new</a> (const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **elems)</td></tr>
 <tr class="memdesc:aebd772f965b1fa5ff5ae10fe8c0950d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory for an array of elements of a given class and initialize them.  <a href="t8__scheme_8h.html#aebd772f965b1fa5ff5ae10fe8c0950d9">More...</a><br /></td></tr>
 <tr class="separator:aebd772f965b1fa5ff5ae10fe8c0950d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff8486dffcfa912cd86f8f8c93405f9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__scheme_8h.html#aff8486dffcfa912cd86f8f8c93405f9b">t8_element_init</a> (const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *elem)</td></tr>
+<tr class="memdesc:aff8486dffcfa912cd86f8f8c93405f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an array of allocated elements.  <a href="t8__scheme_8h.html#aff8486dffcfa912cd86f8f8c93405f9b">More...</a><br /></td></tr>
+<tr class="separator:aff8486dffcfa912cd86f8f8c93405f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a416fa9e577e72a9bf21a9756eeac91c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__scheme_8h.html#a416fa9e577e72a9bf21a9756eeac91c0">t8_element_destroy</a> (const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> tree_class, const int length, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> **elems)</td></tr>
 <tr class="memdesc:a416fa9e577e72a9bf21a9756eeac91c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate an array of elements.  <a href="t8__scheme_8h.html#a416fa9e577e72a9bf21a9756eeac91c0">More...</a><br /></td></tr>
 <tr class="separator:a416fa9e577e72a9bf21a9756eeac91c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2458,6 +2461,67 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aff8486dffcfa912cd86f8f8c93405f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff8486dffcfa912cd86f8f8c93405f9b">&#9670;&nbsp;</a></span>t8_element_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void t8_element_init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *&#160;</td>
+          <td class="paramname"><em>scheme</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a>&#160;</td>
+          <td class="paramname"><em>tree_class</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td>
+          <td class="paramname"><em>elem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize an array of allocated elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>The scheme to use. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tree_class</td><td>The eclass of the current tree. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>The number of elements to be initialized. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>On input an array of <em>length</em> many allocated elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>In debugging mode, an element that was passed to <a class="el" href="t8__scheme_8h.html#aff8486dffcfa912cd86f8f8c93405f9b">t8_element_init</a> must pass <a class="el" href="t8__scheme_8h.html#a7d23dd3ac6e1643f1809ae9637ba38d6">t8_element_is_valid</a>. </dd>
+<dd>
+If an element was created by <a class="el" href="t8__scheme_8h.html#aebd772f965b1fa5ff5ae10fe8c0950d9">t8_element_new</a> then <a class="el" href="t8__scheme_8h.html#aff8486dffcfa912cd86f8f8c93405f9b">t8_element_init</a> may not be called for it. Thus, <a class="el" href="t8__scheme_8h.html#aff8486dffcfa912cd86f8f8c93405f9b">t8_element_init</a> should initialize an element in the same way as a call to <a class="el" href="t8__scheme_8h.html#aebd772f965b1fa5ff5ae10fe8c0950d9">t8_element_new</a> would. </dd>
+<dd>
+Every call to <a class="el" href="t8__scheme_8h.html#aff8486dffcfa912cd86f8f8c93405f9b">t8_element_init</a> must be matched by a call to t8_element_deinit </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>t8_element_deinit </dd>
+<dd>
+<a class="el" href="t8__scheme_8h.html#aebd772f965b1fa5ff5ae10fe8c0950d9" title="Allocate memory for an array of elements of a given class and initialize them.">t8_element_new</a> </dd>
+<dd>
+<a class="el" href="t8__scheme_8h.html#a7d23dd3ac6e1643f1809ae9637ba38d6" title="Query whether a given element can be considered as &#39;valid&#39; and it is safe to perform any of the above...">t8_element_is_valid</a> </dd></dl>
+
+</div>
+</div>
 <a id="a1222e51682c331a2dabf5a27cc257bb8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1222e51682c331a2dabf5a27cc257bb8">&#9670;&nbsp;</a></span>t8_element_is_equal()</h2>
 
@@ -2883,7 +2947,7 @@ We recommend to use the assertion T8_ASSERT (t8_element_is_valid (element)) in t
 In debugging mode, an element that was created with <a class="el" href="t8__scheme_8h.html#aebd772f965b1fa5ff5ae10fe8c0950d9">t8_element_new</a> must pass <a class="el" href="t8__scheme_8h.html#a7d23dd3ac6e1643f1809ae9637ba38d6">t8_element_is_valid</a>. </dd>
 <dd>
 If an element was created by <a class="el" href="t8__scheme_8h.html#aebd772f965b1fa5ff5ae10fe8c0950d9">t8_element_new</a> then <a class="el" href="classt8__scheme.html#a2fbfe71ec23ec01d916064f660559de5">t8_scheme::element_init</a> may not be called for it. Thus, <a class="el" href="t8__scheme_8h.html#aebd772f965b1fa5ff5ae10fe8c0950d9">t8_element_new</a> should initialize an element in the same way as a call to <a class="el" href="classt8__scheme.html#a2fbfe71ec23ec01d916064f660559de5">t8_scheme::element_init</a> would. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>t8_element_init </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="t8__scheme_8h.html#aff8486dffcfa912cd86f8f8c93405f9b" title="Initialize an array of allocated elements.">t8_element_init</a> </dd>
 <dd>
 element_is_valid </dd></dl>
 

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.203-ec574</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.220-5672</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -194,13 +194,13 @@ sc_array_t *&#160;</td><td class="memItemRight" valign="bottom"><b>trees</b></td
 <tr class="memitem:a915afac27d3893d8a1c1a53088ae5fab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__forest__ghost.html">t8_forest_ghost_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#a915afac27d3893d8a1c1a53088ae5fab">ghosts</a></td></tr>
 <tr class="memdesc:a915afac27d3893d8a1c1a53088ae5fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">If not NULL, the ghost elements.  <a href="structt8__forest.html#a915afac27d3893d8a1c1a53088ae5fab">More...</a><br /></td></tr>
 <tr class="separator:a915afac27d3893d8a1c1a53088ae5fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af859f62ef37f16b7699d0c57534b4cf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#af859f62ef37f16b7699d0c57534b4cf2">element_offsets</a></td></tr>
+<tr class="memitem:af859f62ef37f16b7699d0c57534b4cf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#af859f62ef37f16b7699d0c57534b4cf2">element_offsets</a></td></tr>
 <tr class="memdesc:af859f62ef37f16b7699d0c57534b4cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If partitioned, for each process the global index of its first element.  <a href="structt8__forest.html#af859f62ef37f16b7699d0c57534b4cf2">More...</a><br /></td></tr>
 <tr class="separator:af859f62ef37f16b7699d0c57534b4cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6484b1f511c061fbf9da91e8ea7bc1fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#a6484b1f511c061fbf9da91e8ea7bc1fd">global_first_desc</a></td></tr>
+<tr class="memitem:a6484b1f511c061fbf9da91e8ea7bc1fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#a6484b1f511c061fbf9da91e8ea7bc1fd">global_first_desc</a></td></tr>
 <tr class="memdesc:a6484b1f511c061fbf9da91e8ea7bc1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If partitioned, for each process the linear id (at maxlevel) of its first element's first descendant.  <a href="structt8__forest.html#a6484b1f511c061fbf9da91e8ea7bc1fd">More...</a><br /></td></tr>
 <tr class="separator:a6484b1f511c061fbf9da91e8ea7bc1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3bb8f8f6ededc75b72b7eafe372b893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#ac3bb8f8f6ededc75b72b7eafe372b893">tree_offsets</a></td></tr>
+<tr class="memitem:ac3bb8f8f6ededc75b72b7eafe372b893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest.html#ac3bb8f8f6ededc75b72b7eafe372b893">tree_offsets</a></td></tr>
 <tr class="memdesc:ac3bb8f8f6ededc75b72b7eafe372b893"><td class="mdescLeft">&#160;</td><td class="mdescRight">If partitioned for each process the global index of its first local tree or -(first local tree) - 1 if the first tree on that process is shared.  <a href="structt8__forest.html#ac3bb8f8f6ededc75b72b7eafe372b893">More...</a><br /></td></tr>
 <tr class="separator:ac3bb8f8f6ededc75b72b7eafe372b893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78a92b7f7ee0dfaa9fbf00a86f570c77"><td class="memItemLeft" align="right" valign="top"><a id="a78a92b7f7ee0dfaa9fbf00a86f570c77"></a>
@@ -232,7 +232,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>stats_computed</b></td
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> t8_forest::element_offsets</td>
+          <td class="memname"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> t8_forest::element_offsets</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -300,7 +300,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>stats_computed</b></td
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> t8_forest::global_first_desc</td>
+          <td class="memname"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> t8_forest::global_first_desc</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -385,7 +385,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>stats_computed</b></td
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> t8_forest::tree_offsets</td>
+          <td class="memname"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> t8_forest::tree_offsets</td>
         </tr>
       </table>
 </div><div class="memdoc">

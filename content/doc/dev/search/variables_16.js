@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x_3277',['x',['../structt8__dhex.html#a1c5f32a3c938511eacca97f5ad31ce5a',1,'t8_dhex::x()'],['../structt8__dtet.html#a891d3f8d12454db88871789512a2f1ef',1,'t8_dtet::x()']]]
+  ['write_5fstart_5fcalled_3340',['write_start_called',['../structt8__shmem__array.html#a8c2bcf324658a070ab4d7e18f4bdd783',1,'t8_shmem_array']]],
+  ['writing_5fpossible_3341',['writing_possible',['../structt8__shmem__array.html#aa9289628bf3cea57463b47c0862318cd',1,'t8_shmem_array']]]
 ];

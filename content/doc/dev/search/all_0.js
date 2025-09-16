@@ -8,7 +8,7 @@ var searchData=
   ['add_5fvertex_5fto_5ftree_5',['add_vertex_to_tree',['../classt8__cmesh__vertex__conn__vertex__to__tree.html#a04ccfe2be9fe8bba6c6aa950da7de84c',1,'t8_cmesh_vertex_conn_vertex_to_tree']]],
   ['addable_6',['Addable',['../structAddable.html',1,'']]],
   ['addassignable_7',['AddAssignable',['../structAddAssignable.html',1,'']]],
-  ['array_8',['array',['../structt8__element__array__t.html#a475cefa4a49cd6f4d8458622d16a5f21',1,'t8_element_array_t']]],
+  ['array_8',['array',['../structt8__element__array__t.html#a475cefa4a49cd6f4d8458622d16a5f21',1,'t8_element_array_t::array()'],['../structt8__shmem__array.html#ac7b7cbb08cd599fa38e7bfd35013204e',1,'t8_shmem_array::array()']]],
   ['att_5felem_5fnode_9',['att_elem_node',['../structt8__cmesh__netcdf__ugrid__namespace__t.html#a48ba6495e6bb3812869f337b6c4cb612',1,'t8_cmesh_netcdf_ugrid_namespace_t']]],
   ['att_5felem_5fnode_5fconnectivity_10',['att_elem_node_connectivity',['../structt8__cmesh__netcdf__ugrid__namespace__t.html#a258d1fd43558630654faad28b88f869f',1,'t8_cmesh_netcdf_ugrid_namespace_t']]],
   ['att_5felem_5fshape_5ftype_11',['att_elem_shape_type',['../structt8__cmesh__netcdf__ugrid__namespace__t.html#aed99941c7518907fb1be9021e8e3e7a8',1,'t8_cmesh_netcdf_ugrid_namespace_t']]],

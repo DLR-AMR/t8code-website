@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.203-ec574</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.220-5672</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -109,7 +109,7 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;constexpr <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="t8__data__handler_8hxx.html#a797b27683efe6d343d792d2cb6ae151f">   42</a></span>&#160;<a class="code" href="t8__data__handler_8hxx.html#a797b27683efe6d343d792d2cb6ae151f">is_internal_data</a> (<span class="keyword">const</span> <a class="code" href="classT8Type.html">t8_data_handler_type</a> type)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">switch</span> (type.get ()) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">switch</span> (type.<a class="code" href="classT8Type.html#a59d939e6200452904a61e7989d43b445">get</a> ()) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="comment">// Placeholder for future internal data, which is handled here.</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -138,6 +138,7 @@ $(function() {
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DATA_HANDLER_HXX */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclassT8Type_html"><div class="ttname"><a href="classT8Type.html">T8Type</a></div><div class="ttdoc">An implementation of strong type with additional competences.</div><div class="ttdef"><b>Definition:</b> t8_type.hxx:47</div></div>
+<div class="ttc" id="aclassT8Type_html_a59d939e6200452904a61e7989d43b445"><div class="ttname"><a href="classT8Type.html#a59d939e6200452904a61e7989d43b445">T8Type::get</a></div><div class="ttdeci">constexpr T &amp; get() noexcept</div><div class="ttdoc">Get a reference to the stored value.</div><div class="ttdef"><b>Definition:</b> t8_type.hxx:89</div></div>
 <div class="ttc" id="aclasst8__data__handler_html"><div class="ttname"><a href="classt8__data__handler.html">t8_data_handler</a></div><div class="ttdoc">Template class for handling single data items.</div><div class="ttdef"><b>Definition:</b> t8_data_handler.hxx:59</div></div>
 <div class="ttc" id="aclasst8__data__handler_html_a375a99b1038f014eeba3573e76bac200"><div class="ttname"><a href="classt8__data__handler.html#a375a99b1038f014eeba3573e76bac200">t8_data_handler::pack</a></div><div class="ttdeci">void pack(const TType &amp;data, int &amp;pos, void *buffer, const int num_bytes, sc_MPI_Comm comm)</div><div class="ttdoc">Packs the given data into a buffer for communication.</div></div>
 <div class="ttc" id="aclasst8__data__handler_html_a716c093767c70064356cd37fe1b60af4"><div class="ttname"><a href="classt8__data__handler.html#a716c093767c70064356cd37fe1b60af4">t8_data_handler::type</a></div><div class="ttdeci">t8_data_handler_type type()</div><div class="ttdoc">Returns the type of the data handler.</div></div>

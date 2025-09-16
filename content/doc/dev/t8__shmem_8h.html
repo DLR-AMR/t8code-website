@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.203-ec574</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.220-5672</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -99,7 +99,8 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ae1612fc19792cf32d8e070647c20bdf4"><td class="memItemLeft" align="right" valign="top"><a id="ae1612fc19792cf32d8e070647c20bdf4"></a>
-typedef struct <a class="el" href="structt8__shmem__array.html">t8_shmem_array</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_t</b></td></tr>
+typedef struct <a class="el" href="structt8__shmem__array.html">t8_shmem_array</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a></td></tr>
+<tr class="memdesc:ae1612fc19792cf32d8e070647c20bdf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared memory array structure. <br /></td></tr>
 <tr class="separator:ae1612fc19792cf32d8e070647c20bdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -107,7 +108,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a6118807dfe8ca463f93ab12a99955e32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a6118807dfe8ca463f93ab12a99955e32">t8_shmem_init</a> (sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a6118807dfe8ca463f93ab12a99955e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize shared memory usage for a communicator.  <a href="t8__shmem_8h.html#a6118807dfe8ca463f93ab12a99955e32">More...</a><br /></td></tr>
 <tr class="separator:a6118807dfe8ca463f93ab12a99955e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46b05e6a1965f985b3fd6b06a83adccf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a46b05e6a1965f985b3fd6b06a83adccf">t8_shmem_array_is_initialized</a> (const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array)</td></tr>
+<tr class="memitem:a46b05e6a1965f985b3fd6b06a83adccf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a46b05e6a1965f985b3fd6b06a83adccf">t8_shmem_array_is_initialized</a> (const <a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array)</td></tr>
 <tr class="memdesc:a46b05e6a1965f985b3fd6b06a83adccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a shared memory array was properly initialized.  <a href="t8__shmem_8h.html#a46b05e6a1965f985b3fd6b06a83adccf">More...</a><br /></td></tr>
 <tr class="separator:a46b05e6a1965f985b3fd6b06a83adccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9077dfc3dd23a9cb001210041a62a4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#ad9077dfc3dd23a9cb001210041a62a4f">t8_shmem_finalize</a> (sc_MPI_Comm comm)</td></tr>
@@ -116,64 +117,64 @@ Functions</h2></td></tr>
 <tr class="memitem:a7e6f3333aaa111a1d627a7718bb008dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a7e6f3333aaa111a1d627a7718bb008dc">t8_shmem_set_type</a> (sc_MPI_Comm comm, sc_shmem_type_t type)</td></tr>
 <tr class="memdesc:a7e6f3333aaa111a1d627a7718bb008dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a shared memory type of a communicator.  <a href="t8__shmem_8h.html#a7e6f3333aaa111a1d627a7718bb008dc">More...</a><br /></td></tr>
 <tr class="separator:a7e6f3333aaa111a1d627a7718bb008dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a561ea0c410ec5bbb6c1f8e14f16ef79f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a561ea0c410ec5bbb6c1f8e14f16ef79f">t8_shmem_array_init</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> *parray, size_t elem_size, size_t elem_count, sc_MPI_Comm comm)</td></tr>
+<tr class="memitem:a561ea0c410ec5bbb6c1f8e14f16ef79f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a561ea0c410ec5bbb6c1f8e14f16ef79f">t8_shmem_array_init</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> *parray, size_t elem_size, size_t elem_count, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a561ea0c410ec5bbb6c1f8e14f16ef79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize and allocate a shared memory array structure.  <a href="t8__shmem_8h.html#a561ea0c410ec5bbb6c1f8e14f16ef79f">More...</a><br /></td></tr>
 <tr class="separator:a561ea0c410ec5bbb6c1f8e14f16ef79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a562990851375d86a80405b568d6e8ee3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a562990851375d86a80405b568d6e8ee3">t8_shmem_array_start_writing</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array)</td></tr>
+<tr class="memitem:a562990851375d86a80405b568d6e8ee3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a562990851375d86a80405b568d6e8ee3">t8_shmem_array_start_writing</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array)</td></tr>
 <tr class="memdesc:a562990851375d86a80405b568d6e8ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable writing mode for a shmem array.  <a href="t8__shmem_8h.html#a562990851375d86a80405b568d6e8ee3">More...</a><br /></td></tr>
 <tr class="separator:a562990851375d86a80405b568d6e8ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fe205228ed5c05c0780dc62f7aa155b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a5fe205228ed5c05c0780dc62f7aa155b">t8_shmem_array_end_writing</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array)</td></tr>
+<tr class="memitem:a5fe205228ed5c05c0780dc62f7aa155b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a5fe205228ed5c05c0780dc62f7aa155b">t8_shmem_array_end_writing</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array)</td></tr>
 <tr class="memdesc:a5fe205228ed5c05c0780dc62f7aa155b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable writing mode for a shmem array.  <a href="t8__shmem_8h.html#a5fe205228ed5c05c0780dc62f7aa155b">More...</a><br /></td></tr>
 <tr class="separator:a5fe205228ed5c05c0780dc62f7aa155b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a774c19063a099b4cfe2271c129bb510f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a774c19063a099b4cfe2271c129bb510f">t8_shmem_array_set_gloidx</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array, int index, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> value)</td></tr>
+<tr class="memitem:a774c19063a099b4cfe2271c129bb510f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a774c19063a099b4cfe2271c129bb510f">t8_shmem_array_set_gloidx</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array, int index, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> value)</td></tr>
 <tr class="memdesc:a774c19063a099b4cfe2271c129bb510f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an entry of a t8_shmem array that is used to store t8_gloidx_t.  <a href="t8__shmem_8h.html#a774c19063a099b4cfe2271c129bb510f">More...</a><br /></td></tr>
 <tr class="separator:a774c19063a099b4cfe2271c129bb510f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a984e110da07a3bf994ad3a66f71e83b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a984e110da07a3bf994ad3a66f71e83b3">t8_shmem_array_copy</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> dest, <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> source)</td></tr>
+<tr class="memitem:a984e110da07a3bf994ad3a66f71e83b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a984e110da07a3bf994ad3a66f71e83b3">t8_shmem_array_copy</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> dest, <a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> source)</td></tr>
 <tr class="memdesc:a984e110da07a3bf994ad3a66f71e83b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the contents of one t8_shmem array into another.  <a href="t8__shmem_8h.html#a984e110da07a3bf994ad3a66f71e83b3">More...</a><br /></td></tr>
 <tr class="separator:a984e110da07a3bf994ad3a66f71e83b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06264056c2bf4e153c29aab42bbb8156"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a06264056c2bf4e153c29aab42bbb8156">t8_shmem_array_allgather</a> (const void *sendbuf, int sendcount, sc_MPI_Datatype sendtype, <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> recvarray, int recvcount, sc_MPI_Datatype recvtype)</td></tr>
+<tr class="memitem:a06264056c2bf4e153c29aab42bbb8156"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a06264056c2bf4e153c29aab42bbb8156">t8_shmem_array_allgather</a> (const void *sendbuf, int sendcount, sc_MPI_Datatype sendtype, <a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> recvarray, int recvcount, sc_MPI_Datatype recvtype)</td></tr>
 <tr class="memdesc:a06264056c2bf4e153c29aab42bbb8156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a t8_shmem array with an allgather.  <a href="t8__shmem_8h.html#a06264056c2bf4e153c29aab42bbb8156">More...</a><br /></td></tr>
 <tr class="separator:a06264056c2bf4e153c29aab42bbb8156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc7bf43741ad82c9406f2e0074621bb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#abc7bf43741ad82c9406f2e0074621bb6">t8_shmem_array_allgatherv</a> (void *sendbuf, const int sendcount, sc_MPI_Datatype sendtype, <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> recvarray, sc_MPI_Datatype recvtype, sc_MPI_Comm comm)</td></tr>
+<tr class="memitem:abc7bf43741ad82c9406f2e0074621bb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#abc7bf43741ad82c9406f2e0074621bb6">t8_shmem_array_allgatherv</a> (void *sendbuf, const int sendcount, sc_MPI_Datatype sendtype, <a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> recvarray, sc_MPI_Datatype recvtype, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:abc7bf43741ad82c9406f2e0074621bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a t8_shmem array with an Allgatherv Computes the recvcount-array and displacement-array for each rank of a node using the sendcount.  <a href="t8__shmem_8h.html#abc7bf43741ad82c9406f2e0074621bb6">More...</a><br /></td></tr>
 <tr class="separator:abc7bf43741ad82c9406f2e0074621bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2d12129612407c52047d7026780ba02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#ab2d12129612407c52047d7026780ba02">t8_shmem_array_prefix</a> (const void *sendbuf, <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> recvarray, const int count, sc_MPI_Datatype type, sc_MPI_Op op, sc_MPI_Comm comm)</td></tr>
+<tr class="memitem:ab2d12129612407c52047d7026780ba02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#ab2d12129612407c52047d7026780ba02">t8_shmem_array_prefix</a> (const void *sendbuf, <a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> recvarray, const int count, sc_MPI_Datatype type, sc_MPI_Op op, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ab2d12129612407c52047d7026780ba02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a t8_shmem array with an Allgather of the prefix operation over all processes.  <a href="t8__shmem_8h.html#ab2d12129612407c52047d7026780ba02">More...</a><br /></td></tr>
 <tr class="separator:ab2d12129612407c52047d7026780ba02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5e7baf594b64749023abf86f5848edf"><td class="memItemLeft" align="right" valign="top">sc_MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#af5e7baf594b64749023abf86f5848edf">t8_shmem_array_get_comm</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array)</td></tr>
+<tr class="memitem:af5e7baf594b64749023abf86f5848edf"><td class="memItemLeft" align="right" valign="top">sc_MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#af5e7baf594b64749023abf86f5848edf">t8_shmem_array_get_comm</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array)</td></tr>
 <tr class="memdesc:af5e7baf594b64749023abf86f5848edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the MPI communicator associated with a shmem array.  <a href="t8__shmem_8h.html#af5e7baf594b64749023abf86f5848edf">More...</a><br /></td></tr>
 <tr class="separator:af5e7baf594b64749023abf86f5848edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2e432baf332a52241574c0954f32cad"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#af2e432baf332a52241574c0954f32cad">t8_shmem_array_get_elem_size</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array)</td></tr>
+<tr class="memitem:af2e432baf332a52241574c0954f32cad"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#af2e432baf332a52241574c0954f32cad">t8_shmem_array_get_elem_size</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array)</td></tr>
 <tr class="memdesc:af2e432baf332a52241574c0954f32cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the element size of a <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a>.  <a href="t8__shmem_8h.html#af2e432baf332a52241574c0954f32cad">More...</a><br /></td></tr>
 <tr class="separator:af2e432baf332a52241574c0954f32cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd787a4e38879273cf75114503fdf7e1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#abd787a4e38879273cf75114503fdf7e1">t8_shmem_array_get_elem_count</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array)</td></tr>
+<tr class="memitem:abd787a4e38879273cf75114503fdf7e1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#abd787a4e38879273cf75114503fdf7e1">t8_shmem_array_get_elem_count</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array)</td></tr>
 <tr class="memdesc:abd787a4e38879273cf75114503fdf7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of elements of a <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a>.  <a href="t8__shmem_8h.html#abd787a4e38879273cf75114503fdf7e1">More...</a><br /></td></tr>
 <tr class="separator:abd787a4e38879273cf75114503fdf7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ab644b61e99322f17500d21230e33c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#aa3ab644b61e99322f17500d21230e33c">t8_shmem_array_get_gloidx_array</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array)</td></tr>
+<tr class="memitem:aa3ab644b61e99322f17500d21230e33c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#aa3ab644b61e99322f17500d21230e33c">t8_shmem_array_get_gloidx_array</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array)</td></tr>
 <tr class="memdesc:aa3ab644b61e99322f17500d21230e33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a read-only pointer to the data of a shared memory array interpreted as an t8_gloidx_t array.  <a href="t8__shmem_8h.html#aa3ab644b61e99322f17500d21230e33c">More...</a><br /></td></tr>
 <tr class="separator:aa3ab644b61e99322f17500d21230e33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8aec27e620552874cc54b7d57259b89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#aa8aec27e620552874cc54b7d57259b89">t8_shmem_array_get_gloidx_array_for_writing</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array)</td></tr>
+<tr class="memitem:aa8aec27e620552874cc54b7d57259b89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#aa8aec27e620552874cc54b7d57259b89">t8_shmem_array_get_gloidx_array_for_writing</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array)</td></tr>
 <tr class="memdesc:aa8aec27e620552874cc54b7d57259b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the data of a shared memory array interpreted as an t8_gloidx_t array.  <a href="t8__shmem_8h.html#aa8aec27e620552874cc54b7d57259b89">More...</a><br /></td></tr>
 <tr class="separator:aa8aec27e620552874cc54b7d57259b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88e4ac42ae3e0a37506b01006f20a90d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a88e4ac42ae3e0a37506b01006f20a90d">t8_shmem_array_get_gloidx</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array, int index)</td></tr>
+<tr class="memitem:a88e4ac42ae3e0a37506b01006f20a90d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a88e4ac42ae3e0a37506b01006f20a90d">t8_shmem_array_get_gloidx</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array, int index)</td></tr>
 <tr class="memdesc:a88e4ac42ae3e0a37506b01006f20a90d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an entry of a shared memory array that stores t8_gloidx_t.  <a href="t8__shmem_8h.html#a88e4ac42ae3e0a37506b01006f20a90d">More...</a><br /></td></tr>
 <tr class="separator:a88e4ac42ae3e0a37506b01006f20a90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b3a4eace1320d09faad3817119c80a7"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a3b3a4eace1320d09faad3817119c80a7">t8_shmem_array_get_array</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array)</td></tr>
+<tr class="memitem:a3b3a4eace1320d09faad3817119c80a7"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a3b3a4eace1320d09faad3817119c80a7">t8_shmem_array_get_array</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array)</td></tr>
 <tr class="memdesc:a3b3a4eace1320d09faad3817119c80a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the data array of a <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a>.  <a href="t8__shmem_8h.html#a3b3a4eace1320d09faad3817119c80a7">More...</a><br /></td></tr>
 <tr class="separator:a3b3a4eace1320d09faad3817119c80a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ce41cc552c7fa97cbb57b4ed7b066ed"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a5ce41cc552c7fa97cbb57b4ed7b066ed">t8_shmem_array_index</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array, size_t index)</td></tr>
+<tr class="memitem:a5ce41cc552c7fa97cbb57b4ed7b066ed"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a5ce41cc552c7fa97cbb57b4ed7b066ed">t8_shmem_array_index</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array, size_t index)</td></tr>
 <tr class="memdesc:a5ce41cc552c7fa97cbb57b4ed7b066ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a read-only pointer to an element in a <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a>.  <a href="t8__shmem_8h.html#a5ce41cc552c7fa97cbb57b4ed7b066ed">More...</a><br /></td></tr>
 <tr class="separator:a5ce41cc552c7fa97cbb57b4ed7b066ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1af4ad12bb2b9732d10188941f6ee663"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a1af4ad12bb2b9732d10188941f6ee663">t8_shmem_array_index_for_writing</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array, size_t index)</td></tr>
+<tr class="memitem:a1af4ad12bb2b9732d10188941f6ee663"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a1af4ad12bb2b9732d10188941f6ee663">t8_shmem_array_index_for_writing</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array, size_t index)</td></tr>
 <tr class="memdesc:a1af4ad12bb2b9732d10188941f6ee663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to an element in a <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a> in writing mode.  <a href="t8__shmem_8h.html#a1af4ad12bb2b9732d10188941f6ee663">More...</a><br /></td></tr>
 <tr class="separator:a1af4ad12bb2b9732d10188941f6ee663"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade2669746ad0b5813680d0de8f2ab935"><td class="memItemLeft" align="right" valign="top"><a id="ade2669746ad0b5813680d0de8f2ab935"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equal</b> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array_a, <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array_b)</td></tr>
+<tr class="memitem:ade2669746ad0b5813680d0de8f2ab935"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#ade2669746ad0b5813680d0de8f2ab935">t8_shmem_array_is_equal</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array_a, <a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array_b)</td></tr>
+<tr class="memdesc:ade2669746ad0b5813680d0de8f2ab935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two t8_shmem arrays are equal.  <a href="t8__shmem_8h.html#ade2669746ad0b5813680d0de8f2ab935">More...</a><br /></td></tr>
 <tr class="separator:ade2669746ad0b5813680d0de8f2ab935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f2ba9fa946c8268a1b14e6b4be72832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a4f2ba9fa946c8268a1b14e6b4be72832">t8_shmem_array_destroy</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> *parray)</td></tr>
+<tr class="memitem:a4f2ba9fa946c8268a1b14e6b4be72832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a4f2ba9fa946c8268a1b14e6b4be72832">t8_shmem_array_destroy</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> *parray)</td></tr>
 <tr class="memdesc:a4f2ba9fa946c8268a1b14e6b4be72832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free all memory associated with a <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a>.  <a href="t8__shmem_8h.html#a4f2ba9fa946c8268a1b14e6b4be72832">More...</a><br /></td></tr>
 <tr class="separator:a4f2ba9fa946c8268a1b14e6b4be72832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d199ab7c6b5a8512a1410c10db7895a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a6d199ab7c6b5a8512a1410c10db7895a">t8_shmem_array_binary_search</a> (<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> array, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> value, const int size, int(*compare)(<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>, const int, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>))</td></tr>
+<tr class="memitem:a6d199ab7c6b5a8512a1410c10db7895a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__shmem_8h.html#a6d199ab7c6b5a8512a1410c10db7895a">t8_shmem_array_binary_search</a> (<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> array, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> value, const int size, int(*compare)(<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>, const int, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>))</td></tr>
 <tr class="memdesc:a6d199ab7c6b5a8512a1410c10db7895a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a binary search in a <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a>.  <a href="t8__shmem_8h.html#a6d199ab7c6b5a8512a1410c10db7895a">More...</a><br /></td></tr>
 <tr class="separator:a6d199ab7c6b5a8512a1410c10db7895a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -225,7 +226,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>recvarray</em>, </td>
         </tr>
         <tr>
@@ -254,7 +255,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
     <tr><td class="paramdir">[in]</td><td class="paramname">sendbuf</td><td>the source from this process </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sendcount</td><td>the number of items to allgather </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sendtype</td><td>the type of items to allgather </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">recvbuf</td><td>the destination shmem array </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">recvarray</td><td>the destination shmem array </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">recvcount</td><td>the number of items to allgather </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">recvtype</td><td>the type of items to allgather </td></tr>
   </table>
@@ -291,7 +292,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>recvarray</em>, </td>
         </tr>
         <tr>
@@ -339,7 +340,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname">int t8_shmem_array_binary_search </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em>, </td>
         </tr>
         <tr>
@@ -357,7 +358,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int(*)(<a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>, const int, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>)&#160;</td>
+          <td class="paramtype">int(*)(<a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>, const int, const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>)&#160;</td>
           <td class="paramname"><em>compare</em>&#160;</td>
         </tr>
         <tr>
@@ -391,13 +392,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname">void t8_shmem_array_copy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>source</em>&#160;</td>
         </tr>
         <tr>
@@ -431,7 +432,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname">void t8_shmem_array_destroy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> *&#160;</td>
           <td class="paramname"><em>parray</em></td><td>)</td>
           <td></td>
         </tr>
@@ -457,7 +458,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname">void t8_shmem_array_end_writing </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
@@ -485,7 +486,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname">const void* t8_shmem_array_get_array </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
@@ -513,7 +514,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname">sc_MPI_Comm t8_shmem_array_get_comm </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
@@ -540,7 +541,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname">size_t t8_shmem_array_get_elem_count </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
@@ -567,7 +568,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname">size_t t8_shmem_array_get_elem_size </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
@@ -594,7 +595,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> t8_shmem_array_get_gloidx </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em>, </td>
         </tr>
         <tr>
@@ -633,7 +634,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname">const <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>* t8_shmem_array_get_gloidx_array </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
@@ -661,7 +662,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname"><a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a>* t8_shmem_array_get_gloidx_array_for_writing </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
@@ -688,7 +689,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>t8_shmem_array_is_equa
         <tr>
           <td class="memname">const void* t8_shmem_array_index </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em>, </td>
         </tr>
         <tr>
@@ -729,7 +730,7 @@ Writing mode must be disabled for <em>array</em>. </dd></dl>
         <tr>
           <td class="memname">void* t8_shmem_array_index_for_writing </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em>, </td>
         </tr>
         <tr>
@@ -770,7 +771,7 @@ Writing mode must be enabled for <em>array</em>. </dd></dl>
         <tr>
           <td class="memname">void t8_shmem_array_init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a> *&#160;</td>
           <td class="paramname"><em>parray</em>, </td>
         </tr>
         <tr>
@@ -812,6 +813,45 @@ Writing mode must be enabled for <em>array</em>. </dd></dl>
 
 </div>
 </div>
+<a id="ade2669746ad0b5813680d0de8f2ab935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade2669746ad0b5813680d0de8f2ab935">&#9670;&nbsp;</a></span>t8_shmem_array_is_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int t8_shmem_array_is_equal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramname"><em>array_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramname"><em>array_b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if two t8_shmem arrays are equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">array_a</td><td>The first <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a> to compare. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">array_b</td><td>The second <a class="el" href="structt8__shmem__array.html" title="Shared memory array structure.">t8_shmem_array</a> to compare. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the arrays are equal, 0 otherwise. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Writing mode must be disabled for <em>array_a</em> and <em>array_b</em>. </dd></dl>
+
+</div>
+</div>
 <a id="a46b05e6a1965f985b3fd6b06a83adccf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46b05e6a1965f985b3fd6b06a83adccf">&#9670;&nbsp;</a></span>t8_shmem_array_is_initialized()</h2>
 
@@ -821,7 +861,7 @@ Writing mode must be enabled for <em>array</em>. </dd></dl>
         <tr>
           <td class="memname">int t8_shmem_array_is_initialized </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
@@ -854,7 +894,7 @@ Writing mode must be enabled for <em>array</em>. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>recvarray</em>, </td>
         </tr>
         <tr>
@@ -915,7 +955,7 @@ Writing mode must be enabled for <em>array</em>. </dd></dl>
         <tr>
           <td class="memname">void t8_shmem_array_set_gloidx </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em>, </td>
         </tr>
         <tr>
@@ -959,7 +999,7 @@ Writing mode must be enabled for <em>array</em>. </dd></dl>
         <tr>
           <td class="memname">int t8_shmem_array_start_writing </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__shmem__array.html">t8_shmem_array_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__shmem_8h.html#ae1612fc19792cf32d8e070647c20bdf4">t8_shmem_array_t</a>&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
           <td></td>
         </tr>
