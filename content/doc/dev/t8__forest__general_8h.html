@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.231-7ac34</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.235-a7fcc</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -142,7 +142,7 @@ Functions</h2></td></tr>
 <tr class="memitem:af51b189a3580975642abcdac17da3c63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#af51b189a3580975642abcdac17da3c63">t8_forest_is_equal</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest_a, <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest_b)</td></tr>
 <tr class="memdesc:af51b189a3580975642abcdac17da3c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether two committed forests have the same local elements.  <a href="t8__forest__general_8h.html#af51b189a3580975642abcdac17da3c63">More...</a><br /></td></tr>
 <tr class="separator:af51b189a3580975642abcdac17da3c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5624d351d5789e115ed65eaaebdb6cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ab5624d351d5789e115ed65eaaebdb6cf">t8_forest_set_cmesh</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
+<tr class="memitem:ab5624d351d5789e115ed65eaaebdb6cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ab5624d351d5789e115ed65eaaebdb6cf">t8_forest_set_cmesh</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8__cmesh_8h.html#a6ad13c1bb89bc057b355faeb4d5bca8c">t8_cmesh_t</a> cmesh, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:ab5624d351d5789e115ed65eaaebdb6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cmesh associated to a forest.  <a href="t8__forest__general_8h.html#ab5624d351d5789e115ed65eaaebdb6cf">More...</a><br /></td></tr>
 <tr class="separator:ab5624d351d5789e115ed65eaaebdb6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbd60826fd0fbd3682cc752c8837c999"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#afbd60826fd0fbd3682cc752c8837c999">t8_forest_set_scheme</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme)</td></tr>
@@ -220,7 +220,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_set_load</b
 <tr class="memitem:a2b31fe543d2dc96f03fa02948a4af529"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a2b31fe543d2dc96f03fa02948a4af529">t8_forest_cmesh_ltreeid_to_ltreeid</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> lctreeid)</td></tr>
 <tr class="memdesc:a2b31fe543d2dc96f03fa02948a4af529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the local id of a tree in the coarse mesh of a forest, compute the tree's local id in the forest.  <a href="t8__forest__general_8h.html#a2b31fe543d2dc96f03fa02948a4af529">More...</a><br /></td></tr>
 <tr class="separator:a2b31fe543d2dc96f03fa02948a4af529"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b11a2b819128be51b080a161d8b1612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__ctree.html">t8_ctree_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a1b11a2b819128be51b080a161d8b1612">t8_forest_get_coarse_tree</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid)</td></tr>
+<tr class="memitem:a1b11a2b819128be51b080a161d8b1612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__cmesh_8h.html#a5b9a7b3aed57bf98c72cda210b2fda86">t8_ctree_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a1b11a2b819128be51b080a161d8b1612">t8_forest_get_coarse_tree</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltreeid)</td></tr>
 <tr class="memdesc:a1b11a2b819128be51b080a161d8b1612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the local id of a tree in a forest, return the coarse tree of the cmesh that corresponds to this tree.  <a href="t8__forest__general_8h.html#a1b11a2b819128be51b080a161d8b1612">More...</a><br /></td></tr>
 <tr class="separator:a1b11a2b819128be51b080a161d8b1612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b3748495e4c085f819f5581ea49dcd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a8b3748495e4c085f819f5581ea49dcd3">t8_forest_element_is_leaf</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> local_tree)</td></tr>
@@ -271,7 +271,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_set_load</b
 <tr class="memitem:a7bc074b56375efe0462bf58ed4c67599"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__element__array__t.html">t8_element_array_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a7bc074b56375efe0462bf58ed4c67599">t8_forest_tree_get_leaf_elements</a> (const <a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> ltree_id)</td></tr>
 <tr class="memdesc:a7bc074b56375efe0462bf58ed4c67599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the array of leaf elements of a local tree in a forest.  <a href="t8__forest__general_8h.html#a7bc074b56375efe0462bf58ed4c67599">More...</a><br /></td></tr>
 <tr class="separator:a7bc074b56375efe0462bf58ed4c67599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae188ca385657aa6e7d6e0ad98a51865c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ae188ca385657aa6e7d6e0ad98a51865c">t8_forest_get_cmesh</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest)</td></tr>
+<tr class="memitem:ae188ca385657aa6e7d6e0ad98a51865c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__cmesh_8h.html#a6ad13c1bb89bc057b355faeb4d5bca8c">t8_cmesh_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ae188ca385657aa6e7d6e0ad98a51865c">t8_forest_get_cmesh</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest)</td></tr>
 <tr class="memdesc:ae188ca385657aa6e7d6e0ad98a51865c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a cmesh associated to a forest.  <a href="t8__forest__general_8h.html#ae188ca385657aa6e7d6e0ad98a51865c">More...</a><br /></td></tr>
 <tr class="separator:ae188ca385657aa6e7d6e0ad98a51865c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af469520851ce3841d87bfcff72cdb115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#af469520851ce3841d87bfcff72cdb115">t8_forest_get_leaf_element</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> lelement_id, <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> *ltreeid)</td></tr>
@@ -313,7 +313,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
 <tr class="memitem:a8bab5008ba8b6da28cf42bcf4264c941"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a8bab5008ba8b6da28cf42bcf4264c941">t8_forest_element_find_owner</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest, <a class="el" href="t8_8h.html#a03692467b9ffc84d4d0c37e042679225">t8_gloidx_t</a> gtreeid, <a class="el" href="t8__element_8h.html#ac4c605cddc1aad4d36398a773768f738">t8_element_t</a> *element, <a class="el" href="t8__eclass_8h.html#a343c2af26e5b41822905b164cab176ec">t8_eclass_t</a> eclass)</td></tr>
 <tr class="memdesc:a8bab5008ba8b6da28cf42bcf4264c941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the owner process of a given element.  <a href="t8__forest__general_8h.html#a8bab5008ba8b6da28cf42bcf4264c941">More...</a><br /></td></tr>
 <tr class="separator:a8bab5008ba8b6da28cf42bcf4264c941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a982c7024da7c0e7def53e6817d486617"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a982c7024da7c0e7def53e6817d486617">t8_forest_new_uniform</a> (<a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> cmesh, const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const int level, const int do_face_ghost, sc_MPI_Comm comm)</td></tr>
+<tr class="memitem:a982c7024da7c0e7def53e6817d486617"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#a982c7024da7c0e7def53e6817d486617">t8_forest_new_uniform</a> (<a class="el" href="t8__cmesh_8h.html#a6ad13c1bb89bc057b355faeb4d5bca8c">t8_cmesh_t</a> cmesh, const <a class="el" href="t8__scheme_8h.html#a62e7e9eeb599a3a89d33aaf97cd547ef">t8_scheme_c</a> *scheme, const int level, const int do_face_ghost, sc_MPI_Comm comm)</td></tr>
 <tr class="memdesc:a982c7024da7c0e7def53e6817d486617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a uniformly refined forest on a coarse mesh.  <a href="t8__forest__general_8h.html#a982c7024da7c0e7def53e6817d486617">More...</a><br /></td></tr>
 <tr class="separator:a982c7024da7c0e7def53e6817d486617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac86d9553e0795fd3f7f4623c748d0674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__general_8h.html#ac86d9553e0795fd3f7f4623c748d0674">t8_forest_new_adapt</a> (<a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> forest_from, <a class="el" href="t8__forest__general_8h.html#a4b9fc747748d8bdb998b643c0082331f">t8_forest_adapt_t</a> adapt_fn, int recursive, int do_face_ghost, void *user_data)</td></tr>
@@ -841,7 +841,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a> t8_forest_get_cmesh </td>
+          <td class="memname"><a class="el" href="t8__cmesh_8h.html#a6ad13c1bb89bc057b355faeb4d5bca8c">t8_cmesh_t</a> t8_forest_get_cmesh </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
           <td class="paramname"><em>forest</em></td><td>)</td>
@@ -868,7 +868,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_iterate</b>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structt8__ctree.html">t8_ctree_t</a> t8_forest_get_coarse_tree </td>
+          <td class="memname"><a class="el" href="t8__cmesh_8h.html#a5b9a7b3aed57bf98c72cda210b2fda86">t8_ctree_t</a> t8_forest_get_coarse_tree </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a>&#160;</td>
           <td class="paramname"><em>forest</em>, </td>
@@ -2283,7 +2283,7 @@ Important! This routine allocates memory which must be freed. Do it like this:</
         <tr>
           <td class="memname"><a class="el" href="t8__forest__general_8h.html#a8c66cd971abdb628a06dc8d9446b2f22">t8_forest_t</a> t8_forest_new_uniform </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh_8h.html#a6ad13c1bb89bc057b355faeb4d5bca8c">t8_cmesh_t</a>&#160;</td>
           <td class="paramname"><em>cmesh</em>, </td>
         </tr>
         <tr>
@@ -2554,7 +2554,7 @@ This setting may not be combined with <a class="el" href="t8__forest__general_8h
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structt8__cmesh.html">t8_cmesh_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="t8__cmesh_8h.html#a6ad13c1bb89bc057b355faeb4d5bca8c">t8_cmesh_t</a>&#160;</td>
           <td class="paramname"><em>cmesh</em>, </td>
         </tr>
         <tr>

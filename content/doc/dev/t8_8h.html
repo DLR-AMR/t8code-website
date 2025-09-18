@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.231-7ac34</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.235-a7fcc</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -161,31 +161,35 @@ Macros</h2></td></tr>
 <tr class="memdesc:aa9e890a9ba0f6616e84782ca23059f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MPI datatype of t8_linearidx_t. <br /></td></tr>
 <tr class="separator:aa9e890a9ba0f6616e84782ca23059f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6979ba52b1f100d484de8e9f97288599"><td class="memItemLeft" align="right" valign="top"><a id="a6979ba52b1f100d484de8e9f97288599"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_PADDING_SIZE</b>&#160;&#160;&#160;(sizeof (void *))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a6979ba52b1f100d484de8e9f97288599">T8_PADDING_SIZE</a>&#160;&#160;&#160;(sizeof (void *))</td></tr>
+<tr class="memdesc:a6979ba52b1f100d484de8e9f97288599"><td class="mdescLeft">&#160;</td><td class="mdescRight">The padding size is the size of a void pointer. <br /></td></tr>
 <tr class="separator:a6979ba52b1f100d484de8e9f97288599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abae3ec42acfecf3c9c55541e14e8de05"><td class="memItemLeft" align="right" valign="top"><a id="abae3ec42acfecf3c9c55541e14e8de05"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#abae3ec42acfecf3c9c55541e14e8de05">T8_ADD_PADDING</a>(_x)&#160;&#160;&#160;((T8_PADDING_SIZE - ((_x) % T8_PADDING_SIZE)) % T8_PADDING_SIZE)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#abae3ec42acfecf3c9c55541e14e8de05">T8_ADD_PADDING</a>(_x)&#160;&#160;&#160;((<a class="el" href="t8_8h.html#a6979ba52b1f100d484de8e9f97288599">T8_PADDING_SIZE</a> - ((_x) % <a class="el" href="t8_8h.html#a6979ba52b1f100d484de8e9f97288599">T8_PADDING_SIZE</a>)) % <a class="el" href="t8_8h.html#a6979ba52b1f100d484de8e9f97288599">T8_PADDING_SIZE</a>)</td></tr>
 <tr class="memdesc:abae3ec42acfecf3c9c55541e14e8de05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the number of bytes that have to be added to a given byte_count such that it is a multiple of the padding size. <br /></td></tr>
 <tr class="separator:abae3ec42acfecf3c9c55541e14e8de05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae452f05444b7b442c7133af063cab73b"><td class="memItemLeft" align="right" valign="top"><a id="ae452f05444b7b442c7133af063cab73b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#ae452f05444b7b442c7133af063cab73b">T8_PRECISION_EPS</a>&#160;&#160;&#160;SC_EPS</td></tr>
-<tr class="memdesc:ae452f05444b7b442c7133af063cab73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define precisions for computations. <br /></td></tr>
+<tr class="memdesc:ae452f05444b7b442c7133af063cab73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define machine precision for computations. <br /></td></tr>
 <tr class="separator:ae452f05444b7b442c7133af063cab73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d623683af049538f34c9288f9d944b2"><td class="memItemLeft" align="right" valign="top"><a id="a1d623683af049538f34c9288f9d944b2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_PRECISION_SQRT_EPS</b>&#160;&#160;&#160;sqrt (<a class="el" href="t8_8h.html#ae452f05444b7b442c7133af063cab73b">T8_PRECISION_EPS</a>)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a1d623683af049538f34c9288f9d944b2">T8_PRECISION_SQRT_EPS</a>&#160;&#160;&#160;sqrt (<a class="el" href="t8_8h.html#ae452f05444b7b442c7133af063cab73b">T8_PRECISION_EPS</a>)</td></tr>
+<tr class="memdesc:a1d623683af049538f34c9288f9d944b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define square root of machine precision for computations. <br /></td></tr>
 <tr class="separator:a1d623683af049538f34c9288f9d944b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a42ca17168d18cf9b3a722417d5684a"><td class="memItemLeft" align="right" valign="top"><a id="a9a42ca17168d18cf9b3a722417d5684a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a9a42ca17168d18cf9b3a722417d5684a">T8_1D_TO_1D</a>(nx,  i)&#160;&#160;&#160;(i)</td></tr>
-<tr class="memdesc:a9a42ca17168d18cf9b3a722417d5684a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access multidimensional data on one-dimensional C arrays. <br /></td></tr>
+<tr class="memitem:a9a42ca17168d18cf9b3a722417d5684a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a9a42ca17168d18cf9b3a722417d5684a">T8_1D_TO_1D</a>(nx,  i)&#160;&#160;&#160;(i)</td></tr>
+<tr class="memdesc:a9a42ca17168d18cf9b3a722417d5684a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access multidimensional data on one-dimensional C arrays.  <a href="t8_8h.html#a9a42ca17168d18cf9b3a722417d5684a">More...</a><br /></td></tr>
 <tr class="separator:a9a42ca17168d18cf9b3a722417d5684a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9e27b7a52d4c798f8aaabc31acb285a"><td class="memItemLeft" align="right" valign="top"><a id="ae9e27b7a52d4c798f8aaabc31acb285a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_2D_TO_1D</b>(nx,  ny,  i,  j)&#160;&#160;&#160;((i) * (ny) + (j))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#ae9e27b7a52d4c798f8aaabc31acb285a">T8_2D_TO_1D</a>(nx,  ny,  i,  j)&#160;&#160;&#160;((i) * (ny) + (j))</td></tr>
+<tr class="memdesc:ae9e27b7a52d4c798f8aaabc31acb285a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access twodimensional data on one-dimensional C arrays. <br /></td></tr>
 <tr class="separator:ae9e27b7a52d4c798f8aaabc31acb285a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd4a404ce6e5c5c169b63dd7c459bb33"><td class="memItemLeft" align="right" valign="top"><a id="abd4a404ce6e5c5c169b63dd7c459bb33"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_3D_TO_1D</b>(nx,  ny,  nz,  i,  j,  k)&#160;&#160;&#160;(((i) * (ny) + (j)) * (nz) + (k))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#abd4a404ce6e5c5c169b63dd7c459bb33">T8_3D_TO_1D</a>(nx,  ny,  nz,  i,  j,  k)&#160;&#160;&#160;(((i) * (ny) + (j)) * (nz) + (k))</td></tr>
+<tr class="memdesc:abd4a404ce6e5c5c169b63dd7c459bb33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access threedimensional data on one-dimensional C arrays. <br /></td></tr>
 <tr class="separator:abd4a404ce6e5c5c169b63dd7c459bb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4bb6ebdf293c2ab377fc3b781ac78dc"><td class="memItemLeft" align="right" valign="top"><a id="aa4bb6ebdf293c2ab377fc3b781ac78dc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_4D_TO_1D</b>(nx,  ny,  nz,  nl,  i,  j,  k,  l)&#160;&#160;&#160;((((i) * (ny) + (j)) * (nz) + (k)) * (nl) + (l))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#aa4bb6ebdf293c2ab377fc3b781ac78dc">T8_4D_TO_1D</a>(nx,  ny,  nz,  nl,  i,  j,  k,  l)&#160;&#160;&#160;((((i) * (ny) + (j)) * (nz) + (k)) * (nl) + (l))</td></tr>
+<tr class="memdesc:aa4bb6ebdf293c2ab377fc3b781ac78dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access fourdimensional data on one-dimensional C arrays. <br /></td></tr>
 <tr class="separator:aa4bb6ebdf293c2ab377fc3b781ac78dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -277,14 +281,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8
 <tr class="memitem:acb9af1fd94631c8b7d1f63d6149003d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#acb9af1fd94631c8b7d1f63d6149003d9">t8_init</a> (int log_threshold)</td></tr>
 <tr class="memdesc:acb9af1fd94631c8b7d1f63d6149003d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register t8code with libsc and print version and variable information.  <a href="t8_8h.html#acb9af1fd94631c8b7d1f63d6149003d9">More...</a><br /></td></tr>
 <tr class="separator:acb9af1fd94631c8b7d1f63d6149003d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae20eab17c6793ad923cfaaf1c28a06f9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#ae20eab17c6793ad923cfaaf1c28a06f9">t8_sc_array_index_locidx</a> (const sc_array_t *array, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> it)</td></tr>
-<tr class="memdesc:ae20eab17c6793ad923cfaaf1c28a06f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to an array element indexed by a t8_locidx_t.  <a href="t8_8h.html#ae20eab17c6793ad923cfaaf1c28a06f9">More...</a><br /></td></tr>
-<tr class="separator:ae20eab17c6793ad923cfaaf1c28a06f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf980e21bc3b21f3346e53da8001ba9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8h.html#a0cf980e21bc3b21f3346e53da8001ba9">t8_sc_array_index_locidx</a> (const sc_array_t *array, const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a> index)</td></tr>
+<tr class="memdesc:a0cf980e21bc3b21f3346e53da8001ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to an array element indexed by a t8_locidx_t.  <a href="t8_8h.html#a0cf980e21bc3b21f3346e53da8001ba9">More...</a><br /></td></tr>
+<tr class="separator:a0cf980e21bc3b21f3346e53da8001ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the administrative header file for t8code. </p>
 <p>It includes standard C headers via subpackages. It also provides application-level convenience code such as logging functions. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a9a42ca17168d18cf9b3a722417d5684a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a42ca17168d18cf9b3a722417d5684a">&#9670;&nbsp;</a></span>T8_1D_TO_1D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define T8_1D_TO_1D</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">nx, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(i)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access multidimensional data on one-dimensional C arrays. </p>
+<p>Access onedimensional data on one-dimensional C arrays. </p>
+
+</div>
+</div>
 <a id="afee33776137ab765a38d5c84424104b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afee33776137ab765a38d5c84424104b8">&#9670;&nbsp;</a></span>T8_ASSERT</h2>
 
@@ -808,8 +843,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8
 
 </div>
 </div>
-<a id="ae20eab17c6793ad923cfaaf1c28a06f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae20eab17c6793ad923cfaaf1c28a06f9">&#9670;&nbsp;</a></span>t8_sc_array_index_locidx()</h2>
+<a id="a0cf980e21bc3b21f3346e53da8001ba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cf980e21bc3b21f3346e53da8001ba9">&#9670;&nbsp;</a></span>t8_sc_array_index_locidx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -824,7 +859,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="t8_8h.html#af85f71e058c1c9e64d8f7b04f6504fc0">t8_locidx_t</a>&#160;</td>
-          <td class="paramname"><em>it</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -837,11 +872,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8_8
 <p>Return a pointer to an array element indexed by a t8_locidx_t. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">array</td><td>The array of elements. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>needs to be in [0]..[elem_count-1]. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A void * pointing to entry <em>it</em> in <em>array</em>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A void * pointing to entry <em>index</em> in <em>array</em>. </dd></dl>
 
 </div>
 </div>

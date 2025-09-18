@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.231-7ac34</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.235-a7fcc</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -76,29 +76,42 @@ $(function() {
 <div class="title">t8_netcdf_variable_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Struct for elementwise data variable for a NetCDF file.  
+ <a href="structt8__netcdf__variable__t.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="t8__netcdf_8h_source.html">t8_netcdf.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a52e5a56ab3df4189362543a90917fa5c"><td class="memItemLeft" align="right" valign="top"><a id="a52e5a56ab3df4189362543a90917fa5c"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>variable_name</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__netcdf__variable__t.html#a52e5a56ab3df4189362543a90917fa5c">variable_name</a></td></tr>
+<tr class="memdesc:a52e5a56ab3df4189362543a90917fa5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">short name of the variable <br /></td></tr>
 <tr class="separator:a52e5a56ab3df4189362543a90917fa5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd17f423330cbbf220db294b9dee8e5"><td class="memItemLeft" align="right" valign="top"><a id="a7cd17f423330cbbf220db294b9dee8e5"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>variable_long_name</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__netcdf__variable__t.html#a7cd17f423330cbbf220db294b9dee8e5">variable_long_name</a></td></tr>
+<tr class="memdesc:a7cd17f423330cbbf220db294b9dee8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">long name of the variable <br /></td></tr>
 <tr class="separator:a7cd17f423330cbbf220db294b9dee8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad6f9ee958ac1200ea91148294b3cb9"><td class="memItemLeft" align="right" valign="top"><a id="a4ad6f9ee958ac1200ea91148294b3cb9"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>variable_units</b></td></tr>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__netcdf__variable__t.html#a4ad6f9ee958ac1200ea91148294b3cb9">variable_units</a></td></tr>
+<tr class="memdesc:a4ad6f9ee958ac1200ea91148294b3cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit of the variable <br /></td></tr>
 <tr class="separator:a4ad6f9ee958ac1200ea91148294b3cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f7a2101a69a679708d237a4e2dcc210"><td class="memItemLeft" align="right" valign="top"><a id="a2f7a2101a69a679708d237a4e2dcc210"></a>
-t8_netcdf_variable_type_t&#160;</td><td class="memItemRight" valign="bottom"><b>datatype</b></td></tr>
+t8_netcdf_variable_type_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__netcdf__variable__t.html#a2f7a2101a69a679708d237a4e2dcc210">datatype</a></td></tr>
+<tr class="memdesc:a2f7a2101a69a679708d237a4e2dcc210"><td class="mdescLeft">&#160;</td><td class="mdescRight">datatype of the variable <br /></td></tr>
 <tr class="separator:a2f7a2101a69a679708d237a4e2dcc210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecd4eed7c5683fc693ca1fb074d8fc1c"><td class="memItemLeft" align="right" valign="top"><a id="aecd4eed7c5683fc693ca1fb074d8fc1c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>var_user_dimid</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__netcdf__variable__t.html#aecd4eed7c5683fc693ca1fb074d8fc1c">var_user_dimid</a></td></tr>
+<tr class="memdesc:aecd4eed7c5683fc693ca1fb074d8fc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique identifier netCDF assigns to this variable once it is defined in the file. <br /></td></tr>
 <tr class="separator:aecd4eed7c5683fc693ca1fb074d8fc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee0a85f4c9efa21227e684351777f9cf"><td class="memItemLeft" align="right" valign="top"><a id="aee0a85f4c9efa21227e684351777f9cf"></a>
-sc_array_t *&#160;</td><td class="memItemRight" valign="bottom"><b>var_user_data</b></td></tr>
+sc_array_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__netcdf__variable__t.html#aee0a85f4c9efa21227e684351777f9cf">var_user_data</a></td></tr>
+<tr class="memdesc:aee0a85f4c9efa21227e684351777f9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">user data for the variable <br /></td></tr>
 <tr class="separator:aee0a85f4c9efa21227e684351777f9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Struct for elementwise data variable for a NetCDF file. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="t8__netcdf_8h_source.html">t8_netcdf.h</a></li>
 </ul>
 </div><!-- contents -->
