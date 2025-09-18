@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.224-a20df</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.231-7ac34</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -125,21 +125,29 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="t8__dtri_8h.html#a28a8f41f6a2a270974eeaf0886d69c55">   60</a></span>&#160;<span class="preprocessor">#define T8_DLINE_ROOT_BY_DTRI_ROOT (1 &lt;&lt; (T8_DLINE_MAXLEVEL - T8_DTRI_MAXLEVEL))</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">typedef</span> int8_t t8_dtri_type_t;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> int32_t t8_dtri_coord_t;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structt8__dtri.html">   65</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__dtri.html">t8_dtri</a></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  int8_t level;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  t8_dtri_type_t type;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  t8_dtri_coord_t x, y;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <a class="code" href="structt8__dtri.html">t8_dtri_t</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;T8_EXTERN_C_END ();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DTRI_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructt8__dtri_html"><div class="ttname"><a href="structt8__dtri.html">t8_dtri</a></div><div class="ttdef"><b>Definition:</b> t8_dtri.h:66</div></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="t8__dtri_8h.html#a7dd4cc23bcc2f744a7d6186f1883184a">   63</a></span>&#160;<span class="keyword">typedef</span> int8_t <a class="code" href="t8__dtri_8h.html#a7dd4cc23bcc2f744a7d6186f1883184a">t8_dtri_type_t</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="t8__dtri_8h.html#a6b39d39c09a27d977851e4df933eab41">   65</a></span>&#160;<span class="keyword">typedef</span> int32_t <a class="code" href="t8__dtri_8h.html#a6b39d39c09a27d977851e4df933eab41">t8_dtri_coord_t</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structt8__dtri.html">   68</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt8__dtri.html">t8_dtri</a></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structt8__dtri.html#ae38602da6469c58b67b9b73b25a1ac65">   70</a></span>&#160;  int8_t <a class="code" href="structt8__dtri.html#ae38602da6469c58b67b9b73b25a1ac65">level</a>;        </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structt8__dtri.html#ad2818264c44b82e7fda141ff6bf994ad">   71</a></span>&#160;  <a class="code" href="t8__dtri_8h.html#a7dd4cc23bcc2f744a7d6186f1883184a">t8_dtri_type_t</a> <a class="code" href="structt8__dtri.html#ad2818264c44b82e7fda141ff6bf994ad">type</a>; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structt8__dtri.html#ad84d071f188bf02abd73d274099b7989">   72</a></span>&#160;  <a class="code" href="t8__dtri_8h.html#a6b39d39c09a27d977851e4df933eab41">t8_dtri_coord_t</a> <a class="code" href="structt8__dtri.html#ad84d071f188bf02abd73d274099b7989">x</a>;   </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structt8__dtri.html#afbb43072678f8c45e52ab6281f2a9c0b">   73</a></span>&#160;  <a class="code" href="t8__dtri_8h.html#a6b39d39c09a27d977851e4df933eab41">t8_dtri_coord_t</a> <a class="code" href="structt8__dtri.html#afbb43072678f8c45e52ab6281f2a9c0b">y</a>;   </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="t8__dtri_8h.html#a384b334e631d3c16c62b53e1d957e1b8">   74</a></span>&#160;} <a class="code" href="t8__dtri_8h.html#a384b334e631d3c16c62b53e1d957e1b8">t8_dtri_t</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;T8_EXTERN_C_END ();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* T8_DTRI_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructt8__dtri_html"><div class="ttname"><a href="structt8__dtri.html">t8_dtri</a></div><div class="ttdoc">The data container describing a refined element in a refined tree for the triangular element class.</div><div class="ttdef"><b>Definition:</b> t8_dtri.h:69</div></div>
+<div class="ttc" id="astructt8__dtri_html_ad2818264c44b82e7fda141ff6bf994ad"><div class="ttname"><a href="structt8__dtri.html#ad2818264c44b82e7fda141ff6bf994ad">t8_dtri::type</a></div><div class="ttdeci">t8_dtri_type_t type</div><div class="ttdoc">Type of the triangle (0 or 1).</div><div class="ttdef"><b>Definition:</b> t8_dtri.h:71</div></div>
+<div class="ttc" id="astructt8__dtri_html_ad84d071f188bf02abd73d274099b7989"><div class="ttname"><a href="structt8__dtri.html#ad84d071f188bf02abd73d274099b7989">t8_dtri::x</a></div><div class="ttdeci">t8_dtri_coord_t x</div><div class="ttdoc">The x integer coordinate of the anchor node.</div><div class="ttdef"><b>Definition:</b> t8_dtri.h:72</div></div>
+<div class="ttc" id="astructt8__dtri_html_ae38602da6469c58b67b9b73b25a1ac65"><div class="ttname"><a href="structt8__dtri.html#ae38602da6469c58b67b9b73b25a1ac65">t8_dtri::level</a></div><div class="ttdeci">int8_t level</div><div class="ttdoc">The refinement level of the element relative to the root at level 0.</div><div class="ttdef"><b>Definition:</b> t8_dtri.h:70</div></div>
+<div class="ttc" id="astructt8__dtri_html_afbb43072678f8c45e52ab6281f2a9c0b"><div class="ttname"><a href="structt8__dtri.html#afbb43072678f8c45e52ab6281f2a9c0b">t8_dtri::y</a></div><div class="ttdeci">t8_dtri_coord_t y</div><div class="ttdoc">The y integer coordinate of the anchor node.</div><div class="ttdef"><b>Definition:</b> t8_dtri.h:73</div></div>
 <div class="ttc" id="at8_8h_html"><div class="ttname"><a href="t8_8h.html">t8.h</a></div><div class="ttdoc">This is the administrative header file for t8code.</div></div>
+<div class="ttc" id="at8__dtri_8h_html_a384b334e631d3c16c62b53e1d957e1b8"><div class="ttname"><a href="t8__dtri_8h.html#a384b334e631d3c16c62b53e1d957e1b8">t8_dtri_t</a></div><div class="ttdeci">struct t8_dtri t8_dtri_t</div><div class="ttdoc">The data container describing a refined element in a refined tree for the triangular element class.</div></div>
+<div class="ttc" id="at8__dtri_8h_html_a6b39d39c09a27d977851e4df933eab41"><div class="ttname"><a href="t8__dtri_8h.html#a6b39d39c09a27d977851e4df933eab41">t8_dtri_coord_t</a></div><div class="ttdeci">int32_t t8_dtri_coord_t</div><div class="ttdoc">Type of an integer coordinate for a node of a triangular element.</div><div class="ttdef"><b>Definition:</b> t8_dtri.h:65</div></div>
+<div class="ttc" id="at8__dtri_8h_html_a7dd4cc23bcc2f744a7d6186f1883184a"><div class="ttname"><a href="t8__dtri_8h.html#a7dd4cc23bcc2f744a7d6186f1883184a">t8_dtri_type_t</a></div><div class="ttdeci">int8_t t8_dtri_type_t</div><div class="ttdoc">Type for the (integer) type of a triangular element.</div><div class="ttdef"><b>Definition:</b> t8_dtri.h:63</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->

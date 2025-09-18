@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.224-a20df</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.231-7ac34</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -103,7 +103,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad81b76560299ee3c47af43ddd23fe86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the linear position of a pyramid in an uniform grid.  <a href="t8__dpyramid__bits_8h.html#ad81b76560299ee3c47af43ddd23fe86d">More...</a><br /></td></tr>
 <tr class="separator:ad81b76560299ee3c47af43ddd23fe86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed1ff78c292b3bd48f95355886dea3e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid__bits_8h.html#aed1ff78c292b3bd48f95355886dea3e0">t8_dpyramid_child</a> (const <a class="el" href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">t8_dpyramid_t</a> *elem, const int child_id, <a class="el" href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">t8_dpyramid_t</a> *child)</td></tr>
-<tr class="memdesc:aed1ff78c292b3bd48f95355886dea3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the childid-th child in Morton order of a pyramid.  <a href="t8__dpyramid__bits_8h.html#aed1ff78c292b3bd48f95355886dea3e0">More...</a><br /></td></tr>
+<tr class="memdesc:aed1ff78c292b3bd48f95355886dea3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the child_id-th child in Morton order of a pyramid.  <a href="t8__dpyramid__bits_8h.html#aed1ff78c292b3bd48f95355886dea3e0">More...</a><br /></td></tr>
 <tr class="separator:aed1ff78c292b3bd48f95355886dea3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa84e0ca08397e235123541e453bd87ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__dpyramid__bits_8h.html#aa84e0ca08397e235123541e453bd87ae">t8_dpyramid_children</a> (const <a class="el" href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">t8_dpyramid_t</a> *p, <a class="el" href="t8__dpyramid_8h.html#af4f0694d239abc911689b96ce09ed924">t8_dpyramid_t</a> **c)</td></tr>
 <tr class="memdesc:aa84e0ca08397e235123541e453bd87ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the children of a pyramid, array version.  <a href="t8__dpyramid__bits_8h.html#aa84e0ca08397e235123541e453bd87ae">More...</a><br /></td></tr>
@@ -257,16 +257,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pyra</td><td>Input pyramid </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>Level of the ancestor to compute </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">ancestor</td><td>Allocated element that will be filled with the data of the ancestor.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Compute the ancestor of <em>pyra</em> at a given level.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pyra</td><td>Input pyramid </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>The level at which we want to compute <em>ancestoranc</em> </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">ancestor</td><td>Allocated input element which will be filled by the data of the ancestor of <em>pyra</em> at level <em>level</em> </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ancestor</td><td>Allocated element that will be filled with the data of the ancestor. </td></tr>
   </table>
   </dd>
 </dl>
@@ -387,12 +378,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute the childid-th child in Morton order of a pyramid. </p>
+<p>Compute the child_id-th child in Morton order of a pyramid. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Input pyramid. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">childid</td><td>The id of the child, 0..7 in Morton order. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">child</td><td>Existing pyramid whose data will be filled with the date of t's childid-th child. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">child_id</td><td>The id of the child, 0..7 in Morton order. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">child</td><td>Existing pyramid whose data will be filled with the date of t's child_id-th child. </td></tr>
   </table>
   </dd>
 </dl>
@@ -511,9 +502,9 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Input pyramid </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>The face to compute the childran at </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>The face to compute the children at </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">children</td><td>The children of <em>p</em> at <em>face</em> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_childrem</td><td>The number of children at this face </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_children</td><td>The number of children at this face </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">child_indices</td><td>An array to be filled with the local-ids of the children. </td></tr>
   </table>
   </dd>
@@ -1767,8 +1758,8 @@ Functions</h2></td></tr>
 <p>compute if a given element lies on the tree boundary and return the face number of the tree face. </p>
 <p>If not the return value is arbitrary </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>pyramid </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>a face of <em>elem</em> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>pyramid </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>a face of <em>p</em> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1851,7 +1842,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">elem</td><td>Input pyramid. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vertex</td><td>The number of the vertex. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">coordinates</td><td>An array of 3 double that will be filled with the reference coordinates of the vertex. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">coords</td><td>An array of 3 double that will be filled with the reference coordinates of the vertex. </td></tr>
   </table>
   </dd>
 </dl>
