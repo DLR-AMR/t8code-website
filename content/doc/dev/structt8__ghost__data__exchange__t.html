@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.308-f7c6e</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.313-253e4</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -83,19 +83,20 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a4c9ed92c662c06ef7e39f2a0dfeaf8fc"><td class="memItemLeft" align="right" valign="top"><a id="a4c9ed92c662c06ef7e39f2a0dfeaf8fc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>num_remotes</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__ghost__data__exchange__t.html#a4c9ed92c662c06ef7e39f2a0dfeaf8fc">num_remotes</a></td></tr>
+<tr class="memdesc:a4c9ed92c662c06ef7e39f2a0dfeaf8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of processes, we send to. <br /></td></tr>
 <tr class="separator:a4c9ed92c662c06ef7e39f2a0dfeaf8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaa04d4c52c21e027ae1acfe27cbf3e8"><td class="memItemLeft" align="right" valign="top"><a id="acaa04d4c52c21e027ae1acfe27cbf3e8"></a>
 char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__ghost__data__exchange__t.html#acaa04d4c52c21e027ae1acfe27cbf3e8">send_buffers</a></td></tr>
-<tr class="memdesc:acaa04d4c52c21e027ae1acfe27cbf3e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of processes, we send to. <br /></td></tr>
+<tr class="memdesc:acaa04d4c52c21e027ae1acfe27cbf3e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each remote the send buffer. <br /></td></tr>
 <tr class="separator:acaa04d4c52c21e027ae1acfe27cbf3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a386bb3c507c5a37a9a4cb1bc475c3014"><td class="memItemLeft" align="right" valign="top"><a id="a386bb3c507c5a37a9a4cb1bc475c3014"></a>
 sc_MPI_Request *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__ghost__data__exchange__t.html#a386bb3c507c5a37a9a4cb1bc475c3014">send_requests</a></td></tr>
-<tr class="memdesc:a386bb3c507c5a37a9a4cb1bc475c3014"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each remote the send buffer. <br /></td></tr>
+<tr class="memdesc:a386bb3c507c5a37a9a4cb1bc475c3014"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each process we send to, the MPI request used. <br /></td></tr>
 <tr class="separator:a386bb3c507c5a37a9a4cb1bc475c3014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06196b2fc3ae23db67ac48ec355d93c8"><td class="memItemLeft" align="right" valign="top"><a id="a06196b2fc3ae23db67ac48ec355d93c8"></a>
 sc_MPI_Request *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__ghost__data__exchange__t.html#a06196b2fc3ae23db67ac48ec355d93c8">recv_requests</a></td></tr>
-<tr class="memdesc:a06196b2fc3ae23db67ac48ec355d93c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each process we send to, the MPI request used. <br /></td></tr>
+<tr class="memdesc:a06196b2fc3ae23db67ac48ec355d93c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each process we receive from, the MPI request used. <br /></td></tr>
 <tr class="separator:a06196b2fc3ae23db67ac48ec355d93c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.308-f7c6e</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.313-253e4</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -105,32 +105,41 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The t8 tree datatype.  <a href="structt8__tree.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__profile.html">t8_profile</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct holds profiling information, such as timings or statistics about communication.  <a href="structt8__profile.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest__ghost.html">t8_forest_ghost</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct stores various information about a forest's ghost elements and ghost trees.  <a href="structt8__forest__ghost.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:abf98fb44736509ccc0d522d8421a9111"><td class="memItemLeft" align="right" valign="top"><a id="abf98fb44736509ccc0d522d8421a9111"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_FOREST_FROM_FIRST</b>&#160;&#160;&#160;0</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#abf98fb44736509ccc0d522d8421a9111">T8_FOREST_FROM_FIRST</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:abf98fb44736509ccc0d522d8421a9111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lowest valid value of t8_forest_from_t. <br /></td></tr>
 <tr class="separator:abf98fb44736509ccc0d522d8421a9111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf1139c4c716e1c2c83d24dcd519b157"><td class="memItemLeft" align="right" valign="top"><a id="abf1139c4c716e1c2c83d24dcd519b157"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_FOREST_FROM_COPY</b>&#160;&#160;&#160;0 /* must be zero, such that |= with another options overwrites it  */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#abf1139c4c716e1c2c83d24dcd519b157">T8_FOREST_FROM_COPY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:abf1139c4c716e1c2c83d24dcd519b157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be zero, such that |= with another options overwrites it <br  />
+ <br /></td></tr>
 <tr class="separator:abf1139c4c716e1c2c83d24dcd519b157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79170ac9855c05548d2e106070304bd1"><td class="memItemLeft" align="right" valign="top"><a id="a79170ac9855c05548d2e106070304bd1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_FOREST_FROM_ADAPT</b>&#160;&#160;&#160;0x1</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#a79170ac9855c05548d2e106070304bd1">T8_FOREST_FROM_ADAPT</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="memdesc:a79170ac9855c05548d2e106070304bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value of t8_forest_from_t indicating the forest is derived via adapt. <br /></td></tr>
 <tr class="separator:a79170ac9855c05548d2e106070304bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf42517911090279cf54dc09aa5f2be6"><td class="memItemLeft" align="right" valign="top"><a id="acf42517911090279cf54dc09aa5f2be6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_FOREST_FROM_PARTITION</b>&#160;&#160;&#160;0x2</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#acf42517911090279cf54dc09aa5f2be6">T8_FOREST_FROM_PARTITION</a>&#160;&#160;&#160;0x2</td></tr>
+<tr class="memdesc:acf42517911090279cf54dc09aa5f2be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value of t8_forest_from_t indicating the forest is derived via partition. <br /></td></tr>
 <tr class="separator:acf42517911090279cf54dc09aa5f2be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee496390ec8b84265ccf269d0c0cbf8"><td class="memItemLeft" align="right" valign="top"><a id="a3ee496390ec8b84265ccf269d0c0cbf8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_FOREST_FROM_BALANCE</b>&#160;&#160;&#160;0x4</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#a3ee496390ec8b84265ccf269d0c0cbf8">T8_FOREST_FROM_BALANCE</a>&#160;&#160;&#160;0x4</td></tr>
+<tr class="memdesc:a3ee496390ec8b84265ccf269d0c0cbf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value of t8_forest_from_t indicating the forest is derived via balancing. <br /></td></tr>
 <tr class="separator:a3ee496390ec8b84265ccf269d0c0cbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a985fe60be1c7005fe71ff5c2ce39b1b0"><td class="memItemLeft" align="right" valign="top"><a id="a985fe60be1c7005fe71ff5c2ce39b1b0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_FOREST_FROM_NONE</b>&#160;&#160;&#160;0x8 /* A value that is not reached by adding up the other values. No from method used */</td></tr>
+<tr class="memitem:a985fe60be1c7005fe71ff5c2ce39b1b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#a985fe60be1c7005fe71ff5c2ce39b1b0">T8_FOREST_FROM_NONE</a>&#160;&#160;&#160;0x8</td></tr>
+<tr class="memdesc:a985fe60be1c7005fe71ff5c2ce39b1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value that is not reached by adding up the other values.  <a href="t8__forest__types_8h.html#a985fe60be1c7005fe71ff5c2ce39b1b0">More...</a><br /></td></tr>
 <tr class="separator:a985fe60be1c7005fe71ff5c2ce39b1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa60d04d4f5c3e7a627fd5a564719a58f"><td class="memItemLeft" align="right" valign="top"><a id="aa60d04d4f5c3e7a627fd5a564719a58f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>T8_FOREST_FROM_LAST</b>&#160;&#160;&#160;T8_FOREST_FROM_NONE</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#aa60d04d4f5c3e7a627fd5a564719a58f">T8_FOREST_FROM_LAST</a>&#160;&#160;&#160;<a class="el" href="t8__forest__types_8h.html#a985fe60be1c7005fe71ff5c2ce39b1b0">T8_FOREST_FROM_NONE</a></td></tr>
+<tr class="memdesc:aa60d04d4f5c3e7a627fd5a564719a58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value higher than any valid value of t8_forest_from_t. <br /></td></tr>
 <tr class="separator:aa60d04d4f5c3e7a627fd5a564719a58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89738710fea5aaa54e1bf5ee1ac2bf74"><td class="memItemLeft" align="right" valign="top"><a id="a89738710fea5aaa54e1bf5ee1ac2bf74"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#a89738710fea5aaa54e1bf5ee1ac2bf74">T8_FOREST_BALANCE_REPART</a>&#160;&#160;&#160;1</td></tr>
@@ -150,10 +159,12 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a74aea2548060e6282f25c3f2a86c44c5"><td class="memItemLeft" align="right" valign="top"><a id="a74aea2548060e6282f25c3f2a86c44c5"></a>
-typedef struct <a class="el" href="structt8__profile.html">t8_profile</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_profile_t</b></td></tr>
+typedef struct <a class="el" href="structt8__profile.html">t8_profile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#a74aea2548060e6282f25c3f2a86c44c5">t8_profile_t</a></td></tr>
+<tr class="memdesc:a74aea2548060e6282f25c3f2a86c44c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defined below. <br /></td></tr>
 <tr class="separator:a74aea2548060e6282f25c3f2a86c44c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d08abdcdafbc6a5a7be8dd8dfd80acd"><td class="memItemLeft" align="right" valign="top"><a id="a4d08abdcdafbc6a5a7be8dd8dfd80acd"></a>
-typedef struct <a class="el" href="structt8__forest__ghost.html">t8_forest_ghost</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_ghost_t</b></td></tr>
+typedef struct <a class="el" href="structt8__forest__ghost.html">t8_forest_ghost</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#a4d08abdcdafbc6a5a7be8dd8dfd80acd">t8_forest_ghost_t</a></td></tr>
+<tr class="memdesc:a4d08abdcdafbc6a5a7be8dd8dfd80acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defined below. <br /></td></tr>
 <tr class="separator:a4d08abdcdafbc6a5a7be8dd8dfd80acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96898af22d99239b4773d6c31cf1c9db"><td class="memItemLeft" align="right" valign="top">typedef int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#a96898af22d99239b4773d6c31cf1c9db">t8_forest_from_t</a></td></tr>
 <tr class="memdesc:a96898af22d99239b4773d6c31cf1c9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a forest is to be derived from another forest, there are different possibilities how the original forest is modified.  <a href="t8__forest__types_8h.html#a96898af22d99239b4773d6c31cf1c9db">More...</a><br /></td></tr>
@@ -167,15 +178,34 @@ typedef struct <a class="el" href="structt8__tree.html">t8_tree</a>&#160;</td><t
 <tr class="memdesc:a5249dd14afbc434f706cf7c01bec747a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The t8 tree datatype. <br /></td></tr>
 <tr class="separator:a5249dd14afbc434f706cf7c01bec747a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7686c9499bf9e5062bb1115802ffa779"><td class="memItemLeft" align="right" valign="top"><a id="a7686c9499bf9e5062bb1115802ffa779"></a>
-typedef struct <a class="el" href="structt8__profile.html">t8_profile</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_profile_struct_t</b></td></tr>
+typedef struct <a class="el" href="structt8__profile.html">t8_profile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#a7686c9499bf9e5062bb1115802ffa779">t8_profile_struct_t</a></td></tr>
+<tr class="memdesc:a7686c9499bf9e5062bb1115802ffa779"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct holds profiling information, such as timings or statistics about communication. <br /></td></tr>
 <tr class="separator:a7686c9499bf9e5062bb1115802ffa779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca243b5f488312044884d55e4c050c13"><td class="memItemLeft" align="right" valign="top"><a id="aca243b5f488312044884d55e4c050c13"></a>
-typedef struct <a class="el" href="structt8__forest__ghost.html">t8_forest_ghost</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t8_forest_ghost_struct_t</b></td></tr>
+typedef struct <a class="el" href="structt8__forest__ghost.html">t8_forest_ghost</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t8__forest__types_8h.html#aca243b5f488312044884d55e4c050c13">t8_forest_ghost_struct_t</a></td></tr>
+<tr class="memdesc:aca243b5f488312044884d55e4c050c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct stores various information about a forest's ghost elements and ghost trees. <br /></td></tr>
 <tr class="separator:aca243b5f488312044884d55e4c050c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We define here the datatypes needed for internal forest routines. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a985fe60be1c7005fe71ff5c2ce39b1b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a985fe60be1c7005fe71ff5c2ce39b1b0">&#9670;&nbsp;</a></span>T8_FOREST_FROM_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define T8_FOREST_FROM_NONE&#160;&#160;&#160;0x8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A value that is not reached by adding up the other values. </p>
+<p>No from method used </p>
+
+</div>
+</div>
 <a id="ac03513a86c2cd251495b4f8c673d453a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac03513a86c2cd251495b4f8c673d453a">&#9670;&nbsp;</a></span>T8_PROFILE_NUM_STATS <span class="overload">[1/2]</span></h2>
 

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">t8
-   &#160;<span id="projectnumber">4.0.0-RC2.308-f7c6e</span>
+   &#160;<span id="projectnumber">4.0.0-RC2.313-253e4</span>
    </div>
    <div id="projectbrief">t8code is a C library to manage a forest of adaptive                           space-trees of general element classes in parallel.</div>
   </td>
@@ -76,6 +76,11 @@ $(function() {
 <div class="title">t8_forest_ghost Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This struct stores various information about a forest's ghost elements and ghost trees.  
+ <a href="structt8__forest__ghost.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="t8__forest__types_8h_source.html">t8_forest_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -112,13 +117,17 @@ sc_hash_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:ab4fdace2819dcf89dcc50f25a11d5754"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ranks of the processes for which local elements are ghost.  <a href="structt8__forest__ghost.html#ab4fdace2819dcf89dcc50f25a11d5754">More...</a><br /></td></tr>
 <tr class="separator:ab4fdace2819dcf89dcc50f25a11d5754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bfd6cbdef6a232ba2f9e14e25495749"><td class="memItemLeft" align="right" valign="top"><a id="a1bfd6cbdef6a232ba2f9e14e25495749"></a>
-sc_mempool_t *&#160;</td><td class="memItemRight" valign="bottom"><b>glo_tree_mempool</b></td></tr>
+sc_mempool_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest__ghost.html#a1bfd6cbdef6a232ba2f9e14e25495749">glo_tree_mempool</a></td></tr>
+<tr class="memdesc:a1bfd6cbdef6a232ba2f9e14e25495749"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global tree memory pool. <br /></td></tr>
 <tr class="separator:a1bfd6cbdef6a232ba2f9e14e25495749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4186503c29bc0884020c0f5a0116289d"><td class="memItemLeft" align="right" valign="top"><a id="a4186503c29bc0884020c0f5a0116289d"></a>
-sc_mempool_t *&#160;</td><td class="memItemRight" valign="bottom"><b>proc_offset_mempool</b></td></tr>
+sc_mempool_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structt8__forest__ghost.html#a4186503c29bc0884020c0f5a0116289d">proc_offset_mempool</a></td></tr>
+<tr class="memdesc:a4186503c29bc0884020c0f5a0116289d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The process offset memory pool. <br /></td></tr>
 <tr class="separator:a4186503c29bc0884020c0f5a0116289d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This struct stores various information about a forest's ghost elements and ghost trees. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
 <a id="ac642ad1829daa8271e5df218b36bc547"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac642ad1829daa8271e5df218b36bc547">&#9670;&nbsp;</a></span>ghost_trees</h2>
 
